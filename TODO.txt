@@ -1,0 +1,5 @@
+Issues
+
+	1. Correct answers are not displaying
+	2. Images should be uploaded in wordpress -- priority
+	3. 
