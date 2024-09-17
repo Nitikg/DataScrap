@@ -1,5 +1,7 @@
 Issues
 
-	1. Correct answers are not displaying
-	2. Images should be uploaded in wordpress -- priority
-	3. 
+	1. Images should be uploaded in wordpress -- priority 
+	2. Data Extraction for all pages into one xlsx -- Nitik (WIP)
+	3. UI Testing -- Nitik (WIP)
+	4. Data cleanup
+	5. Correct answers are not displaying
