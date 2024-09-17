@@ -1,0 +1,15 @@
+	Shivi's Notes: 
+
+	D:\Wordpress\Local\Temp01\app\public\wp-content\plugins\learnpress\templates\content-quiz\js.php
+
+SELECT post_type , COUNT(*) from wp_posts GROUP BY  post_type
+
+SELECT * FROM wp_posts WHERE post_type='lp_question'
+
+
+
+	-- All Question cleanup 
+	delete FROM wp_posts WHERE post_type='lp_question';
+	TRUNCATE table wp_learnpress_quiz_questions;
+	truncate table wp_learnpress_question_answers	;
+    truncate table wp_learnpress_question_answermeta;

@@ -7,9 +7,8 @@ Issues
 	5. Correct answers are not displaying
 	6. needs to write rollback script also but may be after MVP
 	7. Eduma Mobile App Setup -Shivi
+	1. Logout not working
+	2. See more btn above courses slider not working
 
 	
 
-	Shivi's Notes: 
-
-	D:\Wordpress\Local\Temp01\app\public\wp-content\plugins\learnpress\templates\content-quiz\js.php
