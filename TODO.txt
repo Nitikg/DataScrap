@@ -10,5 +10,20 @@ Issues
 	1. Logout not working
 	2. See more btn above courses slider not working
 
-	
+	wp-content/uploads/examdump/{examName}/imageName.jpg
 
+
+
+	
+1) SQL script genration updated and fixed few bugs 
+2) Created UploadStagging.php file to upload and delete questions in bulk
+3) You need to fix the image path in Q/A html body when creating body. 
+4) The image path should be like wp-content/uploads/examdump/{examName}/imageName.jpg
+5) For current exam this path is "wp-content/uploads/examdump/awsML/imageName.jpg". As of now all images are uploaded to server. If path is correct image must show in body. 
+
+This is you need to do 
+
+6) Fix your excel code
+7) Genrate SQL file from my script for 5 or 10 questions 
+7) Genrate SQL file from my script for 5 or 10 questions or all questions whatever is quick for You
+8) Upload this SQL via upload file and text
