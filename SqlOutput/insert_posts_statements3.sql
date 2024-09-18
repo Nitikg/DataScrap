@@ -27,37 +27,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,1);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.', 'The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The precision of the model is 86%, which is less than the accuracy of the model.', 'The precision of the model is 86%, which is less than the accuracy of the model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.', 'The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The precision of the model is 86%, which is greater than the accuracy of the model.', 'The precision of the model is 86%, which is greater than the accuracy of the model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -87,37 +86,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,2);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a content-based filtering recommendation engine with Apache Spark ML on Amazon EMR', 'Build a content-based filtering recommendation engine with Apache Spark ML on Amazon EMR', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a collaborative filtering recommendation engine with Apache Spark ML on Amazon EMR.', 'Build a collaborative filtering recommendation engine with Apache Spark ML on Amazon EMR.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a model-based filtering recommendation engine with Apache Spark ML on Amazon EMR', 'Build a model-based filtering recommendation engine with Apache Spark ML on Amazon EMR', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a combinative filtering recommendation engine with Apache Spark ML on Amazon EMR', 'Build a combinative filtering recommendation engine with Apache Spark ML on Amazon EMR', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -147,37 +145,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,3);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest .CSV data using Apache Kafka Streams on Amazon EC2 instances and use Kafka Connect S3 to serialize data as Parquet', 'Ingest .CSV data using Apache Kafka Streams on Amazon EC2 instances and use Kafka Connect S3 to serialize data as Parquet', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest .CSV data from Amazon Kinesis Data Streams and use Amazon Glue to convert data into Parquet.', 'Ingest .CSV data from Amazon Kinesis Data Streams and use Amazon Glue to convert data into Parquet.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest .CSV data using Apache Spark Structured Streaming in an Amazon EMR cluster and use Apache Spark to convert data into Parquet.', 'Ingest .CSV data using Apache Spark Structured Streaming in an Amazon EMR cluster and use Apache Spark to convert data into Parquet.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest .CSV data from Amazon Kinesis Data Streams and use Amazon Kinesis Data Firehose to convert data into Parquet.', 'Ingest .CSV data from Amazon Kinesis Data Streams and use Amazon Kinesis Data Firehose to convert data into Parquet.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -207,37 +204,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,4);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker k-Nearest-Neighbors (kNN) algorithm on the single time series consisting of the full year of data with a predictor_type of regressor.', 'Use the Amazon SageMaker k-Nearest-Neighbors (kNN) algorithm on the single time series consisting of the full year of data with a predictor_type of regressor.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Random Cut Forest (RCF) on the single time series consisting of the full year of data.', 'Use Amazon SageMaker Random Cut Forest (RCF) on the single time series consisting of the full year of data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker Linear Learner algorithm on the single time series consisting of the full year of data with a predictor_type of regressor.', 'Use the Amazon SageMaker Linear Learner algorithm on the single time series consisting of the full year of data with a predictor_type of regressor.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker Linear Learner algorithm on the single time series consisting of the full year of data with a predictor_type of classifier.', 'Use the Amazon SageMaker Linear Learner algorithm on the single time series consisting of the full year of data with a predictor_type of classifier.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -267,37 +263,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,5);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a custom encryption algorithm to encrypt the data and store the data on an Amazon SageMaker instance in a VPC. Use the SageMaker DeepAR algorithm to randomize the credit card numbers.', 'Use a custom encryption algorithm to encrypt the data and store the data on an Amazon SageMaker instance in a VPC. Use the SageMaker DeepAR algorithm to randomize the credit card numbers.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an IAM policy to encrypt the data on the Amazon S3 bucket and Amazon Kinesis to automatically discard credit card numbers and insert fake credit card numbers.', 'Use an IAM policy to encrypt the data on the Amazon S3 bucket and Amazon Kinesis to automatically discard credit card numbers and insert fake credit card numbers.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker launch configuration to encrypt the data once it is copied to the SageMaker instance in a VPC. Use the SageMaker principal component analysis (PCA) algorithm to reduce the length of the credit card numbers.', 'Use an Amazon SageMaker launch configuration to encrypt the data once it is copied to the SageMaker instance in a VPC. Use the SageMaker principal component analysis (PCA) algorithm to reduce the length of the credit card numbers.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS KMS to encrypt the data on Amazon S3 and Amazon SageMaker, and redact the credit card numbers from the customer data with AWS Glue.', 'Use AWS KMS to encrypt the data on Amazon S3 and Amazon SageMaker, and redact the credit card numbers from the customer data with AWS Glue.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -327,37 +322,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,6);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker notebook instances are based on the EC2 instances within the customer account, but they run outside of VPCs.', 'Amazon SageMaker notebook instances are based on the EC2 instances within the customer account, but they run outside of VPCs.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker notebook instances are based on the Amazon ECS service within customer accounts.', 'Amazon SageMaker notebook instances are based on the Amazon ECS service within customer accounts.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker notebook instances are based on EC2 instances running within AWS service accounts.', 'Amazon SageMaker notebook instances are based on EC2 instances running within AWS service accounts.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker notebook instances are based on AWS ECS instances running within AWS service accounts.', 'Amazon SageMaker notebook instances are based on AWS ECS instances running within AWS service accounts.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -387,37 +381,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,7);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Review SageMaker logs that have been written to Amazon S3 by leveraging Amazon Athena and Amazon QuickSight to visualize logs as they are being produced.', 'Review SageMaker logs that have been written to Amazon S3 by leveraging Amazon Athena and Amazon QuickSight to visualize logs as they are being produced.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate an Amazon CloudWatch dashboard to create a single view for the latency, memory utilization, and CPU utilization metrics that are outputted by Amazon SageMaker.', 'Generate an Amazon CloudWatch dashboard to create a single view for the latency, memory utilization, and CPU utilization metrics that are outputted by Amazon SageMaker.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build custom Amazon CloudWatch Logs and then leverage Amazon ES and Kibana to query and visualize the log data as it is generated by Amazon SageMaker.', 'Build custom Amazon CloudWatch Logs and then leverage Amazon ES and Kibana to query and visualize the log data as it is generated by Amazon SageMaker.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Send Amazon CloudWatch Logs that were generated by Amazon SageMaker to Amazon ES and use Kibana to query and visualize the log data.', 'Send Amazon CloudWatch Logs that were generated by Amazon SageMaker to Amazon ES and use Kibana to query and visualize the log data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -447,37 +440,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,8);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Data Pipeline to transform the data and Amazon RDS to run queries.', 'Use AWS Data Pipeline to transform the data and Amazon RDS to run queries.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue to catalogue the data and Amazon Athena to run queries.', 'Use AWS Glue to catalogue the data and Amazon Athena to run queries.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Batch to run ETL on the data and Amazon Aurora to run the queries.', 'Use AWS Batch to run ETL on the data and Amazon Aurora to run the queries.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to transform the data and Amazon Kinesis Data Analytics to run queries.', 'Use AWS Lambda to transform the data and Amazon Kinesis Data Analytics to run queries.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -507,37 +499,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,9);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load a smaller subset of the data into the SageMaker notebook and train locally. Confirm that the training code is executing and the model parameters seem reasonable. Initiate a SageMaker training job using the full dataset from the S3 bucket using Pipe input mode.', 'Load a smaller subset of the data into the SageMaker notebook and train locally. Confirm that the training code is executing and the model parameters seem reasonable. Initiate a SageMaker training job using the full dataset from the S3 bucket using Pipe input mode.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch an Amazon EC2 instance with an AWS Deep Learning AMI and attach the S3 bucket to the instance. Train on a small amount of the data to verify the training code and hyperparameters. Go back to Amazon SageMaker and train using the full dataset', 'Launch an Amazon EC2 instance with an AWS Deep Learning AMI and attach the S3 bucket to the instance. Train on a small amount of the data to verify the training code and hyperparameters. Go back to Amazon SageMaker and train using the full dataset', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue to train a model using a small subset of the data to confirm that the data will be compatible with Amazon SageMaker. Initiate a SageMaker training job using the full dataset from the S3 bucket using Pipe input mode.', 'Use AWS Glue to train a model using a small subset of the data to confirm that the data will be compatible with Amazon SageMaker. Initiate a SageMaker training job using the full dataset from the S3 bucket using Pipe input mode.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load a smaller subset of the data into the SageMaker notebook and train locally. Confirm that the training code is executing and the model parameters seem reasonable. Launch an Amazon EC2 instance with an AWS Deep Learning AMI and attach the S3 bucket to train the full dataset.', 'Load a smaller subset of the data into the SageMaker notebook and train locally. Confirm that the training code is executing and the model parameters seem reasonable. Launch an Amazon EC2 instance with an AWS Deep Learning AMI and attach the S3 bucket to train the full dataset.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -567,37 +558,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,10);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write a direct connection to the SQL database within the notebook and pull data in', 'Write a direct connection to the SQL database within the notebook and pull data in', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Push the data from Microsoft SQL Server to Amazon S3 using an AWS Data Pipeline and provide the S3 location within the notebook.', 'Push the data from Microsoft SQL Server to Amazon S3 using an AWS Data Pipeline and provide the S3 location within the notebook.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Move the data to Amazon DynamoDB and set up a connection to DynamoDB within the notebook to pull data in.', 'Move the data to Amazon DynamoDB and set up a connection to DynamoDB within the notebook to pull data in.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Move the data to Amazon ElastiCache using AWS DMS and set up a connection within the notebook to pull data in for fast access.', 'Move the data to Amazon ElastiCache using AWS DMS and set up a connection within the notebook to pull data in for fast access.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -627,37 +617,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,11);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Latent Dirichlet Allocation (LDA) for the given collection of discrete data to identify patterns in the customer database.', 'Latent Dirichlet Allocation (LDA) for the given collection of discrete data to identify patterns in the customer database.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A neural network with a minimum of three layers and random initial weights to identify patterns in the customer database.', 'A neural network with a minimum of three layers and random initial weights to identify patterns in the customer database.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Collaborative filtering based on user interactions and correlations to identify patterns in the customer database.', 'Collaborative filtering based on user interactions and correlations to identify patterns in the customer database.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random Cut Forest (RCF) over random subsamples to identify patterns in the customer database.', 'Random Cut Forest (RCF) over random subsamples to identify patterns in the customer database.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -687,37 +676,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,12);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression', 'Linear regression', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Classification', 'Classification', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Clustering', 'Clustering', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinforcement learning', 'Reinforcement learning', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -747,37 +735,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,13);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model predicts both the trend and the seasonality well', 'The model predicts both the trend and the seasonality well', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model predicts the trend well, but not the seasonality.', 'The model predicts the trend well, but not the seasonality.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model predicts the seasonality well, but not the trend.', 'The model predicts the seasonality well, but not the trend.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model does not predict the trend or the seasonality well.', 'The model does not predict the trend or the seasonality well.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -807,37 +794,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,14);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Long short-term memory (LSTM) model with scaled exponential linear unit (SELU)', 'Long short-term memory (LSTM) model with scaled exponential linear unit (SELU)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logistic regression', 'Logistic regression', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Support vector machine (SVM) with non-linear kernel', 'Support vector machine (SVM) with non-linear kernel', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Single perceptron with tanh activation function', 'Single perceptron with tanh activation function', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -867,37 +853,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,15);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a VPC endpoint and apply a bucket access policy that restricts access to the given VPC endpoint and the VPC.', 'Create a VPC endpoint and apply a bucket access policy that restricts access to the given VPC endpoint and the VPC.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a VPC endpoint and apply a bucket access policy that allows access from the given VPC endpoint and an Amazon EC2 instance.', 'Create a VPC endpoint and apply a bucket access policy that allows access from the given VPC endpoint and an Amazon EC2 instance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a VPC endpoint and use Network Access Control Lists (NACLs) to allow traffic between only the given VPC endpoint and an Amazon EC2 instance.', 'Create a VPC endpoint and use Network Access Control Lists (NACLs) to allow traffic between only the given VPC endpoint and an Amazon EC2 instance.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a VPC endpoint and use security groups to restrict access to the given VPC endpoint and an Amazon EC2 instance', 'Create a VPC endpoint and use security groups to restrict access to the given VPC endpoint and an Amazon EC2 instance', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -927,37 +912,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,16);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The class distribution in the dataset is imbalanced.', 'The class distribution in the dataset is imbalanced.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Dataset shuffling is disabled.', 'Dataset shuffling is disabled.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The batch size is too big.', 'The batch size is too big.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The learning rate is very high.', 'The learning rate is very high.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -987,37 +971,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,17);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe, Amazon Translate, and Amazon Comprehend', 'Amazon Transcribe, Amazon Translate, and Amazon Comprehend', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe, Amazon Comprehend, and Amazon SageMaker seq2seq', 'Amazon Transcribe, Amazon Comprehend, and Amazon SageMaker seq2seq', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe, Amazon Translate, and Amazon SageMaker Neural Topic Model (NTM)', 'Amazon Transcribe, Amazon Translate, and Amazon SageMaker Neural Topic Model (NTM)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe, Amazon Translate and Amazon SageMaker BlazingText', 'Amazon Transcribe, Amazon Translate and Amazon SageMaker BlazingText', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1047,37 +1030,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,18);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Bundle the NVIDIA drivers with the Docker image.', 'Bundle the NVIDIA drivers with the Docker image.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build the Docker container to be NVIDIA-Docker compatible.', 'Build the Docker container to be NVIDIA-Docker compatible.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Organize the Docker container''s file structure to execute on GPU instances.', 'Organize the Docker container''s file structure to execute on GPU instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the GPU flag in the Amazon SageMaker CreateTrainingJob request body.', 'Set the GPU flag in the Amazon SageMaker CreateTrainingJob request body.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1107,37 +1089,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,19);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Receiver operating characteristic (ROC) curve', 'Receiver operating characteristic (ROC) curve', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Misclassification rate', 'Misclassification rate', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Root Mean Square Error (RMSE)', 'Root Mean Square Error (RMSE)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'L1 norm', 'L1 norm', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1167,37 +1148,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,20);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create one-hot word encoding vectors.', 'Create one-hot word encoding vectors.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Produce a set of synonyms for every word using Amazon Mechanical Turk.', 'Produce a set of synonyms for every word using Amazon Mechanical Turk.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create word embedding vectors that store edit distance with every other word.', 'Create word embedding vectors that store edit distance with every other word.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download word embeddings pre-trained on a large corpus.', 'Download word embeddings pre-trained on a large corpus.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1227,42 +1207,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,21);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS CloudTrail', 'AWS CloudTrail', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Health', 'AWS Health', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Trusted Advisor', 'AWS Trusted Advisor', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon CloudWatch', 'Amazon CloudWatch', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Config', 'AWS Config', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1292,37 +1271,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,22);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Require that the stores to switch to capturing their data locally on AWS Storage Gateway for loading into Amazon S3, then use AWS Glue to do the transformation.', 'Require that the stores to switch to capturing their data locally on AWS Storage Gateway for loading into Amazon S3, then use AWS Glue to do the transformation.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy an Amazon EMR cluster running Apache Spark with the transformation logic, and have the cluster run each day on the accumulating records in Amazon S3, outputting new/transformed records to Amazon S3.', 'Deploy an Amazon EMR cluster running Apache Spark with the transformation logic, and have the cluster run each day on the accumulating records in Amazon S3, outputting new/transformed records to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Spin up a fleet of Amazon EC2 instances with the transformation logic, have them transform the data records accumulating on Amazon S3, and output the transformed records to Amazon S3.', 'Spin up a fleet of Amazon EC2 instances with the transformation logic, have them transform the data records accumulating on Amazon S3, and output the transformed records to Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Insert an Amazon Kinesis Data Analytics stream downstream of the Kinesis Data Firehose stream that transforms raw record attributes into simple transformed values using SQL.', 'Insert an Amazon Kinesis Data Analytics stream downstream of the Kinesis Data Firehose stream that transforms raw record attributes into simple transformed values using SQL.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1352,37 +1330,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,23);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Dropout', 'Dropout', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Smooth L1 loss', 'Smooth L1 loss', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Softmax', 'Softmax', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rectified linear units (ReLU)', 'Rectified linear units (ReLU)', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1412,37 +1389,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,24);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Root Mean Square Error (RMSE)', 'Root Mean Square Error (RMSE)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Residual plots', 'Residual plots', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Area under the curve', 'Area under the curve', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Confusion matrix', 'Confusion matrix', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1472,37 +1448,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,25);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decision tree', 'Decision tree', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear support vector machine (SVM)', 'Linear support vector machine (SVM)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Naive Bayesian classifier', 'Naive Bayesian classifier', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Single Perceptron with sigmoidal activation function', 'Single Perceptron with sigmoidal activation function', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1532,37 +1507,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,26);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A histogram showing whether the most important input feature is Gaussian.', 'A histogram showing whether the most important input feature is Gaussian.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A scatter plot with points colored by target variable that uses t-Distributed Stochastic Neighbor Embedding (t-SNE) to visualize the large number of input variables in an easier-to-read dimension.', 'A scatter plot with points colored by target variable that uses t-Distributed Stochastic Neighbor Embedding (t-SNE) to visualize the large number of input variables in an easier-to-read dimension.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A scatter plot showing the performance of the objective metric over each training iteration.', 'A scatter plot showing the performance of the objective metric over each training iteration.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A scatter plot showing the correlation between maximum tree depth and the objective metric.', 'A scatter plot showing the correlation between maximum tree depth and the objective metric.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1592,42 +1566,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,27);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform part-of-speech tagging and keep the action verb and the nouns only.', 'Perform part-of-speech tagging and keep the action verb and the nouns only.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Normalize all words by making the sentence lowercase.', 'Normalize all words by making the sentence lowercase.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Remove stop words using an English stopword dictionary.', 'Remove stop words using an English stopword dictionary.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Correct the typography on "quck" to "quick.ג€', 'Correct the typography on "quck" to "quick.ג€', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'One-hot encode all words in the sentence.', 'One-hot encode all words in the sentence.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1657,37 +1630,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,28);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert current documents to SSML with pronunciation tags.', 'Convert current documents to SSML with pronunciation tags.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an appropriate pronunciation lexicon.', 'Create an appropriate pronunciation lexicon.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Output speech marks to guide in pronunciation.', 'Output speech marks to guide in pronunciation.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Lex to preprocess the text files for pronunciation', 'Use Amazon Lex to preprocess the text files for pronunciation', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1717,42 +1689,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,29);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add vanishing gradient to the model.', 'Add vanishing gradient to the model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform data augmentation on the training data.', 'Perform data augmentation on the training data.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Make the neural network architecture complex.', 'Make the neural network architecture complex.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use gradient checking in the model.', 'Use gradient checking in the model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add L2 regularization to the model.', 'Add L2 regularization to the model.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1782,42 +1753,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,30);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The training channel identifying the location of training data on an Amazon S3 bucket.', 'The training channel identifying the location of training data on an Amazon S3 bucket.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The validation channel identifying the location of validation data on an Amazon S3 bucket.', 'The validation channel identifying the location of validation data on an Amazon S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The IAM role that Amazon SageMaker can assume to perform tasks on behalf of the users.', 'The IAM role that Amazon SageMaker can assume to perform tasks on behalf of the users.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Hyperparameters in a JSON array as documented for the algorithm used.', 'Hyperparameters in a JSON array as documented for the algorithm used.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The Amazon EC2 instance class specifying whether training will be run using CPU or GPU.', 'The Amazon EC2 instance class specifying whether training will be run using CPU or GPU.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1847,37 +1817,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,31);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'CSV files', 'CSV files', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Parquet files', 'Parquet files', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Compressed JSON', 'Compressed JSON', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'RecordIO', 'RecordIO', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1907,37 +1876,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,32);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Binarization', 'Binarization', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'One-hot encoding', 'One-hot encoding', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tokenization', 'Tokenization', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Normalization transformation', 'Normalization transformation', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -1967,42 +1935,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,33);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add more deep trees to the random forest to enable the model to learn more features.', 'Add more deep trees to the random forest to enable the model to learn more features.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include a copy of the samples in the test dataset in the training dataset.', 'Include a copy of the samples in the test dataset in the training dataset.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate more positive samples by duplicating the positive samples and adding a small amount of noise to the duplicated data.', 'Generate more positive samples by duplicating the positive samples and adding a small amount of noise to the duplicated data.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the cost function so that false negatives have a higher impact on the cost value than false positives.', 'Change the cost function so that false negatives have a higher impact on the cost value than false positives.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the cost function so that false positives have a higher impact on the cost value than false negatives.', 'Change the cost function so that false positives have a higher impact on the cost value than false negatives.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2032,37 +1999,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,34);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Drop all records from the dataset where age has been set to 0.', 'Drop all records from the dataset where age has been set to 0.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace the age field value for records with a value of 0 with the mean or median value from the dataset', 'Replace the age field value for records with a value of 0 with the mean or median value from the dataset', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Drop the age feature from the dataset and train the model using the rest of the features.', 'Drop the age feature from the dataset and train the model using the rest of the features.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use k-means clustering to handle missing features', 'Use k-means clustering to handle missing features', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2092,37 +2058,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,35);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store datasets as files in Amazon S3.', 'Store datasets as files in Amazon S3.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store datasets as files in an Amazon EBS volume attached to an Amazon EC2 instance.', 'Store datasets as files in an Amazon EBS volume attached to an Amazon EC2 instance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store datasets as tables in a multi-node Amazon Redshift cluster.', 'Store datasets as tables in a multi-node Amazon Redshift cluster.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store datasets as global tables in Amazon DynamoDB.', 'Store datasets as global tables in Amazon DynamoDB.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2152,37 +2117,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,36);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model needs to be completely re-engineered because it is unable to handle product inventory changes.', 'The model needs to be completely re-engineered because it is unable to handle product inventory changes.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model''s hyperparameters should be periodically updated to prevent drift.', 'The model''s hyperparameters should be periodically updated to prevent drift.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model should be periodically retrained from scratch using the original data while adding a regularization term to handle product inventory changes', 'The model should be periodically retrained from scratch using the original data while adding a regularization term to handle product inventory changes', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model should be periodically retrained using the original training data plus new data as product inventory changes.', 'The model should be periodically retrained using the original training data plus new data as product inventory changes.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2212,37 +2176,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,37);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Glue as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for real-time data insights; Amazon Kinesis Data Firehose for delivery to Amazon ES for clickstream analytics; Amazon EMR to generate personalized product recommendations', 'AWS Glue as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for real-time data insights; Amazon Kinesis Data Firehose for delivery to Amazon ES for clickstream analytics; Amazon EMR to generate personalized product recommendations', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Athena as the data catalog: Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for near-real-time data insights; Amazon Kinesis Data Firehose for clickstream analytics; AWS Glue to generate personalized product recommendations', 'Amazon Athena as the data catalog: Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for near-real-time data insights; Amazon Kinesis Data Firehose for clickstream analytics; AWS Glue to generate personalized product recommendations', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Glue as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for historical data insights; Amazon Kinesis Data Firehose for delivery to Amazon ES for clickstream analytics; Amazon EMR to generate personalized product recommendations', 'AWS Glue as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for historical data insights; Amazon Kinesis Data Firehose for delivery to Amazon ES for clickstream analytics; Amazon EMR to generate personalized product recommendations', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Athena as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for historical data insights; Amazon DynamoDB streams for clickstream analytics; AWS Glue to generate personalized product recommendations', 'Amazon Athena as the data catalog; Amazon Kinesis Data Streams and Amazon Kinesis Data Analytics for historical data insights; Amazon DynamoDB streams for clickstream analytics; AWS Glue to generate personalized product recommendations', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2272,42 +2235,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,38);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Customize the built-in image classification algorithm to use Inception and use this for model training.', 'Customize the built-in image classification algorithm to use Inception and use this for model training.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a support case with the SageMaker team to change the default image classification algorithm to Inception.', 'Create a support case with the SageMaker team to change the default image classification algorithm to Inception.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Bundle a Docker container with TensorFlow Estimator loaded with an Inception network and use this for model training.', 'Bundle a Docker container with TensorFlow Estimator loaded with an Inception network and use this for model training.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use custom code in Amazon SageMaker with TensorFlow Estimator to load the model with an Inception network, and use this for model training.', 'Use custom code in Amazon SageMaker with TensorFlow Estimator to load the model with an Inception network, and use this for model training.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download and apt-get install the inception network code into an Amazon EC2 instance and use this instance as a Jupyter notebook in Amazon SageMaker.', 'Download and apt-get install the inception network code into an Amazon EC2 instance and use this instance as a Jupyter notebook in Amazon SageMaker.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2337,37 +2299,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,39);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The learning rate should be increased because the optimization process was trapped at a local minimum.', 'The learning rate should be increased because the optimization process was trapped at a local minimum.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The dropout rate at the flatten layer should be increased because the model is not generalized enough.', 'The dropout rate at the flatten layer should be increased because the model is not generalized enough.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The dimensionality of dense layer next to the flatten layer should be increased because the model is not complex enough.', 'The dimensionality of dense layer next to the flatten layer should be increased because the model is not complex enough.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The epoch number should be increased because the optimization process was terminated before it reached the global minimum.', 'The epoch number should be increased because the optimization process was terminated before it reached the global minimum.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2397,37 +2358,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,40);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement an AWS Lambda function to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 'Implement an AWS Lambda function to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 'Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement an AWS Lambda function to log Amazon SageMaker API calls to AWS CloudTrail. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 'Implement an AWS Lambda function to log Amazon SageMaker API calls to AWS CloudTrail. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Set up Amazon SNS to receive a notification when the model is overfitting', 'Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Set up Amazon SNS to receive a notification when the model is overfitting', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2457,37 +2417,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,41);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform one-hot encoding on highly correlated features.', 'Perform one-hot encoding on highly correlated features.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use matrix multiplication on highly correlated features.', 'Use matrix multiplication on highly correlated features.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new feature space using principal component analysis (PCA)', 'Create a new feature space using principal component analysis (PCA)', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply the Pearson correlation coefficient.', 'Apply the Pearson correlation coefficient.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2517,37 +2476,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,42);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Poisson distribution', 'Poisson distribution', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Uniform distribution', 'Uniform distribution', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Normal distribution', 'Normal distribution', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Binomial distribution', 'Binomial distribution', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2577,37 +2535,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,43);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Place the Amazon SageMaker endpoint and S3 buckets within the same VPC.', 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Place the Amazon SageMaker endpoint and S3 buckets within the same VPC.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Use IAM policies to grant access to Amazon S3 and Amazon SageMaker.', 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Use IAM policies to grant access to Amazon S3 and Amazon SageMaker.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Ensure the VPC has S3 VPC endpoints and Amazon SageMaker VPC endpoints attached to it.', 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Ensure the VPC has S3 VPC endpoints and Amazon SageMaker VPC endpoints attached to it.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Ensure the VPC has a NAT gateway and an associated security group allowing only outbound connections to Amazon S3 and Amazon SageMaker.', 'Associate the Amazon SageMaker notebook with a private subnet in a VPC. Ensure the VPC has a NAT gateway and an associated security group allowing only outbound connections to Amazon S3 and Amazon SageMaker.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2637,42 +2594,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,44);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease regularization.', 'Decrease regularization.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase regularization.', 'Increase regularization.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase dropout.', 'Increase dropout.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease dropout.', 'Decrease dropout.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase feature combinations.', 'Increase feature combinations.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2702,37 +2658,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,45);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a schema in the AWS Glue Data Catalog of the incoming data format. Use an Amazon Kinesis Data Firehose delivery stream to stream the data and transform the data to Apache Parquet or ORC format using the AWS Glue Data Catalog before delivering to Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena, and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 'Create a schema in the AWS Glue Data Catalog of the incoming data format. Use an Amazon Kinesis Data Firehose delivery stream to stream the data and transform the data to Apache Parquet or ORC format using the AWS Glue Data Catalog before delivering to Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena, and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write each JSON record to a staging location in Amazon S3. Use the S3 Put event to trigger an AWS Lambda function that transforms the data into Apache Parquet or ORC format and writes the data to a processed data location in Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena, and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 'Write each JSON record to a staging location in Amazon S3. Use the S3 Put event to trigger an AWS Lambda function that transforms the data into Apache Parquet or ORC format and writes the data to a processed data location in Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena, and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write each JSON record to a staging location in Amazon S3. Use the S3 Put event to trigger an AWS Lambda function that transforms the data into Apache Parquet or ORC format and inserts it into an Amazon RDS PostgreSQL database. Have the Analysts query and run dashboards from the RDS database.', 'Write each JSON record to a staging location in Amazon S3. Use the S3 Put event to trigger an AWS Lambda function that transforms the data into Apache Parquet or ORC format and inserts it into an Amazon RDS PostgreSQL database. Have the Analysts query and run dashboards from the RDS database.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Analytics to ingest the streaming data and perform real-time SQL queries to convert the records to Apache Parquet before delivering to Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 'Use Amazon Kinesis Data Analytics to ingest the streaming data and perform real-time SQL queries to convert the records to Apache Parquet before delivering to Amazon S3. Have the Analysts query the data directly from Amazon S3 using Amazon Athena and connect to BI tools using the Athena Java Database Connectivity (JDBC) connector.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2762,37 +2717,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,46);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Listwise deletion', 'Listwise deletion', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Last observation carried forward', 'Last observation carried forward', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Multiple imputation', 'Multiple imputation', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Mean substitution', 'Mean substitution', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2822,37 +2776,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,47);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a NAT gateway within the corporate VPC.', 'Create a NAT gateway within the corporate VPC.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Route Amazon SageMaker traffic through an on-premises network.', 'Route Amazon SageMaker traffic through an on-premises network.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create Amazon SageMaker VPC interface endpoints within the corporate VPC.', 'Create Amazon SageMaker VPC interface endpoints within the corporate VPC.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create VPC peering with Amazon VPC hosting Amazon SageMaker.', 'Create VPC peering with Amazon VPC hosting Amazon SageMaker.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2882,37 +2835,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,48);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with random weights in all layers including the last fully connected layer.', 'Initialize the model with random weights in all layers including the last fully connected layer.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with pre-trained weights in all layers and replace the last fully connected layer.', 'Initialize the model with pre-trained weights in all layers and replace the last fully connected layer.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with random weights in all layers and replace the last fully connected layer.', 'Initialize the model with random weights in all layers and replace the last fully connected layer.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with pre-trained weights in all layers including the last fully connected layer.', 'Initialize the model with pre-trained weights in all layers including the last fully connected layer.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -2942,37 +2894,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,49);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Video and create a stream processor to detect faces from a collection of known employees, and alert when non-employees are detected.', 'Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Video and create a stream processor to detect faces from a collection of known employees, and alert when non-employees are detected.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Image to detect faces from a collection of known employees and alert when non-employees are detected.', 'Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Image to detect faces from a collection of known employees and alert when non-employees are detected.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to stream video to Amazon Kinesis Video Streams for each camera. On each stream, use Amazon Rekognition Video and create a stream processor to detect faces from a collection on each stream, and alert when non-employees are detected.', 'Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to stream video to Amazon Kinesis Video Streams for each camera. On each stream, use Amazon Rekognition Video and create a stream processor to detect faces from a collection on each stream, and alert when non-employees are detected.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to stream video to Amazon Kinesis Video Streams for each camera. On each stream, run an AWS Lambda function to capture image fragments and then call Amazon Rekognition Image to detect faces from a collection of known employees, and alert when non-employees are detected.', 'Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to stream video to Amazon Kinesis Video Streams for each camera. On each stream, run an AWS Lambda function to capture image fragments and then call Amazon Rekognition Image to detect faces from a collection of known employees, and alert when non-employees are detected.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3002,37 +2953,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,50);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use regression on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media', 'Use regression on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use clustering on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media', 'Use clustering on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a recommendation engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.', 'Use a recommendation engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a decision tree classifier engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.', 'Use a decision tree classifier engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3062,37 +3012,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,51);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logistic regression', 'Logistic regression', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random Cut Forest (RCF)', 'Random Cut Forest (RCF)', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Principal component analysis (PCA)', 'Principal component analysis (PCA)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression', 'Linear regression', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3122,37 +3071,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,52);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue crawler to crawl S3 data, an AWS Lambda function to trigger an AWS Glue ETL job, and an AWS Glue Data catalog to search and discover metadata.', 'Use an AWS Glue crawler to crawl S3 data, an AWS Lambda function to trigger an AWS Glue ETL job, and an AWS Glue Data catalog to search and discover metadata.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue crawler to crawl S3 data, an AWS Lambda function to trigger an AWS Batch job, and an external Apache Hive metastore to search and discover metadata.', 'Use an AWS Glue crawler to crawl S3 data, an AWS Lambda function to trigger an AWS Batch job, and an external Apache Hive metastore to search and discover metadata.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue crawler to crawl S3 data, an Amazon CloudWatch alarm to trigger an AWS Batch job, and an AWS Glue Data Catalog to search and discover metadata.', 'Use an AWS Glue crawler to crawl S3 data, an Amazon CloudWatch alarm to trigger an AWS Batch job, and an AWS Glue Data Catalog to search and discover metadata.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue crawler to crawl S3 data, an Amazon CloudWatch alarm to trigger an AWS Glue ETL job, and an external Apache Hive metastore to search and discover metadata.', 'Use an AWS Glue crawler to crawl S3 data, an Amazon CloudWatch alarm to trigger an AWS Glue ETL job, and an external Apache Hive metastore to search and discover metadata.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3182,37 +3130,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,53);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Do not change the TensorFlow code. Change the machine to one with a more powerful GPU to speed up the training.', 'Do not change the TensorFlow code. Change the machine to one with a more powerful GPU to speed up the training.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the TensorFlow code to implement a Horovod distributed framework supported by Amazon SageMaker. Parallelize the training to as many machines as needed to achieve the business goals.', 'Change the TensorFlow code to implement a Horovod distributed framework supported by Amazon SageMaker. Parallelize the training to as many machines as needed to achieve the business goals.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Switch to using a built-in AWS SageMaker DeepAR model. Parallelize the training to as many machines as needed to achieve the business goals.', 'Switch to using a built-in AWS SageMaker DeepAR model. Parallelize the training to as many machines as needed to achieve the business goals.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Move the training to Amazon EMR and distribute the workload to as many machines as needed to achieve the business goals.', 'Move the training to Amazon EMR and distribute the workload to as many machines as needed to achieve the business goals.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3242,37 +3189,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,54);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Recall', 'Recall', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Misclassification rate', 'Misclassification rate', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Mean absolute percentage error (MAPE)', 'Mean absolute percentage error (MAPE)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Area Under the ROC Curve (AUC)', 'Area Under the ROC Curve (AUC)', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3302,37 +3248,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,55);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a daily Amazon EMR workflow to generate precision-recall data, and save the results in Amazon S3. Give the Business team read-only access to S3.', 'Run a daily Amazon EMR workflow to generate precision-recall data, and save the results in Amazon S3. Give the Business team read-only access to S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate daily precision-recall data in Amazon QuickSight, and publish the results in a dashboard shared with the Business team.', 'Generate daily precision-recall data in Amazon QuickSight, and publish the results in a dashboard shared with the Business team.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a daily Amazon EMR workflow to generate precision-recall data, and save the results in Amazon S3. Visualize the arrays in Amazon QuickSight, and publish them in a dashboard shared with the Business team.', 'Run a daily Amazon EMR workflow to generate precision-recall data, and save the results in Amazon S3. Visualize the arrays in Amazon QuickSight, and publish them in a dashboard shared with the Business team.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate daily precision-recall data in Amazon ES, and publish the results in a dashboard shared with the Business team.', 'Generate daily precision-recall data in Amazon ES, and publish the results in a dashboard shared with the Business team.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3362,37 +3307,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,56);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker batch transform feature to transform the training data into a DataFrame.', 'Use the SageMaker batch transform feature to transform the training data into a DataFrame.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue to compress the data into the Apache Parquet format.', 'Use AWS Glue to compress the data into the Apache Parquet format.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Transform the dataset into the RecordIO protobuf format.', 'Transform the dataset into the RecordIO protobuf format.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker hyperparameter optimization feature to automatically optimize the data.', 'Use the SageMaker hyperparameter optimization feature to automatically optimize the data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3422,37 +3366,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,57);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the training data by adding variation in rotation for training images.', 'Increase the training data by adding variation in rotation for training images.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of epochs for model training', 'Increase the number of epochs for model training', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of layers for the neural network.', 'Increase the number of layers for the neural network.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the dropout rate for the second-to-last layer.', 'Increase the dropout rate for the second-to-last layer.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3482,37 +3425,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,58);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS DMS', 'AWS DMS', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis Data Streams', 'Amazon Kinesis Data Streams', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis Data Firehose', 'Amazon Kinesis Data Firehose', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis Data Analytics', 'Amazon Kinesis Data Analytics', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3542,37 +3484,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,59);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply random sampling to the dataset. Then split the dataset into training, validation, and test sets.', 'Apply random sampling to the dataset. Then split the dataset into training, validation, and test sets.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Split the dataset into training, validation, and test sets. Then rescale the training set and apply the same scaling to the validation and test sets.', 'Split the dataset into training, validation, and test sets. Then rescale the training set and apply the same scaling to the validation and test sets.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rescale the dataset. Then split the dataset into training, validation, and test sets.', 'Rescale the dataset. Then split the dataset into training, validation, and test sets.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Split the dataset into training, validation, and test sets. Then rescale the training set, the validation set, and the test set independently.', 'Split the dataset into training, validation, and test sets. Then rescale the training set, the validation set, and the test set independently.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3602,37 +3543,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,60);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Install Python 3 and boto3 on their laptop and continue the code development using that environment.', 'Install Python 3 and boto3 on their laptop and continue the code development using that environment.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download the TensorFlow Docker container used in Amazon SageMaker from GitHub to their local environment, and use the Amazon SageMaker Python SDK to test the code.', 'Download the TensorFlow Docker container used in Amazon SageMaker from GitHub to their local environment, and use the Amazon SageMaker Python SDK to test the code.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download TensorFlow from tensorflow.org to emulate the TensorFlow kernel in the SageMaker environment.', 'Download TensorFlow from tensorflow.org to emulate the TensorFlow kernel in the SageMaker environment.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download the SageMaker notebook to their local environment, then install Jupyter Notebooks on their laptop and continue the development in a local notebook.', 'Download the SageMaker notebook to their local environment, then install Jupyter Notebooks on their laptop and continue the development in a local notebook.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3662,37 +3602,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,61);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data using Amazon Kinesis Data Firehose, and use Amazon Kinesis Data Analytics Random Cut Forest (RCF) for anomaly detection. Then use Kinesis Data Firehose to stream the results to Amazon S3.', 'Ingest the data using Amazon Kinesis Data Firehose, and use Amazon Kinesis Data Analytics Random Cut Forest (RCF) for anomaly detection. Then use Kinesis Data Firehose to stream the results to Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data into Apache Spark Streaming using Amazon EMR, and use Spark MLlib with k-means to perform anomaly detection. Then store the results in an Apache Hadoop Distributed File System (HDFS) using Amazon EMR with a replication factor of three as the data lake.', 'Ingest the data into Apache Spark Streaming using Amazon EMR, and use Spark MLlib with k-means to perform anomaly detection. Then store the results in an Apache Hadoop Distributed File System (HDFS) using Amazon EMR with a replication factor of three as the data lake.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data and store it in Amazon S3. Use AWS Batch along with the AWS Deep Learning AMIs to train a k-means model using TensorFlow on the data in Amazon S3.', 'Ingest the data and store it in Amazon S3. Use AWS Batch along with the AWS Deep Learning AMIs to train a k-means model using TensorFlow on the data in Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data and store it in Amazon S3. Have an AWS Glue job that is triggered on demand transform the new data. Then use the built-in Random Cut Forest (RCF) model within Amazon SageMaker to detect anomalies in the data.', 'Ingest the data and store it in Amazon S3. Have an AWS Glue job that is triggered on demand transform the new data. Then use the built-in Random Cut Forest (RCF) model within Amazon SageMaker to detect anomalies in the data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3722,37 +3661,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,62);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis Data Analytics with an AWS Lambda function to transform the data.', 'Amazon Kinesis Data Analytics with an AWS Lambda function to transform the data.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Glue with a custom ETL script to transform the data.', 'AWS Glue with a custom ETL script to transform the data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'An Amazon Kinesis Client Library to transform the data and save it to an Amazon ES cluster.', 'An Amazon Kinesis Client Library to transform the data and save it to an Amazon ES cluster.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis Data Firehose to transform the data and put it into an Amazon S3 bucket.', 'Amazon Kinesis Data Firehose to transform the data and put it into an Amazon S3 bucket.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3782,37 +3720,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,63);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AnXGBoost model where the objective parameter is set to multi:softmax', 'AnXGBoost model where the objective parameter is set to multi:softmax', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A deep convolutional neural network (CNN) with a softmax activation function for the last layer', 'A deep convolutional neural network (CNN) with a softmax activation function for the last layer', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A regression forest where the number of trees is set equal to the number of product categories', 'A regression forest where the number of trees is set equal to the number of product categories', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A DeepAR forecasting model based on a recurrent neural network (RNN)', 'A DeepAR forecasting model based on a recurrent neural network (RNN)', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3842,37 +3779,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,64);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Comprehend syntax analysis and entity detection', 'Amazon Comprehend syntax analysis and entity detection', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker BlazingText cbow mode', 'Amazon SageMaker BlazingText cbow mode', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Natural Language Toolkit (NLTK) stemming and stop word removal', 'Natural Language Toolkit (NLTK) stemming and stop word removal', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Scikit-leam term frequency-inverse document frequency (TF-IDF) vectorizer', 'Scikit-leam term frequency-inverse document frequency (TF-IDF) vectorizer', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3902,37 +3838,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,65);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply quantile binning to group the data into categorical bins to keep any relationships in the data by replacing the magnitude with distribution.', 'Apply quantile binning to group the data into categorical bins to keep any relationships in the data by replacing the magnitude with distribution.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply the Cartesian product transformation to create new combinations of fields that are independent of the magnitude.', 'Apply the Cartesian product transformation to create new combinations of fields that are independent of the magnitude.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply normalization to ensure each field will have a mean of 0 and a variance of 1 to remove any significant magnitude.', 'Apply normalization to ensure each field will have a mean of 0 and a variance of 1 to remove any significant magnitude.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply the orthogonal sparse bigram (OSB) transformation to apply a fixed-size sliding window to generate new features of a similar magnitude.', 'Apply the orthogonal sparse bigram (OSB) transformation to apply a fixed-size sliding window to generate new features of a similar magnitude.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -3962,37 +3897,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,66);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert the records to Apache Parquet format.', 'Convert the records to Apache Parquet format.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert the records to JSON format.', 'Convert the records to JSON format.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert the records to GZIP CSV format.', 'Convert the records to GZIP CSV format.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert the records to XML format.', 'Convert the records to XML format.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4022,37 +3956,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,67);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to trigger an AWS Step Functions workflow to wait for dataset uploads to complete in Amazon S3. Use AWS Glue to join the datasets. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 'Use AWS Lambda to trigger an AWS Step Functions workflow to wait for dataset uploads to complete in Amazon S3. Use AWS Glue to join the datasets. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Develop the ETL workflow using AWS Lambda to start an Amazon SageMaker notebook instance. Use a lifecycle configuration script to join the datasets and persist the results in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 'Develop the ETL workflow using AWS Lambda to start an Amazon SageMaker notebook instance. Use a lifecycle configuration script to join the datasets and persist the results in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Develop the ETL workflow using AWS Batch to trigger the start of ETL jobs when data is uploaded to Amazon S3. Use AWS Glue to join the datasets in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 'Develop the ETL workflow using AWS Batch to trigger the start of ETL jobs when data is uploaded to Amazon S3. Use AWS Glue to join the datasets in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to chain other Lambda functions to read and join the datasets in Amazon S3 as soon as the data is uploaded to Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 'Use AWS Lambda to chain other Lambda functions to read and join the datasets in Amazon S3 as soon as the data is uploaded to Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4082,42 +4015,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,68);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The factorization machines (FM) algorithm', 'The factorization machines (FM) algorithm', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The Latent Dirichlet Allocation (LDA) algorithm', 'The Latent Dirichlet Allocation (LDA) algorithm', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The principal component analysis (PCA) algorithm', 'The principal component analysis (PCA) algorithm', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The k-means algorithm', 'The k-means algorithm', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The Random Cut Forest (RCF) algorithm', 'The Random Cut Forest (RCF) algorithm', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4147,37 +4079,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,69);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a custom ARIMA model to forecast demand for the new product.', 'Train a custom ARIMA model to forecast demand for the new product.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an Amazon SageMaker DeepAR algorithm to forecast demand for the new product.', 'Train an Amazon SageMaker DeepAR algorithm to forecast demand for the new product.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an Amazon SageMaker k-means clustering algorithm to forecast demand for the new product.', 'Train an Amazon SageMaker k-means clustering algorithm to forecast demand for the new product.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a custom XGBoost model to forecast demand for the new product.', 'Train a custom XGBoost model to forecast demand for the new product.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4207,37 +4138,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,70);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Define security group(s) to allow all HTTP inbound/outbound traffic and assign those security group(s) to the Amazon SageMaker notebook instance.', 'Define security group(s) to allow all HTTP inbound/outbound traffic and assign those security group(s) to the Amazon SageMaker notebook instance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '׀¡onfigure the Amazon SageMaker notebook instance to have access to the VPC. Grant permission in the KMS key policy to the notebook''s KMS role.', '׀¡onfigure the Amazon SageMaker notebook instance to have access to the VPC. Grant permission in the KMS key policy to the notebook''s KMS role.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Assign an IAM role to the Amazon SageMaker notebook with S3 read access to the dataset. Grant permission in the KMS key policy to that role.', 'Assign an IAM role to the Amazon SageMaker notebook with S3 read access to the dataset. Grant permission in the KMS key policy to that role.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Assign the same KMS key used to encrypt data in Amazon S3 to the Amazon SageMaker notebook instance.', 'Assign the same KMS key used to encrypt data in Amazon S3 to the Amazon SageMaker notebook instance.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4267,37 +4197,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,71);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write the raw data to Amazon S3. Schedule an AWS Lambda function to submit a Spark step to a persistent Amazon EMR cluster based on the existing schedule. Use the existing PySpark logic to run the ETL job on the EMR cluster. Output the results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 'Write the raw data to Amazon S3. Schedule an AWS Lambda function to submit a Spark step to a persistent Amazon EMR cluster based on the existing schedule. Use the existing PySpark logic to run the ETL job on the EMR cluster. Output the results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write the raw data to Amazon S3. Create an AWS Glue ETL job to perform the ETL processing against the input data. Write the ETL job in PySpark to leverage the existing logic. Create a new AWS Glue trigger to trigger the ETL job based on the existing schedule. Configure the output target of the ETL job to write to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 'Write the raw data to Amazon S3. Create an AWS Glue ETL job to perform the ETL processing against the input data. Write the ETL job in PySpark to leverage the existing logic. Create a new AWS Glue trigger to trigger the ETL job based on the existing schedule. Configure the output target of the ETL job to write to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write the raw data to Amazon S3. Schedule an AWS Lambda function to run on the existing schedule and process the input data from Amazon S3. Write the Lambda logic in Python and implement the existing PySpark logic to perform the ETL process. Have the Lambda function output the results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 'Write the raw data to Amazon S3. Schedule an AWS Lambda function to run on the existing schedule and process the input data from Amazon S3. Write the Lambda logic in Python and implement the existing PySpark logic to perform the ETL process. Have the Lambda function output the results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Analytics to stream the input data and perform real-time SQL queries against the stream to carry out the required transformations within the stream. Deliver the output results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 'Use Amazon Kinesis Data Analytics to stream the input data and perform real-time SQL queries against the stream to carry out the required transformations within the stream. Deliver the output results to a ג€processedג€ location in Amazon S3 that is accessible for downstream use.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4327,42 +4256,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,72);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add L1 regularization to the classifier', 'Add L1 regularization to the classifier', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add features to the dataset', 'Add features to the dataset', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform recursive feature elimination', 'Perform recursive feature elimination', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform t-distributed stochastic neighbor embedding (t-SNE)', 'Perform t-distributed stochastic neighbor embedding (t-SNE)', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform linear discriminant analysis', 'Perform linear discriminant analysis', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4392,37 +4320,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,73);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS IoT Analytics for ingestion, storage, and further analysis. Use Jupyter notebooks from within AWS IoT Analytics to carry out analysis for anomalies.', 'Use AWS IoT Analytics for ingestion, storage, and further analysis. Use Jupyter notebooks from within AWS IoT Analytics to carry out analysis for anomalies.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon S3 for ingestion, storage, and further analysis. Use an Amazon EMR cluster to carry out Apache Spark ML k-means clustering to determine anomalies.', 'Use Amazon S3 for ingestion, storage, and further analysis. Use an Amazon EMR cluster to carry out Apache Spark ML k-means clustering to determine anomalies.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon S3 for ingestion, storage, and further analysis. Use the Amazon SageMaker Random Cut Forest (RCF) algorithm to determine anomalies.', 'Use Amazon S3 for ingestion, storage, and further analysis. Use the Amazon SageMaker Random Cut Forest (RCF) algorithm to determine anomalies.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose for ingestion and Amazon Kinesis Data Analytics Random Cut Forest (RCF) to perform anomaly detection. Use Kinesis Data Firehose to store data in Amazon S3 for further analysis.', 'Use Amazon Kinesis Data Firehose for ingestion and Amazon Kinesis Data Analytics Random Cut Forest (RCF) to perform anomaly detection. Use Kinesis Data Firehose to store data in Amazon S3 for further analysis.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4452,42 +4379,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,74);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Secrets Manager', 'AWS Secrets Manager', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS CodeStar', 'AWS CodeStar', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon ECR', 'Amazon ECR', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon ECS', 'Amazon ECS', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon S3', 'Amazon S3', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4517,37 +4443,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,75);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '10', '10', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '30', '30', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '600', '600', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '2,400', '2,400', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4577,37 +4502,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,76);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the words by term frequency-inverse document frequency (TF-IDF) vectors pretrained on a large collection of news articles related to the energy sector.', 'Initialize the words by term frequency-inverse document frequency (TF-IDF) vectors pretrained on a large collection of news articles related to the energy sector.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use gated recurrent units (GRUs) instead of LSTM and run the training process until the validation loss stops decreasing.', 'Use gated recurrent units (GRUs) instead of LSTM and run the training process until the validation loss stops decreasing.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the learning rate and run the training process until the training loss stops decreasing.', 'Reduce the learning rate and run the training process until the training loss stops decreasing.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the words by word2vec embeddings pretrained on a large collection of news articles related to the energy sector.', 'Initialize the words by word2vec embeddings pretrained on a large collection of news articles related to the energy sector.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4637,42 +4561,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,77);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS DMS', 'AWS DMS', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Kinesis', 'Amazon Kinesis', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Data Pipeline', 'AWS Data Pipeline', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Athena', 'Amazon Athena', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon ES', 'Amazon ES', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4702,37 +4625,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,78);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build the Docker image with the inference code. Tag the Docker image with the registry hostname and upload it to Amazon ECR.', 'Build the Docker image with the inference code. Tag the Docker image with the registry hostname and upload it to Amazon ECR.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Serialize the trained model so the format is compressed for deployment. Tag the Docker image with the registry hostname and upload it to Amazon S3.', 'Serialize the trained model so the format is compressed for deployment. Tag the Docker image with the registry hostname and upload it to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Serialize the trained model so the format is compressed for deployment. Build the image and upload it to Docker Hub.', 'Serialize the trained model so the format is compressed for deployment. Build the image and upload it to Docker Hub.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build the Docker image with the inference code. Configure Docker Hub and upload the image to Amazon ECR.', 'Build the Docker image with the inference code. Configure Docker Hub and upload the image to Amazon ECR.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4762,37 +4684,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,79);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a database, such as Amazon DynamoDB, to store the images, and set the IAM policies to restrict access to only the desired IAM users.', 'Use a database, such as Amazon DynamoDB, to store the images, and set the IAM policies to restrict access to only the desired IAM users.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon S3-backed data lake to store the raw images, and set up the permissions using bucket policies.', 'Use an Amazon S3-backed data lake to store the raw images, and set up the permissions using bucket policies.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Setup up Amazon EMR with Hadoop Distributed File System (HDFS) to store the files, and restrict access to the EMR instances using IAM policies.', 'Setup up Amazon EMR with Hadoop Distributed File System (HDFS) to store the files, and restrict access to the EMR instances using IAM policies.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure Amazon EFS with IAM policies to make the data available to Amazon EC2 instances owned by the IAM users.', 'Configure Amazon EFS with IAM policies to make the data available to Amazon EC2 instances owned by the IAM users.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4822,37 +4743,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,80);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run self-correlation on all features and remove highly correlated features', 'Run self-correlation on all features and remove highly correlated features', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Normalize all numerical values to be between 0 and 1', 'Normalize all numerical values to be between 0 and 1', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an autoencoder or principal component analysis (PCA) to replace original features with new features', 'Use an autoencoder or principal component analysis (PCA) to replace original features with new features', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Cluster raw data using k-means and use sample data from each cluster to build a new dataset', 'Cluster raw data using k-means and use sample data from each cluster to build a new dataset', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4882,37 +4802,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,81);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Gather more data using Amazon Mechanical Turk and then retrain', 'Gather more data using Amazon Mechanical Turk and then retrain', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an anomaly detection model instead of an MLP', 'Train an anomaly detection model instead of an MLP', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an XGBoost model instead of an MLP', 'Train an XGBoost model instead of an MLP', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add class weights to the MLP''s loss function and then retrain', 'Add class weights to the MLP''s loss function and then retrain', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -4942,37 +4861,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,82);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Streaming classification', 'Streaming classification', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Binary classification', 'Binary classification', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Multi-category classification', 'Multi-category classification', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Regression classification', 'Regression classification', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5002,37 +4920,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,83);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logistic regression', 'Logistic regression', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression', 'Linear regression', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-means', 'K-means', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Principal component analysis (PCA)', 'Principal component analysis (PCA)', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5062,37 +4979,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,84);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'It could cause the backpropagation algorithm to fail during training', 'It could cause the backpropagation algorithm to fail during training', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'It could create a singular matrix during optimization, which fails to define a unique solution', 'It could create a singular matrix during optimization, which fails to define a unique solution', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'It could modify the loss function during optimization, causing it to fail during training', 'It could modify the loss function during optimization, causing it to fail during training', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'It could introduce non-linear dependencies within the data, which could invalidate the linear assumptions of the model', 'It could introduce non-linear dependencies within the data, which could invalidate the linear assumptions of the model', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5122,37 +5038,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,85);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The true class frequency for Romance is 77.56% and the predicted class frequency for Adventure is 20.85%', 'The true class frequency for Romance is 77.56% and the predicted class frequency for Adventure is 20.85%', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The true class frequency for Romance is 57.92% and the predicted class frequency for Adventure is 13.12%', 'The true class frequency for Romance is 57.92% and the predicted class frequency for Adventure is 13.12%', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The true class frequency for Romance is 0.78 and the predicted class frequency for Adventure is (0.47-0.32)', 'The true class frequency for Romance is 0.78 and the predicted class frequency for Adventure is (0.47-0.32)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The true class frequency for Romance is 77.56% ֳ— 0.78 and the predicted class frequency for Adventure is 20.85% ֳ— 0.32', 'The true class frequency for Romance is 77.56% ֳ— 0.78 and the predicted class frequency for Adventure is 20.85% ֳ— 0.32', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5182,37 +5097,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,86);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the bash_profile file in the container and add a bash command to start the training program', 'Modify the bash_profile file in the container and add a bash command to start the training program', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use CMD config in the Dockerfile to add the training program as a CMD of the image', 'Use CMD config in the Dockerfile to add the training program as a CMD of the image', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the training program as an ENTRYPOINT named train', 'Configure the training program as an ENTRYPOINT named train', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Copy the training program to directory /opt/ml/train', 'Copy the training program to directory /opt/ml/train', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5242,42 +5156,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,87);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Cross-validation', 'Cross-validation', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Numerical value binning', 'Numerical value binning', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'High-degree polynomial transformation', 'High-degree polynomial transformation', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logarithmic transformation', 'Logarithmic transformation', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'One hot encoding', 'One hot encoding', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5307,37 +5220,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,88);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the randomization of training data in the mini-batches used in training', 'Increase the randomization of training data in the mini-batches used in training', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Allocate a higher proportion of the overall data to the training dataset', 'Allocate a higher proportion of the overall data to the training dataset', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply L1 or L2 regularization and dropouts to the training', 'Apply L1 or L2 regularization and dropouts to the training', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the number of layers and units (or neurons) from the deep learning network', 'Reduce the number of layers and units (or neurons) from the deep learning network', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5367,37 +5279,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,89);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Embed the numerical features using the t-distributed stochastic neighbor embedding (t-SNE) algorithm and create a scatter plot.', 'Embed the numerical features using the t-distributed stochastic neighbor embedding (t-SNE) algorithm and create a scatter plot.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run k-means using the Euclidean distance measure for different values of k and create an elbow plot.', 'Run k-means using the Euclidean distance measure for different values of k and create an elbow plot.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Embed the numerical features using the t-distributed stochastic neighbor embedding (t-SNE) algorithm and create a line graph.', 'Embed the numerical features using the t-distributed stochastic neighbor embedding (t-SNE) algorithm and create a line graph.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run k-means using the Euclidean distance measure for different values of k and create box plots for each numerical column within each cluster.', 'Run k-means using the Euclidean distance measure for different values of k and create box plots for each numerical column within each cluster.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5427,37 +5338,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,90);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Master node', 'Master node', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Any of the core nodes', 'Any of the core nodes', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Any of the task nodes', 'Any of the task nodes', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Both core and task nodes', 'Both core and task nodes', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5487,37 +5397,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,91);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a recurrent neural network (RNN) to train the model to recognize when an engine might need maintenance for a certain fault.', 'Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a recurrent neural network (RNN) to train the model to recognize when an engine might need maintenance for a certain fault.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'This data requires an unsupervised learning algorithm. Use Amazon SageMaker k-means to cluster the data.', 'This data requires an unsupervised learning algorithm. Use Amazon SageMaker k-means to cluster the data.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a convolutional neural network (CNN) to train the model to recognize when an engine might need maintenance for a certain fault.', 'Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a convolutional neural network (CNN) to train the model to recognize when an engine might need maintenance for a certain fault.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'This data is already formulated as a time series. Use Amazon SageMaker seq2seq to model the time series.', 'This data is already formulated as a time series. Use Amazon SageMaker seq2seq to model the time series.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5547,37 +5456,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,92);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Plot a histogram of the features and compute their standard deviation. Remove features with high variance.', 'Plot a histogram of the features and compute their standard deviation. Remove features with high variance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Plot a histogram of the features and compute their standard deviation. Remove features with low variance.', 'Plot a histogram of the features and compute their standard deviation. Remove features with low variance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a heatmap showing the correlation of the dataset against itself. Remove features with low mutual correlation scores.', 'Build a heatmap showing the correlation of the dataset against itself. Remove features with low mutual correlation scores.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a correlation check of all features against the target variable. Remove features with low target variable correlation scores.', 'Run a correlation check of all features against the target variable. Remove features with low target variable correlation scores.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5607,37 +5515,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,93);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear support vector machine (SVM)', 'Linear support vector machine (SVM)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decision tree', 'Decision tree', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Support vector machine (SVM) with a radial basis function kernel', 'Support vector machine (SVM) with a radial basis function kernel', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Single perceptron with a Tanh activation function', 'Single perceptron with a Tanh activation function', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5667,42 +5574,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,94);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Choose a higher number of layers', 'Choose a higher number of layers', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Choose a lower number of layers', 'Choose a lower number of layers', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Choose a smaller learning rate', 'Choose a smaller learning rate', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable dropout', 'Enable dropout', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include all the images from the test set in the training set', 'Include all the images from the test set in the training set', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5732,37 +5638,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,95);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Early stopping', 'Early stopping', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random initialization of weights with appropriate seed', 'Random initialization of weights with appropriate seed', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increasing the number of epochs', 'Increasing the number of epochs', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Adding another layer with the 100 neurons', 'Adding another layer with the 100 neurons', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5792,37 +5697,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,96);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression is inappropriate. The residuals do not have constant variance.', 'Linear regression is inappropriate. The residuals do not have constant variance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression is inappropriate. The underlying data has outliers.', 'Linear regression is inappropriate. The underlying data has outliers.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression is appropriate. The residuals have a zero mean.', 'Linear regression is appropriate. The residuals have a zero mean.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression is appropriate. The residuals have constant variance.', 'Linear regression is appropriate. The residuals have constant variance.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5852,42 +5756,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,97);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Alexa for Business', 'Alexa for Business', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Connect', 'Amazon Connect', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Lex', 'Amazon Lex', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Polly', 'Amazon Polly', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Comprehend', 'Amazon Comprehend', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5917,37 +5820,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,98);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the model to an Amazon SageMaker notebook instance and use the Amazon SageMaker HPO feature to optimize the model''s hyperparameters.', 'Upload the model to an Amazon SageMaker notebook instance and use the Amazon SageMaker HPO feature to optimize the model''s hyperparameters.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add more data to the training set and retrain the model using transfer learning to reduce the bias.', 'Add more data to the training set and retrain the model using transfer learning to reduce the bias.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a neural network model with more layers that are pretrained on ImageNet and apply transfer learning to increase the variance.', 'Use a neural network model with more layers that are pretrained on ImageNet and apply transfer learning to increase the variance.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a new model using the current neural network architecture.', 'Train a new model using the current neural network architecture.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -5977,37 +5879,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,99);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convert the images to grayscale and retrain the model', 'Convert the images to grayscale and retrain the model', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the number of distinct items from 10 to 2, build the model, and iterate', 'Reduce the number of distinct items from 10 to 2, build the model, and iterate', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Attach different colored labels to each item, take the images again, and build the model', 'Attach different colored labels to each item, take the images again, and build the model', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Augment training data for each item using image variants like inversions and translations, build the model, and iterate.', 'Augment training data for each item using image variants like inversions and translations, build the model, and iterate.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6037,37 +5938,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,100);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A k-fold cross-validation strategy with k=5', 'A k-fold cross-validation strategy with k=5', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A stratified k-fold cross-validation strategy with k=5', 'A stratified k-fold cross-validation strategy with k=5', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A k-fold cross-validation strategy with k=5 and 3 repeats', 'A k-fold cross-validation strategy with k=5 and 3 repeats', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'An 80/20 stratified split between training and validation', 'An 80/20 stratified split between training and validation', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6097,37 +5997,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,101);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement the solution using AWS Deep Learning Containers and run the container as a job using AWS Batch on a GPU-compatible Spot Instance', 'Implement the solution using AWS Deep Learning Containers and run the container as a job using AWS Batch on a GPU-compatible Spot Instance', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement the solution using a low-cost GPU-compatible Amazon EC2 instance and use the AWS Instance Scheduler to schedule the task', 'Implement the solution using a low-cost GPU-compatible Amazon EC2 instance and use the AWS Instance Scheduler to schedule the task', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement the solution using AWS Deep Learning Containers, run the workload using AWS Fargate running on Spot Instances, and then schedule the task using the built-in task scheduler', 'Implement the solution using AWS Deep Learning Containers, run the workload using AWS Fargate running on Spot Instances, and then schedule the task using the built-in task scheduler', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement the solution using Amazon ECS running on Spot Instances and schedule the task using the ECS service scheduler', 'Implement the solution using Amazon ECS running on Spot Instances and schedule the task using the ECS service scheduler', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6157,37 +6056,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,102);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '1', '1', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '4', '4', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '7', '7', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '10', '10', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6217,37 +6115,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,103);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition, Amazon Comprehend, and Amazon Transcribe to tag data into distinct categories/classes.', 'Use Amazon Rekognition, Amazon Comprehend, and Amazon Transcribe to tag data into distinct categories/classes.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a set of Amazon Mechanical Turk Human Intelligence Tasks to label all footage.', 'Create a set of Amazon Mechanical Turk Human Intelligence Tasks to label all footage.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Transcribe to convert speech to text. Use the Amazon SageMaker Neural Topic Model (NTM) and Object Detection algorithms to tag data into distinct categories/classes.', 'Use Amazon Transcribe to convert speech to text. Use the Amazon SageMaker Neural Topic Model (NTM) and Object Detection algorithms to tag data into distinct categories/classes.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the AWS Deep Learning AMI and Amazon EC2 GPU instances to create custom models for audio transcription and topic modeling, and use object detection to tag data into distinct categories/classes.', 'Use the AWS Deep Learning AMI and Amazon EC2 GPU instances to create custom models for audio transcription and topic modeling, and use object detection to tag data into distinct categories/classes.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6277,37 +6174,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,104);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '1 shards', '1 shards', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '10 shards', '10 shards', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '100 shards', '100 shards', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, '1,000 shards', '1,000 shards', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6337,37 +6233,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,105);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A naive Bayesian model, since the features are all conditionally independent.', 'A naive Bayesian model, since the features are all conditionally independent.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A full Bayesian network, since the features are all conditionally independent.', 'A full Bayesian network, since the features are all conditionally independent.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A naive Bayesian model, since some of the features are statistically dependent.', 'A naive Bayesian model, since some of the features are statistically dependent.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A full Bayesian network, since some of the features are statistically dependent.', 'A full Bayesian network, since some of the features are statistically dependent.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6397,37 +6292,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,106);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Exponential transformation', 'Exponential transformation', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logarithmic transformation', 'Logarithmic transformation', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Polynomial transformation', 'Polynomial transformation', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Sinusoidal transformation', 'Sinusoidal transformation', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6457,37 +6351,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,107);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the max_depth parameter value.', 'Increase the max_depth parameter value.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Lower the max_depth parameter value.', 'Lower the max_depth parameter value.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Update the objective to binary:logistic.', 'Update the objective to binary:logistic.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Lower the min_child_weight parameter value.', 'Lower the min_child_weight parameter value.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6517,37 +6410,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,108);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use historic web traffic data to train an anomaly detection model using the Amazon SageMaker Random Cut Forest (RCF) built-in model. Use an Amazon Kinesis Data Stream to process the incoming web traffic data. Attach a preprocessing AWS Lambda function to perform data enrichment by calling the RCF model to calculate the anomaly score for each record.', 'Use historic web traffic data to train an anomaly detection model using the Amazon SageMaker Random Cut Forest (RCF) built-in model. Use an Amazon Kinesis Data Stream to process the incoming web traffic data. Attach a preprocessing AWS Lambda function to perform data enrichment by calling the RCF model to calculate the anomaly score for each record.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use historic web traffic data to train an anomaly detection model using the Amazon SageMaker built-in XGBoost model. Use an Amazon Kinesis Data Stream to process the incoming web traffic data. Attach a preprocessing AWS Lambda function to perform data enrichment by calling the XGBoost model to calculate the anomaly score for each record.', 'Use historic web traffic data to train an anomaly detection model using the Amazon SageMaker built-in XGBoost model. Use an Amazon Kinesis Data Stream to process the incoming web traffic data. Attach a preprocessing AWS Lambda function to perform data enrichment by calling the XGBoost model to calculate the anomaly score for each record.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Collect the streaming data using Amazon Kinesis Data Firehose. Map the delivery stream as an input source for Amazon Kinesis Data Analytics. Write a SQL query to run in real time against the streaming data with the k-Nearest Neighbors (kNN) SQL extension to calculate anomaly scores for each record using a tumbling window.', 'Collect the streaming data using Amazon Kinesis Data Firehose. Map the delivery stream as an input source for Amazon Kinesis Data Analytics. Write a SQL query to run in real time against the streaming data with the k-Nearest Neighbors (kNN) SQL extension to calculate anomaly scores for each record using a tumbling window.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Collect the streaming data using Amazon Kinesis Data Firehose. Map the delivery stream as an input source for Amazon Kinesis Data Analytics. Write a SQL query to run in real time against the streaming data with the Amazon Random Cut Forest (RCF) SQL extension to calculate anomaly scores for each record using a sliding window.', 'Collect the streaming data using Amazon Kinesis Data Firehose. Map the delivery stream as an input source for Amazon Kinesis Data Analytics. Write a SQL query to run in real time against the streaming data with the Amazon Random Cut Forest (RCF) SQL extension to calculate anomaly scores for each record using a sliding window.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6577,37 +6469,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,109);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Classification month-to-month using supervised learning of the 200 categories based on claim contents.', 'Classification month-to-month using supervised learning of the 200 categories based on claim contents.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinforcement learning using claim IDs and timestamps where the agent will identify how many claims in each category to expect from month to month.', 'Reinforcement learning using claim IDs and timestamps where the agent will identify how many claims in each category to expect from month to month.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Forecasting using claim IDs and timestamps to identify how many claims in each category to expect from month to month.', 'Forecasting using claim IDs and timestamps to identify how many claims in each category to expect from month to month.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Classification with supervised learning of the categories for which partial information on claim contents is provided, and forecasting using claim IDs and timestamps for all other categories.', 'Classification with supervised learning of the categories for which partial information on claim contents is provided, and forecasting using claim IDs and timestamps for all other categories.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6637,37 +6528,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,110);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build and host multiple models in Amazon SageMaker. Create multiple Amazon SageMaker endpoints, one for each model. Programmatically control invoking different models for inference at the application layer.', 'Build and host multiple models in Amazon SageMaker. Create multiple Amazon SageMaker endpoints, one for each model. Programmatically control invoking different models for inference at the application layer.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build and host multiple models in Amazon SageMaker. Create an Amazon SageMaker endpoint configuration with multiple production variants. Programmatically control the portion of the inferences served by the multiple models by updating the endpoint configuration.', 'Build and host multiple models in Amazon SageMaker. Create an Amazon SageMaker endpoint configuration with multiple production variants. Programmatically control the portion of the inferences served by the multiple models by updating the endpoint configuration.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build and host multiple models in Amazon SageMaker Neo to take into account different types of medical devices. Programmatically control which model is invoked for inference based on the medical device type.', 'Build and host multiple models in Amazon SageMaker Neo to take into account different types of medical devices. Programmatically control which model is invoked for inference based on the medical device type.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build and host multiple models in Amazon SageMaker. Create a single endpoint that accesses multiple models. Use Amazon SageMaker batch transform to control invoking the different models through the single endpoint.', 'Build and host multiple models in Amazon SageMaker. Create a single endpoint that accesses multiple models. Use Amazon SageMaker batch transform to control invoking the different models through the single endpoint.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6697,37 +6587,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,111);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes.', 'Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.', 'Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.', 'Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes.', 'Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6757,37 +6646,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,112);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model in Amazon SageMaker. Run sensor data through this model to predict which machines need maintenance.', 'Deploy the model in Amazon SageMaker. Run sensor data through this model to predict which machines need maintenance.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model on AWS IoT Greengrass in each factory. Run sensor data through this model to infer which machines need maintenance.', 'Deploy the model on AWS IoT Greengrass in each factory. Run sensor data through this model to infer which machines need maintenance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model to an Amazon SageMaker batch transformation job. Generate inferences in a daily batch report to identify machines that need maintenance.', 'Deploy the model to an Amazon SageMaker batch transformation job. Generate inferences in a daily batch report to identify machines that need maintenance.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model in Amazon SageMaker and use an IoT rule to write data to an Amazon DynamoDB table. Consume a DynamoDB stream from the table with an AWS Lambda function to invoke the endpoint.', 'Deploy the model in Amazon SageMaker and use an IoT rule to write data to an Amazon DynamoDB table. Consume a DynamoDB stream from the table with an AWS Lambda function to invoke the endpoint.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6817,37 +6705,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,113);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker script mode and use train.py unchanged. Point the Amazon SageMaker training invocation to the local path of the data without reformatting the training data.', 'Use Amazon SageMaker script mode and use train.py unchanged. Point the Amazon SageMaker training invocation to the local path of the data without reformatting the training data.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker script mode and use train.py unchanged. Put the TFRecord data into an Amazon S3 bucket. Point the Amazon SageMaker training invocation to the S3 bucket without reformatting the training data.', 'Use Amazon SageMaker script mode and use train.py unchanged. Put the TFRecord data into an Amazon S3 bucket. Point the Amazon SageMaker training invocation to the S3 bucket without reformatting the training data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rewrite the train.py script to add a section that converts TFRecords to protobuf and ingests the protobuf data instead of TFRecords.', 'Rewrite the train.py script to add a section that converts TFRecords to protobuf and ingests the protobuf data instead of TFRecords.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare the data in the format accepted by Amazon SageMaker. Use AWS Glue or AWS Lambda to reformat and store the data in an Amazon S3 bucket.', 'Prepare the data in the format accepted by Amazon SageMaker. Use AWS Glue or AWS Lambda to reformat and store the data in an Amazon S3 bucket.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6877,37 +6764,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,114);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Latent Dirichlet Allocation (LDA)', 'Latent Dirichlet Allocation (LDA)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Recurrent neural network (RNN)', 'Recurrent neural network (RNN)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-means', 'K-means', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convolutional neural network (CNN)', 'Convolutional neural network (CNN)', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6937,37 +6823,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,115);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the event tracker in Amazon Personalize to include real-time user interactions.', 'Use the event tracker in Amazon Personalize to include real-time user interactions.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add user metadata and use the HRNN-Metadata recipe in Amazon Personalize.', 'Add user metadata and use the HRNN-Metadata recipe in Amazon Personalize.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Implement a new solution using the built-in factorization machines (FM) algorithm in Amazon SageMaker.', 'Implement a new solution using the built-in factorization machines (FM) algorithm in Amazon SageMaker.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add event type and event value fields to the interactions dataset in Amazon Personalize.', 'Add event type and event value fields to the interactions dataset in Amazon Personalize.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -6997,42 +6882,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,116);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add a VPC endpoint policy to allow access to the IAM users.', 'Add a VPC endpoint policy to allow access to the IAM users.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the users'' IAM policy to allow access to Amazon SageMaker Service API calls only.', 'Modify the users'' IAM policy to allow access to Amazon SageMaker Service API calls only.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the security group on the endpoint network interface to restrict access to the instances.', 'Modify the security group on the endpoint network interface to restrict access to the instances.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the ACL on the endpoint network interface to restrict access to the instances.', 'Modify the ACL on the endpoint network interface to restrict access to the instances.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add a SageMaker Runtime VPC endpoint interface to the VPC.', 'Add a SageMaker Runtime VPC endpoint interface to the VPC.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7062,37 +6946,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,117);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job to connect to the PostgreSQL DB instance. Ingest tables without sensitive data through an AWS Site-to-Site VPN connection directly into Amazon S3.', 'Create an AWS Glue job to connect to the PostgreSQL DB instance. Ingest tables without sensitive data through an AWS Site-to-Site VPN connection directly into Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job to connect to the PostgreSQL DB instance. Ingest all data through an AWS Site-to-Site VPN connection into Amazon S3 while removing sensitive data using a PySpark job.', 'Create an AWS Glue job to connect to the PostgreSQL DB instance. Ingest all data through an AWS Site-to-Site VPN connection into Amazon S3 while removing sensitive data using a PySpark job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Database Migration Service (AWS DMS) with table mapping to select PostgreSQL tables with no sensitive data through an SSL connection. Replicate data directly into Amazon S3.', 'Use AWS Database Migration Service (AWS DMS) with table mapping to select PostgreSQL tables with no sensitive data through an SSL connection. Replicate data directly into Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use PostgreSQL logical replication to replicate all data to PostgreSQL in Amazon EC2 through AWS Direct Connect with a VPN connection. Use AWS Glue to move data from Amazon EC2 to Amazon S3.', 'Use PostgreSQL logical replication to replicate all data to PostgreSQL in Amazon EC2 through AWS Direct Connect with a VPN connection. Use AWS Glue to move data from Amazon EC2 to Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7122,42 +7005,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,118);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set PerformAutoML to true.', 'Set PerformAutoML to true.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set ForecastHorizon to 4.', 'Set ForecastHorizon to 4.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set ForecastFrequency to W for weekly.', 'Set ForecastFrequency to W for weekly.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set PerformHPO to true.', 'Set PerformHPO to true.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set FeaturizationMethodName to filling.', 'Set FeaturizationMethodName to filling.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7187,37 +7069,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,119);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use ETL jobs in AWS Glue to separate the dataset into a target time series dataset and an item metadata dataset. Upload both datasets as .csv files to Amazon S3.', 'Use ETL jobs in AWS Glue to separate the dataset into a target time series dataset and an item metadata dataset. Upload both datasets as .csv files to Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a Jupyter notebook in Amazon SageMaker to separate the dataset into a related time series dataset and an item metadata dataset. Upload both datasets as tables in Amazon Aurora.', 'Use a Jupyter notebook in Amazon SageMaker to separate the dataset into a related time series dataset and an item metadata dataset. Upload both datasets as tables in Amazon Aurora.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Batch jobs to separate the dataset into a target time series dataset, a related time series dataset, and an item metadata dataset. Upload them directly to Forecast from a local machine.', 'Use AWS Batch jobs to separate the dataset into a target time series dataset, a related time series dataset, and an item metadata dataset. Upload them directly to Forecast from a local machine.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a Jupyter notebook in Amazon SageMaker to transform the data into the optimized protobuf recordIO format. Upload the dataset in this format to Amazon S3.', 'Use a Jupyter notebook in Amazon SageMaker to transform the data into the optimized protobuf recordIO format. Upload the dataset in this format to Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7247,37 +7128,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,120);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Redeploy the model as a batch transform job on an M5 instance.', 'Redeploy the model as a batch transform job on an M5 instance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Redeploy the model on an M5 instance. Attach Amazon Elastic Inference to the instance.', 'Redeploy the model on an M5 instance. Attach Amazon Elastic Inference to the instance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Redeploy the model on a P3dn instance.', 'Redeploy the model on a P3dn instance.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model onto an Amazon Elastic Container Service (Amazon ECS) cluster using a P3 instance.', 'Deploy the model onto an Amazon Elastic Container Service (Amazon ECS) cluster using a P3 instance.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7307,37 +7187,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,121);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Install AWS Systems Manager Agent on the underlying Amazon EC2 instance and use Systems Manager Automation to execute the package installation commands.', 'Install AWS Systems Manager Agent on the underlying Amazon EC2 instance and use Systems Manager Automation to execute the package installation commands.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a Jupyter notebook file (.ipynb) with cells containing the package installation commands to execute and place the file under the /etc/init directory of each Amazon SageMaker notebook instance.', 'Create a Jupyter notebook file (.ipynb) with cells containing the package installation commands to execute and place the file under the /etc/init directory of each Amazon SageMaker notebook instance.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the conda package manager from within the Jupyter notebook console to apply the necessary conda packages to the default kernel of the notebook.', 'Use the conda package manager from within the Jupyter notebook console to apply the necessary conda packages to the default kernel of the notebook.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon SageMaker lifecycle configuration with package installation commands and assign the lifecycle configuration to the notebook instance.', 'Create an Amazon SageMaker lifecycle configuration with package installation commands and assign the lifecycle configuration to the notebook instance.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7367,37 +7246,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,122);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Execute the built-in FindDuplicates Amazon Athena query.', 'Execute the built-in FindDuplicates Amazon Athena query.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a FindMatches machine learning transform in AWS Glue.', 'Create a FindMatches machine learning transform in AWS Glue.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue crawler to infer duplicate accounts in the source data.', 'Create an AWS Glue crawler to infer duplicate accounts in the source data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Search for duplicate accounts in the AWS Glue Data Catalog.', 'Search for duplicate accounts in the AWS Glue Data Catalog.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7427,42 +7305,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,123);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the XGBoost eval_metric parameter to optimize based on Root Mean Square Error (RMSE).', 'Change the XGBoost eval_metric parameter to optimize based on Root Mean Square Error (RMSE).', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the XGBoost scale_pos_weight parameter to adjust the balance of positive and negative weights.', 'Increase the XGBoost scale_pos_weight parameter to adjust the balance of positive and negative weights.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the XGBoost max_depth parameter because the model is currently underfitting the data.', 'Increase the XGBoost max_depth parameter because the model is currently underfitting the data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the XGBoost eval_metric parameter to optimize based on Area Under the ROC Curve (AUC).', 'Change the XGBoost eval_metric parameter to optimize based on Area Under the ROC Curve (AUC).', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the XGBoost max_depth parameter because the model is currently overfitting the data.', 'Decrease the XGBoost max_depth parameter because the model is currently overfitting the data.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7492,37 +7369,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,124);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change preprocessing to use n-grams.', 'Change preprocessing to use n-grams.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add more nodes to the recurrent neural network (RNN) than the largest sentence''s word count.', 'Add more nodes to the recurrent neural network (RNN) than the largest sentence''s word count.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Adjust hyperparameters related to the attention mechanism.', 'Adjust hyperparameters related to the attention mechanism.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Choose a different weight initialization type.', 'Choose a different weight initialization type.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7552,42 +7428,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,125);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Specificity', 'Specificity', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'False positive rate', 'False positive rate', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Accuracy', 'Accuracy', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Area under the precision-recall curve', 'Area under the precision-recall curve', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'True positive rate', 'True positive rate', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7617,37 +7492,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,126);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Remove Amazon S3 access permissions from the SageMaker execution role.', 'Remove Amazon S3 access permissions from the SageMaker execution role.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Encrypt the weights of the CNN model.', 'Encrypt the weights of the CNN model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Encrypt the training and validation dataset.', 'Encrypt the training and validation dataset.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable network isolation for training jobs.', 'Enable network isolation for training jobs.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7677,37 +7551,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,127);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a workforce with AWS Identity and Access Management (IAM). Build a labeling tool on Amazon EC2 Queue images for labeling by using Amazon Simple Queue Service (Amazon SQS). Write the labeling instructions.', 'Create a workforce with AWS Identity and Access Management (IAM). Build a labeling tool on Amazon EC2 Queue images for labeling by using Amazon Simple Queue Service (Amazon SQS). Write the labeling instructions.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Mechanical Turk workforce and manifest file. Create a labeling job by using the built-in image classification task type in Amazon SageMaker Ground Truth. Write the labeling instructions.', 'Create an Amazon Mechanical Turk workforce and manifest file. Create a labeling job by using the built-in image classification task type in Amazon SageMaker Ground Truth. Write the labeling instructions.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a private workforce and manifest file. Create a labeling job by using the built-in bounding box task type in Amazon SageMaker Ground Truth. Write the labeling instructions.', 'Create a private workforce and manifest file. Create a labeling job by using the built-in bounding box task type in Amazon SageMaker Ground Truth. Write the labeling instructions.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a workforce with Amazon Cognito. Build a labeling web application with AWS Amplify. Build a labeling workflow backend using AWS Lambda. Write the labeling instructions.', 'Create a workforce with Amazon Cognito. Build a labeling web application with AWS Amplify. Build a labeling workflow backend using AWS Lambda. Write the labeling instructions.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7737,37 +7610,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,128);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure Amazon Textract to route low-confidence predictions to Amazon SageMaker Ground Truth. Perform a manual review on those words before performing a business validation.', 'Configure Amazon Textract to route low-confidence predictions to Amazon SageMaker Ground Truth. Perform a manual review on those words before performing a business validation.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon Textract synchronous operation instead of an asynchronous operation.', 'Use an Amazon Textract synchronous operation instead of an asynchronous operation.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure Amazon Textract to route low-confidence predictions to Amazon Augmented AI (Amazon A2I). Perform a manual review on those words before performing a business validation.', 'Configure Amazon Textract to route low-confidence predictions to Amazon Augmented AI (Amazon A2I). Perform a manual review on those words before performing a business validation.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition''s feature to detect text in an image to extract the data from scanned images. Use this information to process the loan applications.', 'Use Amazon Rekognition''s feature to detect text in an image to extract the data from scanned images. Use this information to process the loan applications.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7797,37 +7669,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,129);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of S3 prefixes for the delivery stream to write to.', 'Increase the number of S3 prefixes for the delivery stream to write to.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the retention period for the data stream.', 'Decrease the retention period for the data stream.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of shards for the data stream.', 'Increase the number of shards for the data stream.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add more consumers using the Kinesis Client Library (KCL).', 'Add more consumers using the Kinesis Client Library (KCL).', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7857,37 +7728,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,130);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Shuffle all interaction data. Split off the last 10% of the interaction data for the test set.', 'Shuffle all interaction data. Split off the last 10% of the interaction data for the test set.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Identify the most recent 10% of interactions for each user. Split off these interactions for the test set.', 'Identify the most recent 10% of interactions for each user. Split off these interactions for the test set.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Identify the 10% of users with the least interaction data. Split off all interaction data from these users for the test set.', 'Identify the 10% of users with the least interaction data. Split off all interaction data from these users for the test set.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Randomly select 10% of the users. Split off all interaction data from these users for the test set.', 'Randomly select 10% of the users. Split off all interaction data from these users for the test set.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7917,42 +7787,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,131);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Connect to SageMaker by using a VPC interface endpoint powered by AWS PrivateLink.', 'Connect to SageMaker by using a VPC interface endpoint powered by AWS PrivateLink.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SCPs to restrict access to SageMaker.', 'Use SCPs to restrict access to SageMaker.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Disable root access on the SageMaker notebook instances.', 'Disable root access on the SageMaker notebook instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable network isolation for training jobs and models.', 'Enable network isolation for training jobs and models.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Restrict notebook presigned URLs to specific IPs used by the company.', 'Restrict notebook presigned URLs to specific IPs used by the company.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -7982,17 +7851,16 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,132);
-~ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8022,37 +7890,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,133);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extract text from receipt images by using Amazon Textract. Use the Amazon SageMaker BlazingText algorithm to train on the text for entities and custom entities.', 'Extract text from receipt images by using Amazon Textract. Use the Amazon SageMaker BlazingText algorithm to train on the text for entities and custom entities.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use the NER deep learning model to extract entities.', 'Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use the NER deep learning model to extract entities.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extract text from receipt images by using Amazon Textract. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.', 'Extract text from receipt images by using Amazon Textract. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.', 'Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8082,37 +7949,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,134);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs, S3 read and write access to the relevant S3 bucket, and appropriate KMS and ECR permissions. Attach the role to the SageMaker notebook instance. Create an Amazon SageMaker Processing job from the notebook.', 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs, S3 read and write access to the relevant S3 bucket, and appropriate KMS and ECR permissions. Attach the role to the SageMaker notebook instance. Create an Amazon SageMaker Processing job from the notebook.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs. Attach the role to the SageMaker notebook instance. Create an Amazon SageMaker Processing job with an IAM role that has read and write permissions to the relevant S3 bucket, and appropriate KMS and ECR permissions.', 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs. Attach the role to the SageMaker notebook instance. Create an Amazon SageMaker Processing job with an IAM role that has read and write permissions to the relevant S3 bucket, and appropriate KMS and ECR permissions.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs and to access Amazon ECR.    Attach the role     to the SageMaker notebook instance. Set up both an S3 endpoint and a KMS endpoint in the default VPC. Create Amazon SageMaker Processing jobs from the notebook.', 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs and to access Amazon ECR.    Attach the role     to the SageMaker notebook instance. Set up both an S3 endpoint and a KMS endpoint in the default VPC. Create Amazon SageMaker Processing jobs from the notebook.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs. Attach the role to the SageMaker notebook instance. Set up an S3 endpoint in the default VPC. Create Amazon SageMaker Processing jobs with the access key and secret key of the IAM user with appropriate KMS and ECR permissions.', 'Create an IAM role that has permissions to create Amazon SageMaker Processing jobs. Attach the role to the SageMaker notebook instance. Set up an S3 endpoint in the default VPC. Create Amazon SageMaker Processing jobs with the access key and secret key of the IAM user with appropriate KMS and ECR permissions.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8142,37 +8008,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,135);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Call the CreateNotebookInstanceLifecycleConfig API operation', 'Call the CreateNotebookInstanceLifecycleConfig API operation', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new SageMaker notebook instance and mount the Amazon Elastic Block Store (Amazon EBS) volume from the original instance', 'Create a new SageMaker notebook instance and mount the Amazon Elastic Block Store (Amazon EBS) volume from the original instance', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Stop and then restart the SageMaker notebook instance', 'Stop and then restart the SageMaker notebook instance', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Call the UpdateNotebookInstanceLifecycleConfig API operation', 'Call the UpdateNotebookInstanceLifecycleConfig API operation', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8202,37 +8067,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,136);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable server-side encryption on the S3 bucket. Submit an AWS Support ticket to opt out of allowing images to be used for improving the service, and follow the process provided by AWS Support.', 'Enable server-side encryption on the S3 bucket. Submit an AWS Support ticket to opt out of allowing images to be used for improving the service, and follow the process provided by AWS Support.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Switch to using an Amazon Rekognition collection to store the images. Use the IndexFaces and SearchFacesByImage API operations instead of the CompareFaces API operation.', 'Switch to using an Amazon Rekognition collection to store the images. Use the IndexFaces and SearchFacesByImage API operations instead of the CompareFaces API operation.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Switch to using the AWS GovCloud (US) Region for Amazon S3 to store images and for Amazon Rekognition to compare faces. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.', 'Switch to using the AWS GovCloud (US) Region for Amazon S3 to store images and for Amazon Rekognition to compare faces. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable client-side encryption on the S3 bucket. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.', 'Enable client-side encryption on the S3 bucket. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8262,37 +8126,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,137);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Install cameras compatible with Amazon Kinesis Video Streams to stream the data to AWS over the restaurant''s existing internet connection. Write an AWS Lambda function to take an image and send it to Amazon Rekognition to count the number of faces in the image. Send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 'Install cameras compatible with Amazon Kinesis Video Streams to stream the data to AWS over the restaurant''s existing internet connection. Write an AWS Lambda function to take an image and send it to Amazon Rekognition to count the number of faces in the image. Send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy AWS DeepLens cameras in the restaurant to capture video. Enable Amazon Rekognition on the AWS DeepLens device, and use it to trigger a local AWS Lambda function when a person is recognized. Use the Lambda function to send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 'Deploy AWS DeepLens cameras in the restaurant to capture video. Enable Amazon Rekognition on the AWS DeepLens device, and use it to trigger a local AWS Lambda function when a person is recognized. Use the Lambda function to send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a custom model in Amazon SageMaker to recognize the number of people in an image. Install cameras compatible with Amazon Kinesis Video Streams in the restaurant. Write an AWS Lambda function to take an image. Use the SageMaker endpoint to call the model to count people. Send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 'Build a custom model in Amazon SageMaker to recognize the number of people in an image. Install cameras compatible with Amazon Kinesis Video Streams in the restaurant. Write an AWS Lambda function to take an image. Use the SageMaker endpoint to call the model to count people. Send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a custom model in Amazon SageMaker to recognize the number of people in an image. Deploy AWS DeepLens cameras in the restaurant. Deploy the model to the cameras. Deploy an AWS Lambda function to the cameras to use the model to count people and send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 'Build a custom model in Amazon SageMaker to recognize the number of people in an image. Deploy AWS DeepLens cameras in the restaurant. Deploy the model to the cameras. Deploy an AWS Lambda function to the cameras to use the model to count people and send an Amazon Simple Notification Service (Amazon SNS) notification if the line is too long.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8322,37 +8185,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,138);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the cooldown period for the scale-in activity. Increase the configured maximum capacity of instances.', 'Decrease the cooldown period for the scale-in activity. Increase the configured maximum capacity of instances.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace the current endpoint with a multi-model endpoint using SageMaker.', 'Replace the current endpoint with a multi-model endpoint using SageMaker.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up Amazon API Gateway and AWS Lambda to trigger the SageMaker inference endpoint.', 'Set up Amazon API Gateway and AWS Lambda to trigger the SageMaker inference endpoint.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the cooldown period for the scale-out activity.', 'Increase the cooldown period for the scale-out activity.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8382,37 +8244,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,139);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Update the ProductionVariant data type with the new version of the model by using the CreateEndpointConfig operation with the InitialVariantWeight parameter set to 0. Specify the TargetVariant parameter for InvokeEndpoint calls for users who subscribed to the preview feature. When the new version of the model is ready for release, gradually increase InitialVariantWeight until all users have the updated version.', 'Update the ProductionVariant data type with the new version of the model by using the CreateEndpointConfig operation with the InitialVariantWeight parameter set to 0. Specify the TargetVariant parameter for InvokeEndpoint calls for users who subscribed to the preview feature. When the new version of the model is ready for release, gradually increase InitialVariantWeight until all users have the updated version.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure two SageMaker hosted endpoints that serve the different versions of the model. Create an Application Load Balancer (ALB) to route traffic to both endpoints based on the TargetVariant query string parameter. Reconfigure the app to send the TargetVariant query string parameter for users who subscribed to the preview feature. When the new version of the model is ready for release, change the ALB''s routing algorithm to weighted until all users have the updated version.', 'Configure two SageMaker hosted endpoints that serve the different versions of the model. Create an Application Load Balancer (ALB) to route traffic to both endpoints based on the TargetVariant query string parameter. Reconfigure the app to send the TargetVariant query string parameter for users who subscribed to the preview feature. When the new version of the model is ready for release, change the ALB''s routing algorithm to weighted until all users have the updated version.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Update the DesiredWeightsAndCapacity data type with the new version of the model by using the UpdateEndpointWeightsAndCapacities operation with the DesiredWeight parameter set to 0. Specify the TargetVariant parameter for InvokeEndpoint calls for users who subscribed to the preview feature. When the new version of the model is ready for release, gradually increase DesiredWeight until all users have the updated version.', 'Update the DesiredWeightsAndCapacity data type with the new version of the model by using the UpdateEndpointWeightsAndCapacities operation with the DesiredWeight parameter set to 0. Specify the TargetVariant parameter for InvokeEndpoint calls for users who subscribed to the preview feature. When the new version of the model is ready for release, gradually increase DesiredWeight until all users have the updated version.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure two SageMaker hosted endpoints that serve the different versions of the model. Create an Amazon Route 53 record that is configured with a simple routing policy and that points to the current version of the model. Configure the mobile app to use the endpoint URL for users who subscribed to the preview feature and to use the Route 53 record for other users. When the new version of the model is ready for release, add a new model version endpoint to Route 53, and switch the policy to weighted until all users have the updated version.', 'Configure two SageMaker hosted endpoints that serve the different versions of the model. Create an Amazon Route 53 record that is configured with a simple routing policy and that points to the current version of the model. Configure the mobile app to use the endpoint URL for users who subscribed to the preview feature and to use the Route 53 record for other users. When the new version of the model is ready for release, add a new model version endpoint to Route 53, and switch the policy to weighted until all users have the updated version.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8442,37 +8303,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,140);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Ground Truth to label each record as either a successful or failed access attempt. Use Amazon SageMaker to train a binary classification model using the factorization machines (FM) algorithm.', 'Use Amazon SageMaker Ground Truth to label each record as either a successful or failed access attempt. Use Amazon SageMaker to train a binary classification model using the factorization machines (FM) algorithm.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker to train a model using the IP Insights algorithm. Schedule updates and retraining of the model using new log data nightly.', 'Use Amazon SageMaker to train a model using the IP Insights algorithm. Schedule updates and retraining of the model using new log data nightly.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Ground Truth to label each record as either a successful or failed access attempt. Use Amazon SageMaker to train a binary classification model using the IP Insights algorithm.', 'Use Amazon SageMaker Ground Truth to label each record as either a successful or failed access attempt. Use Amazon SageMaker to train a binary classification model using the IP Insights algorithm.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker to train a model using the Object2Vec algorithm. Schedule updates and retraining of the model using new log data nightly.', 'Use Amazon SageMaker to train a model using the Object2Vec algorithm. Schedule updates and retraining of the model using new log data nightly.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8502,37 +8362,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,141);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Lambda function to process the data. Use two arrays to compare equal strings in the fields from the two datasets and remove any duplicates.', 'Use an AWS Lambda function to process the data. Use two arrays to compare equal strings in the fields from the two datasets and remove any duplicates.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create AWS Glue crawlers for reading and populating the AWS Glue Data Catalog. Call the AWS Glue SearchTables API operation to perform a fuzzy- matching search on the two datasets, and cleanse the data accordingly.', 'Create AWS Glue crawlers for reading and populating the AWS Glue Data Catalog. Call the AWS Glue SearchTables API operation to perform a fuzzy- matching search on the two datasets, and cleanse the data accordingly.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create AWS Glue crawlers for reading and populating the AWS Glue Data Catalog. Use the FindMatches transform to cleanse the data.', 'Create AWS Glue crawlers for reading and populating the AWS Glue Data Catalog. Use the FindMatches transform to cleanse the data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Lake Formation custom transform. Run a transformation for matching products from the Lake Formation console to cleanse the data automatically.', 'Create an AWS Lake Formation custom transform. Run a transformation for matching products from the Lake Formation console to cleanse the data automatically.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8562,37 +8421,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,142);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the notebook instances'' security group to allow traffic only from the CIDR ranges of the VPC. Apply this security group to all of the notebook instances'' VPC interfaces.', 'Modify the notebook instances'' security group to allow traffic only from the CIDR ranges of the VPC. Apply this security group to all of the notebook instances'' VPC interfaces.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM policy that allows the sagemaker:CreatePresignedNotebooklnstanceUrl and sagemaker:DescribeNotebooklnstance actions from only the VPC endpoints. Apply this policy to all IAM users, groups, and roles used to access the notebook instances.', 'Create an IAM policy that allows the sagemaker:CreatePresignedNotebooklnstanceUrl and sagemaker:DescribeNotebooklnstance actions from only the VPC endpoints. Apply this policy to all IAM users, groups, and roles used to access the notebook instances.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add a NAT gateway to the VPC. Convert all of the subnets where the Amazon SageMaker notebook instances are hosted to private subnets. Stop and start all of the notebook instances to reassign only private IP addresses.', 'Add a NAT gateway to the VPC. Convert all of the subnets where the Amazon SageMaker notebook instances are hosted to private subnets. Stop and start all of the notebook instances to reassign only private IP addresses.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the network ACL of the subnet the notebook is hosted in to restrict access to anyone outside the VPC.', 'Change the network ACL of the subnet the notebook is hosted in to restrict access to anyone outside the VPC.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8622,37 +8480,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,143);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use encryption keys that are stored in AWS Cloud HSM to encrypt the ML data volumes, and to encrypt the model artifacts and data in Amazon S3.', 'Use encryption keys that are stored in AWS Cloud HSM to encrypt the ML data volumes, and to encrypt the model artifacts and data in Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker built-in transient keys to encrypt the ML data volumes. Enable default encryption for new Amazon Elastic Block Store (Amazon EBS) volumes.', 'Use SageMaker built-in transient keys to encrypt the ML data volumes. Enable default encryption for new Amazon Elastic Block Store (Amazon EBS) volumes.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use customer managed keys in AWS Key Management Service (AWS KMS) to encrypt the ML data volumes, and to encrypt the model artifacts and data in Amazon S3.', 'Use customer managed keys in AWS Key Management Service (AWS KMS) to encrypt the ML data volumes, and to encrypt the model artifacts and data in Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Security Token Service (AWS STS) to create temporary tokens to encrypt the ML storage volumes, and to encrypt the model artifacts and data in Amazon S3.', 'Use AWS Security Token Service (AWS STS) to create temporary tokens to encrypt the ML storage volumes, and to encrypt the model artifacts and data in Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8682,37 +8539,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,144);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch an Amazon EMR cluster. Create an Apache Hive external table for the DynamoDB table and S3 data. Join the Hive tables and write the results out to Amazon S3.', 'Launch an Amazon EMR cluster. Create an Apache Hive external table for the DynamoDB table and S3 data. Join the Hive tables and write the results out to Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output to an Amazon Redshift cluster.', 'Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output to an Amazon Redshift cluster.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable Amazon DynamoDB Streams on the sensor table. Write an AWS Lambda function that consumes the stream and appends the results to the existing weather files in Amazon S3.', 'Enable Amazon DynamoDB Streams on the sensor table. Write an AWS Lambda function that consumes the stream and appends the results to the existing weather files in Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output in CSV format to Amazon S3.', 'Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output in CSV format to Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8742,37 +8598,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,145);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a custom classifier by using Amazon Comprehend.', 'Train a custom classifier by using Amazon Comprehend.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a recurrent neural network (RNN) in Amazon SageMaker by using Gluon and Apache MXNet.', 'Build a recurrent neural network (RNN) in Amazon SageMaker by using Gluon and Apache MXNet.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a built-in BlazingText model using Word2Vec mode in Amazon SageMaker.', 'Train a built-in BlazingText model using Word2Vec mode in Amazon SageMaker.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a built-in seq2seq model in Amazon SageMaker.', 'Use a built-in seq2seq model in Amazon SageMaker.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8802,37 +8657,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,146);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add the unrecognized words in the enumeration values list as new values in the slot type.', 'Add the unrecognized words in the enumeration values list as new values in the slot type.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new custom slot type, add the unrecognized words to this slot type as enumeration values, and use this slot type for the slot.', 'Create a new custom slot type, add the unrecognized words to this slot type as enumeration values, and use this slot type for the slot.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the AMAZON.SearchQuery built-in slot types for custom searches in the database.', 'Use the AMAZON.SearchQuery built-in slot types for custom searches in the database.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add the unrecognized words as synonyms in the custom slot type.', 'Add the unrecognized words as synonyms in the custom slot type.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8862,37 +8716,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,147);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up a 10 Gbps AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images. Increase the size of the instances and the number of instances that are used by the SageMaker endpoint.', 'Set up a 10 Gbps AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images. Increase the size of the instances and the number of instances that are used by the SageMaker endpoint.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extend the long-running Lambda function that runs on AWS IoT Greengrass to compress the images and upload the compressed files to Amazon S3. Decompress the files by using a separate Lambda function that invokes the existing Lambda function to run the inference pipeline.', 'Extend the long-running Lambda function that runs on AWS IoT Greengrass to compress the images and upload the compressed files to Amazon S3. Decompress the files by using a separate Lambda function that invokes the existing Lambda function to run the inference pipeline.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use auto scaling for SageMaker. Set up an AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images.', 'Use auto scaling for SageMaker. Set up an AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the Lambda function and the ML models onto the AWS IoT Greengrass core that is running on the industrial PCs that are installed on each machine. Extend the long-running Lambda function that runs on AWS IoT Greengrass to invoke the Lambda function with the captured images and run the inference on the edge component that forwards the results directly to the web service.', 'Deploy the Lambda function and the ML models onto the AWS IoT Greengrass core that is running on the industrial PCs that are installed on each machine. Extend the long-running Lambda function that runs on AWS IoT Greengrass to invoke the Lambda function with the captured images and run the inference on the edge component that forwards the results directly to the web service.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8922,37 +8775,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,148);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add an S3 bucket policy allowing GetObject, PutObject, and ListBucket permissions to the Amazon SageMaker notebook ARN as principal.', 'Add an S3 bucket policy allowing GetObject, PutObject, and ListBucket permissions to the Amazon SageMaker notebook ARN as principal.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Encrypt the objects in the S3 bucket with a custom AWS Key Management Service (AWS KMS) key that only the notebook owner has access to.', 'Encrypt the objects in the S3 bucket with a custom AWS Key Management Service (AWS KMS) key that only the notebook owner has access to.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Attach the policy to the IAM role associated with the notebook that allows GetObject, PutObject, and ListBucket operations to the specific S3 bucket.', 'Attach the policy to the IAM role associated with the notebook that allows GetObject, PutObject, and ListBucket operations to the specific S3 bucket.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a script in a lifecycle configuration to configure the AWS CLI on the instance with an access key ID and secret.', 'Use a script in a lifecycle configuration to configure the AWS CLI on the instance with an access key ID and secret.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -8982,37 +8834,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,149);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model in Amazon SageMaker by using the BlazingText algorithm to detect sentiment in the corpus of social media posts. Expose an endpoint that can be called by AWS Lambda. Trigger a Lambda function when posts are added to the S3 bucket to invoke the endpoint and record the sentiment in an Amazon DynamoDB table and in a custom Amazon CloudWatch metric. Use CloudWatch alarms to notify analysts of trends.', 'Train a model in Amazon SageMaker by using the BlazingText algorithm to detect sentiment in the corpus of social media posts. Expose an endpoint that can be called by AWS Lambda. Trigger a Lambda function when posts are added to the S3 bucket to invoke the endpoint and record the sentiment in an Amazon DynamoDB table and in a custom Amazon CloudWatch metric. Use CloudWatch alarms to notify analysts of trends.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model in Amazon SageMaker by using the semantic segmentation algorithm to model the semantic content in the corpus of social media posts. Expose an endpoint that can be called by AWS Lambda. Trigger a Lambda function when objects are added to the S3 bucket to invoke the endpoint and record the sentiment in an Amazon DynamoDB table. Schedule a second Lambda function to query recently added records and send an Amazon Simple Notification Service (Amazon SNS) notification to notify analysts of trends.', 'Train a model in Amazon SageMaker by using the semantic segmentation algorithm to model the semantic content in the corpus of social media posts. Expose an endpoint that can be called by AWS Lambda. Trigger a Lambda function when objects are added to the S3 bucket to invoke the endpoint and record the sentiment in an Amazon DynamoDB table. Schedule a second Lambda function to query recently added records and send an Amazon Simple Notification Service (Amazon SNS) notification to notify analysts of trends.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Trigger an AWS Lambda function when social media posts are added to the S3 bucket. Call Amazon Comprehend for each post to capture the sentiment in the    message and record the sentiment in an Amazon DynamoDB table. Schedule a second Lambda function to query recently added records and send an Amazon Simple Notification Service (Amazon SNS) notification to notify analysts of trends.', 'Trigger an AWS Lambda function when social media posts are added to the S3 bucket. Call Amazon Comprehend for each post to capture the sentiment in the    message and record the sentiment in an Amazon DynamoDB table. Schedule a second Lambda function to query recently added records and send an Amazon Simple Notification Service (Amazon SNS) notification to notify analysts of trends.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Trigger an AWS Lambda function when social media posts are added to the S3 bucket. Call Amazon Comprehend for each post to capture the sentiment in the message and record the sentiment in a custom Amazon CloudWatch metric and in S3. Use CloudWatch alarms to notify analysts of trends.', 'Trigger an AWS Lambda function when social media posts are added to the S3 bucket. Call Amazon Comprehend for each post to capture the sentiment in the message and record the sentiment in a custom Amazon CloudWatch metric and in S3. Use CloudWatch alarms to notify analysts of trends.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9042,37 +8893,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,150);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Deploy the model at an endpoint. Enable Amazon SageMaker Model Monitor to store inferences. Use the inferences to create Shapley values that help explain model behavior. Create a chart that shows features and SHapley Additive exPlanations (SHAP) values to explain to the credit team how the features affect the model outcomes.', 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Deploy the model at an endpoint. Enable Amazon SageMaker Model Monitor to store inferences. Use the inferences to create Shapley values that help explain model behavior. Create a chart that shows features and SHapley Additive exPlanations (SHAP) values to explain to the credit team how the features affect the model outcomes.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Activate Amazon SageMaker Debugger, and configure it to calculate and collect Shapley values. Create a chart that shows features and SHapley Additive exPlanations (SHAP) values to explain to the credit team how the features affect the model outcomes.', 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Activate Amazon SageMaker Debugger, and configure it to calculate and collect Shapley values. Create a chart that shows features and SHapley Additive exPlanations (SHAP) values to explain to the credit team how the features affect the model outcomes.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon SageMaker notebook instance. Use the notebook instance and the XGBoost library to locally retrain the model. Use the plot_importance() method in the Python XGBoost interface to create a feature importance chart. Use that chart to explain to the credit team how the features affect the model outcomes.', 'Create an Amazon SageMaker notebook instance. Use the notebook instance and the XGBoost library to locally retrain the model. Use the plot_importance() method in the Python XGBoost interface to create a feature importance chart. Use that chart to explain to the credit team how the features affect the model outcomes.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Deploy the model at an endpoint. Use Amazon SageMaker Processing to post-analyze the model and create a feature importance explainability chart automatically for the credit team.', 'Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Deploy the model at an endpoint. Use Amazon SageMaker Processing to post-analyze the model and create a feature importance explainability chart automatically for the credit team.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9102,37 +8952,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,151);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Comprehend for the part-of-speech tagging, key phase extraction, and classification tasks.', 'Use Amazon Comprehend for the part-of-speech tagging, key phase extraction, and classification tasks.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an NLP library in Amazon SageMaker for the part-of-speech tagging. Use Amazon Comprehend for the key phase extraction. Use AWS Deep Learning Containers with Amazon SageMaker to build the custom classifier.', 'Use an NLP library in Amazon SageMaker for the part-of-speech tagging. Use Amazon Comprehend for the key phase extraction. Use AWS Deep Learning Containers with Amazon SageMaker to build the custom classifier.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Comprehend for the part-of-speech tagging and key phase extraction tasks. Use Amazon SageMaker built-in Latent Dirichlet Allocation (LDA) algorithm to build the custom classifier.', 'Use Amazon Comprehend for the part-of-speech tagging and key phase extraction tasks. Use Amazon SageMaker built-in Latent Dirichlet Allocation (LDA) algorithm to build the custom classifier.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Comprehend for the part-of-speech tagging and key phase extraction tasks. Use AWS Deep Learning Containers with Amazon SageMaker to build the custom classifier.', 'Use Amazon Comprehend for the part-of-speech tagging and key phase extraction tasks. Use AWS Deep Learning Containers with Amazon SageMaker to build the custom classifier.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9143,7 +8992,7 @@ INSERT INTO wp_posts
 (2, 
  NOW(), 
  NOW(), 
- 'A machine learning (ML) specialist must develop a classification model for a financial services company. A domain expert provides the dataset, which is tabular with 10,000 rows and 1,020 features. During exploratory data analysis, the specialist finds no missing values and a small percentage of duplicate rows. There are correlation scores of &gt; 0.9 for 200 feature pairs. The mean value of each feature is similar to its 50th percentile.<br/>Which feature engineering strategy should the ML specialist use with Amazon SageMaker?<br/>', 
+ 'A machine learning (ML) specialist must develop a classification model for a financial services company. A domain expert provides the dataset, which is tabular with 10,000 rows and 1,020 features. During exploratory data analysis, the specialist finds no missing values and a small percentage of duplicate rows. There are correlation scores of > 0.9 for 200 feature pairs. The mean value of each feature is similar to its 50th percentile.<br/>Which feature engineering strategy should the ML specialist use with Amazon SageMaker?<br/>', 
  'AWS ML Question #152', 
  '', 
  'Publish', 
@@ -9162,37 +9011,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,152);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply dimensionality reduction by using the principal component analysis (PCA) algorithm.', 'Apply dimensionality reduction by using the principal component analysis (PCA) algorithm.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Drop the features with low correlation scores by using a Jupyter notebook.', 'Drop the features with low correlation scores by using a Jupyter notebook.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply anomaly detection by using the Random Cut Forest (RCF) algorithm.', 'Apply anomaly detection by using the Random Cut Forest (RCF) algorithm.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Concatenate the features with high correlation scores by using a Jupyter notebook.', 'Concatenate the features with high correlation scores by using a Jupyter notebook.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9222,37 +9070,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,153);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A longer training time', 'A longer training time', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Making the network larger', 'Making the network larger', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Using a different optimizer', 'Using a different optimizer', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Using some form of regularization', 'Using some form of regularization', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9282,42 +9129,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,154);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker BlazingText algorithm to find the topics independently from language. Proceed with the analysis.', 'Use an Amazon SageMaker BlazingText algorithm to find the topics independently from language. Proceed with the analysis.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker seq2seq algorithm to translate from Spanish to English, if necessary. Use a SageMaker Latent Dirichlet Allocation (LDA) algorithm to find the topics.', 'Use an Amazon SageMaker seq2seq algorithm to translate from Spanish to English, if necessary. Use a SageMaker Latent Dirichlet Allocation (LDA) algorithm to find the topics.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon Comprehend topic modeling to find the topics.', 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon Comprehend topic modeling to find the topics.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon Lex to extract topics form the content.', 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon Lex to extract topics form the content.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon SageMaker Neural Topic Model (NTM) to find the topics.', 'Use Amazon Translate to translate from Spanish to English, if necessary. Use Amazon SageMaker Neural Topic Model (NTM) to find the topics.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9347,37 +9193,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,155);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Manually trigger the monitoring job to re-evaluate the SageMaker endpoint traffic sample.', 'Manually trigger the monitoring job to re-evaluate the SageMaker endpoint traffic sample.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run the Model Monitor baseline job again on the new training set. Configure Model Monitor to use the new baseline.', 'Run the Model Monitor baseline job again on the new training set. Configure Model Monitor to use the new baseline.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Delete the endpoint and recreate it with the original configuration.', 'Delete the endpoint and recreate it with the original configuration.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model again by using a combination of the original training set and the new training set.', 'Retrain the model again by using a combination of the original training set and the new training set.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9407,42 +9252,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,156);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Detecting seasonality for the majority of stores will be an issue. Request categorical data to relate new stores with similar stores that have more historical data.', 'Detecting seasonality for the majority of stores will be an issue. Request categorical data to relate new stores with similar stores that have more historical data.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The sales data does not have enough variance. Request external sales data from other industries to improve the model''s ability to generalize.', 'The sales data does not have enough variance. Request external sales data from other industries to improve the model''s ability to generalize.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Sales data is aggregated by week. Request daily sales data from the source database to enable building a daily model.', 'Sales data is aggregated by week. Request daily sales data from the source database to enable building a daily model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The sales data is missing zero entries for item sales. Request that item sales data from the source database include zero entries to enable building the model.', 'The sales data is missing zero entries for item sales. Request that item sales data from the source database include zero entries to enable building the model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Only 100 MB of sales data is available in Amazon S3. Request 10 years of sales data, which would provide 200 MB of training data for the model.', 'Only 100 MB of sales data is available in Amazon S3. Request 10 years of sales data, which would provide 200 MB of training data for the model.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9472,42 +9316,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,157);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker semantic segmentation algorithm to train a new model to achieve improved accuracy.', 'Use the SageMaker semantic segmentation algorithm to train a new model to achieve improved accuracy.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon Rekognition DetectLabels API to classify the products in the dataset.', 'Use the Amazon Rekognition DetectLabels API to classify the products in the dataset.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Augment the images in the dataset. Use open source libraries to crop, resize, flip, rotate, and adjust the brightness and contrast of the images.', 'Augment the images in the dataset. Use open source libraries to crop, resize, flip, rotate, and adjust the brightness and contrast of the images.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a SageMaker notebook to implement the normalization of pixels and scaling of the images. Store the new dataset in Amazon S3.', 'Use a SageMaker notebook to implement the normalization of pixels and scaling of the images. Store the new dataset in Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition Custom Labels to train a new model.', 'Use Amazon Rekognition Custom Labels to train a new model.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9537,37 +9380,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,158);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Classes C and D are too similar.', 'Classes C and D are too similar.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The dataset is too small for holdout cross-validation.', 'The dataset is too small for holdout cross-validation.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The data distribution is skewed.', 'The data distribution is skewed.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The model is overfitting for classes B and E.', 'The model is overfitting for classes B and E.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9597,42 +9439,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,159);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Data scaling with standardization and normalization', 'Data scaling with standardization and normalization', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Correlation plot with heat maps', 'Correlation plot with heat maps', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Data binning', 'Data binning', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Univariate selection', 'Univariate selection', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Feature importance with a tree-based classifier', 'Feature importance with a tree-based classifier', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9662,37 +9503,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,160);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Autoregressive Integrated Moving Average (AIRMA)', 'Autoregressive Integrated Moving Average (AIRMA)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Exponential Smoothing (ETS)', 'Exponential Smoothing (ETS)', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convolutional Neural Network - Quantile Regression (CNN-QR)', 'Convolutional Neural Network - Quantile Regression (CNN-QR)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prophet', 'Prophet', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9722,37 +9562,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,161);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a voice-driven Amazon Lex bot to perform the ASR customization. Create customer slots within the bot that specifically identify each of the required product names. Use the Amazon Lex synonym mechanism to provide additional variations of each product name as mis-transcriptions are identified in development.', 'Use a voice-driven Amazon Lex bot to perform the ASR customization. Create customer slots within the bot that specifically identify each of the required product names. Use the Amazon Lex synonym mechanism to provide additional variations of each product name as mis-transcriptions are identified in development.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Transcribe to perform the ASR customization. Analyze the word confidence scores in the transcript, and automatically create or update a custom vocabulary file with any word that has a confidence score below an acceptable threshold value. Use this updated custom vocabulary file in all future transcription tasks.', 'Use Amazon Transcribe to perform the ASR customization. Analyze the word confidence scores in the transcript, and automatically create or update a custom vocabulary file with any word that has a confidence score below an acceptable threshold value. Use this updated custom vocabulary file in all future transcription tasks.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a custom vocabulary file containing each product name with phonetic pronunciations, and use it with Amazon Transcribe to perform the ASR customization. Analyze the transcripts and manually update the custom vocabulary file to include updated or additional entries for those names that are not being correctly identified.', 'Create a custom vocabulary file containing each product name with phonetic pronunciations, and use it with Amazon Transcribe to perform the ASR customization. Analyze the transcripts and manually update the custom vocabulary file to include updated or additional entries for those names that are not being correctly identified.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the audio transcripts to create a training dataset and build an Amazon Transcribe custom language model. Analyze the transcripts and update    the training dataset with a manually corrected version of transcripts where product names are not being transcribed correctly. Create an updated custom language model.', 'Use the audio transcripts to create a training dataset and build an Amazon Transcribe custom language model. Analyze the transcripts and update    the training dataset with a manually corrected version of transcripts where product names are not being transcribed correctly. Create an updated custom language model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9782,37 +9621,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,162);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the notebook instance type to a memory optimized instance with the same vCPU number as the ml.m5.4xlarge instance has. Stop the notebook when it is not in use. Run both data preprocessing and feature engineering development on that instance.', 'Change the notebook instance type to a memory optimized instance with the same vCPU number as the ml.m5.4xlarge instance has. Stop the notebook when it is not in use. Run both data preprocessing and feature engineering development on that instance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Keep the notebook instance type and size the same. Stop the notebook when it is not in use. Run data preprocessing on a P3 instance type with the same memory as the ml.m5.4xlarge instance by using Amazon SageMaker Processing.', 'Keep the notebook instance type and size the same. Stop the notebook when it is not in use. Run data preprocessing on a P3 instance type with the same memory as the ml.m5.4xlarge instance by using Amazon SageMaker Processing.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the notebook instance type to a smaller general purpose instance. Stop the notebook when it is not in use. Run data preprocessing on an ml.r5 instance with the same memory size as the ml.m5.4xlarge instance by using Amazon SageMaker Processing.', 'Change the notebook instance type to a smaller general purpose instance. Stop the notebook when it is not in use. Run data preprocessing on an ml.r5 instance with the same memory size as the ml.m5.4xlarge instance by using Amazon SageMaker Processing.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the notebook instance type to a smaller general purpose instance. Stop the notebook when it is not in use. Run data preprocessing on an R5 instance with the same memory size as the ml.m5.4xlarge instance by using the Reserved Instance option.', 'Change the notebook instance type to a smaller general purpose instance. Stop the notebook when it is not in use. Run data preprocessing on an R5 instance with the same memory size as the ml.m5.4xlarge instance by using the Reserved Instance option.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9842,42 +9680,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,163);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply integer transformation and set Red = 1, White = 5, and Green = 10.', 'Apply integer transformation and set Red = 1, White = 5, and Green = 10.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add new columns that store one-hot representation of colors.', 'Add new columns that store one-hot representation of colors.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace the color name string by its length.', 'Replace the color name string by its length.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create three columns to encode the color in RGB format.', 'Create three columns to encode the color in RGB format.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace each color name by its training set frequency.', 'Replace each color name by its training set frequency.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9907,37 +9744,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,164);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The data scientist should obtain a correlated equilibrium policy by formulating this problem as a multi-agent reinforcement learning problem.', 'The data scientist should obtain a correlated equilibrium policy by formulating this problem as a multi-agent reinforcement learning problem.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The data scientist should obtain the optimal equilibrium policy by formulating this problem as a single-agent reinforcement learning problem.', 'The data scientist should obtain the optimal equilibrium policy by formulating this problem as a single-agent reinforcement learning problem.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rather than finding an equilibrium policy, the data scientist should obtain accurate predictors of traffic flow by using historical data through a supervised learning approach.', 'Rather than finding an equilibrium policy, the data scientist should obtain accurate predictors of traffic flow by using historical data through a supervised learning approach.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rather than finding an equilibrium policy, the data scientist should obtain accurate predictors of traffic flow by using unlabeled simulated data representing the new traffic patterns in the city and applying an unsupervised learning approach.', 'Rather than finding an equilibrium policy, the data scientist should obtain accurate predictors of traffic flow by using unlabeled simulated data representing the new traffic patterns in the city and applying an unsupervised learning approach.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -9967,37 +9803,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,165);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon Comprehend entity recognition API operations. Remove the detected words from the blog post data. Replace the blog post data source in the S3 bucket.', 'Use the Amazon Comprehend entity recognition API operations. Remove the detected words from the blog post data. Replace the blog post data source in the S3 bucket.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run the SageMaker built-in principal component analysis (PCA) algorithm with the blog post data from the S3 bucket as the data source. Replace the blog post data in the S3 bucket with the results of the training job.', 'Run the SageMaker built-in principal component analysis (PCA) algorithm with the blog post data from the S3 bucket as the data source. Replace the blog post data in the S3 bucket with the results of the training job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker built-in Object Detection algorithm instead of the NTM algorithm for the training job to process the blog post data.', 'Use the SageMaker built-in Object Detection algorithm instead of the NTM algorithm for the training job to process the blog post data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Remove the stopwords from the blog post data by using the CountVectorizer function in the scikit-learn library. Replace the blog post data in the S3 bucket with the results of the vectorizer.', 'Remove the stopwords from the blog post data by using the CountVectorizer function in the scikit-learn library. Replace the blog post data in the S3 bucket with the results of the vectorizer.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10027,37 +9862,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,166);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the S3 sync command to compare the source S3 bucket and the destination S3 bucket. Determine which source files do not exist in the destination S3 bucket and which source files were modified.', 'Use the S3 sync command to compare the source S3 bucket and the destination S3 bucket. Determine which source files do not exist in the destination S3 bucket and which source files were modified.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Transfer for FTPS to transfer the files from the on-premises storage to Amazon S3.', 'Use AWS Transfer for FTPS to transfer the files from the on-premises storage to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS DataSync to make an initial copy of the entire dataset. Schedule subsequent incremental transfers of changing data until the final cutover from on premises to AWS.', 'Use AWS DataSync to make an initial copy of the entire dataset. Schedule subsequent incremental transfers of changing data until the final cutover from on premises to AWS.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use S3 Batch Operations to pull data periodically from the on-premises storage. Enable S3 Versioning on the S3 bucket to protect against accidental overwrites.', 'Use S3 Batch Operations to pull data periodically from the on-premises storage. Enable S3 Versioning on the S3 bucket to protect against accidental overwrites.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10087,37 +9921,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,167);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition Custom Labels to label the dataset and create a custom Amazon Rekognition object detection model. Create a private workforce. Use Amazon Augmented AI (Amazon A2I) to review the low-confidence predictions and retrain the custom Amazon Rekognition model.', 'Use Amazon Rekognition Custom Labels to label the dataset and create a custom Amazon Rekognition object detection model. Create a private workforce. Use Amazon Augmented AI (Amazon A2I) to review the low-confidence predictions and retrain the custom Amazon Rekognition model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Ground Truth object detection labeling task. Use Amazon Mechanical Turk as the labeling workforce.', 'Use an Amazon SageMaker Ground Truth object detection labeling task. Use Amazon Mechanical Turk as the labeling workforce.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition Custom Labels to label the dataset and create a custom Amazon Rekognition object detection model. Create a workforce with a third-party AWS Marketplace vendor. Use Amazon Augmented AI (Amazon A2I) to review the low-confidence predictions and retrain the custom Amazon Rekognition model.', 'Use Amazon Rekognition Custom Labels to label the dataset and create a custom Amazon Rekognition object detection model. Create a workforce with a third-party AWS Marketplace vendor. Use Amazon Augmented AI (Amazon A2I) to review the low-confidence predictions and retrain the custom Amazon Rekognition model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Ground Truth semantic segmentation labeling task. Use a private workforce as the labeling workforce.', 'Use an Amazon SageMaker Ground Truth semantic segmentation labeling task. Use a private workforce as the labeling workforce.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10147,42 +9980,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,168);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a linear-based algorithm to train the model.', 'Use a linear-based algorithm to train the model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply principal component analysis (PCA).', 'Apply principal component analysis (PCA).', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Remove a portion of highly correlated features from the dataset.', 'Remove a portion of highly correlated features from the dataset.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply min-max feature scaling to the dataset.', 'Apply min-max feature scaling to the dataset.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply one-hot encoding category-based variables.', 'Apply one-hot encoding category-based variables.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10212,37 +10044,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,169);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into an Amazon Redshift cluster. Execute the pipeline by using SQL. Store the results in Amazon S3.', 'Load the data into an Amazon Redshift cluster. Execute the pipeline by using SQL. Store the results in Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into Amazon DynamoDB. Convert the scripts to an AWS Lambda function. Execute the pipeline by triggering Lambda executions. Store the results in Amazon S3.', 'Load the data into Amazon DynamoDB. Convert the scripts to an AWS Lambda function. Execute the pipeline by triggering Lambda executions. Store the results in Amazon S3.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job. Convert the scripts to PySpark. Execute the pipeline. Store the results in Amazon S3.', 'Create an AWS Glue job. Convert the scripts to PySpark. Execute the pipeline. Store the results in Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a set of individual AWS Lambda functions to execute each of the scripts. Build a step function by using the AWS Step Functions Data Science SDK. Store the results in Amazon S3.', 'Create a set of individual AWS Lambda functions to execute each of the scripts. Build a step function by using the AWS Step Functions Data Science SDK. Store the results in Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10272,42 +10103,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,170);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Emails exchanged by customers and the company''s customer service agents', 'Emails exchanged by customers and the company''s customer service agents', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Social media posts containing the name of the company or its products', 'Social media posts containing the name of the company or its products', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A publicly available collection of news articles', 'A publicly available collection of news articles', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A publicly available collection of customer reviews', 'A publicly available collection of customer reviews', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Product sales revenue figures for the company', 'Product sales revenue figures for the company', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10337,37 +10167,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,171);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add an Amazon SageMaker Debugger hook to the script to capture key metrics. Run the script as an AWS Glue job.', 'Add an Amazon SageMaker Debugger hook to the script to capture key metrics. Run the script as an AWS Glue job.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add an Amazon SageMaker Experiments tracker to the script to capture key metrics. Run the script as an AWS Glue job.', 'Add an Amazon SageMaker Experiments tracker to the script to capture key metrics. Run the script as an AWS Glue job.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add an Amazon SageMaker Debugger hook to the script to capture key parameters. Run the script as a SageMaker processing job.', 'Add an Amazon SageMaker Debugger hook to the script to capture key parameters. Run the script as a SageMaker processing job.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add an Amazon SageMaker Experiments tracker to the script to capture key parameters. Run the script as a SageMaker processing job.', 'Add an Amazon SageMaker Experiments tracker to the script to capture key parameters. Run the script as a SageMaker processing job.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10397,37 +10226,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,172);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Mount the EFS file system to a SageMaker notebook and run a script that copies the data to an Amazon FSx for Lustre file system. Run the SageMaker training job with the FSx for Lustre file system as the data source.', 'Mount the EFS file system to a SageMaker notebook and run a script that copies the data to an Amazon FSx for Lustre file system. Run the SageMaker training job with the FSx for Lustre file system as the data source.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch a transient Amazon EMR cluster. Configure steps to mount the EFS file system and copy the data to an Amazon S3 bucket by using S3DistCp. Run the SageMaker training job with Amazon S3 as the data source.', 'Launch a transient Amazon EMR cluster. Configure steps to mount the EFS file system and copy the data to an Amazon S3 bucket by using S3DistCp. Run the SageMaker training job with Amazon S3 as the data source.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Mount the EFS file system to an Amazon EC2 instance and use the AWS CLI to copy the data to an Amazon S3 bucket. Run the SageMaker training job with Amazon S3 as the data source.', 'Mount the EFS file system to an Amazon EC2 instance and use the AWS CLI to copy the data to an Amazon S3 bucket. Run the SageMaker training job with Amazon S3 as the data source.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a SageMaker training job with an EFS file system as the data source.', 'Run a SageMaker training job with an EFS file system as the data source.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10457,37 +10285,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,173);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a histogram of the daily sales over the last 3 weeks. In addition, create a histogram of the daily sales from before that period.', 'Create a histogram of the daily sales over the last 3 weeks. In addition, create a histogram of the daily sales from before that period.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a histogram of the model errors over the last 3 weeks. In addition, create a histogram of the model errors from before that period.', 'Create a histogram of the model errors over the last 3 weeks. In addition, create a histogram of the model errors from before that period.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a line chart with the weekly mean absolute error (MAE) of the model.', 'Create a line chart with the weekly mean absolute error (MAE) of the model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a scatter plot of daily sales versus model error for the last 3 weeks. In addition, create a scatter plot of daily sales versus model error from before that period.', 'Create a scatter plot of daily sales versus model error for the last 3 weeks. In addition, create a scatter plot of daily sales versus model error from before that period.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10517,37 +10344,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,174);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The XGBoost model provides a true/false binary output. Apply principal component analysis (PCA) with five feature dimensions to predict a segment.', 'The XGBoost model provides a true/false binary output. Apply principal component analysis (PCA) with five feature dimensions to predict a segment.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The XGBoost model provides a true/false binary output. Increase the number of classes the XGBoost model predicts to five classes to predict a segment.', 'The XGBoost model provides a true/false binary output. Increase the number of classes the XGBoost model predicts to five classes to predict a segment.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The XGBoost model is a supervised machine learning algorithm. Train a k-Nearest-Neighbors (kNN) model with K = 5 on the same dataset to predict a segment.', 'The XGBoost model is a supervised machine learning algorithm. Train a k-Nearest-Neighbors (kNN) model with K = 5 on the same dataset to predict a segment.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The XGBoost model is a supervised machine learning algorithm. Train a k-means model with K = 5 on the same dataset to predict a segment.', 'The XGBoost model is a supervised machine learning algorithm. Train a k-means model with K = 5 on the same dataset to predict a segment.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10577,37 +10403,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,175);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a one-hot encoder for the categorical fields in the dataset. Perform standardization on the financial fields in the dataset. Apply L1 regularization to the data.', 'Use a one-hot encoder for the categorical fields in the dataset. Perform standardization on the financial fields in the dataset. Apply L1 regularization to the data.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use tokenization of the categorical fields in the dataset. Perform binning on the financial fields in the dataset. Remove the outliers in the data by using the z- score.', 'Use tokenization of the categorical fields in the dataset. Perform binning on the financial fields in the dataset. Remove the outliers in the data by using the z- score.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a label encoder for the categorical fields in the dataset. Perform L1 regularization on the financial fields in the dataset. Apply L2 regularization to the data.', 'Use a label encoder for the categorical fields in the dataset. Perform L1 regularization on the financial fields in the dataset. Apply L2 regularization to the data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a logarithm transformation on the categorical fields in the dataset. Perform binning on the financial fields in the dataset. Use imputation to populate missing values in the dataset.', 'Use a logarithm transformation on the categorical fields in the dataset. Perform binning on the financial fields in the dataset. Use imputation to populate missing values in the dataset.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10637,42 +10462,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,176);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker seq2seq algorithm', 'Amazon SageMaker seq2seq algorithm', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker BlazingText algorithm in Skip-gram mode', 'Amazon SageMaker BlazingText algorithm in Skip-gram mode', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker Object2Vec algorithm', 'Amazon SageMaker Object2Vec algorithm', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker BlazingText algorithm in continuous bag-of-words (CBOW) mode', 'Amazon SageMaker BlazingText algorithm in continuous bag-of-words (CBOW) mode', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Combination of the Amazon SageMaker BlazingText algorithm in Batch Skip-gram mode with a custom recurrent neural network (RNN)', 'Combination of the Amazon SageMaker BlazingText algorithm in Batch Skip-gram mode with a custom recurrent neural network (RNN)', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10702,37 +10526,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,177);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Export the database to a .csv file with two columns: claim_label and claim_text. Use the Amazon SageMaker Object2Vec algorithm and the .csv file to train a model. Use SageMaker to deploy the model to an inference endpoint. Develop a service in the application to use the inference endpoint to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 'Export the database to a .csv file with two columns: claim_label and claim_text. Use the Amazon SageMaker Object2Vec algorithm and the .csv file to train a model. Use SageMaker to deploy the model to an inference endpoint. Develop a service in the application to use the inference endpoint to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Export the database to a .csv file with one column: claim_text. Use the Amazon SageMaker Latent Dirichlet Allocation (LDA) algorithm and the .csv file to train a model. Use the LDA algorithm to detect labels automatically. Use SageMaker to deploy the model to an inference endpoint. Develop a service in the application to use the inference endpoint to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 'Export the database to a .csv file with one column: claim_text. Use the Amazon SageMaker Latent Dirichlet Allocation (LDA) algorithm and the .csv file to train a model. Use the LDA algorithm to detect labels automatically. Use SageMaker to deploy the model to an inference endpoint. Develop a service in the application to use the inference endpoint to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Textract to process the database and automatically detect two columns: claim_label and claim_text. Use Amazon Comprehend custom classification and the extracted information to train the custom classifier. Develop a service in the application to use the Amazon Comprehend API to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 'Use Amazon Textract to process the database and automatically detect two columns: claim_label and claim_text. Use Amazon Comprehend custom classification and the extracted information to train the custom classifier. Develop a service in the application to use the Amazon Comprehend API to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Export the database to a .csv file with two columns: claim_label and claim_text. Use Amazon Comprehend custom classification and the .csv file to train the custom classifier. Develop a service in the application to use the Amazon Comprehend API to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 'Export the database to a .csv file with two columns: claim_label and claim_text. Use Amazon Comprehend custom classification and the .csv file to train the custom classifier. Develop a service in the application to use the Amazon Comprehend API to process incoming claims, predict the labels, and route the claims to the appropriate queue.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10762,37 +10585,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,178);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the HPO configuration as follows: Select the most accurate hyperparameter configuration form this HPO job.', 'Modify the HPO configuration as follows: Select the most accurate hyperparameter configuration form this HPO job.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run three different HPO jobs that use different learning rates form the following intervals for MinValue and MaxValue while using the same number of training jobs for each HPO job: ✑ [0.01, 0.1] ✑ [0.001, 0.01] ✑ [0.0001, 0.001] Select the most accurate hyperparameter configuration form these three HPO jobs.', 'Run three different HPO jobs that use different learning rates form the following intervals for MinValue and MaxValue while using the same number of training jobs for each HPO job: ✑ [0.01, 0.1] ✑ [0.001, 0.01] ✑ [0.0001, 0.001] Select the most accurate hyperparameter configuration form these three HPO jobs.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the HPO configuration as follows: Select the most accurate hyperparameter configuration form this training job.', 'Modify the HPO configuration as follows: Select the most accurate hyperparameter configuration form this training job.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run three different HPO jobs that use different learning rates form the following intervals for MinValue and MaxValue. Divide the number of training jobs for each HPO job by three: ✑ [0.01, 0.1] ✑ [0.001, 0.01] [0.0001, 0.001] Select the most accurate hyperparameter configuration form these three HPO jobs.', 'Run three different HPO jobs that use different learning rates form the following intervals for MinValue and MaxValue. Divide the number of training jobs for each HPO job by three: ✑ [0.01, 0.1] ✑ [0.001, 0.01] [0.0001, 0.001] Select the most accurate hyperparameter configuration form these three HPO jobs.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10822,37 +10644,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,179);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Move the training data to an Amazon S3 bucket. Train and evaluate the model by using Amazon SageMaker. Optimize the model by using SageMaker Neo. Deploy the model on a SageMaker hosting services endpoint.', 'Move the training data to an Amazon S3 bucket. Train and evaluate the model by using Amazon SageMaker. Optimize the model by using SageMaker Neo. Deploy the model on a SageMaker hosting services endpoint.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train and evaluate the model on premises. Upload the model to an Amazon S3 bucket. Deploy the model on an Amazon SageMaker hosting services endpoint.', 'Train and evaluate the model on premises. Upload the model to an Amazon S3 bucket. Deploy the model on an Amazon SageMaker hosting services endpoint.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Move the training data to an Amazon S3 bucket. Train and evaluate the model by using Amazon SageMaker. Optimize the model by using SageMaker Neo. Set up an edge device in the manufacturing facilities with AWS IoT Greengrass. Deploy the model on the edge device.', 'Move the training data to an Amazon S3 bucket. Train and evaluate the model by using Amazon SageMaker. Optimize the model by using SageMaker Neo. Set up an edge device in the manufacturing facilities with AWS IoT Greengrass. Deploy the model on the edge device.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train the model on premises. Upload the model to an Amazon S3 bucket. Set up an edge device in the manufacturing facilities with AWS IoT Greengrass. Deploy the model on the edge device.', 'Train the model on premises. Upload the model to an Amazon S3 bucket. Set up an edge device in the manufacturing facilities with AWS IoT Greengrass. Deploy the model on the edge device.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10882,42 +10703,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,180);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the endpoint to use Amazon Elastic Inference (EI) accelerators.', 'Configure the endpoint to use Amazon Elastic Inference (EI) accelerators.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new endpoint configuration with two production variants.', 'Create a new endpoint configuration with two production variants.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the endpoint to automatically scale with the InvocationsPerInstance metric.', 'Configure the endpoint to automatically scale with the InvocationsPerInstance metric.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy a second instance pool to support a blue/green deployment of models.', 'Deploy a second instance pool to support a blue/green deployment of models.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reconfigure the endpoint to use burstable instances.', 'Reconfigure the endpoint to use burstable instances.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -10947,37 +10767,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,181);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a service-linked role for Amazon Elastic Container Service (Amazon ECS) with access to the S3 bucket. Create an ECS cluster that is based on an AWS Deep Learning Containers image. Write the code to perform the feature engineering. Train a logistic regression model for predicting the price, pointing to the bucket with the dataset. Wait for the training job to complete. Perform the inferences.', 'Create a service-linked role for Amazon Elastic Container Service (Amazon ECS) with access to the S3 bucket. Create an ECS cluster that is based on an AWS Deep Learning Containers image. Write the code to perform the feature engineering. Train a logistic regression model for predicting the price, pointing to the bucket with the dataset. Wait for the training job to complete. Perform the inferences.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon SageMaker notebook with a new IAM role that is associated with the notebook. Pull the dataset from the S3 bucket. Explore different combinations of feature engineering transformations, regression algorithms, and hyperparameters. Compare all the results in the notebook, and deploy the most accurate configuration in an endpoint for predictions.', 'Create an Amazon SageMaker notebook with a new IAM role that is associated with the notebook. Pull the dataset from the S3 bucket. Explore different combinations of feature engineering transformations, regression algorithms, and hyperparameters. Compare all the results in the notebook, and deploy the most accurate configuration in an endpoint for predictions.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role with access to Amazon S3, Amazon SageMaker, and AWS Lambda. Create a training job with the SageMaker built-in XGBoost model pointing to the bucket with the dataset. Specify the price as the target feature. Wait for the job to complete. Load the model artifact to a Lambda function for inference on prices of new houses.', 'Create an IAM role with access to Amazon S3, Amazon SageMaker, and AWS Lambda. Create a training job with the SageMaker built-in XGBoost model pointing to the bucket with the dataset. Specify the price as the target feature. Wait for the job to complete. Load the model artifact to a Lambda function for inference on prices of new houses.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role for Amazon SageMaker with access to the S3 bucket. Create a SageMaker AutoML job with SageMaker Autopilot pointing to the bucket with the dataset. Specify the price as the target attribute. Wait for the job to complete. Deploy the best model for predictions.', 'Create an IAM role for Amazon SageMaker with access to the S3 bucket. Create a SageMaker AutoML job with SageMaker Autopilot pointing to the bucket with the dataset. Specify the price as the target attribute. Wait for the job to complete. Deploy the best model for predictions.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11007,42 +10826,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,182);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Named entity recognition', 'Named entity recognition', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Coreference', 'Coreference', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Stemming', 'Stemming', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Term frequency-inverse document frequency (TF-IDF)', 'Term frequency-inverse document frequency (TF-IDF)', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Sentiment analysis', 'Sentiment analysis', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11072,37 +10890,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,183);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The coverage scores indicate that the distributional forecast is poorly calibrated. These scores should be approximately equal to each other at all quantiles.', 'The coverage scores indicate that the distributional forecast is poorly calibrated. These scores should be approximately equal to each other at all quantiles.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The coverage scores indicate that the distributional forecast is poorly calibrated. These scores should peak at the median and be lower at the tails.', 'The coverage scores indicate that the distributional forecast is poorly calibrated. These scores should peak at the median and be lower at the tails.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The coverage scores indicate that the distributional forecast is correctly calibrated. These scores should always fall below the quantile itself.', 'The coverage scores indicate that the distributional forecast is correctly calibrated. These scores should always fall below the quantile itself.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The coverage scores indicate that the distributional forecast is correctly calibrated. These scores should be approximately equal to the quantile itself.', 'The coverage scores indicate that the distributional forecast is correctly calibrated. These scores should be approximately equal to the quantile itself.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11132,37 +10949,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,184);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data by using an HTTP API call to a web server that is hosted on Amazon EC2. Set up EC2 instances in an Auto Scaling configuration behind an Elastic Load Balancer to load the data into Amazon S3.', 'Ingest the data by using an HTTP API call to a web server that is hosted on Amazon EC2. Set up EC2 instances in an Auto Scaling configuration behind an Elastic Load Balancer to load the data into Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to AWS IoT Core. Set up a rule in AWS IoT Core to use Amazon Kinesis Data Firehose to send data to an Amazon Kinesis data stream that is configured to write to an S3 bucket.', 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to AWS IoT Core. Set up a rule in AWS IoT Core to use Amazon Kinesis Data Firehose to send data to an Amazon Kinesis data stream that is configured to write to an S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to AWS IoT Core. Set up a rule in AWS IoT Core to direct all MQTT data to an Amazon Kinesis Data Firehose delivery stream that is configured to write to an S3 bucket.', 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to AWS IoT Core. Set up a rule in AWS IoT Core to direct all MQTT data to an Amazon Kinesis Data Firehose delivery stream that is configured to write to an S3 bucket.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to Amazon Kinesis data stream that is configured to write to an S3 bucket.', 'Ingest the data over Message Queuing Telemetry Transport (MQTT) to Amazon Kinesis data stream that is configured to write to an S3 bucket.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11192,37 +11008,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,185);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Custom classification with multi-class mode', 'Custom classification with multi-class mode', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Custom classification with multi-label mode', 'Custom classification with multi-label mode', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Custom entity recognition', 'Custom entity recognition', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Built-in models', 'Built-in models', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11252,42 +11067,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,186);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a SageMaker development endpoint in the data science team''s VPC.', 'Create a SageMaker development endpoint in the data science team''s VPC.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue development endpoint in the data science team''s VPC.', 'Create an AWS Glue development endpoint in the data science team''s VPC.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create SageMaker notebooks by using the AWS Glue development endpoint.', 'Create SageMaker notebooks by using the AWS Glue development endpoint.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create SageMaker notebooks by using the SageMaker console.', 'Create SageMaker notebooks by using the SageMaker console.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Attach a decryption policy to the SageMaker notebooks.', 'Attach a decryption policy to the SageMaker notebooks.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11317,37 +11131,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,187);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up an Amazon EMR cluster. Create an Apache Spark job to read the data from the Amazon Redshift cluster and transform the data. Load the data into the S3 bucket. Schedule the job to run monthly.', 'Set up an Amazon EMR cluster. Create an Apache Spark job to read the data from the Amazon Redshift cluster and transform the data. Load the data into the S3 bucket. Schedule the job to run monthly.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up an Amazon EC2 instance with a SQL client tool, such as SQL Workbench/J, to query the data from the Amazon Redshift cluster directly Export the resulting dataset into a file. Upload the file into the S3 bucket. Perform these tasks monthly.', 'Set up an Amazon EC2 instance with a SQL client tool, such as SQL Workbench/J, to query the data from the Amazon Redshift cluster directly Export the resulting dataset into a file. Upload the file into the S3 bucket. Perform these tasks monthly.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up an AWS Glue job that has the Amazon Redshift cluster as the source and the S3 bucket as the destination. Use the built-in transforms Filter, Map, and RenameField to perform the required transformations. Schedule the job to run monthly.', 'Set up an AWS Glue job that has the Amazon Redshift cluster as the source and the S3 bucket as the destination. Use the built-in transforms Filter, Map, and RenameField to perform the required transformations. Schedule the job to run monthly.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Redshift Spectrum to run a query that writes the data directly to the S3 bucket. Create an AWS Lambda function to run the query monthly.', 'Use Amazon Redshift Spectrum to run a query that writes the data directly to the S3 bucket. Create an AWS Lambda function to run the query monthly.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11377,37 +11190,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,188);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Specify the server argument in the ENTRYPOINT instruction in the Dockerfile.', 'Specify the server argument in the ENTRYPOINT instruction in the Dockerfile.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Specify the training program in the ENTRYPOINT instruction in the Dockerfile.', 'Specify the training program in the ENTRYPOINT instruction in the Dockerfile.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include the path to the training data in the docker build command when packaging the container.', 'Include the path to the training data in the docker build command when packaging the container.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a COPY instruction in the Dockerfile to copy the training program to the /opt/ml/train directory.', 'Use a COPY instruction in the Dockerfile to copy the training program to the /opt/ml/train directory.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11437,42 +11249,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,189);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'IP Insights', 'IP Insights', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-nearest neighbors (k-NN)', 'K-nearest neighbors (k-NN)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear learner with a logistic function', 'Linear learner with a logistic function', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random Cut Forest (RCF)', 'Random Cut Forest (RCF)', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'XGBoost', 'XGBoost', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11502,42 +11313,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,190);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the SageMaker notebook instance to be launched with a VPC attached and internet access disabled.', 'Configure the SageMaker notebook instance to be launched with a VPC attached and internet access disabled.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create and configure a VPN tunnel between SageMaker and Amazon S3.', 'Create and configure a VPN tunnel between SageMaker and Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create and configure an S3 VPC endpoint Attach it to the VPC.', 'Create and configure an S3 VPC endpoint Attach it to the VPC.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an S3 bucket policy that allows traffic from the VPC and denies traffic from the internet.', 'Create an S3 bucket policy that allows traffic from the VPC and denies traffic from the internet.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy AWS Transit Gateway Attach the S3 bucket and the SageMaker instance to the gateway.', 'Deploy AWS Transit Gateway Attach the S3 bucket and the SageMaker instance to the gateway.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11567,42 +11377,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,191);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add information about the store''s sales periods to the dataset.', 'Add information about the store''s sales periods to the dataset.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Aggregate sales figures from stores in the same proximity.', 'Aggregate sales figures from stores in the same proximity.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply smoothing to correct for seasonal variation.', 'Apply smoothing to correct for seasonal variation.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the forecast frequency from daily to weekly.', 'Change the forecast frequency from daily to weekly.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace missing values in the dataset by using linear interpolation.', 'Replace missing values in the dataset by using linear interpolation.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11632,37 +11441,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,192);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random Cut Forest (RCF)', 'Random Cut Forest (RCF)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'XGBoost', 'XGBoost', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Neural Topic Model (NTM)', 'Neural Topic Model (NTM)', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'DeepAR forecasting', 'DeepAR forecasting', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11692,37 +11500,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,193);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Security Token Service (AWS STS) to create temporary tokens to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 'Use AWS Security Token Service (AWS STS) to create temporary tokens to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use customer managed keys in AWS Key Management Service (AWS KMS) to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 'Use customer managed keys in AWS Key Management Service (AWS KMS) to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use encryption keys stored in AWS CloudHSM to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 'Use encryption keys stored in AWS CloudHSM to encrypt the storage volumes for all SageMaker instances and to encrypt the model artifacts and data in Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker built-in transient keys to encrypt the storage volumes for all SageMaker instances. Enable default encryption ffnew Amazon Elastic Block Store (Amazon EBS) volumes.', 'Use SageMaker built-in transient keys to encrypt the storage volumes for all SageMaker instances. Enable default encryption ffnew Amazon Elastic Block Store (Amazon EBS) volumes.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11752,37 +11559,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,194);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon EMR cluster. Create external tables in the Apache Hive metastore, referencing the data that is stored in the S3 bucket. Explore the data from the Hive console.', 'Create an Amazon EMR cluster. Create external tables in the Apache Hive metastore, referencing the data that is stored in the S3 bucket. Explore the data from the Hive console.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue to crawl the S3 bucket and create tables in the AWS Glue Data Catalog. Use Amazon Athena to explore the data.', 'Use AWS Glue to crawl the S3 bucket and create tables in the AWS Glue Data Catalog. Use Amazon Athena to explore the data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Redshift cluster. Use the COPY command to ingest the data from Amazon S3. Explore the data from the Amazon Redshift query editor GUI.', 'Create an Amazon Redshift cluster. Use the COPY command to ingest the data from Amazon S3. Explore the data from the Amazon Redshift query editor GUI.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Redshift cluster. Create external tables in an external schema, referencing the S3 bucket that contains the data. Explore the data from the Amazon Redshift query editor GUI.', 'Create an Amazon Redshift cluster. Create external tables in an external schema, referencing the S3 bucket that contains the data. Explore the data from the Amazon Redshift query editor GUI.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11812,37 +11618,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,195);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the training configuration to use two ml.p2.xlarge instances.', 'Modify the training configuration to use two ml.p2.xlarge instances.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the training configuration to use Pipe input mode.', 'Modify the training configuration to use Pipe input mode.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the training configuration to use a single ml.p3.2xlarge instance.', 'Modify the training configuration to use a single ml.p3.2xlarge instance.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the training configuration to use Amazon Elastic File System (Amazon EFS) instead of Amazon S3 to store the input training data.', 'Modify the training configuration to use Amazon Elastic File System (Amazon EFS) instead of Amazon S3 to store the input training data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11872,37 +11677,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,196);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Order and use an AWS Snowball Edge Compute Optimized device with an NVIDIA Tesla module to run the transcription algorithm. Use AWS DataSync to send the resulting transcriptions to the transcription S3 bucket.', 'Order and use an AWS Snowball Edge Compute Optimized device with an NVIDIA Tesla module to run the transcription algorithm. Use AWS DataSync to send the resulting transcriptions to the transcription S3 bucket.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Order and use an AWS Snowcone device with Amazon EC2 Inf1 instances to run the transcription algorithm. Use AWS DataSync to send the resulting transcriptions to the transcription S3 bucket.', 'Order and use an AWS Snowcone device with Amazon EC2 Inf1 instances to run the transcription algorithm. Use AWS DataSync to send the resulting transcriptions to the transcription S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Order and use AWS Outposts to run the transcription algorithm on GPU-based Amazon EC2 instances. Store the resulting transcriptions in the transcription S3 bucket.', 'Order and use AWS Outposts to run the transcription algorithm on GPU-based Amazon EC2 instances. Store the resulting transcriptions in the transcription S3 bucket.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS DataSync to ingest the audio files to Amazon S3. Create an AWS Lambda function to run the transcription algorithm on the audio files when they are uploaded to Amazon S3. Configure the function to write the resulting transcriptions to the transcription S3 bucket.', 'Use AWS DataSync to ingest the audio files to Amazon S3. Create an AWS Lambda function to run the transcription algorithm on the audio files when they are uploaded to Amazon S3. Configure the function to write the resulting transcriptions to the transcription S3 bucket.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11932,37 +11736,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,197);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest event data by using a GraphQLAPI in AWS AppSync. Store the data in an Amazon DynamoDB table. Use DynamoDB Streams to call an AWS Lambda function to transform the most recent 10 minutes of data before inference.', 'Ingest event data by using a GraphQLAPI in AWS AppSync. Store the data in an Amazon DynamoDB table. Use DynamoDB Streams to call an AWS Lambda function to transform the most recent 10 minutes of data before inference.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest event data by using Amazon Kinesis Data Streams. Store the data in Amazon S3 by using Amazon Kinesis Data Firehose. Use AWS Glue to transform the most recent 10 minutes of data before inference.', 'Ingest event data by using Amazon Kinesis Data Streams. Store the data in Amazon S3 by using Amazon Kinesis Data Firehose. Use AWS Glue to transform the most recent 10 minutes of data before inference.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest event data by using Amazon Kinesis Data Streams. Use an Amazon Kinesis Data Analytics for Apache Flink application to transform the most recent 10 minutes of data before inference.', 'Ingest event data by using Amazon Kinesis Data Streams. Use an Amazon Kinesis Data Analytics for Apache Flink application to transform the most recent 10 minutes of data before inference.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Ingest event data by using Amazon Managed Streaming for Apache Kafka (Amazon MSK). Use an AWS Lambda function to transform the most recent 10 minutes of data before inference.', 'Ingest event data by using Amazon Managed Streaming for Apache Kafka (Amazon MSK). Use an AWS Lambda function to transform the most recent 10 minutes of data before inference.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -11992,37 +11795,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,198);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to create three SageMaker batch transform jobs, one batch transform job for each model for each document.', 'Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to create three SageMaker batch transform jobs, one batch transform job for each model for each document.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy all the models to a single SageMaker endpoint. Treat each model as a production variant. Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to call each production variant and return the results of each model.', 'Deploy all the models to a single SageMaker endpoint. Treat each model as a production variant. Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to call each production variant and return the results of each model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy each model to its own SageMaker endpoint Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to call each endpoint and return the results of each model.', 'Deploy each model to its own SageMaker endpoint Configure an S3 event notification that invokes an AWS Lambda function when new documents are created. Configure the Lambda function to call each endpoint and return the results of each model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy each model to its own SageMaker endpoint. Create three AWS Lambda functions. Configure each Lambda function to call a different endpoint and return the results. Configure three S3 event notifications to invoke the Lambda functions when new documents are created.', 'Deploy each model to its own SageMaker endpoint. Create three AWS Lambda functions. Configure each Lambda function to call a different endpoint and return the results. Configure three S3 event notifications to invoke the Lambda functions when new documents are created.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12052,42 +11854,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,199);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Continue to use the SageMaker linear learner algorithm. Reduce the number of features with the SageMaker principal component analysis (PCA) algorithm.', 'Continue to use the SageMaker linear learner algorithm. Reduce the number of features with the SageMaker principal component analysis (PCA) algorithm.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Continue to use the SageMaker linear learner algorithm. Reduce the number of features with the scikit-learn multi-dimensional scaling (MDS) algorithm.', 'Continue to use the SageMaker linear learner algorithm. Reduce the number of features with the scikit-learn multi-dimensional scaling (MDS) algorithm.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Continue to use the SageMaker linear learner algorithm. Set the predictor type to regressor.', 'Continue to use the SageMaker linear learner algorithm. Set the predictor type to regressor.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker k-means algorithm with k of less than 1,000 to train the model.', 'Use the SageMaker k-means algorithm with k of less than 1,000 to train the model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker k-nearest neighbors (k-NN) algorithm. Set a dimension reduction target of less than 1,000 to train the model.', 'Use the SageMaker k-nearest neighbors (k-NN) algorithm. Set a dimension reduction target of less than 1,000 to train the model.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12117,37 +11918,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,200);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the endpoint instance to an ml.t3 burstable instance with the same vCPU number as the ml.m5.xlarge instance has.', 'Change the endpoint instance to an ml.t3 burstable instance with the same vCPU number as the ml.m5.xlarge instance has.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Attach an Amazon Elastic Inference ml.eia2.medium accelerator to the endpoint instance.', 'Attach an Amazon Elastic Inference ml.eia2.medium accelerator to the endpoint instance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable Amazon SageMaker Autopilot to automatically tune performance of the model.', 'Enable Amazon SageMaker Autopilot to automatically tune performance of the model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the endpoint instance to use a memory optimized ML instance.', 'Change the endpoint instance to use a memory optimized ML instance.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12177,37 +11977,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,201);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon CloudWatch algorithm metrics for visibility into the SageMaker training weights, gradients, biases, and activation outputs. Compute the filter ranks based on this information. Apply pruning to remove the low-ranking filters. Set the new weights. Run a new training job with the pruned model.', 'Use Amazon CloudWatch algorithm metrics for visibility into the SageMaker training weights, gradients, biases, and activation outputs. Compute the filter ranks based on this information. Apply pruning to remove the low-ranking filters. Set the new weights. Run a new training job with the pruned model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Debugger for visibility into the training weights, gradients, biases, and activation outputs. Adjust the model hyperparameters, and look for lower inference times. Run a new training job.', 'Use SageMaker Debugger for visibility into the training weights, gradients, biases, and activation outputs. Adjust the model hyperparameters, and look for lower inference times. Run a new training job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Debugger for visibility into the training weights, gradients, biases, and activation outputs. Compute the filter ranks based on this information. Apply pruning to remove the low-ranking filters. Set the new weights. Run a new training job with the pruned model.', 'Use SageMaker Debugger for visibility into the training weights, gradients, biases, and activation outputs. Compute the filter ranks based on this information. Apply pruning to remove the low-ranking filters. Set the new weights. Run a new training job with the pruned model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Model Monitor for visibility into the ModelLatency metric and OverheadLatency metric of the model after the model is deployed. Adjust the model hyperparameters, and look for lower inference times. Run a new training job.', 'Use SageMaker Model Monitor for visibility into the ModelLatency metric and OverheadLatency metric of the model after the model is deployed. Adjust the model hyperparameters, and look for lower inference times. Run a new training job.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12237,37 +12036,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,202);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Put the TFRecord data into an Amazon S3 bucket. Use AWS Glue or AWS Lambda to reformat the data to protobuf format and store the data in a second S3 bucket. Point the SageMaker training invocation to the second S3 bucket.', 'Put the TFRecord data into an Amazon S3 bucket. Use AWS Glue or AWS Lambda to reformat the data to protobuf format and store the data in a second S3 bucket. Point the SageMaker training invocation to the second S3 bucket.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rewrite the train.py script to add a section that converts TFRecord data to protobuf format. Point the SageMaker training invocation to the local path of the data. Ingest the protobuf data instead of the TFRecord data.', 'Rewrite the train.py script to add a section that converts TFRecord data to protobuf format. Point the SageMaker training invocation to the local path of the data. Ingest the protobuf data instead of the TFRecord data.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker script mode, and use train.py unchanged. Point the SageMaker training invocation to the local path of the data without reformatting the training data.', 'Use SageMaker script mode, and use train.py unchanged. Point the SageMaker training invocation to the local path of the data without reformatting the training data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker script mode, and use train.py unchanged. Put the TFRecord data into an Amazon S3 bucket. Point the SageMaker training invocation to the S3 bucket without reformatting the training data.', 'Use SageMaker script mode, and use train.py unchanged. Put the TFRecord data into an Amazon S3 bucket. Point the SageMaker training invocation to the S3 bucket without reformatting the training data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12297,37 +12095,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,203);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create the training jobs as AWS Batch jobs that use Amazon EC2 Spot Instances in a managed compute environment.', 'Create the training jobs as AWS Batch jobs that use Amazon EC2 Spot Instances in a managed compute environment.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon EC2 Spot Instances to run the training jobs. Use a Spot Instance interruption notice to save a snapshot of the model to Amazon S3 before an instance is terminated.', 'Use Amazon EC2 Spot Instances to run the training jobs. Use a Spot Instance interruption notice to save a snapshot of the model to Amazon S3 before an instance is terminated.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to run the training jobs. Save model weights to Amazon S3.', 'Use AWS Lambda to run the training jobs. Save model weights to Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use managed spot training in Amazon SageMaker. Launch the training jobs with checkpointing enabled.', 'Use managed spot training in Amazon SageMaker. Launch the training jobs with checkpointing enabled.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12357,37 +12154,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,204);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Model Monitor to create a data quality baseline. Confirm that the emit_metrics option is set to Enabled in the baseline constraints file. Set up an Amazon CloudWatch alarm for the metric.', 'Use Amazon SageMaker Model Monitor to create a data quality baseline. Confirm that the emit_metrics option is set to Enabled in the baseline constraints file. Set up an Amazon CloudWatch alarm for the metric.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Model Monitor to create a model quality baseline. Confirm that the emit_metrics option is set to Enabled in the baseline constraints file. Set up an Amazon CloudWatch alarm for the metric.', 'Use Amazon SageMaker Model Monitor to create a model quality baseline. Confirm that the emit_metrics option is set to Enabled in the baseline constraints file. Set up an Amazon CloudWatch alarm for the metric.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Debugger to create rules to capture feature values Set up an Amazon CloudWatch alarm for the rules.', 'Use Amazon SageMaker Debugger to create rules to capture feature values Set up an Amazon CloudWatch alarm for the rules.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon CloudWatch to monitor Amazon SageMaker endpoints. Analyze logs in Amazon CloudWatch Logs to check for data drift.', 'Use Amazon CloudWatch to monitor Amazon SageMaker endpoints. Analyze logs in Amazon CloudWatch Logs to check for data drift.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12417,37 +12213,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,205);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare a custom HPO script that runs multiple training jobs in SageMaker Studio in local mode to tune the model of the custom container image. Use the automatic model tuning capability of SageMaker with early stopping enabled to tune the model of the built-in image classification algorithm. Select the model with the best objective metric value.', 'Prepare a custom HPO script that runs multiple training jobs in SageMaker Studio in local mode to tune the model of the custom container image. Use the automatic model tuning capability of SageMaker with early stopping enabled to tune the model of the built-in image classification algorithm. Select the model with the best objective metric value.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Autopilot to tune the model of the custom container image. Use the automatic model tuning capability of SageMaker with early stopping enabled to tune the model of the built-in image classification algorithm. Compare the objective metric values of the resulting models of the SageMaker AutopilotAutoML job and the automatic model tuning job. Select the model with the best objective metric value.', 'Use SageMaker Autopilot to tune the model of the custom container image. Use the automatic model tuning capability of SageMaker with early stopping enabled to tune the model of the built-in image classification algorithm. Compare the objective metric values of the resulting models of the SageMaker AutopilotAutoML job and the automatic model tuning job. Select the model with the best objective metric value.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Experiments to run and manage multiple training jobs and tune the model of the custom container image. Use the automatic model tuning capability of SageMaker to tune the model of the built-in image classification algorithm. Select the model with the best objective metric value.', 'Use SageMaker Experiments to run and manage multiple training jobs and tune the model of the custom container image. Use the automatic model tuning capability of SageMaker to tune the model of the built-in image classification algorithm. Select the model with the best objective metric value.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the automatic model tuning capability of SageMaker to tune the models of the custom container image and the built-in image classification algorithm at the same time. Select the model with the best objective metric value.', 'Use the automatic model tuning capability of SageMaker to tune the models of the custom container image and the built-in image classification algorithm at the same time. Select the model with the best objective metric value.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12477,42 +12272,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,206);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch multiple medium-sized instances in a distributed SageMaker Processing job. Use the prebuilt Docker images for Apache Spark to query and plot the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 'Launch multiple medium-sized instances in a distributed SageMaker Processing job. Use the prebuilt Docker images for Apache Spark to query and plot the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch multiple medium-sized notebook instances with a PySpark kernel in distributed mode. Download the data from Amazon Redshift to the notebook cluster. Query and plot the relevant data. Export the relevant data from the notebook cluster to Amazon S3.', 'Launch multiple medium-sized notebook instances with a PySpark kernel in distributed mode. Download the data from Amazon Redshift to the notebook cluster. Query and plot the relevant data. Export the relevant data from the notebook cluster to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Secrets Manager to store the Amazon Redshift credentials. From a SageMaker Studio notebook, use the stored credentials to connect to Amazon Redshift with a Python adapter. Use the Python client to query the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 'Use AWS Secrets Manager to store the Amazon Redshift credentials. From a SageMaker Studio notebook, use the stored credentials to connect to Amazon Redshift with a Python adapter. Use the Python client to query the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Secrets Manager to store the Amazon Redshift credentials. Launch a SageMaker extra-large notebook instance with block storage that is slightly larger than 10 TB. Use the stored credentials to connect to Amazon Redshift with a Python adapter. Download, query, and plot the relevant data. Export the relevant data from the local notebook drive to Amazon S3.', 'Use AWS Secrets Manager to store the Amazon Redshift credentials. Launch a SageMaker extra-large notebook instance with block storage that is slightly larger than 10 TB. Use the stored credentials to connect to Amazon Redshift with a Python adapter. Download, query, and plot the relevant data. Export the relevant data from the local notebook drive to Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler to query and plot the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 'Use SageMaker Data Wrangler to query and plot the relevant data and to export the relevant data from Amazon Redshift to Amazon S3.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12542,37 +12336,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,207);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with pretrained weights in all layers except the last fully connected layer.', 'Initialize the model with pretrained weights in all layers except the last fully connected layer.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with pretrained weights in all layers. Stack a classifier on top of the first output position. Train the classifier with the labeled data.', 'Initialize the model with pretrained weights in all layers. Stack a classifier on top of the first output position. Train the classifier with the labeled data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with random weights in all layers. Replace the last fully connected layer with a classifier. Train the classifier with the labeled data.', 'Initialize the model with random weights in all layers. Replace the last fully connected layer with a classifier. Train the classifier with the labeled data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initialize the model with pretrained weights in all layers. Replace the last fully connected layer with a classifier. Train the classifier with the labeled data.', 'Initialize the model with pretrained weights in all layers. Replace the last fully connected layer with a classifier. Train the classifier with the labeled data.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12602,37 +12395,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,208);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Transcribe to process audio calls to produce transcripts, categorize calls, and detect issues. Use Amazon Comprehend to analyze sentiment.', 'Use Amazon Transcribe to process audio calls to produce transcripts, categorize calls, and detect issues. Use Amazon Comprehend to analyze sentiment.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Transcribe to process audio calls to produce transcripts. Use Amazon Comprehend to categorize calls, detect issues, and analyze sentiment', 'Use Amazon Transcribe to process audio calls to produce transcripts. Use Amazon Comprehend to categorize calls, detect issues, and analyze sentiment', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Contact Lens for Amazon Connect to process audio calls to produce transcripts, categorize calls, detect issues, and analyze sentiment.', 'Use Contact Lens for Amazon Connect to process audio calls to produce transcripts, categorize calls, detect issues, and analyze sentiment.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Contact Lens for Amazon Connect to process audio calls to produce transcripts. Use Amazon Comprehend to categorize calls, detect issues, and analyze sentiment.', 'Use Contact Lens for Amazon Connect to process audio calls to produce transcripts. Use Amazon Comprehend to categorize calls, detect issues, and analyze sentiment.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12662,37 +12454,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,209);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Pick a date so that 80% of the data points precede the date. Assign that group of data points as the training dataset. Assign all the remaining data points to the validation dataset.', 'Pick a date so that 80% of the data points precede the date. Assign that group of data points as the training dataset. Assign all the remaining data points to the validation dataset.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Pick a date so that 80% of the data points occur after the date. Assign that group of data points as the training dataset. Assign all the remaining data points to the validation dataset.', 'Pick a date so that 80% of the data points occur after the date. Assign that group of data points as the training dataset. Assign all the remaining data points to the validation dataset.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Starting from the earliest date in the dataset, pick eight data points for the training dataset and two data points for the validation dataset. Repeat this stratified sampling until no data points remain.', 'Starting from the earliest date in the dataset, pick eight data points for the training dataset and two data points for the validation dataset. Repeat this stratified sampling until no data points remain.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Sample data points randomly without replacement so that 80% of the data points are in the training dataset. Assign all the remaining data points to the validation dataset.', 'Sample data points randomly without replacement so that 80% of the data points are in the training dataset. Assign all the remaining data points to the validation dataset.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12722,37 +12513,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,210);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model by using a user-based collaborative filtering algorithm on Amazon SageMaker. Host the model on a SageMaker real-time endpoint. Configure an Amazon API Gateway API and an AWS Lambda function to handle real-time inference requests that the web application sends. Exclude the items that the user previously purchased from the results before sending the results back to the web application.', 'Train a model by using a user-based collaborative filtering algorithm on Amazon SageMaker. Host the model on a SageMaker real-time endpoint. Configure an Amazon API Gateway API and an AWS Lambda function to handle real-time inference requests that the web application sends. Exclude the items that the user previously purchased from the results before sending the results back to the web application.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon Personalize PERSONALIZED_RANKING recipe to train a model. Create a real-time filter to exclude items that the user previously purchased. Create and deploy a campaign on Amazon Personalize. Use the GetPersonalizedRanking API operation to get the real-time recommendations.', 'Use an Amazon Personalize PERSONALIZED_RANKING recipe to train a model. Create a real-time filter to exclude items that the user previously purchased. Create and deploy a campaign on Amazon Personalize. Use the GetPersonalizedRanking API operation to get the real-time recommendations.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon Personalize USER_PERSONALIZATION recipe to train a model. Create a real-time filter to exclude items that the user previously purchased. Create and deploy a campaign on Amazon Personalize. Use the GetRecommendations API operation to get the real-time recommendations.', 'Use an Amazon Personalize USER_PERSONALIZATION recipe to train a model. Create a real-time filter to exclude items that the user previously purchased. Create and deploy a campaign on Amazon Personalize. Use the GetRecommendations API operation to get the real-time recommendations.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a neural collaborative filtering model on Amazon SageMaker by using GPU instances. Host the model on a SageMaker real-time endpoint. Configure an Amazon API Gateway API and an AWS Lambda function to handle real-time inference requests that the web application sends. Exclude the items that the user previously purchased from the results before sending the results back to the web application.', 'Train a neural collaborative filtering model on Amazon SageMaker by using GPU instances. Host the model on a SageMaker real-time endpoint. Configure an Amazon API Gateway API and an AWS Lambda function to handle real-time inference requests that the web application sends. Exclude the items that the user previously purchased from the results before sending the results back to the web application.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12782,37 +12572,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,211);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a SageMaker incremental training based on the best candidate from the current model''s tuning job. Monitor the same metric that was used as the objective metric in the previous tuning, and look for improvements.', 'Run a SageMaker incremental training based on the best candidate from the current model''s tuning job. Monitor the same metric that was used as the objective metric in the previous tuning, and look for improvements.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the Area Under the ROC Curve (AUC) as the objective metric for a new SageMaker automatic hyperparameter tuning job. Use the same maximum training jobs parameter that was used in the previous tuning job.', 'Set the Area Under the ROC Curve (AUC) as the objective metric for a new SageMaker automatic hyperparameter tuning job. Use the same maximum training jobs parameter that was used in the previous tuning job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run a SageMaker warm start hyperparameter tuning job based on the current model’s tuning job. Use the same objective metric that was used in the previous tuning.', 'Run a SageMaker warm start hyperparameter tuning job based on the current model’s tuning job. Use the same objective metric that was used in the previous tuning.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the F1 score as the objective metric for a new SageMaker automatic hyperparameter tuning job. Double the maximum training jobs parameter that was used in the previous tuning job.', 'Set the F1 score as the objective metric for a new SageMaker automatic hyperparameter tuning job. Double the maximum training jobs parameter that was used in the previous tuning job.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12842,37 +12631,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,212);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue crawler to convert the file format.', 'Use an AWS Glue crawler to convert the file format.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write a script to convert the file format. Run the script as an AWS Glue job.', 'Write a script to convert the file format. Run the script as an AWS Glue job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write a script to convert the file format. Run the script on an Amazon EMR cluster.', 'Write a script to convert the file format. Run the script on an Amazon EMR cluster.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write a script to convert the file format. Run the script in an Amazon SageMaker notebook.', 'Write a script to convert the file format. Run the script in an Amazon SageMaker notebook.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12902,37 +12690,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,213);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the devices to send streaming data to an Amazon Kinesis data stream. Configure an Amazon Kinesis Data Firehose delivery stream to automatically consume the Kinesis data stream, transform the data with an AWS Lambda function, and save the output into an Amazon S3 bucket.', 'Configure the devices to send streaming data to an Amazon Kinesis data stream. Configure an Amazon Kinesis Data Firehose delivery stream to automatically consume the Kinesis data stream, transform the data with an AWS Lambda function, and save the output into an Amazon S3 bucket.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the devices to send streaming data to an Amazon S3 bucket. Configure an AWS Lambda function that is invoked by S3 event notifications to transform the data and load the data into an Amazon Kinesis data stream. Configure an Amazon Kinesis Data Firehose delivery stream to automatically consume the Kinesis data stream and load the output back into the S3 bucket.', 'Configure the devices to send streaming data to an Amazon S3 bucket. Configure an AWS Lambda function that is invoked by S3 event notifications to transform the data and load the data into an Amazon Kinesis data stream. Configure an Amazon Kinesis Data Firehose delivery stream to automatically consume the Kinesis data stream and load the output back into the S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the devices to send streaming data to an Amazon S3 bucket. Configure an AWS Glue job that is invoked by S3 event notifications to read the data, transform the data, and load the output into a new S3 bucket.', 'Configure the devices to send streaming data to an Amazon S3 bucket. Configure an AWS Glue job that is invoked by S3 event notifications to read the data, transform the data, and load the output into a new S3 bucket.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the devices to send streaming data to an Amazon Kinesis Data Firehose delivery stream. Configure an AWS Glue job that connects to the delivery stream to transform the data and load the output into an Amazon S3 bucket.', 'Configure the devices to send streaming data to an Amazon Kinesis Data Firehose delivery stream. Configure an AWS Glue job that connects to the delivery stream to transform the data and load the output into an Amazon S3 bucket.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -12962,37 +12749,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,214);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Lambda function that can transform the incoming records. Enable data transformation on the ingestion Kinesis Data Firehose delivery stream. Use the Lambda function as the invocation target.', 'Create an AWS Lambda function that can transform the incoming records. Enable data transformation on the ingestion Kinesis Data Firehose delivery stream. Use the Lambda function as the invocation target.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy an Amazon EMR cluster that runs Apache Spark and includes the transformation logic. Use Amazon EventBridge (Amazon CloudWatch Events) to schedule an AWS Lambda function to launch the cluster each day and transform the records that accumulate in Amazon S3. Deliver the transformed records to Amazon S3.', 'Deploy an Amazon EMR cluster that runs Apache Spark and includes the transformation logic. Use Amazon EventBridge (Amazon CloudWatch Events) to schedule an AWS Lambda function to launch the cluster each day and transform the records that accumulate in Amazon S3. Deliver the transformed records to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy an Amazon S3 File Gateway in the stores. Update the in-store software to deliver data to the S3 File Gateway. Use a scheduled daily AWS Glue job to transform the data that the S3 File Gateway delivers to Amazon S3.', 'Deploy an Amazon S3 File Gateway in the stores. Update the in-store software to deliver data to the S3 File Gateway. Use a scheduled daily AWS Glue job to transform the data that the S3 File Gateway delivers to Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Launch a fleet of Amazon EC2 instances that include the transformation logic. Configure the EC2 instances with a daily cron job to transform the records that accumulate in Amazon S3. Deliver the transformed records to Amazon S3.', 'Launch a fleet of Amazon EC2 instances that include the transformation logic. Configure the EC2 instances with a daily cron job to transform the records that accumulate in Amazon S3. Deliver the transformed records to Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13022,42 +12808,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,215);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe with custom vocabularies', 'Amazon Transcribe with custom vocabularies', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Transcribe with custom language models', 'Amazon Transcribe with custom language models', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker Seq2Seq', 'Amazon SageMaker Seq2Seq', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker with Hugging Face Speech2Text', 'Amazon SageMaker with Hugging Face Speech2Text', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Translate', 'Amazon Translate', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13087,37 +12872,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,216);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Forecast with Holidays featurization and the built-in autoregressive integrated moving average (ARIMA) algorithm to train the model.', 'Use Amazon Forecast with Holidays featurization and the built-in autoregressive integrated moving average (ARIMA) algorithm to train the model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Forecast with Holidays featurization and the built-in DeepAR+ algorithm to train the model.', 'Use Amazon Forecast with Holidays featurization and the built-in DeepAR+ algorithm to train the model.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Processing to enrich the data with holiday information. Train the model by using the SageMaker DeepAR built-in algorithm.', 'Use Amazon SageMaker Processing to enrich the data with holiday information. Train the model by using the SageMaker DeepAR built-in algorithm.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Processing to enrich the data with holiday information. Train the model by using the Gluon Time Series (GluonTS) toolkit.', 'Use Amazon SageMaker Processing to enrich the data with holiday information. Train the model by using the Gluon Time Series (GluonTS) toolkit.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13147,37 +12931,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,217);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Adjust the class weight to account for each machine type.', 'Adjust the class weight to account for each machine type.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Oversample the failure cases by using the Synthetic Minority Oversampling Technique (SMOTE).', 'Oversample the failure cases by using the Synthetic Minority Oversampling Technique (SMOTE).', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Undersample the non-failure events. Stratify the non-failure events by machine type.', 'Undersample the non-failure events. Stratify the non-failure events by machine type.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Undersample the non-failure events by using the Synthetic Minority Oversampling Technique (SMOTE).', 'Undersample the non-failure events by using the Synthetic Minority Oversampling Technique (SMOTE).', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13207,37 +12990,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,218);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a custom clustering model. Create a Dockerfile and build a Docker image. Register the Docker image in Amazon Elastic Container Registry (Amazon ECR). Use the custom image in Amazon SageMaker to generate a trained model.', 'Build a custom clustering model. Create a Dockerfile and build a Docker image. Register the Docker image in Amazon Elastic Container Registry (Amazon ECR). Use the custom image in Amazon SageMaker to generate a trained model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tokenize the data and transform the data into tabular data. Train an Amazon SageMaker k-means model to generate the product categories.', 'Tokenize the data and transform the data into tabular data. Train an Amazon SageMaker k-means model to generate the product categories.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an Amazon SageMaker Neural Topic Model (NTM) model to generate the product categories.', 'Train an Amazon SageMaker Neural Topic Model (NTM) model to generate the product categories.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an Amazon SageMaker Blazing Text model to generate the product categories.', 'Train an Amazon SageMaker Blazing Text model to generate the product categories.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13267,37 +13049,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,219);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition.', 'Use Amazon Rekognition.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a custom convolutional neural network (CNN).', 'Use a custom convolutional neural network (CNN).', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker Object Detection algorithm.', 'Use the Amazon SageMaker Object Detection algorithm.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Lookout for Vision.', 'Use Amazon Lookout for Vision.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13327,37 +13108,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,220);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'SageMaker Batch Transform', 'SageMaker Batch Transform', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'SageMaker Asynchronous Inference', 'SageMaker Asynchronous Inference', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'SageMaker Processing', 'SageMaker Processing', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A SageMaker multi-container endpoint', 'A SageMaker multi-container endpoint', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13387,37 +13167,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,221);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Calculate the principal component analysis (PCA) components. Run the k-means clustering algorithm for a range of k by using only the first two PCA components. For each value of k, create a scatter plot with a different color for each cluster. The optimal value of k is the value where the clusters start to look reasonably separated.', 'Calculate the principal component analysis (PCA) components. Run the k-means clustering algorithm for a range of k by using only the first two PCA components. For each value of k, create a scatter plot with a different color for each cluster. The optimal value of k is the value where the clusters start to look reasonably separated.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Calculate the principal component analysis (PCA) components. Create a line plot of the number of components against the explained variance. The optimal value of k is the number of PCA components after which the curve starts decreasing in a linear fashion.', 'Calculate the principal component analysis (PCA) components. Create a line plot of the number of components against the explained variance. The optimal value of k is the number of PCA components after which the curve starts decreasing in a linear fashion.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a t-distributed stochastic neighbor embedding (t-SNE) plot for a range of perplexity values. The optimal value of k is the value of perplexity, where the clusters start to look reasonably separated.', 'Create a t-distributed stochastic neighbor embedding (t-SNE) plot for a range of perplexity values. The optimal value of k is the value of perplexity, where the clusters start to look reasonably separated.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run the k-means clustering algorithm for a range of k. For each value of k, calculate the sum of squared errors (SSE). Plot a line chart of the SSE for each value of k. The optimal value of k is the point after which the curve starts decreasing in a linear fashion.', 'Run the k-means clustering algorithm for a range of k. For each value of k, calculate the sum of squared errors (SSE). Plot a line chart of the SSE for each value of k. The optimal value of k is the point after which the curve starts decreasing in a linear fashion.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13447,42 +13226,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,222);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Pipelines to create an automated workflow that extracts fresh data, trains the model, and deploys a new version of the model.', 'Use SageMaker Pipelines to create an automated workflow that extracts fresh data, trains the model, and deploys a new version of the model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure SageMaker Model Monitor with an accuracy threshold to check for model drift. Initiate an Amazon CloudWatch alarm when the threshold is exceeded. Connect the workflow in SageMaker Pipelines with the CloudWatch alarm to automatically initiate retraining.', 'Configure SageMaker Model Monitor with an accuracy threshold to check for model drift. Initiate an Amazon CloudWatch alarm when the threshold is exceeded. Connect the workflow in SageMaker Pipelines with the CloudWatch alarm to automatically initiate retraining.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store the model predictions in Amazon S3. Create a daily SageMaker Processing job that reads the predictions from Amazon S3, checks for changes in model prediction accuracy, and sends an email notification if a significant change is detected.', 'Store the model predictions in Amazon S3. Create a daily SageMaker Processing job that reads the predictions from Amazon S3, checks for changes in model prediction accuracy, and sends an email notification if a significant change is detected.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Rerun the steps in the Jupyter notebook that is hosted on SageMaker Studio notebooks to retrain the model and redeploy a new version of the model.', 'Rerun the steps in the Jupyter notebook that is hosted on SageMaker Studio notebooks to retrain the model and redeploy a new version of the model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Export the training and deployment code from the SageMaker Studio notebooks into a Python script. Package the script into an Amazon Elastic Container Service (Amazon ECS) task that an AWS Lambda function can initiate.', 'Export the training and deployment code from the SageMaker Studio notebooks into a Python script. Package the script into an Amazon Elastic Container Service (Amazon ECS) task that an AWS Lambda function can initiate.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13512,42 +13290,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,223);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Downsample the data uniformly to reduce the amount of data.', 'Downsample the data uniformly to reduce the amount of data.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two different models for different sections of the data.', 'Create two different models for different sections of the data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Downsample the data in sections where Price < 50.', 'Downsample the data in sections where Price < 50.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Offset the input data by a constant value where Price > 50.', 'Offset the input data by a constant value where Price > 50.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Examine the input data, and apply non-linear data transformations where appropriate.', 'Examine the input data, and apply non-linear data transformations where appropriate.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13577,37 +13354,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,224);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-nearest neighbors (k-NN) with dimension reduction', 'K-nearest neighbors (k-NN) with dimension reduction', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear learner with early stopping', 'Linear learner with early stopping', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-means', 'K-means', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Principal component analysis (PCA) with the algorithm mode set to random', 'Principal component analysis (PCA) with the algorithm mode set to random', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13637,37 +13413,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,225);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use CPU utilization metrics that are captured in Amazon CloudWatch. Configure a CloudWatch alarm to stop the training job early if low CPU utilization occurs.', 'Use CPU utilization metrics that are captured in Amazon CloudWatch. Configure a CloudWatch alarm to stop the training job early if low CPU utilization occurs.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use high-resolution custom metrics that are captured in Amazon CloudWatch. Configure an AWS Lambda function to analyze the metrics and to stop the training job early if issues are detected.', 'Use high-resolution custom metrics that are captured in Amazon CloudWatch. Configure an AWS Lambda function to analyze the metrics and to stop the training job early if issues are detected.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Debugger vanishing_gradient and LowGPUUtilization built-in rules to detect issues and to launch the StopTrainingJob action if issues are detected.', 'Use the SageMaker Debugger vanishing_gradient and LowGPUUtilization built-in rules to detect issues and to launch the StopTrainingJob action if issues are detected.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Debugger confusion and feature_importance_overweight built-in rules to detect issues and to launch the StopTrainingJob action if issues are detected.', 'Use the SageMaker Debugger confusion and feature_importance_overweight built-in rules to detect issues and to launch the StopTrainingJob action if issues are detected.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13697,37 +13472,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,226);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a SageMaker notebook instance. Upload the model artifact to the notebook. Use the plot_importance() method in the Python XGBoost interface to create a feature importance chart for the individual predictions.', 'Create a SageMaker notebook instance. Upload the model artifact to the notebook. Use the plot_importance() method in the Python XGBoost interface to create a feature importance chart for the individual predictions.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model by using SageMaker Debugger. Configure Debugger to calculate and collect Shapley values. Create a chart that shows features and SHapley. Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 'Retrain the model by using SageMaker Debugger. Configure Debugger to calculate and collect Shapley values. Create a chart that shows features and SHapley. Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up and run an explainability job powered by SageMaker Clarify to analyze the individual customer data, using the training data as a baseline. Create a chart that shows features and SHapley Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 'Set up and run an explainability job powered by SageMaker Clarify to analyze the individual customer data, using the training data as a baseline. Create a chart that shows features and SHapley Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Model Monitor to create Shapley values that help explain model behavior. Store the Shapley values in Amazon S3. Create a chart that shows features and SHapley Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 'Use SageMaker Model Monitor to create Shapley values that help explain model behavior. Store the Shapley values in Amazon S3. Create a chart that shows features and SHapley Additive explanations (SHAP) values to explain how the features affect the model outcomes.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13757,42 +13531,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,227);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Class imbalance', 'Class imbalance', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Conditional demographic disparity', 'Conditional demographic disparity', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Difference in proportions of labels', 'Difference in proportions of labels', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Jensen-Shannon divergence', 'Jensen-Shannon divergence', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Kullback-Leibler divergence', 'Kullback-Leibler divergence', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13822,37 +13595,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,228);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model by using the Autoregressive Integrated Moving Average (ARIMA) algorithm. Evaluate the model by using the Weighted Quantile Loss (wQL) metric at 0.75 (P75).', 'Train a model by using the Autoregressive Integrated Moving Average (ARIMA) algorithm. Evaluate the model by using the Weighted Quantile Loss (wQL) metric at 0.75 (P75).', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model by using the Autoregressive Integrated Moving Average (ARIMA) algorithm. Evaluate the model by using the Weighted Absolute Percentage Error (WAPE) metric.', 'Train a model by using the Autoregressive Integrated Moving Average (ARIMA) algorithm. Evaluate the model by using the Weighted Absolute Percentage Error (WAPE) metric.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model by using the Convolutional Neural Network - Quantile Regression (CNN-QR) algorithm. Evaluate the model by using the Weighted Quantile Loss (wQL) metric at 0.75 (P75).', 'Train a model by using the Convolutional Neural Network - Quantile Regression (CNN-QR) algorithm. Evaluate the model by using the Weighted Quantile Loss (wQL) metric at 0.75 (P75).', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a model by using the Convolutional Neural Network - Quantile Regression (CNN-QR) algorithm. Evaluate the model by using the Weighted Absolute Percentage Error (WAPE) metric.', 'Train a model by using the Convolutional Neural Network - Quantile Regression (CNN-QR) algorithm. Evaluate the model by using the Weighted Absolute Percentage Error (WAPE) metric.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13882,42 +13654,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,229);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run distributed training jobs in a private VPC. Enable inter-container traffic encryption.', 'Run distributed training jobs in a private VPC. Enable inter-container traffic encryption.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run distributed training jobs across multiple VPCs. Enable VPC peering.', 'Run distributed training jobs across multiple VPCs. Enable VPC peering.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an S3 VPC endpoint. Then configure network routes, endpoint policies, and S3 bucket policies.', 'Create an S3 VPC endpoint. Then configure network routes, endpoint policies, and S3 bucket policies.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Grant read-only access to SageMaker resources by using an IAM role.', 'Grant read-only access to SageMaker resources by using an IAM role.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a NAT gateway. Assign an Elastic IP address for the NAT gateway.', 'Create a NAT gateway. Assign an Elastic IP address for the NAT gateway.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -13947,37 +13718,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,230);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Elastic Inference on the SageMaker hosted endpoint.', 'Use Amazon Elastic Inference on the SageMaker hosted endpoint.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the CNN with more layers and a larger dataset.', 'Retrain the CNN with more layers and a larger dataset.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the CNN with more layers and a smaller dataset.', 'Retrain the CNN with more layers and a smaller dataset.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Choose a SageMaker instance type that has multiple GPUs.', 'Choose a SageMaker instance type that has multiple GPUs.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14007,42 +13777,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,231);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Identify the existing data in the databases and S3 buckets. Link the data to AWS Lake Formation.', 'Identify the existing data in the databases and S3 buckets. Link the data to AWS Lake Formation.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Identify the existing data in the databases and S3 buckets. Link the data to AWS Glue.', 'Identify the existing data in the databases and S3 buckets. Link the data to AWS Glue.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run AWS Glue crawlers on the linked data sources to create a central data catalog.', 'Run AWS Glue crawlers on the linked data sources to create a central data catalog.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply granular access policies by using AWS Identity and Access Management (1AM). Configure server-side encryption on each data source.', 'Apply granular access policies by using AWS Identity and Access Management (1AM). Configure server-side encryption on each data source.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply granular access policies and encryption by using AWS Lake Formation.', 'Apply granular access policies and encryption by using AWS Lake Formation.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14072,42 +13841,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,232);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Shuffle the dataset with a different seed.', 'Shuffle the dataset with a different seed.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the learning rate.', 'Decrease the learning rate.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of layers in the network.', 'Increase the number of layers in the network.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add L1 regularization and L2 regularization.', 'Add L1 regularization and L2 regularization.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add dropout.', 'Add dropout.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14137,37 +13905,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,233);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model with L1 regularization applied.', 'Retrain the model with L1 regularization applied.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model with L2 regularization applied.', 'Retrain the model with L2 regularization applied.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model with dropout regularization applied.', 'Retrain the model with dropout regularization applied.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Retrain the model by using more data.', 'Retrain the model by using more data.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14197,37 +13964,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,234);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply the Synthetic Minority Oversampling Technique (SMOTE) on the minority class in the training dataset. Retrain the model with the updated training data.', 'Apply the Synthetic Minority Oversampling Technique (SMOTE) on the minority class in the training dataset. Retrain the model with the updated training data.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply the Synthetic Minority Oversampling Technique (SMOTE) on the majority class in the training dataset. Retrain the model with the updated training data.', 'Apply the Synthetic Minority Oversampling Technique (SMOTE) on the majority class in the training dataset. Retrain the model with the updated training data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Undersample the minority class.', 'Undersample the minority class.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Oversample the majority class.', 'Oversample the majority class.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14257,37 +14023,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,235);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use File mode in SageMaker to copy the dataset from the S3 buckets to the ML instance storage.', 'Use File mode in SageMaker to copy the dataset from the S3 buckets to the ML instance storage.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon FSx for Lustre file system. Link the file system to the S3 buckets.', 'Create an Amazon FSx for Lustre file system. Link the file system to the S3 buckets.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Elastic File System (Amazon EFS) file system. Mount the file system to the training instances.', 'Create an Amazon Elastic File System (Amazon EFS) file system. Mount the file system to the training instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use FastFile mode in SageMaker to stream the files on demand from the S3 buckets.', 'Use FastFile mode in SageMaker to stream the files on demand from the S3 buckets.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14317,37 +14082,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,236);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'One-hot encoding', 'One-hot encoding', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Cartesian product transformation', 'Cartesian product transformation', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Quantile binning', 'Quantile binning', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Normalization', 'Normalization', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14377,37 +14141,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,237);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an S3 bucket for each dataset. Create an ACL for each S3 bucket. For each S3 bucket that contains a sensitive dataset, set the ACL to allow access only from the Finance department user group. Allow all three department user groups to access each S3 bucket that contains a non-sensitive dataset.', 'Create an S3 bucket for each dataset. Create an ACL for each S3 bucket. For each S3 bucket that contains a sensitive dataset, set the ACL to allow access only from the Finance department user group. Allow all three department user groups to access each S3 bucket that contains a non-sensitive dataset.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an S3 bucket for each dataset. For each S3 bucket that contains a sensitive dataset, set the bucket policy to allow access only from the Finance department user group. Allow all three department user groups to access each S3 bucket that contains a non-sensitive dataset.', 'Create an S3 bucket for each dataset. For each S3 bucket that contains a sensitive dataset, set the bucket policy to allow access only from the Finance department user group. Allow all three department user groups to access each S3 bucket that contains a non-sensitive dataset.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a single S3 bucket that includes two folders to separate the sensitive datasets from the non-sensitive datasets. For the Finance department user group, attach an IAM policy that provides access to both folders. For the Marketing and Human Resources department user groups, attach an IAM policy that provides access to only the folder that contains the non-sensitive datasets.', 'Create a single S3 bucket that includes two folders to separate the sensitive datasets from the non-sensitive datasets. For the Finance department user group, attach an IAM policy that provides access to both folders. For the Marketing and Human Resources department user groups, attach an IAM policy that provides access to only the folder that contains the non-sensitive datasets.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a single S3 bucket that includes two folders to separate the sensitive datasets from the non-sensitive datasets. Set the policy for the S3 bucket to allow only the Finance department user group to access the folder that contains the sensitive datasets. Allow all three department user groups to access the folder that contains the non-sensitive datasets.', 'Create a single S3 bucket that includes two folders to separate the sensitive datasets from the non-sensitive datasets. Set the policy for the S3 bucket to allow only the Finance department user group to access the folder that contains the sensitive datasets. Allow all three department user groups to access the folder that contains the non-sensitive datasets.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14437,37 +14200,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,238);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Video Streams to ingest, index, and store the data. Use the built-in integration with Amazon Rekognition for viewing by the security team.', 'Use Amazon Kinesis Video Streams to ingest, index, and store the data. Use the built-in integration with Amazon Rekognition for viewing by the security team.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Video Streams to ingest, index, and store the data. Use the built-in HTTP live streaming (HLS) capability for viewing by the security team.', 'Use Amazon Kinesis Video Streams to ingest, index, and store the data. Use the built-in HTTP live streaming (HLS) capability for viewing by the security team.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition Video and the GStreamer plugin to ingest the data for viewing by the security team. Use Amazon Kinesis Data Streams to index and store the data.', 'Use Amazon Rekognition Video and the GStreamer plugin to ingest the data for viewing by the security team. Use Amazon Kinesis Data Streams to index and store the data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to ingest, index, and store the data. Use the built-in HTTP live streaming (HLS) capability for viewing by the security team.', 'Use Amazon Kinesis Data Firehose to ingest, index, and store the data. Use the built-in HTTP live streaming (HLS) capability for viewing by the security team.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14497,37 +14259,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,239);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Textract for automatic processing. Use Amazon A2I with Amazon Mechanical Turk for manual review.', 'Use Amazon Textract for automatic processing. Use Amazon A2I with Amazon Mechanical Turk for manual review.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition for automatic processing. Use Amazon A2I with a private workforce option for manual review.', 'Use Amazon Rekognition for automatic processing. Use Amazon A2I with a private workforce option for manual review.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Transcribe for automatic processing. Use Amazon A2I with a private workforce option for manual review.', 'Use Amazon Transcribe for automatic processing. Use Amazon A2I with a private workforce option for manual review.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Panorama for automatic processing. Use Amazon A2I with Amazon Mechanical Turk for manual review.', 'Use AWS Panorama for automatic processing. Use Amazon A2I with Amazon Mechanical Turk for manual review.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14557,37 +14318,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,240);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into an Amazon S3 bucket by using Amazon Kinesis Data Firehose. Use a SageMaker Processing job to aggregate the data and to load the results into SageMaker Feature Store as an online feature group.', 'Load the data into an Amazon S3 bucket by using Amazon Kinesis Data Firehose. Use a SageMaker Processing job to aggregate the data and to load the results into SageMaker Feature Store as an online feature group.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write the data directly from the data stream into SageMaker Feature Store as an online feature group. Calculate the rolling averages in place within SageMaker Feature Store by using the SageMaker GetRecord API operation.', 'Write the data directly from the data stream into SageMaker Feature Store as an online feature group. Calculate the rolling averages in place within SageMaker Feature Store by using the SageMaker GetRecord API operation.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Consume the data stream by using an Amazon Kinesis Data Analytics SQL application that calculates the rolling averages. Generate a result stream. Consume the result stream by using a custom AWS Lambda function that publishes the results to SageMaker Feature Store as an online feature group.', 'Consume the data stream by using an Amazon Kinesis Data Analytics SQL application that calculates the rolling averages. Generate a result stream. Consume the result stream by using a custom AWS Lambda function that publishes the results to SageMaker Feature Store as an online feature group.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into an Amazon S3 bucket by using Amazon Kinesis Data Firehose. Use a SageMaker Processing job to load the data into SageMaker Feature Store as an offline feature group. Compute the rolling averages at query time.', 'Load the data into an Amazon S3 bucket by using Amazon Kinesis Data Firehose. Use a SageMaker Processing job to load the data into SageMaker Feature Store as an offline feature group. Compute the rolling averages at query time.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14617,37 +14377,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,241);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using Amazon QuickSight ML Insights. Visualize the data in QuickSight.', 'Use Amazon Kinesis Data Firehose to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using Amazon QuickSight ML Insights. Visualize the data in QuickSight.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using the Random Cut Forest (RCF) trained model in Amazon SageMaker. Visualize the data in Amazon QuickSight.', 'Use Amazon Kinesis Data Streams to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using the Random Cut Forest (RCF) trained model in Amazon SageMaker. Visualize the data in Amazon QuickSight.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using the Random Cut Forest (RCF) trained model in Amazon SageMaker. Visualize the data in Amazon QuickSight.', 'Use Amazon Kinesis Data Firehose to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using the Random Cut Forest (RCF) trained model in Amazon SageMaker. Visualize the data in Amazon QuickSight.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using Amazon QuickSight ML Insights. Visualize the data in QuickSight.', 'Use Amazon Kinesis Data Streams to stream the reservation data directly to Amazon S3. Detect high-demand outliers by using Amazon QuickSight ML Insights. Visualize the data in QuickSight.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14677,37 +14436,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,242);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the target_recall hyperparameter to 90%. Set the binary_classifier_model_selection_criteria hyperparameter to recall_at_target_precision.', 'Set the target_recall hyperparameter to 90%. Set the binary_classifier_model_selection_criteria hyperparameter to recall_at_target_precision.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the target_precision hyperparameter to 90%. Set the binary_classifier_model_selection_criteria hyperparameter to precision_at_target_recall.', 'Set the target_precision hyperparameter to 90%. Set the binary_classifier_model_selection_criteria hyperparameter to precision_at_target_recall.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use 90% of the historical data for training. Set the number of epochs to 20.', 'Use 90% of the historical data for training. Set the number of epochs to 20.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set the normalize_label hyperparameter to true. Set the number of classes to 2.', 'Set the normalize_label hyperparameter to true. Set the number of classes to 2.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14737,37 +14495,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,243);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'XGBoost', 'XGBoost', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Image Classification - TensorFlow', 'Image Classification - TensorFlow', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Object Detection - TensorFlow', 'Object Detection - TensorFlow', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Semantic segmentation - MXNet', 'Semantic segmentation - MXNet', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14797,37 +14554,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,244);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Recall', 'Recall', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'F1 score', 'F1 score', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Accuracy', 'Accuracy', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision', 'Precision', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14857,37 +14613,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,245);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the L1 regularization parameter. Do not change any other training parameters.', 'Increase the L1 regularization parameter. Do not change any other training parameters.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the L1 regularization parameter. Do not change any other training parameters.', 'Decrease the L1 regularization parameter. Do not change any other training parameters.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Introduce a large L2 regularization parameter. Do not change the current L1 regularization value.', 'Introduce a large L2 regularization parameter. Do not change the current L1 regularization value.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Introduce a small L2 regularization parameter. Do not change the current L1 regularization value.', 'Introduce a small L2 regularization parameter. Do not change the current L1 regularization value.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14917,37 +14672,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,246);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Feature Store BatchGetRecord API with the record identifier. Filter to find the latest record.', 'Use the SageMaker Feature Store BatchGetRecord API with the record identifier. Filter to find the latest record.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Athena query to retrieve the data from the feature table.', 'Create an Amazon Athena query to retrieve the data from the feature table.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon Athena query to retrieve the data from the feature table. Use the write_time value to find the latest record.', 'Create an Amazon Athena query to retrieve the data from the feature table. Use the write_time value to find the latest record.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Feature Store GetRecord API with the record identifier.', 'Use the SageMaker Feature Store GetRecord API with the record identifier.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -14977,42 +14731,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,247);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new endpoint configuration that includes a production variant for each of the two models.', 'Create a new endpoint configuration that includes a production variant for each of the two models.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new endpoint configuration that includes two target variants that point to different endpoints.', 'Create a new endpoint configuration that includes two target variants that point to different endpoints.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the new model to the existing endpoint.', 'Deploy the new model to the existing endpoint.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Update the existing endpoint to activate the new model.', 'Update the existing endpoint to activate the new model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Update the existing endpoint to use the new endpoint configuration.', 'Update the existing endpoint to use the new endpoint configuration.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15042,37 +14795,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,248);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon EMR cluster. Develop PySpark code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 'Create an Amazon EMR cluster. Develop PySpark code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a processing job in Amazon SageMaker. Develop Python code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 'Create a processing job in Amazon SageMaker. Develop Python code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new flow in Amazon SageMaker Data Wrangler. Import the S3 file, use the Featurize date/time transform to generate the new variables, and save the dataset as a new file in Amazon S3.', 'Create a new flow in Amazon SageMaker Data Wrangler. Import the S3 file, use the Featurize date/time transform to generate the new variables, and save the dataset as a new file in Amazon S3.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job. Develop code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 'Create an AWS Glue job. Develop code that can read the timestamp variable as a string, transform and create the new variables, and save the dataset as a new file in Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15102,37 +14854,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,249);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker DeepAR forecasting algorithm', 'Amazon SageMaker DeepAR forecasting algorithm', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker XGBoost algorithm', 'Amazon SageMaker XGBoost algorithm', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon SageMaker Latent Dirichlet Allocation (LDA) algorithm', 'Amazon SageMaker Latent Dirichlet Allocation (LDA) algorithm', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A convolutional neural network (CNN) and ResNet', 'A convolutional neural network (CNN) and ResNet', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15162,37 +14913,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,250);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon S3', 'Amazon S3', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Elastic Block Store (Amazon EBS)', 'Amazon Elastic Block Store (Amazon EBS)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS CloudTrail', 'AWS CloudTrail', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon CloudWatch', 'Amazon CloudWatch', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15222,37 +14972,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,251);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Supervised learning', 'Supervised learning', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Unsupervised learning', 'Unsupervised learning', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Semi-supervised learning', 'Semi-supervised learning', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinforcement learning', 'Reinforcement learning', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15282,37 +15031,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,252);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Turn on managed spot training by setting the use_spot_instances parameter to True. Pass the script to the estimator in the call to the TensorFlow fit() method.', 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Turn on managed spot training by setting the use_spot_instances parameter to True. Pass the script to the estimator in the call to the TensorFlow fit() method.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Adjust the training script to use distributed data parallelism. Specify appropriate values for the distribution parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 'Adjust the training script to use distributed data parallelism. Specify appropriate values for the distribution parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Set the MaxWaitTimeInSeconds parameter to be equal to the MaxRuntimeInSeconds parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 'Turn on SageMaker Training Compiler by adding compiler_config=TrainingCompilerConfig() as a parameter. Set the MaxWaitTimeInSeconds parameter to be equal to the MaxRuntimeInSeconds parameter. Pass the script to the estimator in the call to the TensorFlow fit() method.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15342,37 +15090,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,253);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon CloudWatch metrics to gain visibility into the SageMaker training weights, gradients, biases, and activation outputs. Compute the filter ranks based on the training information. Apply pruning to remove the low-ranking filters. Set new weights based on the pruned set of filters. Run a new training job with the pruned model.', 'Use Amazon CloudWatch metrics to gain visibility into the SageMaker training weights, gradients, biases, and activation outputs. Compute the filter ranks based on the training information. Apply pruning to remove the low-ranking filters. Set new weights based on the pruned set of filters. Run a new training job with the pruned model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Ground Truth to build and run data labeling workflows. Collect a larger labeled dataset with the labelling workflows. Run a new training job that uses the new labeled data with previous training data.', 'Use Amazon SageMaker Ground Truth to build and run data labeling workflows. Collect a larger labeled dataset with the labelling workflows. Run a new training job that uses the new labeled data with previous training data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Debugger to gain visibility into the training weights, gradients, biases, and activation outputs. Compute the filter ranks based on the training information. Apply pruning to remove the low-ranking filters. Set the new weights based on the pruned set of filters. Run a new training job with the pruned model.', 'Use Amazon SageMaker Debugger to gain visibility into the training weights, gradients, biases, and activation outputs. Compute the filter ranks based on the training information. Apply pruning to remove the low-ranking filters. Set the new weights based on the pruned set of filters. Run a new training job with the pruned model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Model Monitor to gain visibility into the ModelLatency metric and OverheadLatency metric of the model after the company deploys the model. Increase the model learning rate. Run a new training job.', 'Use Amazon SageMaker Model Monitor to gain visibility into the ModelLatency metric and OverheadLatency metric of the model after the company deploys the model. Increase the model learning rate. Run a new training job.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15402,42 +15149,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,254);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the amount of regularization that the model uses.', 'Increase the amount of regularization that the model uses.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Decrease the amount of regularization that the model uses.', 'Decrease the amount of regularization that the model uses.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of training examples that that model uses.', 'Increase the number of training examples that that model uses.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of test examples that the model uses.', 'Increase the number of test examples that the model uses.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of model features that the model uses.', 'Increase the number of model features that the model uses.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15467,37 +15213,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,255);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a deep convolutional neural network (CNN) classifier with the images as input. Include a linear output layer that outputs the probability that an image contains a car.', 'Use a deep convolutional neural network (CNN) classifier with the images as input. Include a linear output layer that outputs the probability that an image contains a car.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a deep convolutional neural network (CNN) classifier with the images as input. Include a softmax output layer that outputs the probability that an image contains a car.', 'Use a deep convolutional neural network (CNN) classifier with the images as input. Include a softmax output layer that outputs the probability that an image contains a car.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a deep multilayer perceptron (MLP) classifier with the images as input. Include a linear output layer that outputs the probability that an image contains a car.', 'Use a deep multilayer perceptron (MLP) classifier with the images as input. Include a linear output layer that outputs the probability that an image contains a car.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a deep multilayer perceptron (MLP) classifier with the images as input. Include a softmax output layer that outputs the probability that an image contains a car.', 'Use a deep multilayer perceptron (MLP) classifier with the images as input. Include a softmax output layer that outputs the probability that an image contains a car.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15527,42 +15272,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,256);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a ResNet model. Initiate full training mode by initializing the network with random weights.', 'Use a ResNet model. Initiate full training mode by initializing the network with random weights.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Inception model that is available with the SageMaker image classification algorithm.', 'Use an Inception model that is available with the SageMaker image classification algorithm.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a .lst file that contains a list of image files and corresponding class labels. Upload the .lst file to Amazon S3.', 'Create a .lst file that contains a list of image files and corresponding class labels. Upload the .lst file to Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Initiate transfer learning. Train the model by using the images of less common species.', 'Initiate transfer learning. Train the model by using the images of less common species.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an augmented manifest file in JSON Lines format.', 'Use an augmented manifest file in JSON Lines format.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15592,37 +15336,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,257);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Feature Store to store features for model training and inference. Create an online store for online inference. Create an offline store for model training. Create an IAM role for data scientists to access and search through feature groups.', 'Use Amazon SageMaker Feature Store to store features for model training and inference. Create an online store for online inference. Create an offline store for model training. Create an IAM role for data scientists to access and search through feature groups.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Feature Store to store features for model training and inference. Create an online store for both online inference and model training. Create an IAM role for data scientists to access and search through feature groups.', 'Use Amazon SageMaker Feature Store to store features for model training and inference. Create an online store for both online inference and model training. Create an IAM role for data scientists to access and search through feature groups.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create one Amazon S3 bucket to store online inference features. Create a second S3 bucket to store offline model training features. Turn on versioning for the S3 buckets and use tags to specify which tags are for online inference features and which are for offline model training features. Use Amazon Athena to query the S3 bucket for online inference. Connect the S3 bucket for offline model training to a SageMaker training job. Create an IAM policy that allows data scientists to access both buckets.', 'Create one Amazon S3 bucket to store online inference features. Create a second S3 bucket to store offline model training features. Turn on versioning for the S3 buckets and use tags to specify which tags are for online inference features and which are for offline model training features. Use Amazon Athena to query the S3 bucket for online inference. Connect the S3 bucket for offline model training to a SageMaker training job. Create an IAM policy that allows data scientists to access both buckets.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two separate Amazon DynamoDB tables to store online inference features and offline model training features. Use time-based versioning on both tables. Query the DynamoDB table for online inference. Move the data from DynamoDB to Amazon S3 when a new SageMaker training job is launched. Create an IAM policy that allows data scientists to access both tables.', 'Create two separate Amazon DynamoDB tables to store online inference features and offline model training features. Use time-based versioning on both tables. Query the DynamoDB table for online inference. Move the data from DynamoDB to Amazon S3 when a new SageMaker training job is launched. Create an IAM policy that allows data scientists to access both tables.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15652,37 +15395,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,258);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an object detection algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an ResNet-50 algorithm to determine hair style and hair color.', 'Use an object detection algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an ResNet-50 algorithm to determine hair style and hair color.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an object detection algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an XGBoost algorithm to determine hair style and hair color.', 'Use an object detection algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an XGBoost algorithm to determine hair style and hair color.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a semantic segmentation algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an ResNet-50 algorithm to determine hair style and hair color.', 'Use a semantic segmentation algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an ResNet-50 algorithm to determine hair style and hair color.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a semantic segmentation algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an XGBoost algorithm to determine hair style and hair.', 'Use a semantic segmentation algorithm to identify a visitor’s hair in video frames. Pass the identified hair to an XGBoost algorithm to determine hair style and hair.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15712,37 +15454,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,259);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Model Debugger to automatically debug the predictions, generate the explanation, and attach the explanation report.', 'Use SageMaker Model Debugger to automatically debug the predictions, generate the explanation, and attach the explanation report.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to provide feature importance and partial dependence plots. Use the plots to generate and attach the explanation report.', 'Use AWS Lambda to provide feature importance and partial dependence plots. Use the plots to generate and attach the explanation report.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Clarify to generate the explanation report. Attach the report to the predicted results.', 'Use SageMaker Clarify to generate the explanation report. Attach the report to the predicted results.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use custom Amazon CloudWatch metrics to generate the explanation report. Attach the report to the predicted results.', 'Use custom Amazon CloudWatch metrics to generate the explanation report. Attach the report to the predicted results.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15772,37 +15513,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,260);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Factorization Machines algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker endpoint to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 'Use the Factorization Machines algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker endpoint to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Neural Collaborative Filtering algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker endpoint to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 'Use the Neural Collaborative Filtering algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker endpoint to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Neural Collaborative Filtering algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker batch inference job to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 'Use the Neural Collaborative Filtering algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker batch inference job to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Factorization Machines algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker batch inference job to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 'Use the Factorization Machines algorithm to build a model that can generate personalized offer recommendations for customers. Deploy a SageMaker batch inference job to generate offer recommendations. Feed the offer recommendations into the bulk email marketing system.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15832,37 +15572,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,261);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate two Apache Parquet files, training.parquet and validation.parquet, by reading the images into a Pandas data frame and storing the data frame as a Parquet file. Upload the Parquet files to the training S3 bucket.', 'Generate two Apache Parquet files, training.parquet and validation.parquet, by reading the images into a Pandas data frame and storing the data frame as a Parquet file. Upload the Parquet files to the training S3 bucket.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Compress the training and validation directories by using the Snappy compression library. Upload the manifest and compressed files to the training S3 bucket.', 'Compress the training and validation directories by using the Snappy compression library. Upload the manifest and compressed files to the training S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Compress the training and validation directories by using the gzip compression library. Upload the manifest and compressed files to the training S3 bucket.', 'Compress the training and validation directories by using the gzip compression library. Upload the manifest and compressed files to the training S3 bucket.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Generate two RecordIO files, training.rec and validation.rec, from the manifest files by using the im2rec Apache MXNet utility tool. Upload the RecordIO files to the training S3 bucket.', 'Generate two RecordIO files, training.rec and validation.rec, from the manifest files by using the im2rec Apache MXNet utility tool. Upload the RecordIO files to the training S3 bucket.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15892,37 +15631,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,262);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Panorama to identify celebrities in the pictures. Use AWS CloudTrail to capture IP address and timestamp details.', 'Use AWS Panorama to identify celebrities in the pictures. Use AWS CloudTrail to capture IP address and timestamp details.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Panorama to identify celebrities in the pictures. Make calls to the AWS Panorama Device SDK to capture IP address and timestamp details.', 'Use AWS Panorama to identify celebrities in the pictures. Make calls to the AWS Panorama Device SDK to capture IP address and timestamp details.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition to identify celebrities in the pictures. Use AWS CloudTrail to capture IP address and timestamp details.', 'Use Amazon Rekognition to identify celebrities in the pictures. Use AWS CloudTrail to capture IP address and timestamp details.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition to identify celebrities in the pictures. Use the text detection feature to capture IP address and timestamp details.', 'Use Amazon Rekognition to identify celebrities in the pictures. Use the text detection feature to capture IP address and timestamp details.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -15952,42 +15690,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,263);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Latent Dirichlet allocation (LDA)', 'Latent Dirichlet allocation (LDA)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random forest classifier', 'Random forest classifier', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Neural topic modeling (NTM)', 'Neural topic modeling (NTM)', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear support vector machine', 'Linear support vector machine', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Linear regression', 'Linear regression', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16017,37 +15754,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,264);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Index company documents by using Amazon Kendra. Integrate the chatbot with Amazon Kendra by using the Amazon Kendra Query API operation to answer customer questions.', 'Index company documents by using Amazon Kendra. Integrate the chatbot with Amazon Kendra by using the Amazon Kendra Query API operation to answer customer questions.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a Bidirectional Attention Flow (BiDAF) network based on past customer questions and company documents. Deploy the model as a real-time Amazon SageMaker endpoint. Integrate the model with the chatbot by using the SageMaker Runtime InvokeEndpoint API operation to answer customer questions.', 'Train a Bidirectional Attention Flow (BiDAF) network based on past customer questions and company documents. Deploy the model as a real-time Amazon SageMaker endpoint. Integrate the model with the chatbot by using the SageMaker Runtime InvokeEndpoint API operation to answer customer questions.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an Amazon SageMaker Blazing Text model based on past customer questions and company documents. Deploy the model as a real-time SageMaker endpoint. Integrate the model with the chatbot by using the SageMaker Runtime InvokeEndpoint API operation to answer customer questions.', 'Train an Amazon SageMaker Blazing Text model based on past customer questions and company documents. Deploy the model as a real-time SageMaker endpoint. Integrate the model with the chatbot by using the SageMaker Runtime InvokeEndpoint API operation to answer customer questions.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Index company documents by using Amazon OpenSearch Service. Integrate the chatbot with OpenSearch Service by using the OpenSearch Service k-nearest neighbors (k-NN) Query API operation to answer customer questions.', 'Index company documents by using Amazon OpenSearch Service. Integrate the chatbot with OpenSearch Service by using the OpenSearch Service k-nearest neighbors (k-NN) Query API operation to answer customer questions.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16077,37 +15813,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,265);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up a private workforce that consists of the internal team. Use the private workforce and the SageMaker Ground Truth active learning feature to label the data. Use Amazon Rekognition Custom Labels for model training and hosting.', 'Set up a private workforce that consists of the internal team. Use the private workforce and the SageMaker Ground Truth active learning feature to label the data. Use Amazon Rekognition Custom Labels for model training and hosting.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up a private workforce that consists of the internal team. Use the private workforce to label the data. Use Amazon Rekognition Custom Labels for model training and hosting.', 'Set up a private workforce that consists of the internal team. Use the private workforce to label the data. Use Amazon Rekognition Custom Labels for model training and hosting.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up a private workforce that consists of the internal team. Use the private workforce and the SageMaker Ground Truth active learning feature to label the data. Use the SageMaker Object Detection algorithm to train a model. Use SageMaker batch transform for inference.', 'Set up a private workforce that consists of the internal team. Use the private workforce and the SageMaker Ground Truth active learning feature to label the data. Use the SageMaker Object Detection algorithm to train a model. Use SageMaker batch transform for inference.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up a public workforce. Use the public workforce to label the data. Use the SageMaker Object Detection algorithm to train a model. Use SageMaker batch transform for inference.', 'Set up a public workforce. Use the public workforce to label the data. Use the SageMaker Object Detection algorithm to train a model. Use SageMaker batch transform for inference.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16137,37 +15872,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,266);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler with a custom transformation to identify and redact the PII.', 'Use Amazon SageMaker Data Wrangler with a custom transformation to identify and redact the PII.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a custom AWS Lambda function to read the files, identify the PII. and redact the PII', 'Create a custom AWS Lambda function to read the files, identify the PII. and redact the PII', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue DataBrew to identity and redact the PII', 'Use AWS Glue DataBrew to identity and redact the PII', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Glue development endpoint to implement the PII redaction from within a notebook', 'Use an AWS Glue development endpoint to implement the PII redaction from within a notebook', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16197,37 +15931,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,267);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store the daily objects in the S3 Standard-InfrequentAccess (S3 Standard-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Flexible Retrieval after 90 days.', 'Store the daily objects in the S3 Standard-InfrequentAccess (S3 Standard-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Flexible Retrieval after 90 days.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store the daily objects in the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Flexible Retrieval after 90 days.', 'Store the daily objects in the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Flexible Retrieval after 90 days.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store the daily objects in the S3 Standard-InfrequentAccess (S3 Standard-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Deep Archive after 90 days.', 'Store the daily objects in the S3 Standard-InfrequentAccess (S3 Standard-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Deep Archive after 90 days.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Store the daily objects in the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Deep Archive after 90 days.', 'Store the daily objects in the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class. Configure an S3 Lifecycle rule to move the objects to S3 Glacier Deep Archive after 90 days.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16257,37 +15990,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,268);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Feature Store to select the features. Create a data flow to perform feature-level metadata analysis. Create an Amazon DynamoDB table to store feature-level metadata. Use Amazon QuickSight to analyze the metadata.', 'Use Amazon SageMaker Feature Store to select the features. Create a data flow to perform feature-level metadata analysis. Create an Amazon DynamoDB table to store feature-level metadata. Use Amazon QuickSight to analyze the metadata.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Feature Store to set feature groups for the current features that the ML models use. Assign the required metadata for each feature. Use SageMaker Studio to analyze the metadata.', 'Use Amazon SageMaker Feature Store to set feature groups for the current features that the ML models use. Assign the required metadata for each feature. Use SageMaker Studio to analyze the metadata.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Features Store to apply custom algorithms to analyze the feature-level metadata that the company requires. Create an Amazon DynamoDB table to store feature-level metadata. Use Amazon QuickSight to analyze the metadata.', 'Use Amazon SageMaker Features Store to apply custom algorithms to analyze the feature-level metadata that the company requires. Create an Amazon DynamoDB table to store feature-level metadata. Use Amazon QuickSight to analyze the metadata.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Feature Store to set feature groups for the current features that the ML models use. Assign the required metadata for each feature. Use Amazon QuickSight to analyze the metadata.', 'Use Amazon SageMaker Feature Store to set feature groups for the current features that the ML models use. Assign the required metadata for each feature. Use Amazon QuickSight to analyze the metadata.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16317,37 +16049,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,269);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Define security groups to allow all HTTP inbound and outbound traffic. Assign the security groups to the SageMaker notebook instance.', 'Define security groups to allow all HTTP inbound and outbound traffic. Assign the security groups to the SageMaker notebook instance.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the SageMaker notebook instance to have access to the VPC. Grant permission in the AWS Key Management Service (AWS KMS) key policy to the notebook’s VPC.', 'Configure the SageMaker notebook instance to have access to the VPC. Grant permission in the AWS Key Management Service (AWS KMS) key policy to the notebook’s VPC.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Assign an IAM role that provides S3 read access for the dataset to the SageMaker notebook. Grant permission in the KMS key policy to the IAM role.', 'Assign an IAM role that provides S3 read access for the dataset to the SageMaker notebook. Grant permission in the KMS key policy to the IAM role.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Assign the same KMS key that encrypts the data in Amazon S3 to the SageMaker notebook instance.', 'Assign the same KMS key that encrypts the data in Amazon S3 to the SageMaker notebook instance.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16377,37 +16108,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,270);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster to ingest event data. Use Amazon Kinesis Data Analytics to transform the most recent 10 minutes of data before inference.', 'Use an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster to ingest event data. Use Amazon Kinesis Data Analytics to transform the most recent 10 minutes of data before inference.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams to ingest event data. Store the data in Amazon S3 by using Amazon Kinesis Data Firehose. Use AWS Lambda to transform the most recent 10 minutes of data before inference.', 'Use Amazon Kinesis Data Streams to ingest event data. Store the data in Amazon S3 by using Amazon Kinesis Data Firehose. Use AWS Lambda to transform the most recent 10 minutes of data before inference.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams to ingest event data. Use Amazon Kinesis Data Analytics to transform the most recent 10 minutes of data before inference.', 'Use Amazon Kinesis Data Streams to ingest event data. Use Amazon Kinesis Data Analytics to transform the most recent 10 minutes of data before inference.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster to ingest event data. Use AWS Lambda to transform the most recent 10 minutes of data before inference.', 'Use an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster to ingest event data. Use AWS Lambda to transform the most recent 10 minutes of data before inference.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16437,37 +16167,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,271);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add class weights to the MLP''s loss function, and then retrain.', 'Add class weights to the MLP''s loss function, and then retrain.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Gather more data by using Amazon Mechanical Turk, and then retrain.', 'Gather more data by using Amazon Mechanical Turk, and then retrain.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train a k-means algorithm instead of an MLP.', 'Train a k-means algorithm instead of an MLP.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Train an anomaly detection model instead of an MLP.', 'Train an anomaly detection model instead of an MLP.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16497,42 +16226,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,272);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Clarify to automatically detect data bias', 'Use SageMaker Clarify to automatically detect data bias', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Turn on the bias detection option in SageMaker Ground Truth to automatically analyze data features.', 'Turn on the bias detection option in SageMaker Ground Truth to automatically analyze data features.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Model Monitor to generate a bias drift report.', 'Use SageMaker Model Monitor to generate a bias drift report.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure SageMaker Data Wrangler to generate a bias report.', 'Configure SageMaker Data Wrangler to generate a bias report.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Experiments to perform a data check', 'Use SageMaker Experiments to perform a data check', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16562,37 +16290,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,273);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using Amazon Kinesis Data Firehose.', 'Use AWS Lambda to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using Amazon Kinesis Data Firehose.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using a short-lived Amazon EMR cluster.', 'Use Amazon Kinesis Data Firehose to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using a short-lived Amazon EMR cluster.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Analytics to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using Amazon Kinesis Data Firehose.', 'Use Amazon Kinesis Data Analytics to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using Amazon Kinesis Data Firehose.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using AWS Lambda.', 'Use Amazon Kinesis Data Firehose to read and aggregate the data hourly. Transform the data and store it in Amazon S3 by using AWS Lambda.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16622,37 +16349,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,274);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Spell check the column. Use Amazon SageMaker one-hot encoding on the column to transform a categorical feature to a numerical feature.', 'Spell check the column. Use Amazon SageMaker one-hot encoding on the column to transform a categorical feature to a numerical feature.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Fix the spelling in the column by using char-RNN. Use Amazon SageMaker Data Wrangler one-hot encoding to transform a categorical feature to a numerical feature.', 'Fix the spelling in the column by using char-RNN. Use Amazon SageMaker Data Wrangler one-hot encoding to transform a categorical feature to a numerical feature.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler similarity encoding on the column to create embeddings of vectors of real numbers.', 'Use Amazon SageMaker Data Wrangler similarity encoding on the column to create embeddings of vectors of real numbers.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler ordinal encoding on the column to encode categories into an integer between 0 and the total number of categories in the column.', 'Use Amazon SageMaker Data Wrangler ordinal encoding on the column to encode categories into an integer between 0 and the total number of categories in the column.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16682,42 +16408,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,275);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM role in the development account that the integration account and production account can assume. Attach IAM policies to the role that allow access to the feature repository and the S3 buckets.', 'Create an IAM role in the development account that the integration account and production account can assume. Attach IAM policies to the role that allow access to the feature repository and the S3 buckets.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Share the feature repository that is associated the S3 buckets from the development account to the integration account and the production account by using AWS Resource Access Manager (AWS RAM).', 'Share the feature repository that is associated the S3 buckets from the development account to the integration account and the production account by using AWS Resource Access Manager (AWS RAM).', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Security Token Service (AWS STS) from the integration account and the production account to retrieve credentials for the development account.', 'Use AWS Security Token Service (AWS STS) from the integration account and the production account to retrieve credentials for the development account.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set up S3 replication between the development S3 buckets and the integration and production S3 buckets.', 'Set up S3 replication between the development S3 buckets and the integration and production S3 buckets.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS PrivateLink endpoint in the development account for SageMaker.', 'Create an AWS PrivateLink endpoint in the development account for SageMaker.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16747,37 +16472,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,276);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create new features and interaction variables.', 'Create new features and interaction variables.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a principal component analysis (PCA) model.', 'Use a principal component analysis (PCA) model.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply normalization on the feature set.', 'Apply normalization on the feature set.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a multiple correspondence analysis (MCA) model.', 'Use a multiple correspondence analysis (MCA) model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16807,37 +16531,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,277);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add L1 regularization to the linear learner regression model.', 'Add L1 regularization to the linear learner regression model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform a principal component analysis (PCA) on the dataset. Use the linear learner regression model.', 'Perform a principal component analysis (PCA) on the dataset. Use the linear learner regression model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform feature engineering by including quadratic and cubic terms. Train the linear learner regression model.', 'Perform feature engineering by including quadratic and cubic terms. Train the linear learner regression model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add L2 regularization to the linear learner regression model.', 'Add L2 regularization to the linear learner regression model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16867,42 +16590,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,278);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Ground Truth to label the unlabeled images.', 'Use Amazon SageMaker Ground Truth to label the unlabeled images.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use image preprocessing to transform the images into grayscale images.', 'Use image preprocessing to transform the images into grayscale images.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use data augmentation to rotate and translate the labeled images.', 'Use data augmentation to rotate and translate the labeled images.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace the activation of the last layer with a sigmoid.', 'Replace the activation of the last layer with a sigmoid.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker k-nearest neighbors (k-NN) algorithm to label the unlabeled images.', 'Use the Amazon SageMaker k-nearest neighbors (k-NN) algorithm to label the unlabeled images.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16932,37 +16654,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,279);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler preconfigured transformations to explore feature transformations. Use SageMaker Data Wrangler templates for visualization. Export the feature processing workflow to a SageMaker pipeline for automation.', 'Use Amazon SageMaker Data Wrangler preconfigured transformations to explore feature transformations. Use SageMaker Data Wrangler templates for visualization. Export the feature processing workflow to a SageMaker pipeline for automation.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker notebook instance to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package the feature processing steps into an AWS Lambda function for automation.', 'Use an Amazon SageMaker notebook instance to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package the feature processing steps into an AWS Lambda function for automation.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue Studio with custom code to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package the feature processing steps into an AWS Lambda function for automation.', 'Use AWS Glue Studio with custom code to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package the feature processing steps into an AWS Lambda function for automation.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler preconfigured transformations to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package each feature transformation step into a separate AWS Lambda function. Use AWS Step Functions for workflow automation.', 'Use Amazon SageMaker Data Wrangler preconfigured transformations to experiment with different feature transformations. Save the transformations to Amazon S3. Use Amazon QuickSight for visualization. Package each feature transformation step into a separate AWS Lambda function. Use AWS Step Functions for workflow automation.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -16992,37 +16713,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,280);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a VPC interface endpoint for the SageMaker notebook in the VPC. Access the notebook through a VPN connection and the VPC endpoint.', 'Create a VPC interface endpoint for the SageMaker notebook in the VPC. Access the notebook through a VPN connection and the VPC endpoint.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a bastion host by using Amazon EC2 in a public subnet within the VPC. Log in to the bastion host through a VPN connection. Access the SageMaker notebook from the bastion host.', 'Create a bastion host by using Amazon EC2 in a public subnet within the VPC. Log in to the bastion host through a VPN connection. Access the SageMaker notebook from the bastion host.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a bastion host by using Amazon EC2 in a private subnet within the VPC with a NAT gateway. Log in to the bastion host through a VPN connection. Access the SageMaker notebook from the bastion host.', 'Create a bastion host by using Amazon EC2 in a private subnet within the VPC with a NAT gateway. Log in to the bastion host through a VPN connection. Access the SageMaker notebook from the bastion host.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a NAT gateway in the VPC. Access the SageMaker notebook HTTPS endpoint through a VPN connection and the NAT gateway.', 'Create a NAT gateway in the VPC. Access the SageMaker notebook HTTPS endpoint through a VPN connection and the NAT gateway.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17052,37 +16772,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,281);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a combination of AWS Step Functions and an AWS Lambda function to call the DetectSentiment API operation for each post synchronously.', 'Use a combination of AWS Step Functions and an AWS Lambda function to call the DetectSentiment API operation for each post synchronously.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a combination of AWS Step Functions and an AWS Lambda function to call the BatchDetectSentiment API operation with batches of up to 25 posts at a time.', 'Use a combination of AWS Step Functions and an AWS Lambda function to call the BatchDetectSentiment API operation with batches of up to 25 posts at a time.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the posts to Amazon S3. Pass the S3 storage path to an AWS Lambda function that calls the StartSentimentDetectionJob API operation.', 'Upload the posts to Amazon S3. Pass the S3 storage path to an AWS Lambda function that calls the StartSentimentDetectionJob API operation.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an AWS Lambda function to call the BatchDetectSentiment API operation with the whole dataset.', 'Use an AWS Lambda function to call the BatchDetectSentiment API operation with the whole dataset.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17112,37 +16831,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,282);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Aggregate sales from stores in the same geographic area.', 'Aggregate sales from stores in the same geographic area.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply smoothing to correct for seasonal variation.', 'Apply smoothing to correct for seasonal variation.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Change the forecast frequency from daily to weekly.', 'Change the forecast frequency from daily to weekly.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace missing values in the dataset by using linear interpolation.', 'Replace missing values in the dataset by using linear interpolation.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17172,37 +16890,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,283);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Register the model artifact and container to the SageMaker Model Registry. Use the SageMaker Inference Recommender Default job type. Provide the known traffic pattern for load testing to select the best instance type and configuration based on the workloads.', 'Register the model artifact and container to the SageMaker Model Registry. Use the SageMaker Inference Recommender Default job type. Provide the known traffic pattern for load testing to select the best instance type and configuration based on the workloads.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Register the model artifact and container to the SageMaker Model Registry. Use the SageMaker Inference Recommender Advanced job type. Provide the known traffic pattern for load testing to select the best instance type and configuration based on the workloads.', 'Register the model artifact and container to the SageMaker Model Registry. Use the SageMaker Inference Recommender Advanced job type. Provide the known traffic pattern for load testing to select the best instance type and configuration based on the workloads.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model to an endpoint by using GPU instances. Use AWS Lambda and Amazon API Gateway to handle invocations from the web. Use open-source tools to perform load testing against the endpoint and to select the best instance type and configuration.', 'Deploy the model to an endpoint by using GPU instances. Use AWS Lambda and Amazon API Gateway to handle invocations from the web. Use open-source tools to perform load testing against the endpoint and to select the best instance type and configuration.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy the model to an endpoint by using CPU instances. Use AWS Lambda and Amazon API Gateway to handle invocations from the web. Use open-source tools to perform load testing against the endpoint and to select the best instance type and configuration.', 'Deploy the model to an endpoint by using CPU instances. Use AWS Lambda and Amazon API Gateway to handle invocations from the web. Use open-source tools to perform load testing against the endpoint and to select the best instance type and configuration.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17232,42 +16949,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,284);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'On-Demand Instances', 'On-Demand Instances', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Checkpoints', 'Checkpoints', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reserved Instances', 'Reserved Instances', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Incremental training', 'Incremental training', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Spot instances', 'Spot instances', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17297,37 +17013,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,285);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Latent Dirichlet Allocation (LDA) algorithm.', 'Use the SageMaker Latent Dirichlet Allocation (LDA) algorithm.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker BlazingText algorithm.', 'Use the SageMaker BlazingText algorithm.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Neural Topic Model (NTM) algorithm.', 'Use the SageMaker Neural Topic Model (NTM) algorithm.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker CatBoost algorithm.', 'Use the SageMaker CatBoost algorithm.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17357,37 +17072,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,286);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Canvas to automatically clean the data and to prepare a categorical model.', 'Use SageMaker Canvas to automatically clean the data and to prepare a categorical model.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler to clean the data. Use the built-in SageMaker XGBoost algorithm to train a classification model.', 'Use SageMaker Data Wrangler to clean the data. Use the built-in SageMaker XGBoost algorithm to train a classification model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Canvas automatic data cleaning and preparation tools. Use the built-in SageMaker XGBoost algorithm to train a regression model.', 'Use SageMaker Canvas automatic data cleaning and preparation tools. Use the built-in SageMaker XGBoost algorithm to train a regression model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler to clean the data. Use the SageMaker Autopilot to train a regression model', 'Use SageMaker Data Wrangler to clean the data. Use the SageMaker Autopilot to train a regression model', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17417,42 +17131,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,287);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler to refit and transform the dataset by applying one-hot encoding to category-based variables.', 'Use SageMaker Data Wrangler to refit and transform the dataset by applying one-hot encoding to category-based variables.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler diagnostic visualization. Use principal components analysis (PCA) and singular value decomposition (SVD) to calculate singular values.', 'Use SageMaker Data Wrangler diagnostic visualization. Use principal components analysis (PCA) and singular value decomposition (SVD) to calculate singular values.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler Quick Model visualization to quickly evaluate the dataset and to produce importance scores for each feature.', 'Use the SageMaker Data Wrangler Quick Model visualization to quickly evaluate the dataset and to produce importance scores for each feature.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler Min Max Scaler transform to normalize the data.', 'Use the SageMaker Data Wrangler Min Max Scaler transform to normalize the data.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler diagnostic visualization. Use least absolute shrinkage and selection operator (LASSO) to plot coefficient values from a LASSO model that is trained on the dataset.', 'Use SageMaker Data Wrangler diagnostic visualization. Use least absolute shrinkage and selection operator (LASSO) to plot coefficient values from a LASSO model that is trained on the dataset.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17482,37 +17195,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,288);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 'Use AWS Glue to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 'Use Amazon Kinesis Data Streams to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an API call from QuickSight to access the data that is in Amazon DynamoDB directly.', 'Use an API call from QuickSight to access the data that is in Amazon DynamoDB directly.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Firehose to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 'Use Amazon Kinesis Data Firehose to export the data from Amazon DynamoDB to Amazon S3. Configure QuickSight to access the data in Amazon S3.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17542,37 +17254,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,289);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the AWS Data Exchange product as a producer for an Amazon Kinesis data stream. Use an Amazon Kinesis Data Firehose delivery stream to transfer the data to Amazon S3. Run an AWS Glue job that will merge the existing business data with the Athena table. Write the result set back to Amazon S3.', 'Configure the AWS Data Exchange product as a producer for an Amazon Kinesis data stream. Use an Amazon Kinesis Data Firehose delivery stream to transfer the data to Amazon S3. Run an AWS Glue job that will merge the existing business data with the Athena table. Write the result set back to Amazon S3.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an S3 event on the AWS Data Exchange S3 bucket to invoke an AWS Lambda function. Program the Lambda function to use Amazon SageMaker Data Wrangler to merge the existing business data with the Athena table. Write the result set back to Amazon S3.', 'Use an S3 event on the AWS Data Exchange S3 bucket to invoke an AWS Lambda function. Program the Lambda function to use Amazon SageMaker Data Wrangler to merge the existing business data with the Athena table. Write the result set back to Amazon S3.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an S3 event on the AWS Data Exchange S3 bucket to invoke an AWS Lambda function. Program the Lambda function to run an AWS Glue job that will merge the existing business data with the Athena table. Write the results back to Amazon S3.', 'Use an S3 event on the AWS Data Exchange S3 bucket to invoke an AWS Lambda function. Program the Lambda function to run an AWS Glue job that will merge the existing business data with the Athena table. Write the results back to Amazon S3.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Provision an Amazon Redshift cluster. Subscribe to the AWS Data Exchange product and use the product to create an Amazon Redshift table. Merge the data in Amazon Redshift. Write the results back to Amazon S3.', 'Provision an Amazon Redshift cluster. Subscribe to the AWS Data Exchange product and use the product to create an Amazon Redshift table. Merge the data in Amazon Redshift. Write the results back to Amazon S3.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17602,42 +17313,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,290);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The historical sensor data does not include a significant number of data points and attributes for certain time periods.', 'The historical sensor data does not include a significant number of data points and attributes for certain time periods.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The historical sensor data shows that simple rule-based thresholds can predict crane failures.', 'The historical sensor data shows that simple rule-based thresholds can predict crane failures.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The historical sensor data contains failure data for only one type of crane model that is in operation and lacks failure data of most other types of crane that are in operation.', 'The historical sensor data contains failure data for only one type of crane model that is in operation and lacks failure data of most other types of crane that are in operation.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The historical sensor data from the cranes are available with high granularity for the last 3 years.', 'The historical sensor data from the cranes are available with high granularity for the last 3 years.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The historical sensor data contains most common types of crane failures that the company wants to predict.', 'The historical sensor data contains most common types of crane failures that the company wants to predict.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17667,42 +17377,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,291);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Image Classification', 'Image Classification', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Optical Character Recognition (OCR)', 'Optical Character Recognition (OCR)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Object Detection', 'Object Detection', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Pose estimation', 'Pose estimation', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Image Generative Adversarial Networks (GANs)', 'Image Generative Adversarial Networks (GANs)', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17732,37 +17441,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,292);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two new SageMaker endpoints for the TensorFlow and PyTorch models in addition to the existing SageMaker endpoint. Create an Application Load Balancer. Create a target group for each endpoint. Configure listener rules and add weight to the target groups. To send traffic to the TensorFlow model for customers who are from Europe, create an additional listener rule to forward traffic to the TensorFlow target group.', 'Create two new SageMaker endpoints for the TensorFlow and PyTorch models in addition to the existing SageMaker endpoint. Create an Application Load Balancer. Create a target group for each endpoint. Configure listener rules and add weight to the target groups. To send traffic to the TensorFlow model for customers who are from Europe, create an additional listener rule to forward traffic to the TensorFlow target group.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two production variants for the TensorFlow and PyTorch models. Create an auto scaling policy and configure the desired A/B weights to direct traffic to each production variant. Update the existing SageMaker endpoint with the auto scaling policy. To send traffic to the TensorFlow model for customers who are from Europe, set the TargetVariant header in the request to point to the variant name of the TensorFlow model.', 'Create two production variants for the TensorFlow and PyTorch models. Create an auto scaling policy and configure the desired A/B weights to direct traffic to each production variant. Update the existing SageMaker endpoint with the auto scaling policy. To send traffic to the TensorFlow model for customers who are from Europe, set the TargetVariant header in the request to point to the variant name of the TensorFlow model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two new SageMaker endpoints for the TensorFlow and PyTorch models in addition to the existing SageMaker endpoint. Create a Network Load Balancer. Create a target group for each endpoint. Configure listener rules and add weight to the target groups. To send traffic to the TensorFlow model for customers who are from Europe, create an additional listener rule to forward traffic to the TensorFlow target group.', 'Create two new SageMaker endpoints for the TensorFlow and PyTorch models in addition to the existing SageMaker endpoint. Create a Network Load Balancer. Create a target group for each endpoint. Configure listener rules and add weight to the target groups. To send traffic to the TensorFlow model for customers who are from Europe, create an additional listener rule to forward traffic to the TensorFlow target group.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two production variants for the TensorFlow and PyTorch models. Specify the weight for each production variant in the SageMaker endpoint configuration. Update the existing SageMaker endpoint with the new configuration. To send traffic to the TensorFlow model for customers who are from Europe, set the TargetVariant header in the request to point to the variant name of the TensorFlow model.', 'Create two production variants for the TensorFlow and PyTorch models. Specify the weight for each production variant in the SageMaker endpoint configuration. Update the existing SageMaker endpoint with the new configuration. To send traffic to the TensorFlow model for customers who are from Europe, set the TargetVariant header in the request to point to the variant name of the TensorFlow model.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17792,42 +17500,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,293);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Attach the AmazonAthenaFullAccess AWS managed policy to the user identity.', 'Attach the AmazonAthenaFullAccess AWS managed policy to the user identity.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include a policy statement for the data scientist''s IAM user that allows the IAM user to perform the sagemaker:InvokeEndpoint action.', 'Include a policy statement for the data scientist''s IAM user that allows the IAM user to perform the sagemaker:InvokeEndpoint action.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include an inline policy for the data scientist’s IAM user that allows SageMaker to read S3 objects.', 'Include an inline policy for the data scientist’s IAM user that allows SageMaker to read S3 objects.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include a policy statement for the data scientist’s IAM user that allows the IAM user to perform the sagemaker:GetRecord action.', 'Include a policy statement for the data scientist’s IAM user that allows the IAM user to perform the sagemaker:GetRecord action.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Include the SQL statement "USING EXTERNAL FUNCTION ml_function_name'''' in the Athena SQL query.', 'Include the SQL statement "USING EXTERNAL FUNCTION ml_function_name'''' in the Athena SQL query.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17857,37 +17564,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,294);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Exponential transformation', 'Exponential transformation', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Logarithmic transformation', 'Logarithmic transformation', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Polynomial transformation', 'Polynomial transformation', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Sinusoidal transformation', 'Sinusoidal transformation', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17917,37 +17623,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,295);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform classification every month by using supervised learning of the 200 outcome categories based on claim contents.', 'Perform classification every month by using supervised learning of the 200 outcome categories based on claim contents.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform reinforcement learning by using claim IDs and dates. Instruct the insurance agents who submit the claim records to estimate the expected number of claims in each outcome category every month.', 'Perform reinforcement learning by using claim IDs and dates. Instruct the insurance agents who submit the claim records to estimate the expected number of claims in each outcome category every month.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform forecasting by using claim IDs and dates to identify the expected number of claims in each outcome category every month.', 'Perform forecasting by using claim IDs and dates to identify the expected number of claims in each outcome category every month.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform classification by using supervised learning of the outcome categories for which partial information on claim contents is provided. Perform forecasting by using claim IDs and dates for all other outcome categories.', 'Perform classification by using supervised learning of the outcome categories for which partial information on claim contents is provided. Perform forecasting by using claim IDs and dates for all other outcome categories.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -17977,42 +17682,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,296);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Athena to scan the data and identify the schema.', 'Use Amazon Athena to scan the data and identify the schema.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue crawlers to scan the data and identify the schema.', 'Use AWS Glue crawlers to scan the data and identify the schema.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Redshift to store procedures to perform data transformations.', 'Use Amazon Redshift to store procedures to perform data transformations.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue workflows and AWS Glue jobs to perform data transformations.', 'Use AWS Glue workflows and AWS Glue jobs to perform data transformations.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Redshift ML to train a model to detect fraud.', 'Use Amazon Redshift ML to train a model to detect fraud.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18042,37 +17746,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,297);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Lambda to run a predefined SageMaker pipeline to perform the transformations on each new dataset that arrives in the S3 bucket.', 'Use AWS Lambda to run a predefined SageMaker pipeline to perform the transformations on each new dataset that arrives in the S3 bucket.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Run an AWS Step Functions step and a predefined SageMaker pipeline to perform the transformations on each new dataset that arrives in the S3 bucket.', 'Run an AWS Step Functions step and a predefined SageMaker pipeline to perform the transformations on each new dataset that arrives in the S3 bucket.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Apache Airflow to orchestrate a set of predefined transformations on each new dataset that arrives in the S3 bucket.', 'Use Apache Airflow to orchestrate a set of predefined transformations on each new dataset that arrives in the S3 bucket.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure Amazon EventBridge to run a predefined SageMaker pipeline to perform the transformations when a new data is detected in the S3 bucket.', 'Configure Amazon EventBridge to run a predefined SageMaker pipeline to perform the transformations when a new data is detected in the S3 bucket.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18102,37 +17805,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,298);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A/B testing', 'A/B testing', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Canary release', 'Canary release', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Shadow deployment', 'Shadow deployment', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Blue/green deployment', 'Blue/green deployment', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18162,37 +17864,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,299);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform incremental training to update the model. Activate Amazon SageMaker Model Monitor to detect model performance issues and to send notifications.', 'Perform incremental training to update the model. Activate Amazon SageMaker Model Monitor to detect model performance issues and to send notifications.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Model Governance. Configure Model Governance to automatically adjust model hyperparameters. Create a performance threshold alarm in Amazon CloudWatch to send notifications.', 'Use Amazon SageMaker Model Governance. Configure Model Governance to automatically adjust model hyperparameters. Create a performance threshold alarm in Amazon CloudWatch to send notifications.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Debugger with appropriate thresholds. Configure Debugger to send Amazon CloudWatch alarms to alert the team. Retrain the model by using only data from the previous several months.', 'Use Amazon SageMaker Debugger with appropriate thresholds. Configure Debugger to send Amazon CloudWatch alarms to alert the team. Retrain the model by using only data from the previous several months.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use only data from the previous several months to perform incremental training to update the model. Use Amazon SageMaker Model Monitor to detect model performance issues and to send notifications.', 'Use only data from the previous several months to perform incremental training to update the model. Use Amazon SageMaker Model Monitor to detect model performance issues and to send notifications.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18222,42 +17923,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,300);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Ground Truth to sort the data into two groups named "enrolled" or "not enrolled."', 'Use Amazon SageMaker Ground Truth to sort the data into two groups named "enrolled" or "not enrolled."', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a forecasting algorithm to run predictions.', 'Use a forecasting algorithm to run predictions.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a regression algorithm to run predictions.', 'Use a regression algorithm to run predictions.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a classification algorithm to run predictions.', 'Use a classification algorithm to run predictions.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the built-in Amazon SageMaker k-means algorithm to cluster the data into two groups named "enrolled" or "not enrolled."', 'Use the built-in Amazon SageMaker k-means algorithm to cluster the data into two groups named "enrolled" or "not enrolled."', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18287,42 +17987,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,301);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace On-Demand Instances with Spot Instances.', 'Replace On-Demand Instances with Spot Instances.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure model auto scaling dynamically to adjust the number of instances automatically.', 'Configure model auto scaling dynamically to adjust the number of instances automatically.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace CPU-based EC2 instances with GPU-based EC2 instances.', 'Replace CPU-based EC2 instances with GPU-based EC2 instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use multiple training instances.', 'Use multiple training instances.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a pre-trained version of the model. Run incremental training.', 'Use a pre-trained version of the model. Run incremental training.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18352,37 +18051,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,302);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision = 0.91 - Recall = 0.6', 'Precision = 0.91 - Recall = 0.6', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision = 0.61 - Recall = 0.98', 'Precision = 0.61 - Recall = 0.98', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision = 0.7 - Recall = 0.9', 'Precision = 0.7 - Recall = 0.9', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision = 0.98 - Recall = 0.8', 'Precision = 0.98 - Recall = 0.8', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18412,37 +18110,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,303);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an Amazon SageMaker notebook instance for pulling all the models from Amazon S3 using the boto3 library. Remove the existing instances and use the notebook to perform a SageMaker batch transform for performing inferences offline for all the possible users in all the cities. Store the results in different files in Amazon S3. Point the web client to the files.', 'Create an Amazon SageMaker notebook instance for pulling all the models from Amazon S3 using the boto3 library. Remove the existing instances and use the notebook to perform a SageMaker batch transform for performing inferences offline for all the possible users in all the cities. Store the results in different files in Amazon S3. Point the web client to the files.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare an Amazon SageMaker Docker container based on the open-source multi-model server. Remove the existing instances and create a multi-model endpoint in SageMaker instead, pointing to the S3 bucket containing all the models. Invoke the endpoint from the web client at runtime, specifying the TargetModel parameter according to the city of each request.', 'Prepare an Amazon SageMaker Docker container based on the open-source multi-model server. Remove the existing instances and create a multi-model endpoint in SageMaker instead, pointing to the S3 bucket containing all the models. Invoke the endpoint from the web client at runtime, specifying the TargetModel parameter according to the city of each request.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Keep only a single EC2 instance for hosting all the models. Install a model server in the instance and load each model by pulling it from Amazon S3. Integrate the instance with the web client using Amazon API Gateway for responding to the requests in real time, specifying the target resource according to the city of each request.', 'Keep only a single EC2 instance for hosting all the models. Install a model server in the instance and load each model by pulling it from Amazon S3. Integrate the instance with the web client using Amazon API Gateway for responding to the requests in real time, specifying the target resource according to the city of each request.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Prepare a Docker container based on the prebuilt images in Amazon SageMaker. Replace the existing instances with separate SageMaker endpoints, one for each city where the company operates. Invoke the endpoints from the web client, specifying the URL and EndpointName parameter according to the city of each request.', 'Prepare a Docker container based on the prebuilt images in Amazon SageMaker. Replace the existing instances with separate SageMaker endpoints, one for each city where the company operates. Invoke the endpoints from the web client, specifying the URL and EndpointName parameter according to the city of each request.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18472,37 +18169,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,304);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Switch to an instance type that has only CPUs.', 'Switch to an instance type that has only CPUs.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a heterogeneous cluster that has two different instances groups.', 'Use a heterogeneous cluster that has two different instances groups.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use memory-optimized EC2 Spot Instances for the training jobs.', 'Use memory-optimized EC2 Spot Instances for the training jobs.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Switch to an instance type that has a CPU:GPU ratio of 6:1.', 'Switch to an instance type that has a CPU:GPU ratio of 6:1.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18532,37 +18228,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,305);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon EMR Serverless with PySpark.', 'Use Amazon EMR Serverless with PySpark.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue DataBrew.', 'Use AWS Glue DataBrew.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Studio Data Wrangler.', 'Use Amazon SageMaker Studio Data Wrangler.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Studio Notebook with Pandas.', 'Use Amazon SageMaker Studio Notebook with Pandas.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18592,37 +18287,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,306);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each store. Create a bar plot, faceted by year, of average sales for each store. Add an extra bar in each facet to represent average sales.', 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each store. Create a bar plot, faceted by year, of average sales for each store. Add an extra bar in each facet to represent average sales.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each store. Create a bar plot, colored by region and faceted by year, of average sales for each store. Add a horizontal line in each facet to represent average sales.', 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each store. Create a bar plot, colored by region and faceted by year, of average sales for each store. Add a horizontal line in each facet to represent average sales.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each region. Create a bar plot of average sales for each region. Add an extra bar in each facet to represent average sales.', 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each region. Create a bar plot of average sales for each region. Add an extra bar in each facet to represent average sales.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each region. Create a bar plot, faceted by year, of average sales for each region. Add a horizontal line in each facet to represent average sales.', 'Create an aggregated dataset by using the Pandas GroupBy function to get average sales for each year for each region. Create a bar plot, faceted by year, of average sales for each region. Add a horizontal line in each facet to represent average sales.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18652,37 +18346,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,307);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into an Amazon SageMaker Studio notebook. Calculate the first and third quartile. Use a SageMaker Data Wrangler data flow to remove only values that are outside of those quartiles.', 'Load the data into an Amazon SageMaker Studio notebook. Calculate the first and third quartile. Use a SageMaker Data Wrangler data flow to remove only values that are outside of those quartiles.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Data Wrangler bias report to find outliers in the dataset. Use a Data Wrangler data flow to remove outliers based on the bias report.', 'Use an Amazon SageMaker Data Wrangler bias report to find outliers in the dataset. Use a Data Wrangler data flow to remove outliers based on the bias report.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Data Wrangler anomaly detection visualization to find outliers in the dataset. Add a transformation to a Data Wrangler data flow to remove outliers.', 'Use an Amazon SageMaker Data Wrangler anomaly detection visualization to find outliers in the dataset. Add a transformation to a Data Wrangler data flow to remove outliers.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Lookout for Equipment to find and remove outliers from the dataset.', 'Use Amazon Lookout for Equipment to find and remove outliers from the dataset.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18712,37 +18405,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,308);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker built-in algorithm for PCA on the dataset to transform the data.', 'Use the Amazon SageMaker built-in algorithm for PCA on the dataset to transform the data.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Load the data into Amazon SageMaker Data Wrangler. Scale the data with a Min Max Scaler transformation step. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 'Load the data into Amazon SageMaker Data Wrangler. Scale the data with a Min Max Scaler transformation step. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the dimensionality of the dataset by removing the features that have the highest correlation. Load the data into Amazon SageMaker Data Wrangler. Perform a Standard Scaler transformation step to scale the data. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 'Reduce the dimensionality of the dataset by removing the features that have the highest correlation. Load the data into Amazon SageMaker Data Wrangler. Perform a Standard Scaler transformation step to scale the data. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the dimensionality of the dataset by removing the features that have the lowest correlation. Load the data into Amazon SageMaker Data Wrangler. Perform a Min Max Scaler transformation step to scale the data. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 'Reduce the dimensionality of the dataset by removing the features that have the lowest correlation. Load the data into Amazon SageMaker Data Wrangler. Perform a Min Max Scaler transformation step to scale the data. Use the SageMaker built-in algorithm for PCA on the scaled dataset to transform the data.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18772,42 +18464,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,309);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Latent Dirichlet Allocation (LDA)', 'Latent Dirichlet Allocation (LDA)', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'K-means', 'K-means', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Semantic segmentation', 'Semantic segmentation', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Principal component analysis (PCA)', 'Principal component analysis (PCA)', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Factorization machines (FM)', 'Factorization machines (FM)', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18837,37 +18528,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,310);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform stratified sampling on the original dataset.', 'Perform stratified sampling on the original dataset.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Acquire additional data about the majority classes in the original dataset.', 'Acquire additional data about the majority classes in the original dataset.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a smaller, randomly sampled version of the training dataset.', 'Use a smaller, randomly sampled version of the training dataset.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform systematic sampling on the original dataset.', 'Perform systematic sampling on the original dataset.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18897,37 +18587,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,311);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Apache Spark from within Amazon Athena.', 'Use Apache Spark from within Amazon Athena.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Apache Spark from within Amazon SageMaker.', 'Use Apache Spark from within Amazon SageMaker.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Apache Spark from within an Amazon EMR cluster.', 'Use Apache Spark from within an Amazon EMR cluster.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Apache Spark through an integration with Amazon Redshift.', 'Use Apache Spark through an integration with Amazon Redshift.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -18957,37 +18646,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,312);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job to transform the data from .csv format to Apache Parquet format. Use an AWS Glue crawler and Amazon Athena with appropriate SQL queries to retrieve the required information.', 'Create an AWS Glue job to transform the data from .csv format to Apache Parquet format. Use an AWS Glue crawler and Amazon Athena with appropriate SQL queries to retrieve the required information.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Leave the dataset in .csv format. Use an AWS Glue crawler and Amazon Athena with appropriate SQL queries to retrieve the required information.', 'Leave the dataset in .csv format. Use an AWS Glue crawler and Amazon Athena with appropriate SQL queries to retrieve the required information.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an AWS Glue job to transform the data from .csv format to Apache Parquet format. Import the data into Amazon SageMaker Data Wrangler. Use the Data Quality and Insights Report to retrieve the required information.', 'Create an AWS Glue job to transform the data from .csv format to Apache Parquet format. Import the data into Amazon SageMaker Data Wrangler. Use the Data Quality and Insights Report to retrieve the required information.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Leave the dataset in .csv format. Import the data into Amazon SageMaker Data Wrangler. Use the Data Quality and Insights Report to retrieve the required information.', 'Leave the dataset in .csv format. Import the data into Amazon SageMaker Data Wrangler. Use the Data Quality and Insights Report to retrieve the required information.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19017,37 +18705,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,313);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tune all possible hyperparameters by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:accuracy", "Type": "Maximize"}}.', 'Tune all possible hyperparameters by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:accuracy", "Type": "Maximize"}}.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tune the csv_weight hyperparameter and the scale_pos_weight hyperparameter by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation''ll", "Type": "Maximize"}}.', 'Tune the csv_weight hyperparameter and the scale_pos_weight hyperparameter by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation''ll", "Type": "Maximize"}}.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tune all possible hyperparameters by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:f1", "Type": "Maximize"}}.', 'Tune all possible hyperparameters by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:f1", "Type": "Maximize"}}.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Tune the csv_weight hyperparameter and the scale_pos_weight hyperparameter by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:f1", "Type": "Minimize"}}.', 'Tune the csv_weight hyperparameter and the scale_pos_weight hyperparameter by using automatic model tuning (AMT). Optimize on {"HyperParameterTuningJobObjective": {"MetricName": "validation:f1", "Type": "Minimize"}}.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19077,42 +18764,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,314);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Hyperband tuning strategy.', 'Use the Hyperband tuning strategy.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the number of hyperparameters.', 'Increase the number of hyperparameters.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set a lower value for the MaxNumberOfTrainingJobs parameter.', 'Set a lower value for the MaxNumberOfTrainingJobs parameter.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the grid search tuning strategy.', 'Use the grid search tuning strategy.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set a lower value for the MaxParallelTrainingJobs parameter.', 'Set a lower value for the MaxParallelTrainingJobs parameter.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19142,37 +18828,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,315);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a bootstrap script to install scikit-learn on an Amazon EMR cluster. Deploy the EMR cluster. Apply k-fold cross-validation methods to the algorithm.', 'Use a bootstrap script to install scikit-learn on an Amazon EMR cluster. Deploy the EMR cluster. Apply k-fold cross-validation methods to the algorithm.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy Amazon SageMaker prebuilt Docker images that have scikit-learn installed. Apply k-fold cross-validation methods to the algorithm.', 'Deploy Amazon SageMaker prebuilt Docker images that have scikit-learn installed. Apply k-fold cross-validation methods to the algorithm.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker automatic model tuning (AMT). Specify a range of values for each hyperparameter.', 'Use Amazon SageMaker automatic model tuning (AMT). Specify a range of values for each hyperparameter.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Subscribe to an AUC algorithm that is on AWS Marketplace. Specify a range of values for each hyperparameter.', 'Subscribe to an AUC algorithm that is on AWS Marketplace. Specify a range of values for each hyperparameter.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19202,37 +18887,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,316);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use SageMaker Data Wrangler to perform a Gini importance score analysis.', 'Use SageMaker Data Wrangler to perform a Gini importance score analysis.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a SageMaker notebook instance to perform principal component analysis (PCA).', 'Use a SageMaker notebook instance to perform principal component analysis (PCA).', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a SageMaker notebook instance to perform a singular value decomposition analysis.', 'Use a SageMaker notebook instance to perform a singular value decomposition analysis.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the multicollinearity feature to perform a lasso feature selection to perform an importance scores analysis.', 'Use the multicollinearity feature to perform a lasso feature selection to perform an importance scores analysis.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19262,37 +18946,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,317);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker CreatePresignedDomainUrl API to generate a presigned URL for each domain according to the DynamoDB table. Pass the presigned URL to the proxy application.', 'Use the SageMaker CreatePresignedDomainUrl API to generate a presigned URL for each domain according to the DynamoDB table. Pass the presigned URL to the proxy application.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker CreateHumanTaskUi API to generate a UI URL. Pass the URL to the proxy application.', 'Use the SageMaker CreateHumanTaskUi API to generate a UI URL. Pass the URL to the proxy application.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker ListHumanTaskUis API to list all UI URLs. Pass the appropriate URL to the DynamoDB table so that the proxy application can use the URL.', 'Use the Amazon SageMaker ListHumanTaskUis API to list all UI URLs. Pass the appropriate URL to the DynamoDB table so that the proxy application can use the URL.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker CreatePresignedNotebooklnstanceUrl API to generate a presigned URL. Pass the presigned URL to the proxy application.', 'Use the SageMaker CreatePresignedNotebooklnstanceUrl API to generate a presigned URL. Pass the presigned URL to the proxy application.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19322,37 +19005,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,318);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the value of the momentum hyperparameter.', 'Increase the value of the momentum hyperparameter.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the value of the dropout_rate hyperparameter.', 'Reduce the value of the dropout_rate hyperparameter.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reduce the value of the learning_rate hyperparameter', 'Reduce the value of the learning_rate hyperparameter', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Increase the value of the L2 hyperparameter.', 'Increase the value of the L2 hyperparameter.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19382,37 +19064,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,319);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler. Import the data from Amazon S3. Impute hourly missing data. Perform a Seasonal Trend decomposition.', 'Use Amazon SageMaker Data Wrangler. Import the data from Amazon S3. Impute hourly missing data. Perform a Seasonal Trend decomposition.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Autopilot. Create a new experiment that specifies the S3 data location. Choose ARIMA as the machine learning (ML) problem. Check the model performance.', 'Use Amazon SageMaker Autopilot. Create a new experiment that specifies the S3 data location. Choose ARIMA as the machine learning (ML) problem. Check the model performance.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Data Wrangler. Import the data from Amazon S3. Resample data by using the aggregate daily total. Perform a Seasonal Trend decomposition.', 'Use Amazon SageMaker Data Wrangler. Import the data from Amazon S3. Resample data by using the aggregate daily total. Perform a Seasonal Trend decomposition.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon SageMaker Autopilot. Create a new experiment that specifies the S3 data location. Impute missing hourly values. Choose ARIMA as the machine learning (ML) problem. Check the model performance.', 'Use Amazon SageMaker Autopilot. Create a new experiment that specifies the S3 data location. Impute missing hourly values. Choose ARIMA as the machine learning (ML) problem. Check the model performance.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19442,37 +19123,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,320);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Connect the SageMaker notebook instances that are in the VPC by using AWS Site-to-Site VPN to encrypt all internet-bound traffic. Configure VPC flow logs. Monitor all network traffic to detect and prevent any malicious activity.', 'Connect the SageMaker notebook instances that are in the VPC by using AWS Site-to-Site VPN to encrypt all internet-bound traffic. Configure VPC flow logs. Monitor all network traffic to detect and prevent any malicious activity.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Configure the VPC that contains the SageMaker notebook instances to use VPC interface endpoints to establish connections for training and hosting. Modify any existing security groups that are associated with the VPC interface endpoint to allow only outbound connections for training and hosting.', 'Configure the VPC that contains the SageMaker notebook instances to use VPC interface endpoints to establish connections for training and hosting. Modify any existing security groups that are associated with the VPC interface endpoint to allow only outbound connections for training and hosting.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create an IAM policy that prevents access the internet. Apply the IAM policy to an IAM role. Assign the IAM role to the SageMaker notebook instances in addition to any IAM roles that are already assigned to the instances.', 'Create an IAM policy that prevents access the internet. Apply the IAM policy to an IAM role. Assign the IAM role to the SageMaker notebook instances in addition to any IAM roles that are already assigned to the instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create VPC security groups to prevent all incoming and outgoing traffic. Assign the security groups to the SageMaker notebook instances.', 'Create VPC security groups to prevent all incoming and outgoing traffic. Assign the security groups to the SageMaker notebook instances.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19502,37 +19182,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,321);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a warm start hyperparameter tuning job.', 'Use a warm start hyperparameter tuning job.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a checkpointing hyperparameter tuning job.', 'Use a checkpointing hyperparameter tuning job.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the same random seed for the hyperparameter tuning job.', 'Use the same random seed for the hyperparameter tuning job.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use multiple jobs in parallel for the hyperparameter tuning job.', 'Use multiple jobs in parallel for the hyperparameter tuning job.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19562,37 +19241,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,322);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Extract the topics from each article by using Latent Dirichlet Allocation (LDA) topic modeling. Create a topic table by assigning the sum of the topic counts as a score for each word in the articles. Configure the tool to retrieve the articles where this topic count score is higher for the queried words.', 'Extract the topics from each article by using Latent Dirichlet Allocation (LDA) topic modeling. Create a topic table by assigning the sum of the topic counts as a score for each word in the articles. Configure the tool to retrieve the articles where this topic count score is higher for the queried words.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a term frequency for each word in the articles that is weighted with the article''s length. Build an inverse document frequency for each word that is weighted with all articles in the corpus. Define a final highlight score as the product of both of these frequencies. Configure the tool to retrieve the articles where this highlight score is higher for the queried words.', 'Build a term frequency for each word in the articles that is weighted with the article''s length. Build an inverse document frequency for each word that is weighted with all articles in the corpus. Define a final highlight score as the product of both of these frequencies. Configure the tool to retrieve the articles where this highlight score is higher for the queried words.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Download a pretrained word-embedding lookup table. Create a titles-embedding table by averaging the title''s word embedding for each article in the corpus. Define a highlight score for each word as inversely proportional to the distance between its embedding and the title embedding. Configure the tool to retrieve the articles where this highlight score is higher for the queried words.', 'Download a pretrained word-embedding lookup table. Create a titles-embedding table by averaging the title''s word embedding for each article in the corpus. Define a highlight score for each word as inversely proportional to the distance between its embedding and the title embedding. Configure the tool to retrieve the articles where this highlight score is higher for the queried words.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Build a term frequency score table for each word in each article of the corpus. Assign a score of zero to all stop words. For any other words, assign a score as the word’s frequency in the article. Configure the tool to retrieve the articles where this frequency score is higher for the queried words.', 'Build a term frequency score table for each word in each article of the corpus. Assign a score of zero to all stop words. For any other words, assign a score as the word’s frequency in the article. Configure the tool to retrieve the articles where this frequency score is higher for the queried words.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19622,37 +19300,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,323);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy multiple instances for each endpoint in a VPC that spans at least two Regions.', 'Deploy multiple instances for each endpoint in a VPC that spans at least two Regions.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker auto scaling feature for the hosted recommendation models.', 'Use the SageMaker auto scaling feature for the hosted recommendation models.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Deploy multiple instances for each production endpoint in a VPC that spans least two subnets that are in a second Availability Zone.', 'Deploy multiple instances for each production endpoint in a VPC that spans least two subnets that are in a second Availability Zone.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Frequently generate backups of the production recommendation model. Deploy the backups in a second Region.', 'Frequently generate backups of the production recommendation model. Deploy the backups in a second Region.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19682,37 +19359,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,324);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a PaddleOCR model in Amazon SageMaker to detect and extract the required text and fields. Use a SageMaker text classification model to classify the document.', 'Use a PaddleOCR model in Amazon SageMaker to detect and extract the required text and fields. Use a SageMaker text classification model to classify the document.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a PaddleOCR model in Amazon SageMaker to detect and extract the required text and fields. Use Amazon Comprehend to classify the document.', 'Use a PaddleOCR model in Amazon SageMaker to detect and extract the required text and fields. Use Amazon Comprehend to classify the document.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Textract to detect and extract the required text and fields. Use Amazon Rekognition to classify the document.', 'Use Amazon Textract to detect and extract the required text and fields. Use Amazon Rekognition to classify the document.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Textract to detect and extract the required text and fields. Use Amazon Comprehend to classify the document.', 'Use Amazon Textract to detect and extract the required text and fields. Use Amazon Comprehend to classify the document.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19742,42 +19418,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,325);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Specificity', 'Specificity', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'False positive rate', 'False positive rate', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Accuracy', 'Accuracy', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'F1 score', 'F1 score', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'True positive rate', 'True positive rate', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19807,37 +19482,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,326);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon S3 with S3 Cross-Region Replication (CRR)', 'Amazon S3 with S3 Cross-Region Replication (CRR)', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Elastic Block Store (Amazon EBS) with snapshots that are shared in a secondary Region', 'Amazon Elastic Block Store (Amazon EBS) with snapshots that are shared in a secondary Region', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Amazon Elastic File System (Amazon EFS) Standard storage that is configured with Regional availability', 'Amazon Elastic File System (Amazon EFS) Standard storage that is configured with Regional availability', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'AWS Storage Gateway Volume Gateway', 'AWS Storage Gateway Volume Gateway', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19867,37 +19541,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,327);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new SageMaker endpoint for the new model. Configure an Application Load Balancer (ALB) to distribute traffic between the old model and the new model.', 'Create a new SageMaker endpoint for the new model. Configure an Application Load Balancer (ALB) to distribute traffic between the old model and the new model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the existing endpoint to use SageMaker production variants to distribute traffic between the old model and the new model.', 'Modify the existing endpoint to use SageMaker production variants to distribute traffic between the old model and the new model.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Modify the existing endpoint to use SageMaker batch transform to distribute traffic between the old model and the new model.', 'Modify the existing endpoint to use SageMaker batch transform to distribute traffic between the old model and the new model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a new SageMaker endpoint for the new model. Configure a Network Load Balancer (NLB) to distribute traffic between the old model and the new model.', 'Create a new SageMaker endpoint for the new model. Configure a Network Load Balancer (NLB) to distribute traffic between the old model and the new model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19927,37 +19600,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,328);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Impute the missing values by using the linear regression method. Use the entire dataset and the imputed values to train the DeepAR model.', 'Impute the missing values by using the linear regression method. Use the entire dataset and the imputed values to train the DeepAR model.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Replace the missing values with not a number (NaN). Use the entire dataset and the encoded missing values to train the DeepAR model.', 'Replace the missing values with not a number (NaN). Use the entire dataset and the encoded missing values to train the DeepAR model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Impute the missing values by using a forward fill. Use the entire dataset and the imputed values to train the DeepAR model.', 'Impute the missing values by using a forward fill. Use the entire dataset and the imputed values to train the DeepAR model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Impute the missing values by using the mean value. Use the entire dataset and the imputed values to train the DeepAR model.', 'Impute the missing values by using the mean value. Use the entire dataset and the imputed values to train the DeepAR model.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -19987,37 +19659,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,329);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the AnalyzeDocument API action. Set the FeatureTypes parameter to SIGNATURES. Return the confidence scores for each page.', 'Use the AnalyzeDocument API action. Set the FeatureTypes parameter to SIGNATURES. Return the confidence scores for each page.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Prediction API call on the documents. Return the signatures and confidence scores for each page.', 'Use the Prediction API call on the documents. Return the signatures and confidence scores for each page.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the StartDocumentAnalysis API action to detect the signatures. Return the confidence scores for each page.', 'Use the StartDocumentAnalysis API action to detect the signatures. Return the confidence scores for each page.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the GetDocumentAnalysis API action to detect the signatures. Return the confidence scores for each page.', 'Use the GetDocumentAnalysis API action to detect the signatures. Return the confidence scores for each page.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20047,42 +19718,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,330);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an object detection algorithm to train a model to identify corrosion areas of a photo.', 'Use an object detection algorithm to train a model to identify corrosion areas of a photo.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Rekognition with label detection on the photos.', 'Use Amazon Rekognition with label detection on the photos.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use a k-means clustering algorithm to train a model to classify the severity of corrosion in a photo.', 'Use a k-means clustering algorithm to train a model to classify the severity of corrosion in a photo.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an XGBoost algorithm to train a model to classify the severity of corrosion in a photo.', 'Use an XGBoost algorithm to train a model to classify the severity of corrosion in a photo.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform image augmentation on photos that contain corrosion.', 'Perform image augmentation on photos that contain corrosion.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20112,37 +19782,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,331);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Score the model by using AWS Batch managed Amazon EC2 Reserved Instances. Create an Amazon EC2 instance store volume and mount it to the Reserved Instances.', 'Score the model by using AWS Batch managed Amazon EC2 Reserved Instances. Create an Amazon EC2 instance store volume and mount it to the Reserved Instances.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Score the model by using AWS Batch managed Amazon EC2 Spot Instances. Create an Amazon FSx for Lustre volume and mount it to the Spot Instances.', 'Score the model by using AWS Batch managed Amazon EC2 Spot Instances. Create an Amazon FSx for Lustre volume and mount it to the Spot Instances.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Score the model by using an Amazon SageMaker notebook on Amazon EC2 Reserved Instances. Create an Amazon EBS volume and mount it to the Reserved Instances.', 'Score the model by using an Amazon SageMaker notebook on Amazon EC2 Reserved Instances. Create an Amazon EBS volume and mount it to the Reserved Instances.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Score the model by using Amazon SageMaker notebook on Amazon EC2 Spot Instances. Create an Amazon Elastic File System (Amazon EFS) file system and mount it to the Spot Instances.', 'Score the model by using Amazon SageMaker notebook on Amazon EC2 Spot Instances. Create an Amazon Elastic File System (Amazon EFS) file system and mount it to the Spot Instances.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20172,37 +19841,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,332);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Grid search', 'Grid search', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Random search', 'Random search', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Bayesian optimization', 'Bayesian optimization', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Hyperband', 'Hyperband', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20232,37 +19900,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,333);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Package the code as the training script for an Amazon SageMaker scikit-learn container.', 'Package the code as the training script for an Amazon SageMaker scikit-learn container.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Package the code into a custom-built container. Push the container to Amazon Elastic Container Registry (Amazon ECR).', 'Package the code into a custom-built container. Push the container to Amazon Elastic Container Registry (Amazon ECR).', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Package the code into a custom-built container. Push the container to AWS Fargate.', 'Package the code into a custom-built container. Push the container to AWS Fargate.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Package the code by extending an Amazon SageMaker scikit-learn container.', 'Package the code by extending an Amazon SageMaker scikit-learn container.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20292,37 +19959,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,334);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create two Amazon Data Firehose delivery streams to send data to the S3 bucket and OpenSearch Service. Configure the data sources to send data to the delivery streams.', 'Create two Amazon Data Firehose delivery streams to send data to the S3 bucket and OpenSearch Service. Configure the data sources to send data to the delivery streams.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create one Amazon Kinesis data stream. Create two Amazon Data Firehose delivery streams to send data to the S3 bucket and OpenSearch Service. Connect the delivery streams to the data stream. Configure the data sources to send data to the data stream.', 'Create one Amazon Kinesis data stream. Create two Amazon Data Firehose delivery streams to send data to the S3 bucket and OpenSearch Service. Connect the delivery streams to the data stream. Configure the data sources to send data to the data stream.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create one Amazon Data Firehose delivery stream to send data to OpenSearch Service. Configure the delivery stream to back up the raw data to the S3 bucket. Configure the data sources to send data to the delivery stream.', 'Create one Amazon Data Firehose delivery stream to send data to OpenSearch Service. Configure the delivery stream to back up the raw data to the S3 bucket. Configure the data sources to send data to the delivery stream.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create one Amazon Kinesis data stream. Create one Amazon Data Firehose delivery stream to send data to OpenSearch Service. Configure the delivery stream to back up the data to the S3 bucket. Connect the delivery stream to the data stream. Configure the data sources to send data to the data stream.', 'Create one Amazon Kinesis data stream. Create one Amazon Data Firehose delivery stream to send data to OpenSearch Service. Configure the delivery stream to back up the data to the S3 bucket. Connect the delivery stream to the data stream. Configure the data sources to send data to the data stream.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20352,37 +20018,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,335);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the data into the SageMaker Data Wrangler console directly. Perform data transformations and generate insights within Data Wrangler.', 'Upload the data into the SageMaker Data Wrangler console directly. Perform data transformations and generate insights within Data Wrangler.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the data into an Amazon S3 bucket. Allow SageMaker to access the data that is in the bucket. Import the data from the S3 bucket into SageMaker Data Wrangler. Perform data transformations and generate insights within Data Wrangler.', 'Upload the data into an Amazon S3 bucket. Allow SageMaker to access the data that is in the bucket. Import the data from the S3 bucket into SageMaker Data Wrangler. Perform data transformations and generate insights within Data Wrangler.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the data into the SageMaker Data Wrangler console directly. Allow SageMaker and Amazon QuickSight to access the data that is in an Amazon S3 bucket. Perform data transformations in Data Wrangler and save the transformed data into a second S3 bucket. Use QuickSight to generate data insights.', 'Upload the data into the SageMaker Data Wrangler console directly. Allow SageMaker and Amazon QuickSight to access the data that is in an Amazon S3 bucket. Perform data transformations in Data Wrangler and save the transformed data into a second S3 bucket. Use QuickSight to generate data insights.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Upload the data into an Amazon S3 bucket. Allow SageMaker to access the data that is in the bucket. Import the data from the bucket into SageMaker Data Wrangler. Perform data transformations in Data Wrangler. Save the data into a second S3 bucket. Use a SageMaker Studio notebook to generate data insights.', 'Upload the data into an Amazon S3 bucket. Allow SageMaker to access the data that is in the bucket. Import the data from the bucket into SageMaker Data Wrangler. Perform data transformations in Data Wrangler. Save the data into a second S3 bucket. Use a SageMaker Studio notebook to generate data insights.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20412,37 +20077,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,336);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Real-time inference with auto scaling', 'Real-time inference with auto scaling', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Serverless inference with provisioned concurrency', 'Serverless inference with provisioned concurrency', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Asynchronous inference', 'Asynchronous inference', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'A batch transform task', 'A batch transform task', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20472,37 +20136,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,337);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set Strategy to the Bayesian value.', 'Set Strategy to the Bayesian value.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set RetryStrategy to a value of 1.', 'Set RetryStrategy to a value of 1.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set ParameterRanges to the narrow range Inferred from previous hyperparameter jobs.', 'Set ParameterRanges to the narrow range Inferred from previous hyperparameter jobs.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Set TrainingJobEarlyStoppingType to the AUTO value.', 'Set TrainingJobEarlyStoppingType to the AUTO value.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20532,37 +20195,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,338);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply anomaly detection to remove outliers from the training dataset before training.', 'Apply anomaly detection to remove outliers from the training dataset before training.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply Synthetic Minority Oversampling Technique (SMOTE) to the training dataset before training.', 'Apply Synthetic Minority Oversampling Technique (SMOTE) to the training dataset before training.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply normalization to the features of the training dataset before training.', 'Apply normalization to the features of the training dataset before training.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Apply undersampling to the training dataset before training.', 'Apply undersampling to the training dataset before training.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20592,37 +20254,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,339);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Difference in proportions of labels (DPL)', 'Difference in proportions of labels (DPL)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Class imbalance (CI)', 'Class imbalance (CI)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Conditional demographic disparity (CDD)', 'Conditional demographic disparity (CDD)', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Kolmogorov-Smirnov (KS)', 'Kolmogorov-Smirnov (KS)', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20652,37 +20313,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,340);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'MaxRuntimeInSeconds', 'MaxRuntimeInSeconds', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'TargetObjectiveMetricValue', 'TargetObjectiveMetricValue', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'CompleteOnConvergence', 'CompleteOnConvergence', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'MaxNumberOfTrainingJobsNotImproving', 'MaxNumberOfTrainingJobsNotImproving', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20712,37 +20372,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,341);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler scatter plot visualization to inspect the relationship between the car price and type of car.', 'Use the SageMaker Data Wrangler scatter plot visualization to inspect the relationship between the car price and type of car.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler quick model visualization to quickly evaluate the data and produce importance scores for the car price and type of car.', 'Use the SageMaker Data Wrangler quick model visualization to quickly evaluate the data and produce importance scores for the car price and type of car.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler anomaly detection visualization to Identify outliers for the specific features.', 'Use the SageMaker Data Wrangler anomaly detection visualization to Identify outliers for the specific features.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SageMaker Data Wrangler histogram visualization to inspect the range of values for the specific feature.', 'Use the SageMaker Data Wrangler histogram visualization to inspect the range of values for the specific feature.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20772,37 +20431,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,342);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Instead of File mode, configure the SageMaker training job to use Pipe mode. Ingest the data from a pipe.', 'Instead of File mode, configure the SageMaker training job to use Pipe mode. Ingest the data from a pipe.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Instead of File mode, configure the SageMaker training job to use FastFile mode with no other changes.', 'Instead of File mode, configure the SageMaker training job to use FastFile mode with no other changes.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Instead of On-Demand Instances, configure the SageMaker training job to use Spot Instances. Make no other changes,', 'Instead of On-Demand Instances, configure the SageMaker training job to use Spot Instances. Make no other changes,', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Instead of On-Demand Instances, configure the SageMaker training job to use Spot Instances, implement model checkpoints.', 'Instead of On-Demand Instances, configure the SageMaker training job to use Spot Instances, implement model checkpoints.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20832,37 +20490,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,343);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable Amazon SageMaker Model Monitor data capture on the model endpoint. Create a monitoring baseline on the training dataset. Schedule monitoring jobs. Use Amazon CloudWatch to alert the data scientists when the numerical distance of regional customer data fails the baseline drift check. Reevaluate the training set with the larger data source and retrain the model.', 'Enable Amazon SageMaker Model Monitor data capture on the model endpoint. Create a monitoring baseline on the training dataset. Schedule monitoring jobs. Use Amazon CloudWatch to alert the data scientists when the numerical distance of regional customer data fails the baseline drift check. Reevaluate the training set with the larger data source and retrain the model.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable Amazon SageMaker Debugger on the model endpoint. Create a custom rule to measure the variance from the baseline training dataset. Use Amazon CloudWatch to alert the data scientists when the rule is invoked. Reevaluate the training set with the larger data source and retrain the model.', 'Enable Amazon SageMaker Debugger on the model endpoint. Create a custom rule to measure the variance from the baseline training dataset. Use Amazon CloudWatch to alert the data scientists when the rule is invoked. Reevaluate the training set with the larger data source and retrain the model.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Capture all customer calls routed to the specialist service team in Amazon S3. Schedule a monitoring job to capture all the true positives and true negatives, correlate them to the training dataset, and calculate the accuracy. Use Amazon CloudWatch to alert the data scientists when the accuracy decreases. Reevaluate the training set with the additional data from the specialist service team and retrain the model.', 'Capture all customer calls routed to the specialist service team in Amazon S3. Schedule a monitoring job to capture all the true positives and true negatives, correlate them to the training dataset, and calculate the accuracy. Use Amazon CloudWatch to alert the data scientists when the accuracy decreases. Reevaluate the training set with the additional data from the specialist service team and retrain the model.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Enable Amazon CloudWatch on the model endpoint. Capture metrics using Amazon CloudWatch Logs and send them to Amazon S3. Analyze the monitored results against the training data baseline. When the variance from the baseline exceeds the regional customer variance, reevaluate the training set and retrain the model.', 'Enable Amazon CloudWatch on the model endpoint. Capture metrics using Amazon CloudWatch Logs and send them to Amazon S3. Analyze the monitored results against the training data baseline. When the variance from the baseline exceeds the regional customer variance, reevaluate the training set and retrain the model.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20892,37 +20549,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,344);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Accuracy', 'Accuracy', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision', 'Precision', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Recall', 'Recall', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'F1', 'F1', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -20952,37 +20608,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,345);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker BlazingText algorithm to add context to search results through query expansion.', 'Use the Amazon SageMaker BlazingText algorithm to add context to search results through query expansion.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker XGBoost algorithm to improve candidate ranking.', 'Use the Amazon SageMaker XGBoost algorithm to improve candidate ranking.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon CloudSearch and sort results by the search relevance score.', 'Use Amazon CloudSearch and sort results by the search relevance score.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon CloudSearch and sort results by the geographic location.', 'Use Amazon CloudSearch and sort results by the geographic location.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21012,37 +20667,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,346);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a scatterplot for day_of_week and binned_age.', 'Create a scatterplot for day_of_week and binned_age.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create crosstabs for day_of_week and binned_age.', 'Create crosstabs for day_of_week and binned_age.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create word clouds for day_of_week and binned_age.', 'Create word clouds for day_of_week and binned_age.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Create a boxplot for day_of_week and binned_age.', 'Create a boxplot for day_of_week and binned_age.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21072,37 +20726,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,347);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker Data Wrangler multicollinearity measurement features and the principal component analysis (PCA) algorithm to calculate the variance of the dataset along multiple directions in the feature space.', 'Use the Amazon SageMaker Data Wrangler multicollinearity measurement features and the principal component analysis (PCA) algorithm to calculate the variance of the dataset along multiple directions in the feature space.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Data Wrangler quick model visualization to find feature importance scores that are between 0.5 and 1.', 'Use an Amazon SageMaker Data Wrangler quick model visualization to find feature importance scores that are between 0.5 and 1.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the Amazon SageMaker Data Wrangler bias report to identify potential biases in the data related to feature engineering.', 'Use the Amazon SageMaker Data Wrangler bias report to identify potential biases in the data related to feature engineering.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use an Amazon SageMaker Data Wrangler data flow to create and modify a data preparation pipeline. Manually add the feature scores.', 'Use an Amazon SageMaker Data Wrangler data flow to create and modify a data preparation pipeline. Manually add the feature scores.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21132,37 +20785,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,348);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Data Firehose with Amazon S3 as the destination. Configure Firehose to invoke an AWS Lambda function for data transformation. Enable source record backup on Firehose.', 'Use Amazon Data Firehose with Amazon S3 as the destination. Configure Firehose to invoke an AWS Lambda function for data transformation. Enable source record backup on Firehose.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Managed Streaming for Apache Kafka. Set up workers in Amazon Elastic Container Service (Amazon ECS) to move data from Kafka brokers to Amazon S3 while transforming it. Configure workers to store raw and unsuccessfully transformed data in different S3 buckets.', 'Use Amazon Managed Streaming for Apache Kafka. Set up workers in Amazon Elastic Container Service (Amazon ECS) to move data from Kafka brokers to Amazon S3 while transforming it. Configure workers to store raw and unsuccessfully transformed data in different S3 buckets.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Data Firehose with Amazon S3 as the destination. Configure Firehose to invoke an Apache Spark job in AWS Glue for data transformation. Enable source record backup and configure the error prefix.', 'Use Amazon Data Firehose with Amazon S3 as the destination. Configure Firehose to invoke an Apache Spark job in AWS Glue for data transformation. Enable source record backup and configure the error prefix.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Kinesis Data Streams in front of Amazon Data Firehose. Use Kinesis Data Streams with AWS Lambda to store raw data in Amazon S3. Configure Firehose to invoke a Lambda function for data transformation with Amazon S3 as the destination.', 'Use Amazon Kinesis Data Streams in front of Amazon Data Firehose. Use Kinesis Data Streams with AWS Lambda to store raw data in Amazon S3. Configure Firehose to invoke a Lambda function for data transformation with Amazon S3 as the destination.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21192,42 +20844,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,349);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Define the feature variables and target variable for the churn prediction model.', 'Define the feature variables and target variable for the churn prediction model.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use the SOL EXPLAIN_MODEL function to run predictions.', 'Use the SOL EXPLAIN_MODEL function to run predictions.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Write a CREATE MODEL SQL statement to create a model.', 'Write a CREATE MODEL SQL statement to create a model.', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Redshift Spectrum to train the model.', 'Use Amazon Redshift Spectrum to train the model.', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Manually export the training data to Amazon S3.', 'Manually export the training data to Amazon S3.', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21257,37 +20908,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,350);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Principal component analysis (PCA)', 'Principal component analysis (PCA)', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Recurrent neural network (RNN)', 'Recurrent neural network (RNN)', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'К-nearest neighbors (k-NN)', 'К-nearest neighbors (k-NN)', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Convolutional neural network (CNN)', 'Convolutional neural network (CNN)', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21317,37 +20967,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,351);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Target leakage occurred in the imported dataset.', 'Target leakage occurred in the imported dataset.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The data scientist did not fine-tune the training and validation split.', 'The data scientist did not fine-tune the training and validation split.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The SageMaker Data Wrangler algorithm that the data scientist used did not find an optimal model fit for each feature to calculate the prediction power.', 'The SageMaker Data Wrangler algorithm that the data scientist used did not find an optimal model fit for each feature to calculate the prediction power.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'The data scientist did not process the features enough to accurately calculate prediction power.', 'The data scientist did not process the features enough to accurately calculate prediction power.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21377,37 +21026,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,352);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Add a new column of data that includes the full country name.', 'Add a new column of data that includes the full country name.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Encode the country codes into numeric variables by using similarity encoding.', 'Encode the country codes into numeric variables by using similarity encoding.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Map the country codes to continent names.', 'Map the country codes to continent names.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Encode the country codes into numeric variables by using one-hot encoding.', 'Encode the country codes into numeric variables by using one-hot encoding.', 4, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21437,42 +21085,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,353);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'InferenceLatency', 'InferenceLatency', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Mean squared error (MSE)', 'Mean squared error (MSE)', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Root mean squared error (RMSE)', 'Root mean squared error (RMSE)', 3, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Precision', 'Precision', 4, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Accuracy', 'Accuracy', 5, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21502,42 +21149,41 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,354);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinitialize the weights of the entire CNN. Retrain the CNN on the classification task by using the new set of objects.', 'Reinitialize the weights of the entire CNN. Retrain the CNN on the classification task by using the new set of objects.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinitialize the weights of the entire network. Retrain the entire network on the prediction task by using the new set of objects.', 'Reinitialize the weights of the entire network. Retrain the entire network on the prediction task by using the new set of objects.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinitialize the weights of the entire RNN. Retrain the entire model on the prediction task by using the new set of objects.', 'Reinitialize the weights of the entire RNN. Retrain the entire model on the prediction task by using the new set of objects.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinitialize the weights of the last fully connected layer of the CNN. Retrain the CNN on the classification task by using the new set of objects.', 'Reinitialize the weights of the last fully connected layer of the CNN. Retrain the CNN on the classification task by using the new set of objects.', 4, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Reinitialize the weights of the last layer of the RNN. Retrain the entire model on the prediction task by using the new set of objects.', 'Reinitialize the weights of the last layer of the RNN. Retrain the entire model on the prediction task by using the new set of objects.', 5, 'yes');
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','multi_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21567,37 +21213,36 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,355);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform one-hot encoding on every possible option for each question of the survey.', 'Perform one-hot encoding on every possible option for each question of the survey.', 1, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Perform binning on all the answers each respondent selected for each question.', 'Perform binning on all the answers each respondent selected for each question.', 2, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Mechanical Turk to create categorical labels for each set of possible responses.', 'Use Amazon Mechanical Turk to create categorical labels for each set of possible responses.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use Amazon Textract to create numeric features for each set of possible responses.', 'Use Amazon Textract to create numeric features for each set of possible responses.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 
 
 INSERT INTO wp_posts
 (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, 
@@ -21627,34 +21272,33 @@ INSERT INTO wp_posts
  'lp_question', 
  '', 
  0);
-~ 
-set @lastQuestionId = Last_Insert_ID();~ 
+ 
+set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
 (25469,@lastQuestionId,356);
-~ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Database Migration Service (AWS DMS) to transfer the data from the PostgreSQL database to an Amazon S3 bucket. Create an Amazon EMR duster to read the S3 bucket and perform the data preparation. Use Amazon SageMaker Studio for the prediction modeling.', 'Use AWS Database Migration Service (AWS DMS) to transfer the data from the PostgreSQL database to an Amazon S3 bucket. Create an Amazon EMR duster to read the S3 bucket and perform the data preparation. Use Amazon SageMaker Studio for the prediction modeling.', 1, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue DataBrew to read the data that is in the PostgreSQL database and to perform the data preparation. Use Amazon SageMaker Canvas for the prediction modeling.', 'Use AWS Glue DataBrew to read the data that is in the PostgreSQL database and to perform the data preparation. Use Amazon SageMaker Canvas for the prediction modeling.', 2, 'yes');
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Database Migration Service (AWS DMS) to transfer the data from the PostgreSQL database to an Amazon S3 bucket. Use AWS Glue to read the data in the S3 bucket and to perform the data preparation. Use Amazon SageMaker Canvas for the prediction modeling.', 'Use AWS Database Migration Service (AWS DMS) to transfer the data from the PostgreSQL database to an Amazon S3 bucket. Use AWS Glue to read the data in the S3 bucket and to perform the data preparation. Use Amazon SageMaker Canvas for the prediction modeling.', 3, 0);
-~ 
-~ 
+ 
+ 
 
 INSERT INTO wp_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
 (@lastQuestionId, 'Use AWS Glue DataBrew to read the data that is in the PostgreSQL database and to perform the data preparation. Use Amazon SageMaker Studio for the prediction modeling.', 'Use AWS Glue DataBrew to read the data that is in the PostgreSQL database and to perform the data preparation. Use Amazon SageMaker Studio for the prediction modeling.', 4, 0);
-~ 
-~ 
+ 
+ 
  
 insert into wp_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
 (@lastQuestionId, '_lp_mark',1),(@lastQuestionId, '_lp_type','single_choice'); 
-~ 
-commit;~ 
+ 

@@ -13,3 +13,8 @@ SELECT * FROM wp_posts WHERE post_type='lp_question'
 	TRUNCATE table wp_learnpress_quiz_questions;
 	truncate table wp_learnpress_question_answers	;
     truncate table wp_learnpress_question_answermeta;
+
+
+	SET GLOBAL general_log = 1;  -- Enable globally
+SET SESSION general_log = 1; -- Enable for the current session
+SHOW VARIABLES LIKE 'general_log_file';

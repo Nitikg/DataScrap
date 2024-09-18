@@ -9,7 +9,7 @@ Issues
 	7. Eduma Mobile App Setup -Shivi
 	1. Logout not working
 	2. See more btn above courses slider not working
-
+    3. Question number 152 have problem. It's greater than sign convert in "&gt;" which is breaking the sql to execute 
 	wp-content/uploads/examdump/{examName}/imageName.jpg
 
 
