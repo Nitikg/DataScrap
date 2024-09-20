@@ -1,29 +1,20 @@
 Issues
 
-	1. Images should be uploaded in wordpress -- priority 
-	2. Data Extraction for all pages into one xlsx -- Nitik (DONE)
-	3. UI Testing -- Nitik (WIP)
-	4. Data cleanup
-	5. Correct answers are not displaying
-	6. needs to write rollback script also but may be after MVP
-	7. Eduma Mobile App Setup -Shivi
-	1. Logout not working
-	2. See more btn above courses slider not working
+	1. Images should be uploaded in wordpress -- priority -- Nitik
+	2. UI Testing -- Nitik (WIP)
+	3. Data cleanup -- DONE
+	4. Remove unnecessary plugins
+
+	1. Logout not working - Shivi
+	2. See more btn above courses slider not working -- Nitik
     3. Question number 152 have problem. It's greater than sign convert in "&gt;" which is breaking the sql to execute 
-	wp-content/uploads/examdump/{examName}/imageName.jpg
+	wp-content/uploads/examdump/{examName}/imageName.jpg -- Nitik
 
 
+AFTER MVP
 
-	
-1) SQL script genration updated and fixed few bugs 
-2) Created UploadStagging.php file to upload and delete questions in bulk
-3) You need to fix the image path in Q/A html body when creating body. 
-4) The image path should be like wp-content/uploads/examdump/{examName}/imageName.jpg
-5) For current exam this path is "wp-content/uploads/examdump/awsML/imageName.jpg". As of now all images are uploaded to server. If path is correct image must show in body. 
+	1. Correct answers are not displaying -- after mvp
+	2. needs to write rollback script also but may be after MVP
+	3. Eduma Mobile App Setup -Shivi -- after mvp
 
-This is you need to do 
 
-6) Fix your excel code
-7) Genrate SQL file from my script for 5 or 10 questions 
-7) Genrate SQL file from my script for 5 or 10 questions or all questions whatever is quick for You
-8) Upload this SQL via upload file and text

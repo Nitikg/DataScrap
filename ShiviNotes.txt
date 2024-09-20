@@ -18,3 +18,15 @@ SELECT * FROM wp_posts WHERE post_type='lp_question'
 	SET GLOBAL general_log = 1;  -- Enable globally
 SET SESSION general_log = 1; -- Enable for the current session
 SHOW VARIABLES LIKE 'general_log_file';
+
+
+
+SFTP Login Cred -  staging
+ usernaem - KDfBIqHP3hufIU
+ pass - bck0hjPmPqAp1i
+
+Eduma theme Purchase Code:
+7fc3dec8-b84b-458f-a706-d7c306add7ff
+
+
+Image path - wp-content/uploads/examdump/{examName}/imageName.jpg
