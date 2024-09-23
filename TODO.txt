@@ -1,15 +1,19 @@
 Issues
-
-	1. Images should be uploaded in wordpress -- priority -- Nitik -- DONE
-	2. UI Testing -- Nitik (WIP)
-	3. Data cleanup -- DONE
-	4. Remove unnecessary plugins
-
-	1. Logout not working - Shivi
+	1. Login and logout breaking on deletion script
 	2. See more btn above courses slider not working -- Nitik - WIP
-    3. Question number 152 have problem. It's greater than sign convert in "&gt;" which is breaking the sql to execute 
+	3. Remove unnecessary plugins
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Particular Question Issues
+	1. Question no. 132 have problem with its options, no insert script is generated for its options.
+    2. Question number 152 have problem. It's greater than sign convert in "&gt;" which is breaking the sql to execute 
 	wp-content/uploads/examdump/{examName}/imageName.jpg -- Nitik
 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 AFTER MVP
 
