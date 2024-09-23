@@ -8,8 +8,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.<br/>The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#1.jpg"/><br/>Based on the model evaluation results, why is this a viable model for production?<br/>', 
- 'AWS ML Question #1', 
+ 'A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.<br/>The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_1.jpg"/><br/>Based on the model evaluation results, why is this a viable model for production?<br/>', 
+ 'AWS ML Question 1', 
  '', 
  'Publish', 
  'closed', 
@@ -31,7 +31,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,1);
+(23299,@lastQuestionId,1);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -68,7 +68,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is designing a system for improving sales for a company. The objective is to use the large amount of information the company has on users'' behavior and product preferences to predict which products users would like based on the users'' similarity to other users.<br/>What should the Specialist do to meet this objective?<br/>', 
- 'AWS ML Question #2', 
+ 'AWS ML Question 2', 
  '', 
  'Publish', 
  'closed', 
@@ -90,7 +90,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,2);
+(23299,@lastQuestionId,2);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -127,7 +127,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Mobile Network Operator is building an analytics platform to analyze and optimize a company''s operations using Amazon Athena and Amazon S3.<br/>The source systems send data in .CSV format in real time. The Data Engineering team wants to transform the data to the Apache Parquet format before storing it on Amazon S3.<br/>Which solution takes the LEAST effort to implement?<br/>', 
- 'AWS ML Question #3', 
+ 'AWS ML Question 3', 
  '', 
  'Publish', 
  'closed', 
@@ -149,7 +149,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,3);
+(23299,@lastQuestionId,3);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -186,7 +186,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A city wants to monitor its air quality to address the consequences of air pollution. A Machine Learning Specialist needs to forecast the air quality in parts per million of contaminates for the next 2 days in the city. As this is a prototype, only daily data from the last year is available.<br/>Which model is MOST likely to provide the best results in Amazon SageMaker?<br/>', 
- 'AWS ML Question #4', 
+ 'AWS ML Question 4', 
  '', 
  'Publish', 
  'closed', 
@@ -208,7 +208,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,4);
+(23299,@lastQuestionId,4);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -245,7 +245,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Engineer needs to build a model using a dataset containing customer credit card information<br/>How can the Data Engineer ensure the data remains encrypted and the credit card information is secure?<br/>', 
- 'AWS ML Question #5', 
+ 'AWS ML Question 5', 
  '', 
  'Publish', 
  'closed', 
@@ -267,7 +267,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,5);
+(23299,@lastQuestionId,5);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -304,7 +304,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is using an Amazon SageMaker notebook instance in a private subnet of a corporate VPC. The ML Specialist has important data stored on the Amazon SageMaker notebook instance''s Amazon EBS volume, and needs to take a snapshot of that EBS volume. However, the ML Specialist cannot find the Amazon SageMaker notebook instance''s EBS volume or Amazon EC2 instance within the VPC.<br/>Why is the ML Specialist not seeing the instance visible in the VPC?<br/>', 
- 'AWS ML Question #6', 
+ 'AWS ML Question 6', 
  '', 
  'Publish', 
  'closed', 
@@ -326,7 +326,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,6);
+(23299,@lastQuestionId,6);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -363,7 +363,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is building a model that will perform time series forecasting using Amazon SageMaker. The Specialist has finished training the model and is now planning to perform load testing on the endpoint so they can configure Auto Scaling for the model variant.<br/>Which approach will allow the Specialist to review the latency, memory utilization, and CPU utilization during the load test?<br/>', 
- 'AWS ML Question #7', 
+ 'AWS ML Question 7', 
  '', 
  'Publish', 
  'closed', 
@@ -385,7 +385,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,7);
+(23299,@lastQuestionId,7);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -422,7 +422,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company has structured and unstructured data stored in an Amazon S3 bucket. A Machine Learning Specialist wants to use SQL to run queries on this data.<br/>Which solution requires the LEAST effort to be able to query this data?<br/>', 
- 'AWS ML Question #8', 
+ 'AWS ML Question 8', 
  '', 
  'Publish', 
  'closed', 
@@ -444,7 +444,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,8);
+(23299,@lastQuestionId,8);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -481,7 +481,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is developing a custom video recommendation model for an application. The dataset used to train this model is very large with millions of data points and is hosted in an Amazon S3 bucket. The Specialist wants to avoid loading all of this data onto an Amazon SageMaker notebook instance because it would take hours to move and will exceed the attached 5 GB Amazon EBS volume on the notebook instance.<br/>Which approach allows the Specialist to use all the data to train the model?<br/>', 
- 'AWS ML Question #9', 
+ 'AWS ML Question 9', 
  '', 
  'Publish', 
  'closed', 
@@ -503,7 +503,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,9);
+(23299,@lastQuestionId,9);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -540,7 +540,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist has completed a proof of concept for a company using a small data sample, and now the Specialist is ready to implement an end- to-end solution in AWS using Amazon SageMaker. The historical training data is stored in Amazon RDS.<br/>Which approach should the Specialist use for training a model using that data?<br/>', 
- 'AWS ML Question #10', 
+ 'AWS ML Question 10', 
  '', 
  'Publish', 
  'closed', 
@@ -562,7 +562,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,10);
+(23299,@lastQuestionId,10);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -599,7 +599,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist receives customer data for an online shopping website. The data includes demographics, past visits, and locality information. The<br/>Specialist must develop a machine learning approach to identify the customer shopping patterns, preferences, and trends to enhance the website for better service and smart recommendations.<br/>Which solution should the Specialist recommend?<br/>', 
- 'AWS ML Question #11', 
+ 'AWS ML Question 11', 
  '', 
  'Publish', 
  'closed', 
@@ -621,7 +621,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,11);
+(23299,@lastQuestionId,11);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -658,7 +658,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is working with a large company to leverage machine learning within its products. The company wants to group its customers into categories based on which customers will and will not churn within the next 6 months. The company has labeled the data available to the Specialist.<br/>Which machine learning model type should the Specialist use to accomplish this task?<br/>', 
- 'AWS ML Question #12', 
+ 'AWS ML Question 12', 
  '', 
  'Publish', 
  'closed', 
@@ -680,7 +680,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,12);
+(23299,@lastQuestionId,12);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -716,8 +716,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'The displayed graph is from a forecasting model for testing a time series.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#13.jpg"/><br/>Considering the graph only, which conclusion should a Machine Learning Specialist make about the behavior of the model?<br/>', 
- 'AWS ML Question #13', 
+ 'The displayed graph is from a forecasting model for testing a time series.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_13.jpg"/><br/>Considering the graph only, which conclusion should a Machine Learning Specialist make about the behavior of the model?<br/>', 
+ 'AWS ML Question 13', 
  '', 
  'Publish', 
  'closed', 
@@ -739,7 +739,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,13);
+(23299,@lastQuestionId,13);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -775,8 +775,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#14.jpg"/><br/>Based on this information, which model would have the HIGHEST accuracy?<br/>', 
- 'AWS ML Question #14', 
+ 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_14.jpg"/><br/>Based on this information, which model would have the HIGHEST accuracy?<br/>', 
+ 'AWS ML Question 14', 
  '', 
  'Publish', 
  'closed', 
@@ -798,7 +798,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,14);
+(23299,@lastQuestionId,14);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -835,7 +835,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist at a company sensitive to security is preparing a dataset for model training. The dataset is stored in Amazon S3 and contains<br/>Personally Identifiable Information (PII).<br/>The dataset:<br/>✑ Must be accessible from a VPC only.<br/>✑ Must not traverse the public internet.<br/>How can these requirements be satisfied?<br/>', 
- 'AWS ML Question #15', 
+ 'AWS ML Question 15', 
  '', 
  'Publish', 
  'closed', 
@@ -857,7 +857,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,15);
+(23299,@lastQuestionId,15);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -894,7 +894,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'During mini-batch training of a neural network for a classification problem, a Data Scientist notices that training accuracy oscillates.<br/>What is the MOST likely cause of this issue?<br/>', 
- 'AWS ML Question #16', 
+ 'AWS ML Question 16', 
  '', 
  'Publish', 
  'closed', 
@@ -916,7 +916,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,16);
+(23299,@lastQuestionId,16);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -953,7 +953,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An employee found a video clip with audio on a company''s social media feed. The language used in the video is Spanish. English is the employee''s first language, and they do not understand Spanish. The employee wants to do a sentiment analysis.<br/>What combination of services is the MOST efficient to accomplish the task?<br/>', 
- 'AWS ML Question #17', 
+ 'AWS ML Question 17', 
  '', 
  'Publish', 
  'closed', 
@@ -975,7 +975,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,17);
+(23299,@lastQuestionId,17);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1012,7 +1012,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is packaging a custom ResNet model into a Docker container so the company can leverage Amazon SageMaker for training. The<br/>Specialist is using Amazon EC2 P3 instances to train the model and needs to properly configure the Docker container to leverage the NVIDIA GPUs.<br/>What does the Specialist need to do?<br/>', 
- 'AWS ML Question #18', 
+ 'AWS ML Question 18', 
  '', 
  'Publish', 
  'closed', 
@@ -1034,7 +1034,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,18);
+(23299,@lastQuestionId,18);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1071,7 +1071,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is building a logistic regression model that will predict whether or not a person will order a pizza. The Specialist is trying to build the optimal model with an ideal classification threshold.<br/>What model evaluation technique should the Specialist use to understand how different classification thresholds will impact the model''s performance?<br/>', 
- 'AWS ML Question #19', 
+ 'AWS ML Question 19', 
  '', 
  'Publish', 
  'closed', 
@@ -1093,7 +1093,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,19);
+(23299,@lastQuestionId,19);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1130,7 +1130,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An interactive online dictionary wants to add a widget that displays words used in similar contexts. A Machine Learning Specialist is asked to provide word features for the downstream nearest neighbor model powering the widget.<br/>What should the Specialist do to meet these requirements?<br/>', 
- 'AWS ML Question #20', 
+ 'AWS ML Question 20', 
  '', 
  'Publish', 
  'closed', 
@@ -1152,7 +1152,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,20);
+(23299,@lastQuestionId,20);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1189,7 +1189,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is configuring Amazon SageMaker so multiple Data Scientists can access notebooks, train models, and deploy endpoints. To ensure the best operational performance, the Specialist needs to be able to track how often the Scientists are deploying models, GPU and CPU utilization on the deployed SageMaker endpoints, and all errors that are generated when an endpoint is invoked.<br/>Which services are integrated with Amazon SageMaker to track this information? (Choose two.)<br/>', 
- 'AWS ML Question #21', 
+ 'AWS ML Question 21', 
  '', 
  'Publish', 
  'closed', 
@@ -1211,7 +1211,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,21);
+(23299,@lastQuestionId,21);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1253,7 +1253,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail chain has been ingesting purchasing records from its network of 20,000 stores to Amazon S3 using Amazon Kinesis Data Firehose. To support training an improved machine learning model, training records will require new but simple transformations, and some attributes will be combined. The model needs to be retrained daily.<br/>Given the large number of stores and the legacy data ingestion, which change will require the LEAST amount of development effort?<br/>', 
- 'AWS ML Question #22', 
+ 'AWS ML Question 22', 
  '', 
  'Publish', 
  'closed', 
@@ -1275,7 +1275,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,22);
+(23299,@lastQuestionId,22);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1312,7 +1312,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is building a convolutional neural network (CNN) that will classify 10 types of animals. The Specialist has built a series of layers in a neural network that will take an input image of an animal, pass it through a series of convolutional and pooling layers, and then finally pass it through a dense and fully connected layer with 10 nodes. The Specialist would like to get an output from the neural network that is a probability distribution of how likely it is that the input image belongs to each of the 10 classes.<br/>Which function will produce the desired output?<br/>', 
- 'AWS ML Question #23', 
+ 'AWS ML Question 23', 
  '', 
  'Publish', 
  'closed', 
@@ -1334,7 +1334,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,23);
+(23299,@lastQuestionId,23);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1371,7 +1371,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist trained a regression model, but the first iteration needs optimizing. The Specialist needs to understand whether the model is more frequently overestimating or underestimating the target.<br/>What option can the Specialist use to determine whether it is overestimating or underestimating the target value?<br/>', 
- 'AWS ML Question #24', 
+ 'AWS ML Question 24', 
  '', 
  'Publish', 
  'closed', 
@@ -1393,7 +1393,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,24);
+(23299,@lastQuestionId,24);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1429,8 +1429,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#25.jpg"/><br/>Based on this information, which model would have the HIGHEST recall with respect to the fraudulent class?<br/>', 
- 'AWS ML Question #25', 
+ 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_25.jpg"/><br/>Based on this information, which model would have the HIGHEST recall with respect to the fraudulent class?<br/>', 
+ 'AWS ML Question 25', 
  '', 
  'Publish', 
  'closed', 
@@ -1452,7 +1452,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,25);
+(23299,@lastQuestionId,25);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1489,7 +1489,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist kicks off a hyperparameter tuning job for a tree-based ensemble model using Amazon SageMaker with Area Under the ROC Curve<br/>(AUC) as the objective metric. This workflow will eventually be deployed in a pipeline that retrains and tunes hyperparameters each night to model click-through on data that goes stale every 24 hours.<br/>With the goal of decreasing the amount of time it takes to train these models, and ultimately to decrease costs, the Specialist wants to reconfigure the input hyperparameter range(s).<br/>Which visualization will accomplish this?<br/>', 
- 'AWS ML Question #26', 
+ 'AWS ML Question 26', 
  '', 
  'Publish', 
  'closed', 
@@ -1511,7 +1511,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,26);
+(23299,@lastQuestionId,26);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1548,7 +1548,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is creating a new natural language processing application that processes a dataset comprised of 1 million sentences. The aim is to then run Word2Vec to generate embeddings of the sentences and enable different types of predictions.<br/>Here is an example from the dataset:<br/>"The quck BROWN FOX jumps over the lazy dog.`<br/>Which of the following are the operations the Specialist needs to perform to correctly sanitize and prepare the data in a repeatable manner? (Choose three.)<br/>', 
- 'AWS ML Question #27', 
+ 'AWS ML Question 27', 
  '', 
  'Publish', 
  'closed', 
@@ -1570,7 +1570,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,27);
+(23299,@lastQuestionId,27);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1612,7 +1612,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is using Amazon Polly to translate plaintext documents to speech for automated company announcements. However, company acronyms are being mispronounced in the current documents.<br/>How should a Machine Learning Specialist address this issue for future documents?<br/>', 
- 'AWS ML Question #28', 
+ 'AWS ML Question 28', 
  '', 
  'Publish', 
  'closed', 
@@ -1634,7 +1634,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,28);
+(23299,@lastQuestionId,28);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1671,7 +1671,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An insurance company is developing a new device for vehicles that uses a camera to observe drivers'' behavior and alert them when they appear distracted. The company created approximately 10,000 training images in a controlled environment that a Machine Learning Specialist will use to train and evaluate machine learning models.<br/>During the model evaluation, the Specialist notices that the training error rate diminishes faster as the number of epochs increases and the model is not accurately inferring on the unseen test images.<br/>Which of the following should be used to resolve this issue? (Choose two.)<br/>', 
- 'AWS ML Question #29', 
+ 'AWS ML Question 29', 
  '', 
  'Publish', 
  'closed', 
@@ -1693,7 +1693,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,29);
+(23299,@lastQuestionId,29);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1735,7 +1735,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'When submitting Amazon SageMaker training jobs using one of the built-in algorithms, which common parameters MUST be specified? (Choose three.)<br/>', 
- 'AWS ML Question #30', 
+ 'AWS ML Question 30', 
  '', 
  'Publish', 
  'closed', 
@@ -1757,7 +1757,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,30);
+(23299,@lastQuestionId,30);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1799,7 +1799,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A monitoring service generates 1 TB of scale metrics record data every minute. A Research team performs queries on this data using Amazon Athena. The queries run slowly due to the large volume of data, and the team requires better performance.<br/>How should the records be stored in Amazon S3 to improve query performance?<br/>', 
- 'AWS ML Question #31', 
+ 'AWS ML Question 31', 
  '', 
  'Publish', 
  'closed', 
@@ -1821,7 +1821,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,31);
+(23299,@lastQuestionId,31);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1857,8 +1857,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'Machine Learning Specialist is working with a media company to perform classification on popular articles from the company''s website. The company is using random forests to classify how popular an article will be before it is published. A sample of the data being used is below.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#32.jpg"/><br/>Given the dataset, the Specialist wants to convert the Day_Of_Week column to binary values.<br/>What technique should be used to convert this column to binary values?<br/>', 
- 'AWS ML Question #32', 
+ 'Machine Learning Specialist is working with a media company to perform classification on popular articles from the company''s website. The company is using random forests to classify how popular an article will be before it is published. A sample of the data being used is below.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_32.jpg"/><br/>Given the dataset, the Specialist wants to convert the Day_Of_Week column to binary values.<br/>What technique should be used to convert this column to binary values?<br/>', 
+ 'AWS ML Question 32', 
  '', 
  'Publish', 
  'closed', 
@@ -1880,7 +1880,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,32);
+(23299,@lastQuestionId,32);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1917,7 +1917,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A gaming company has launched an online game where people can start playing for free, but they need to pay if they choose to use certain features. The company needs to build an automated system to predict whether or not a new user will become a paid user within 1 year. The company has gathered a labeled dataset from 1 million users.<br/>The training dataset consists of 1,000 positive samples (from users who ended up paying within 1 year) and 999,000 negative samples (from users who did not use any paid features). Each data sample consists of 200 features including user age, device, location, and play patterns.<br/>Using this dataset for training, the Data Science team trained a random forest model that converged with over 99% accuracy on the training set. However, the prediction results on a test dataset were not satisfactory<br/>Which of the following approaches should the Data Science team take to mitigate this issue? (Choose two.)<br/>', 
- 'AWS ML Question #33', 
+ 'AWS ML Question 33', 
  '', 
  'Publish', 
  'closed', 
@@ -1939,7 +1939,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,33);
+(23299,@lastQuestionId,33);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -1981,7 +1981,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist is developing a machine learning model to predict future patient outcomes based on information collected about each patient and their treatment plans. The model should output a continuous value as its prediction. The data available includes labeled outcomes for a set of 4,000 patients. The study was conducted on a group of individuals over the age of 65 who have a particular disease that is known to worsen with age.<br/>Initial models have performed poorly. While reviewing the underlying data, the Data Scientist notices that, out of 4,000 patient observations, there are 450 where the patient age has been input as 0. The other features for these observations appear normal compared to the rest of the sample population<br/>How should the Data Scientist correct this issue?<br/>', 
- 'AWS ML Question #34', 
+ 'AWS ML Question 34', 
  '', 
  'Publish', 
  'closed', 
@@ -2003,7 +2003,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,34);
+(23299,@lastQuestionId,34);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2040,7 +2040,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Science team is designing a dataset repository where it will store a large amount of training data commonly used in its machine learning models. As Data<br/>Scientists may create an arbitrary number of new datasets every day, the solution has to scale automatically and be cost-effective. Also, it must be possible to explore the data using SQL.<br/>Which storage scheme is MOST adapted to this scenario?<br/>', 
- 'AWS ML Question #35', 
+ 'AWS ML Question 35', 
  '', 
  'Publish', 
  'closed', 
@@ -2062,7 +2062,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,35);
+(23299,@lastQuestionId,35);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2099,7 +2099,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist deployed a model that provides product recommendations on a company''s website. Initially, the model was performing very well and resulted in customers buying more products on average. However, within the past few months, the Specialist has noticed that the effect of product recommendations has diminished and customers are starting to return to their original habits of spending less. The Specialist is unsure of what happened, as the model has not changed from its initial deployment over a year ago.<br/>Which method should the Specialist try to improve model performance?<br/>', 
- 'AWS ML Question #36', 
+ 'AWS ML Question 36', 
  '', 
  'Publish', 
  'closed', 
@@ -2121,7 +2121,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,36);
+(23299,@lastQuestionId,36);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2158,7 +2158,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist working for an online fashion company wants to build a data ingestion solution for the company''s Amazon S3-based data lake.<br/>The Specialist wants to create a set of ingestion mechanisms that will enable future capabilities comprised of:<br/>✑ Real-time analytics<br/>✑ Interactive analytics of historical data<br/>✑ Clickstream analytics<br/>✑ Product recommendations<br/>Which services should the Specialist use?<br/>', 
- 'AWS ML Question #37', 
+ 'AWS ML Question 37', 
  '', 
  'Publish', 
  'closed', 
@@ -2180,7 +2180,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,37);
+(23299,@lastQuestionId,37);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2217,7 +2217,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is observing low accuracy while training on the default built-in image classification algorithm in Amazon SageMaker. The Data Science team wants to use an Inception neural network architecture instead of a ResNet architecture.<br/>Which of the following will accomplish this? (Choose two.)<br/>', 
- 'AWS ML Question #38', 
+ 'AWS ML Question 38', 
  '', 
  'Publish', 
  'closed', 
@@ -2239,7 +2239,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,38);
+(23299,@lastQuestionId,38);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2281,7 +2281,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist built an image classification deep learning model. However, the Specialist ran into an overfitting problem in which the training and testing accuracies were 99% and 75%, respectively.<br/>How should the Specialist address this issue and what is the reason behind it?<br/>', 
- 'AWS ML Question #39', 
+ 'AWS ML Question 39', 
  '', 
  'Publish', 
  'closed', 
@@ -2303,7 +2303,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,39);
+(23299,@lastQuestionId,39);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2340,7 +2340,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning team uses Amazon SageMaker to train an Apache MXNet handwritten digit classifier model using a research dataset. The team wants to receive a notification when the model is overfitting. Auditors want to view the Amazon SageMaker log activity report to ensure there are no unauthorized API calls.<br/>What should the Machine Learning team do to address the requirements with the least amount of code and fewest steps?<br/>', 
- 'AWS ML Question #40', 
+ 'AWS ML Question 40', 
  '', 
  'Publish', 
  'closed', 
@@ -2362,7 +2362,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,40);
+(23299,@lastQuestionId,40);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2399,7 +2399,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is building a prediction model for a large number of features using linear models, such as linear regression and logistic regression.<br/>During exploratory data analysis, the Specialist observes that many features are highly correlated with each other. This may make the model unstable.<br/>What should be done to reduce the impact of having such a large number of features?<br/>', 
- 'AWS ML Question #41', 
+ 'AWS ML Question 41', 
  '', 
  'Publish', 
  'closed', 
@@ -2421,7 +2421,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,41);
+(23299,@lastQuestionId,41);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2458,7 +2458,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is implementing a full Bayesian network on a dataset that describes public transit in New York City. One of the random variables is discrete, and represents the number of minutes New Yorkers wait for a bus given that the buses cycle every 10 minutes, with a mean of 3 minutes.<br/>Which prior probability distribution should the ML Specialist use for this variable?<br/>', 
- 'AWS ML Question #42', 
+ 'AWS ML Question 42', 
  '', 
  'Publish', 
  'closed', 
@@ -2480,7 +2480,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,42);
+(23299,@lastQuestionId,42);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2517,7 +2517,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Science team within a large company uses Amazon SageMaker notebooks to access data stored in Amazon S3 buckets. The IT Security team is concerned that internet-enabled notebook instances create a security vulnerability where malicious code running on the instances could compromise data privacy.<br/>The company mandates that all instances stay within a secured VPC with no internet access, and data communication traffic must stay within the AWS network.<br/>How should the Data Science team configure the notebook instance placement to meet these requirements?<br/>', 
- 'AWS ML Question #43', 
+ 'AWS ML Question 43', 
  '', 
  'Publish', 
  'closed', 
@@ -2539,7 +2539,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,43);
+(23299,@lastQuestionId,43);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2576,7 +2576,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist has created a deep learning neural network model that performs well on the training data but performs poorly on the test data.<br/>Which of the following methods should the Specialist consider using to correct this? (Choose three.)<br/>', 
- 'AWS ML Question #44', 
+ 'AWS ML Question 44', 
  '', 
  'Publish', 
  'closed', 
@@ -2598,7 +2598,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,44);
+(23299,@lastQuestionId,44);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2640,7 +2640,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist needs to create a serverless ingestion and analytics solution for high-velocity, real-time streaming data.<br/>The ingestion process must buffer and convert incoming records from JSON to a query-optimized, columnar format without data loss. The output datastore must be highly available, and Analysts must be able to run SQL queries against the data and connect to existing business intelligence dashboards.<br/>Which solution should the Data Scientist build to satisfy the requirements?<br/>', 
- 'AWS ML Question #45', 
+ 'AWS ML Question 45', 
  '', 
  'Publish', 
  'closed', 
@@ -2662,7 +2662,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,45);
+(23299,@lastQuestionId,45);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2699,7 +2699,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online reseller has a large, multi-column dataset with one column missing 30% of its data. A Machine Learning Specialist believes that certain columns in the dataset could be used to reconstruct the missing data.<br/>Which reconstruction approach should the Specialist use to preserve the integrity of the dataset?<br/>', 
- 'AWS ML Question #46', 
+ 'AWS ML Question 46', 
  '', 
  'Publish', 
  'closed', 
@@ -2721,7 +2721,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,46);
+(23299,@lastQuestionId,46);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2758,7 +2758,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is setting up an Amazon SageMaker environment. The corporate data security policy does not allow communication over the internet.<br/>How can the company enable the Amazon SageMaker service without enabling direct internet access to Amazon SageMaker notebook instances?<br/>', 
- 'AWS ML Question #47', 
+ 'AWS ML Question 47', 
  '', 
  'Publish', 
  'closed', 
@@ -2780,7 +2780,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,47);
+(23299,@lastQuestionId,47);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2817,7 +2817,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is training a model to identify the make and model of vehicles in images. The Specialist wants to use transfer learning and an existing model trained on images of general objects. The Specialist collated a large custom dataset of pictures containing different vehicle makes and models.<br/>What should the Specialist do to initialize the model to re-train it with the custom data?<br/>', 
- 'AWS ML Question #48', 
+ 'AWS ML Question 48', 
  '', 
  'Publish', 
  'closed', 
@@ -2839,7 +2839,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,48);
+(23299,@lastQuestionId,48);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2876,7 +2876,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An office security agency conducted a successful pilot using 100 cameras installed at key locations within the main office. Images from the cameras were uploaded to Amazon S3 and tagged using Amazon Rekognition, and the results were stored in Amazon ES. The agency is now looking to expand the pilot into a full production system using thousands of video cameras in its office locations globally. The goal is to identify activities performed by non-employees in real time<br/>Which solution should the agency consider?<br/>', 
- 'AWS ML Question #49', 
+ 'AWS ML Question 49', 
  '', 
  'Publish', 
  'closed', 
@@ -2898,7 +2898,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,49);
+(23299,@lastQuestionId,49);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2935,7 +2935,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Marketing Manager at a pet insurance company plans to launch a targeted marketing campaign on social media to acquire new customers. Currently, the company has the following data in Amazon Aurora:<br/>✑ Profiles for all past and existing customers<br/>✑ Profiles for all past and existing insured pets<br/>✑ Policy-level information<br/>✑ Premiums received<br/>✑ Claims paid<br/>What steps should be taken to implement a machine learning model to identify potential new customers on social media?<br/>', 
- 'AWS ML Question #50', 
+ 'AWS ML Question 50', 
  '', 
  'Publish', 
  'closed', 
@@ -2957,7 +2957,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,50);
+(23299,@lastQuestionId,50);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -2994,7 +2994,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company has a large set of labeled historical sales data. The manufacturer would like to predict how many units of a particular part should be produced each quarter.<br/>Which machine learning approach should be used to solve this problem?<br/>', 
- 'AWS ML Question #51', 
+ 'AWS ML Question 51', 
  '', 
  'Publish', 
  'closed', 
@@ -3016,7 +3016,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,51);
+(23299,@lastQuestionId,51);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3053,7 +3053,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A financial services company is building a robust serverless data lake on Amazon S3. The data lake should be flexible and meet the following requirements:<br/>✑ Support querying old and new data on Amazon S3 through Amazon Athena and Amazon Redshift Spectrum.<br/>✑ Support event-driven ETL pipelines<br/>✑ Provide a quick and easy way to understand metadata<br/>Which approach meets these requirements?<br/>', 
- 'AWS ML Question #52', 
+ 'AWS ML Question 52', 
  '', 
  'Publish', 
  'closed', 
@@ -3075,7 +3075,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,52);
+(23299,@lastQuestionId,52);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3112,7 +3112,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company''s Machine Learning Specialist needs to improve the training speed of a time-series forecasting model using TensorFlow. The training is currently implemented on a single-GPU machine and takes approximately 23 hours to complete. The training needs to be run daily.<br/>The model accuracy is acceptable, but the company anticipates a continuous increase in the size of the training data and a need to update the model on an hourly, rather than a daily, basis. The company also wants to minimize coding effort and infrastructure changes.<br/>What should the Machine Learning Specialist do to the training solution to allow it to scale for future demand?<br/>', 
- 'AWS ML Question #53', 
+ 'AWS ML Question 53', 
  '', 
  'Publish', 
  'closed', 
@@ -3134,7 +3134,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,53);
+(23299,@lastQuestionId,53);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3171,7 +3171,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'Which of the following metrics should a Machine Learning Specialist generally use to compare/evaluate machine learning classification models against each other?<br/>', 
- 'AWS ML Question #54', 
+ 'AWS ML Question 54', 
  '', 
  'Publish', 
  'closed', 
@@ -3193,7 +3193,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,54);
+(23299,@lastQuestionId,54);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3230,7 +3230,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is running a machine learning prediction service that generates 100 TB of predictions every day. A Machine Learning Specialist must generate a visualization of the daily precision-recall curve from the predictions, and forward a read-only version to the Business team.<br/>Which solution requires the LEAST coding effort?<br/>', 
- 'AWS ML Question #55', 
+ 'AWS ML Question 55', 
  '', 
  'Publish', 
  'closed', 
@@ -3252,7 +3252,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,55);
+(23299,@lastQuestionId,55);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3289,7 +3289,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is preparing data for training on Amazon SageMaker. The Specialist is using one of the SageMaker built-in algorithms for the training. The dataset is stored in .CSV format and is transformed into a numpy.array, which appears to be negatively affecting the speed of the training.<br/>What should the Specialist do to optimize the data for training on SageMaker?<br/>', 
- 'AWS ML Question #56', 
+ 'AWS ML Question 56', 
  '', 
  'Publish', 
  'closed', 
@@ -3311,7 +3311,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,56);
+(23299,@lastQuestionId,56);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3348,7 +3348,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is required to build a supervised image-recognition model to identify a cat. The ML Specialist performs some tests and records the following results for a neural network-based image classifier:<br/>Total number of images available = 1,000<br/>Test set images = 100 (constant test set)<br/>The ML Specialist notices that, in over 75% of the misclassified images, the cats were held upside down by their owners.<br/>Which techniques can be used by the ML Specialist to improve this specific test error?<br/>', 
- 'AWS ML Question #57', 
+ 'AWS ML Question 57', 
  '', 
  'Publish', 
  'closed', 
@@ -3370,7 +3370,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,57);
+(23299,@lastQuestionId,57);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3407,7 +3407,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist needs to be able to ingest streaming data and store it in Apache Parquet files for exploration and analysis.<br/>Which of the following services would both ingest and store this data in the correct format?<br/>', 
- 'AWS ML Question #58', 
+ 'AWS ML Question 58', 
  '', 
  'Publish', 
  'closed', 
@@ -3429,7 +3429,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,58);
+(23299,@lastQuestionId,58);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3466,7 +3466,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist has explored and sanitized a dataset in preparation for the modeling phase of a supervised learning task. The statistical dispersion can vary widely between features, sometimes by several orders of magnitude. Before moving on to the modeling phase, the data scientist wants to ensure that the prediction performance on the production data is as accurate as possible.<br/>Which sequence of steps should the data scientist take to meet these requirements?<br/>', 
- 'AWS ML Question #59', 
+ 'AWS ML Question 59', 
  '', 
  'Publish', 
  'closed', 
@@ -3488,7 +3488,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,59);
+(23299,@lastQuestionId,59);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3525,7 +3525,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is assigned a TensorFlow project using Amazon SageMaker for training, and needs to continue working for an extended period with no Wi-Fi access.<br/>Which approach should the Specialist use to continue working?<br/>', 
- 'AWS ML Question #60', 
+ 'AWS ML Question 60', 
  '', 
  'Publish', 
  'closed', 
@@ -3547,7 +3547,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,60);
+(23299,@lastQuestionId,60);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3584,7 +3584,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is working with a large cybersecurity company that manages security events in real time for companies around the world. The cybersecurity company wants to design a solution that will allow it to use machine learning to score malicious events as anomalies on the data as it is being ingested. The company also wants be able to save the results in its data lake for later processing and analysis.<br/>What is the MOST efficient way to accomplish these tasks?<br/>', 
- 'AWS ML Question #61', 
+ 'AWS ML Question 61', 
  '', 
  'Publish', 
  'closed', 
@@ -3606,7 +3606,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,61);
+(23299,@lastQuestionId,61);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3643,7 +3643,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist wants to gain real-time insights into a data stream of GZIP files.<br/>Which solution would allow the use of SQL to query the stream with the LEAST latency?<br/>', 
- 'AWS ML Question #62', 
+ 'AWS ML Question 62', 
  '', 
  'Publish', 
  'closed', 
@@ -3665,7 +3665,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,62);
+(23299,@lastQuestionId,62);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3702,7 +3702,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company intends to use machine learning to categorize new products. A labeled dataset of current products was provided to the Data Science team. The dataset includes 1,200 products. The labeled dataset has 15 features for each product such as title dimensions, weight, and price. Each product is labeled as belonging to one of six categories such as books, games, electronics, and movies.<br/>Which model should be used for categorizing new products using the provided dataset for training?<br/>', 
- 'AWS ML Question #63', 
+ 'AWS ML Question 63', 
  '', 
  'Publish', 
  'closed', 
@@ -3724,7 +3724,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,63);
+(23299,@lastQuestionId,63);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3761,7 +3761,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist is working on an application that performs sentiment analysis. The validation accuracy is poor, and the Data Scientist thinks that the cause may be a rich vocabulary and a low average frequency of words in the dataset.<br/>Which tool should be used to improve the validation accuracy?<br/>', 
- 'AWS ML Question #64', 
+ 'AWS ML Question 64', 
  '', 
  'Publish', 
  'closed', 
@@ -3783,7 +3783,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,64);
+(23299,@lastQuestionId,64);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3820,7 +3820,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'Machine Learning Specialist is building a model to predict future employment rates based on a wide range of economic factors. While exploring the data, the<br/>Specialist notices that the magnitude of the input features vary greatly. The Specialist does not want variables with a larger magnitude to dominate the model.<br/>What should the Specialist do to prepare the data for model training?<br/>', 
- 'AWS ML Question #65', 
+ 'AWS ML Question 65', 
  '', 
  'Publish', 
  'closed', 
@@ -3842,7 +3842,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,65);
+(23299,@lastQuestionId,65);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3879,7 +3879,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist must build out a process to query a dataset on Amazon S3 using Amazon Athena. The dataset contains more than 800,000 records stored as plaintext CSV files. Each record contains 200 columns and is approximately 1.5 MB in size. Most queries will span 5 to 10 columns only.<br/>How should the Machine Learning Specialist transform the dataset to minimize query runtime?<br/>', 
- 'AWS ML Question #66', 
+ 'AWS ML Question 66', 
  '', 
  'Publish', 
  'closed', 
@@ -3901,7 +3901,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,66);
+(23299,@lastQuestionId,66);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3938,7 +3938,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is developing a daily ETL workflow containing multiple ETL jobs. The workflow consists of the following processes:<br/>* Start the workflow as soon as data is uploaded to Amazon S3.<br/>* When all the datasets are available in Amazon S3, start an ETL job to join the uploaded datasets with multiple terabyte-sized datasets already stored in Amazon<br/>S3.<br/>* Store the results of joining datasets in Amazon S3.<br/>* If one of the jobs fails, send a notification to the Administrator.<br/>Which configuration will meet these requirements?<br/>', 
- 'AWS ML Question #67', 
+ 'AWS ML Question 67', 
  '', 
  'Publish', 
  'closed', 
@@ -3960,7 +3960,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,67);
+(23299,@lastQuestionId,67);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -3997,7 +3997,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An agency collects census information within a country to determine healthcare and social program needs by province and city. The census form collects responses for approximately 500 questions from each citizen.<br/>Which combination of algorithms would provide the appropriate insights? (Choose two.)<br/>', 
- 'AWS ML Question #68', 
+ 'AWS ML Question 68', 
  '', 
  'Publish', 
  'closed', 
@@ -4019,7 +4019,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,68);
+(23299,@lastQuestionId,68);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4061,7 +4061,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A large consumer goods manufacturer has the following products on sale:<br/>* 34 different toothpaste variants<br/>* 48 different toothbrush variants<br/>* 43 different mouthwash variants<br/>The entire sales history of all these products is available in Amazon S3. Currently, the company is using custom-built autoregressive integrated moving average<br/>(ARIMA) models to forecast demand for these products. The company wants to predict the demand for a new product that will soon be launched.<br/>Which solution should a Machine Learning Specialist apply?<br/>', 
- 'AWS ML Question #69', 
+ 'AWS ML Question 69', 
  '', 
  'Publish', 
  'closed', 
@@ -4083,7 +4083,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,69);
+(23299,@lastQuestionId,69);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4120,7 +4120,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist uploads a dataset to an Amazon S3 bucket protected with server-side encryption using AWS KMS.<br/>How should the ML Specialist define the Amazon SageMaker notebook instance so it can read the same dataset from Amazon S3?<br/>', 
- 'AWS ML Question #70', 
+ 'AWS ML Question 70', 
  '', 
  'Publish', 
  'closed', 
@@ -4142,7 +4142,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,70);
+(23299,@lastQuestionId,70);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4179,7 +4179,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist needs to migrate an existing on-premises ETL process to the cloud. The current process runs at regular time intervals and uses PySpark to combine and format multiple large data sources into a single consolidated output for downstream processing.<br/>The Data Scientist has been given the following requirements to the cloud solution:<br/>✑ Combine multiple data sources.<br/>✑ Reuse existing PySpark logic.<br/>✑ Run the solution on the existing schedule.<br/>✑ Minimize the number of servers that will need to be managed.<br/>Which architecture should the Data Scientist use to build this solution?<br/>', 
- 'AWS ML Question #71', 
+ 'AWS ML Question 71', 
  '', 
  'Publish', 
  'closed', 
@@ -4201,7 +4201,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,71);
+(23299,@lastQuestionId,71);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4238,7 +4238,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist is building a model to predict customer churn using a dataset of 100 continuous numerical features. The Marketing team has not provided any insight about which features are relevant for churn prediction. The Marketing team wants to interpret the model and see the direct impact of relevant features on the model outcome. While training a logistic regression model, the Data Scientist observes that there is a wide gap between the training and validation set accuracy.<br/>Which methods can the Data Scientist use to improve the model performance and satisfy the Marketing team''s needs? (Choose two.)<br/>', 
- 'AWS ML Question #72', 
+ 'AWS ML Question 72', 
  '', 
  'Publish', 
  'closed', 
@@ -4260,7 +4260,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,72);
+(23299,@lastQuestionId,72);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4302,7 +4302,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An aircraft engine manufacturing company is measuring 200 performance metrics in a time-series. Engineers want to detect critical manufacturing defects in near- real time during testing. All of the data needs to be stored for offline analysis.<br/>What approach would be the MOST effective to perform near-real time defect detection?<br/>', 
- 'AWS ML Question #73', 
+ 'AWS ML Question 73', 
  '', 
  'Publish', 
  'closed', 
@@ -4324,7 +4324,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,73);
+(23299,@lastQuestionId,73);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4361,7 +4361,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning team runs its own training algorithm on Amazon SageMaker. The training algorithm requires external assets. The team needs to submit both its own algorithm code and algorithm-specific parameters to Amazon SageMaker.<br/>What combination of services should the team use to build a custom algorithm in Amazon SageMaker? (Choose two.)<br/>', 
- 'AWS ML Question #74', 
+ 'AWS ML Question 74', 
  '', 
  'Publish', 
  'closed', 
@@ -4383,7 +4383,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,74);
+(23299,@lastQuestionId,74);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4425,7 +4425,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist wants to determine the appropriate SageMakerVariantInvocationsPerInstance setting for an endpoint automatic scaling configuration. The Specialist has performed a load test on a single instance and determined that peak requests per second (RPS) without service degradation is about 20 RPS. As this is the first deployment, the Specialist intends to set the invocation safety factor to 0.5.<br/>Based on the stated parameters and given that the invocations per instance setting is measured on a per-minute basis, what should the Specialist set as the<br/>SageMakerVariantInvocationsPerInstance setting?<br/>', 
- 'AWS ML Question #75', 
+ 'AWS ML Question 75', 
  '', 
  'Publish', 
  'closed', 
@@ -4447,7 +4447,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,75);
+(23299,@lastQuestionId,75);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4484,7 +4484,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company uses a long short-term memory (LSTM) model to evaluate the risk factors of a particular energy sector. The model reviews multi-page text documents to analyze each sentence of the text and categorize it as either a potential risk or no risk. The model is not performing well, even though the Data Scientist has experimented with many different network structures and tuned the corresponding hyperparameters.<br/>Which approach will provide the MAXIMUM performance boost?<br/>', 
- 'AWS ML Question #76', 
+ 'AWS ML Question 76', 
  '', 
  'Publish', 
  'closed', 
@@ -4506,7 +4506,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,76);
+(23299,@lastQuestionId,76);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4543,7 +4543,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist needs to move and transform data in preparation for training. Some of the data needs to be processed in near-real time, and other data can be moved hourly. There are existing Amazon EMR MapReduce jobs to clean and feature engineering to perform on the data.<br/>Which of the following services can feed data to the MapReduce jobs? (Choose two.)<br/>', 
- 'AWS ML Question #77', 
+ 'AWS ML Question 77', 
  '', 
  'Publish', 
  'closed', 
@@ -4565,7 +4565,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,77);
+(23299,@lastQuestionId,77);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4607,7 +4607,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist previously trained a logistic regression model using scikit-learn on a local machine, and the Specialist now wants to deploy it to production for inference only.<br/>What steps should be taken to ensure Amazon SageMaker can host a model that was trained locally?<br/>', 
- 'AWS ML Question #78', 
+ 'AWS ML Question 78', 
  '', 
  'Publish', 
  'closed', 
@@ -4629,7 +4629,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,78);
+(23299,@lastQuestionId,78);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4666,7 +4666,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A trucking company is collecting live image data from its fleet of trucks across the globe. The data is growing rapidly and approximately 100 GB of new data is generated every day. The company wants to explore machine learning uses cases while ensuring the data is only accessible to specific IAM users.<br/>Which storage option provides the most processing flexibility and will allow access control with IAM?<br/>', 
- 'AWS ML Question #79', 
+ 'AWS ML Question 79', 
  '', 
  'Publish', 
  'closed', 
@@ -4688,7 +4688,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,79);
+(23299,@lastQuestionId,79);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4725,7 +4725,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A credit card company wants to build a credit scoring model to help predict whether a new credit card applicant will default on a credit card payment. The company has collected data from a large number of sources with thousands of raw attributes. Early experiments to train a classification model revealed that many attributes are highly correlated, the large number of features slows down the training speed significantly, and that there are some overfitting issues.<br/>The Data Scientist on this project would like to speed up the model training time without losing a lot of information from the original dataset.<br/>Which feature engineering technique should the Data Scientist use to meet the objectives?<br/>', 
- 'AWS ML Question #80', 
+ 'AWS ML Question 80', 
  '', 
  'Publish', 
  'closed', 
@@ -4747,7 +4747,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,80);
+(23299,@lastQuestionId,80);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4784,7 +4784,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist is training a multilayer perception (MLP) on a dataset with multiple classes. The target class of interest is unique compared to the other classes within the dataset, but it does not achieve and acceptable recall metric. The Data Scientist has already tried varying the number and size of the MLP''s hidden layers, which has not significantly improved the results. A solution to improve recall must be implemented as quickly as possible.<br/>Which techniques should be used to meet these requirements?<br/>', 
- 'AWS ML Question #81', 
+ 'AWS ML Question 81', 
  '', 
  'Publish', 
  'closed', 
@@ -4806,7 +4806,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,81);
+(23299,@lastQuestionId,81);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4843,7 +4843,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist works for a credit card processing company and needs to predict which transactions may be fraudulent in near-real time.<br/>Specifically, the Specialist must train a model that returns the probability that a given transaction may fraudulent.<br/>How should the Specialist frame this business problem?<br/>', 
- 'AWS ML Question #82', 
+ 'AWS ML Question 82', 
  '', 
  'Publish', 
  'closed', 
@@ -4865,7 +4865,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,82);
+(23299,@lastQuestionId,82);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4902,7 +4902,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A real estate company wants to create a machine learning model for predicting housing prices based on a historical dataset. The dataset contains 32 features.<br/>Which model will meet the business requirement?<br/>', 
- 'AWS ML Question #83', 
+ 'AWS ML Question 83', 
  '', 
  'Publish', 
  'closed', 
@@ -4924,7 +4924,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,83);
+(23299,@lastQuestionId,83);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -4961,7 +4961,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is applying a linear least squares regression model to a dataset with 1,000 records and 50 features. Prior to training, the ML<br/>Specialist notices that two features are perfectly linearly dependent.<br/>Why could this be an issue for the linear least squares regression model?<br/>', 
- 'AWS ML Question #84', 
+ 'AWS ML Question 84', 
  '', 
  'Publish', 
  'closed', 
@@ -4983,7 +4983,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,84);
+(23299,@lastQuestionId,84);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5019,8 +5019,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'Given the following confusion matrix for a movie classification model, what is the true class frequency for Romance and the predicted class frequency for<br/>Adventure?<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#85.jpg"/><br/>', 
- 'AWS ML Question #85', 
+ 'Given the following confusion matrix for a movie classification model, what is the true class frequency for Romance and the predicted class frequency for<br/>Adventure?<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_85.jpg"/><br/>', 
+ 'AWS ML Question 85', 
  '', 
  'Publish', 
  'closed', 
@@ -5042,7 +5042,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,85);
+(23299,@lastQuestionId,85);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5079,7 +5079,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist wants to bring a custom algorithm to Amazon SageMaker. The Specialist implements the algorithm in a Docker container supported by Amazon SageMaker.<br/>How should the Specialist package the Docker container so that Amazon SageMaker can launch the training correctly?<br/>', 
- 'AWS ML Question #86', 
+ 'AWS ML Question 86', 
  '', 
  'Publish', 
  'closed', 
@@ -5101,7 +5101,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,86);
+(23299,@lastQuestionId,86);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5138,7 +5138,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist needs to analyze employment data. The dataset contains approximately 10 million observations on people across 10 different features. During the preliminary analysis, the Data Scientist notices that income and age distributions are not normal. While income levels shows a right skew as expected, with fewer individuals having a higher income, the age distribution also shows a right skew, with fewer older individuals participating in the workforce.<br/>Which feature transformations can the Data Scientist apply to fix the incorrectly skewed data? (Choose two.)<br/>', 
- 'AWS ML Question #87', 
+ 'AWS ML Question 87', 
  '', 
  'Publish', 
  'closed', 
@@ -5160,7 +5160,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,87);
+(23299,@lastQuestionId,87);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5202,7 +5202,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A web-based company wants to improve its conversion rate on its landing page. Using a large historical dataset of customer visits, the company has repeatedly trained a multi-class deep learning network algorithm on Amazon SageMaker. However, there is an overfitting problem: training data shows 90% accuracy in predictions, while test data shows 70% accuracy only.<br/>The company needs to boost the generalization of its model before deploying it into production to maximize conversions of visits to purchases.<br/>Which action is recommended to provide the HIGHEST accuracy model for the company''s test and validation data?<br/>', 
- 'AWS ML Question #88', 
+ 'AWS ML Question 88', 
  '', 
  'Publish', 
  'closed', 
@@ -5224,7 +5224,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,88);
+(23299,@lastQuestionId,88);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5261,7 +5261,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is given a structured dataset on the shopping habits of a company''s customer base. The dataset contains thousands of columns of data and hundreds of numerical columns for each customer. The Specialist wants to identify whether there are natural groupings for these columns across all customers and visualize the results as quickly as possible.<br/>What approach should the Specialist take to accomplish these tasks?<br/>', 
- 'AWS ML Question #89', 
+ 'AWS ML Question 89', 
  '', 
  'Publish', 
  'closed', 
@@ -5283,7 +5283,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,89);
+(23299,@lastQuestionId,89);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5320,7 +5320,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is planning to create a long-running Amazon EMR cluster. The EMR cluster will have 1 master node, 10 core nodes, and 20 task nodes. To save on costs, the Specialist will use Spot Instances in the EMR cluster.<br/>Which nodes should the Specialist launch on Spot Instances?<br/>', 
- 'AWS ML Question #90', 
+ 'AWS ML Question 90', 
  '', 
  'Publish', 
  'closed', 
@@ -5342,7 +5342,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,90);
+(23299,@lastQuestionId,90);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5379,7 +5379,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturer of car engines collects data from cars as they are being driven. The data collected includes timestamp, engine temperature, rotations per minute<br/>(RPM), and other sensor readings. The company wants to predict when an engine is going to have a problem, so it can notify drivers in advance to get engine maintenance. The engine data is loaded into a data lake for training.<br/>Which is the MOST suitable predictive model that can be deployed into production?<br/>', 
- 'AWS ML Question #91', 
+ 'AWS ML Question 91', 
  '', 
  'Publish', 
  'closed', 
@@ -5401,7 +5401,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,91);
+(23299,@lastQuestionId,91);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5438,7 +5438,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to predict the sale prices of houses based on available historical sales data. The target variable in the company''s dataset is the sale price. The features include parameters such as the lot size, living area measurements, non-living area measurements, number of bedrooms, number of bathrooms, year built, and postal code. The company wants to use multi-variable linear regression to predict house sale prices.<br/>Which step should a machine learning specialist take to remove features that are irrelevant for the analysis and reduce the model''s complexity?<br/>', 
- 'AWS ML Question #92', 
+ 'AWS ML Question 92', 
  '', 
  'Publish', 
  'closed', 
@@ -5460,7 +5460,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,92);
+(23299,@lastQuestionId,92);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5496,8 +5496,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a machine learning specialist will build a binary classifier based on two features: age of account, denoted by x, and transaction month, denoted by y. The class distributions are illustrated in the provided figure. The positive class is portrayed in red, while the negative class is portrayed in black.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#93.jpg"/><br/>Which model would have the HIGHEST accuracy?<br/>', 
- 'AWS ML Question #93', 
+ 'A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a machine learning specialist will build a binary classifier based on two features: age of account, denoted by x, and transaction month, denoted by y. The class distributions are illustrated in the provided figure. The positive class is portrayed in red, while the negative class is portrayed in black.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_93.jpg"/><br/>Which model would have the HIGHEST accuracy?<br/>', 
+ 'AWS ML Question 93', 
  '', 
  'Publish', 
  'closed', 
@@ -5519,7 +5519,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,93);
+(23299,@lastQuestionId,93);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5556,7 +5556,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A health care company is planning to use neural networks to classify their X-ray images into normal and abnormal classes. The labeled data is divided into a training set of 1,000 images and a test set of 200 images. The initial training of a neural network model with 50 hidden layers yielded 99% accuracy on the training set, but only 55% accuracy on the test set.<br/>What changes should the Specialist consider to solve this issue? (Choose three.)<br/>', 
- 'AWS ML Question #94', 
+ 'AWS ML Question 94', 
  '', 
  'Publish', 
  'closed', 
@@ -5578,7 +5578,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,94);
+(23299,@lastQuestionId,94);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5619,8 +5619,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'This graph shows the training and validation loss against the epochs for a neural network.<br/>The network being trained is as follows:<br/>✑ Two dense layers, one output neuron<br/>✑ 100 neurons in each layer<br/>✑ 100 epochs<br/>Random initialization of weights<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#95.jpg"/><br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#95.jpg"/><br/>Which technique can be used to improve model performance in terms of accuracy in the validation set?<br/>', 
- 'AWS ML Question #95', 
+ 'This graph shows the training and validation loss against the epochs for a neural network.<br/>The network being trained is as follows:<br/>✑ Two dense layers, one output neuron<br/>✑ 100 neurons in each layer<br/>✑ 100 epochs<br/>Random initialization of weights<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_95.jpg"/><br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_95.jpg"/><br/>Which technique can be used to improve model performance in terms of accuracy in the validation set?<br/>', 
+ 'AWS ML Question 95', 
  '', 
  'Publish', 
  'closed', 
@@ -5642,7 +5642,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,95);
+(23299,@lastQuestionId,95);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5678,8 +5678,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A Machine Learning Specialist is attempting to build a linear regression model.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#96.jpg"/><br/>Given the displayed residual plot only, what is the MOST likely problem with the model?<br/>', 
- 'AWS ML Question #96', 
+ 'A Machine Learning Specialist is attempting to build a linear regression model.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_96.jpg"/><br/>Given the displayed residual plot only, what is the MOST likely problem with the model?<br/>', 
+ 'AWS ML Question 96', 
  '', 
  'Publish', 
  'closed', 
@@ -5701,7 +5701,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,96);
+(23299,@lastQuestionId,96);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5738,7 +5738,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A large company has developed a BI application that generates reports and dashboards using data collected from various operational metrics. The company wants to provide executives with an enhanced experience so they can use natural language to get data from the reports. The company wants the executives to be able ask questions using written and spoken interfaces.<br/>Which combination of services can be used to build this conversational interface? (Choose three.)<br/>', 
- 'AWS ML Question #97', 
+ 'AWS ML Question 97', 
  '', 
  'Publish', 
  'closed', 
@@ -5760,7 +5760,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,97);
+(23299,@lastQuestionId,97);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5802,7 +5802,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning specialist works for a fruit processing company and needs to build a system that categorizes apples into three types. The specialist has collected a dataset that contains 150 images for each type of apple and applied transfer learning on a neural network that was pretrained on ImageNet with this dataset.<br/>The company requires at least 85% accuracy to make use of the model.<br/>After an exhaustive grid search, the optimal hyperparameters produced the following:<br/>✑ 68% accuracy on the training set<br/>✑ 67% accuracy on the validation set<br/>What can the machine learning specialist do to improve the system''s accuracy?<br/>', 
- 'AWS ML Question #98', 
+ 'AWS ML Question 98', 
  '', 
  'Publish', 
  'closed', 
@@ -5824,7 +5824,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,98);
+(23299,@lastQuestionId,98);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5861,7 +5861,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company uses camera images of the tops of items displayed on store shelves to determine which items were removed and which ones still remain. After several hours of data labeling, the company has a total of 1,000 hand-labeled images covering 10 distinct items. The training results were poor.<br/>Which machine learning approach fulfills the company''s long-term needs?<br/>', 
- 'AWS ML Question #99', 
+ 'AWS ML Question 99', 
  '', 
  'Publish', 
  'closed', 
@@ -5883,7 +5883,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,99);
+(23299,@lastQuestionId,99);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5920,7 +5920,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist is developing a binary classifier to predict whether a patient has a particular disease on a series of test results. The Data Scientist has data on<br/>400 patients randomly selected from the population. The disease is seen in 3% of the population.<br/>Which cross-validation strategy should the Data Scientist adopt?<br/>', 
- 'AWS ML Question #100', 
+ 'AWS ML Question 100', 
  '', 
  'Publish', 
  'closed', 
@@ -5942,7 +5942,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,100);
+(23299,@lastQuestionId,100);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -5979,7 +5979,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A technology startup is using complex deep neural networks and GPU compute to recommend the company''s products to its existing customers based upon each customer''s habits and interactions. The solution currently pulls each dataset from an Amazon S3 bucket before loading the data into a TensorFlow model pulled from the company''s Git repository that runs locally. This job then runs for several hours while continually outputting its progress to the same S3 bucket. The job can be paused, restarted, and continued at any time in the event of a failure, and is run from a central queue.<br/>Senior managers are concerned about the complexity of the solution''s resource management and the costs involved in repeating the process regularly. They ask for the workload to be automated so it runs once a week, starting Monday and completing by the close of business Friday.<br/>Which architecture should be used to scale the solution at the lowest cost?<br/>', 
- 'AWS ML Question #101', 
+ 'AWS ML Question 101', 
  '', 
  'Publish', 
  'closed', 
@@ -6001,7 +6001,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,101);
+(23299,@lastQuestionId,101);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6037,8 +6037,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A Machine Learning Specialist prepared the following graph displaying the results of k-means for k = [1..10]:<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#102.jpg"/><br/>Considering the graph, what is a reasonable selection for the optimal choice of k?<br/>', 
- 'AWS ML Question #102', 
+ 'A Machine Learning Specialist prepared the following graph displaying the results of k-means for k = [1..10]:<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_102.jpg"/><br/>Considering the graph, what is a reasonable selection for the optimal choice of k?<br/>', 
+ 'AWS ML Question 102', 
  '', 
  'Publish', 
  'closed', 
@@ -6060,7 +6060,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,102);
+(23299,@lastQuestionId,102);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6097,7 +6097,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A media company with a very large archive of unlabeled images, text, audio, and video footage wishes to index its assets to allow rapid identification of relevant content by the Research team. The company wants to use machine learning to accelerate the efforts of its in-house researchers who have limited machine learning expertise.<br/>Which is the FASTEST route to index the assets?<br/>', 
- 'AWS ML Question #103', 
+ 'AWS ML Question 103', 
  '', 
  'Publish', 
  'closed', 
@@ -6119,7 +6119,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,103);
+(23299,@lastQuestionId,103);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6156,7 +6156,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is working for an online retailer that wants to run analytics on every customer visit, processed through a machine learning pipeline.<br/>The data needs to be ingested by Amazon Kinesis Data Streams at up to 100 transactions per second, and the JSON data blob is 100 KB in size.<br/>What is the MINIMUM number of shards in Kinesis Data Streams the Specialist should use to successfully ingest this data?<br/>', 
- 'AWS ML Question #104', 
+ 'AWS ML Question 104', 
  '', 
  'Publish', 
  'closed', 
@@ -6178,7 +6178,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,104);
+(23299,@lastQuestionId,104);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6215,7 +6215,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is deciding between building a naive Bayesian model or a full Bayesian network for a classification problem. The Specialist computes the Pearson correlation coefficients between each feature and finds that their absolute values range between 0.1 to 0.95.<br/>Which model describes the underlying data in this situation?<br/>', 
- 'AWS ML Question #105', 
+ 'AWS ML Question 105', 
  '', 
  'Publish', 
  'closed', 
@@ -6237,7 +6237,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,105);
+(23299,@lastQuestionId,105);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6273,8 +6273,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A Data Scientist is building a linear regression model and will use resulting p-values to evaluate the statistical significance of each coefficient. Upon inspection of the dataset, the Data Scientist discovers that most of the features are normally distributed. The plot of one feature in the dataset is shown in the graphic.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#106.jpg"/><br/>What transformation should the Data Scientist apply to satisfy the statistical assumptions of the linear regression model?<br/>', 
- 'AWS ML Question #106', 
+ 'A Data Scientist is building a linear regression model and will use resulting p-values to evaluate the statistical significance of each coefficient. Upon inspection of the dataset, the Data Scientist discovers that most of the features are normally distributed. The plot of one feature in the dataset is shown in the graphic.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_106.jpg"/><br/>What transformation should the Data Scientist apply to satisfy the statistical assumptions of the linear regression model?<br/>', 
+ 'AWS ML Question 106', 
  '', 
  'Publish', 
  'closed', 
@@ -6296,7 +6296,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,106);
+(23299,@lastQuestionId,106);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6332,8 +6332,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A Machine Learning Specialist is assigned to a Fraud Detection team and must tune an XGBoost model, which is working appropriately for test data. However, with unknown data, it is not working as expected. The existing parameters are provided as follows.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#107.jpg"/><br/>Which parameter tuning guidelines should the Specialist follow to avoid overfitting?<br/>', 
- 'AWS ML Question #107', 
+ 'A Machine Learning Specialist is assigned to a Fraud Detection team and must tune an XGBoost model, which is working appropriately for test data. However, with unknown data, it is not working as expected. The existing parameters are provided as follows.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_107.jpg"/><br/>Which parameter tuning guidelines should the Specialist follow to avoid overfitting?<br/>', 
+ 'AWS ML Question 107', 
  '', 
  'Publish', 
  'closed', 
@@ -6355,7 +6355,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,107);
+(23299,@lastQuestionId,107);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6391,8 +6391,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A data scientist is developing a pipeline to ingest streaming web traffic data. The data scientist needs to implement a process to identify unusual web traffic patterns as part of the pipeline. The patterns will be used downstream for alerting and incident response. The data scientist has access to unlabeled historic data to use, if needed.<br/>The solution needs to do the following:<br/>✑ Calculate an anomaly score for each web traffic entry.<br/>Adapt unusual event identification to changing web patterns over time.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#108.jpg"/><br/>Which approach should the data scientist implement to meet these requirements?<br/>', 
- 'AWS ML Question #108', 
+ 'A data scientist is developing a pipeline to ingest streaming web traffic data. The data scientist needs to implement a process to identify unusual web traffic patterns as part of the pipeline. The patterns will be used downstream for alerting and incident response. The data scientist has access to unlabeled historic data to use, if needed.<br/>The solution needs to do the following:<br/>✑ Calculate an anomaly score for each web traffic entry.<br/>Adapt unusual event identification to changing web patterns over time.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_108.jpg"/><br/>Which approach should the data scientist implement to meet these requirements?<br/>', 
+ 'AWS ML Question 108', 
  '', 
  'Publish', 
  'closed', 
@@ -6414,7 +6414,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,108);
+(23299,@lastQuestionId,108);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6451,7 +6451,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Data Scientist received a set of insurance records, each consisting of a record ID, the final outcome among 200 categories, and the date of the final outcome.<br/>Some partial information on claim contents is also provided, but only for a few of the 200 categories. For each outcome category, there are hundreds of records distributed over the past 3 years. The Data Scientist wants to predict how many claims to expect in each category from month to month, a few months in advance.<br/>What type of machine learning model should be used?<br/>', 
- 'AWS ML Question #109', 
+ 'AWS ML Question 109', 
  '', 
  'Publish', 
  'closed', 
@@ -6473,7 +6473,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,109);
+(23299,@lastQuestionId,109);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6510,7 +6510,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company that promotes healthy sleep patterns by providing cloud-connected devices currently hosts a sleep tracking application on AWS. The application collects device usage information from device users. The company''s Data Science team is building a machine learning model to predict if and when a user will stop utilizing the company''s devices. Predictions from this model are used by a downstream application that determines the best approach for contacting users.<br/>The Data Science team is building multiple versions of the machine learning model to evaluate each version against the company''s business goals. To measure long-term effectiveness, the team wants to run multiple versions of the model in parallel for long periods of time, with the ability to control the portion of inferences served by the models.<br/>Which solution satisfies these requirements with MINIMAL effort?<br/>', 
- 'AWS ML Question #110', 
+ 'AWS ML Question 110', 
  '', 
  'Publish', 
  'closed', 
@@ -6532,7 +6532,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,110);
+(23299,@lastQuestionId,110);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6569,7 +6569,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An agricultural company is interested in using machine learning to detect specific types of weeds in a 100-acre grassland field. Currently, the company uses tractor-mounted cameras to capture multiple images of the field as 10 ֳ— 10 grids. The company also has a large training dataset that consists of annotated images of popular weed classes like broadleaf and non-broadleaf docks.<br/>The company wants to build a weed detection model that will detect specific types of weeds and the location of each type within the field. Once the model is ready, it will be hosted on Amazon SageMaker endpoints. The model will perform real-time inferencing using the images captured by the cameras.<br/>Which approach should a Machine Learning Specialist take to obtain accurate predictions?<br/>', 
- 'AWS ML Question #111', 
+ 'AWS ML Question 111', 
  '', 
  'Publish', 
  'closed', 
@@ -6591,7 +6591,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,111);
+(23299,@lastQuestionId,111);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6628,7 +6628,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturer is operating a large number of factories with a complex supply chain relationship where unexpected downtime of a machine can cause production to stop at several factories. A data scientist wants to analyze sensor data from the factories to identify equipment in need of preemptive maintenance and then dispatch a service team to prevent unplanned downtime. The sensor readings from a single machine can include up to 200 data points including temperatures, voltages, vibrations, RPMs, and pressure readings.<br/>To collect this sensor data, the manufacturer deployed Wi-Fi and LANs across the factories. Even though many factory locations do not have reliable or high- speed internet connectivity, the manufacturer would like to maintain near-real-time inference capabilities.<br/>Which deployment architecture for the model will address these business requirements?<br/>', 
- 'AWS ML Question #112', 
+ 'AWS ML Question 112', 
  '', 
  'Publish', 
  'closed', 
@@ -6650,7 +6650,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,112);
+(23299,@lastQuestionId,112);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6687,7 +6687,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A Machine Learning Specialist is designing a scalable data storage solution for Amazon SageMaker. There is an existing TensorFlow-based model implemented as a train.py script that relies on static training data that is currently stored as TFRecords.<br/>Which method of providing training data to Amazon SageMaker would meet the business requirements with the LEAST development overhead?<br/>', 
- 'AWS ML Question #113', 
+ 'AWS ML Question 113', 
  '', 
  'Publish', 
  'closed', 
@@ -6709,7 +6709,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,113);
+(23299,@lastQuestionId,113);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6746,7 +6746,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'The chief editor for a product catalog wants the research and development team to build a machine learning system that can be used to detect whether or not individuals in a collection of images are wearing the company''s retail brand. The team has a set of training data.<br/>Which machine learning algorithm should the researchers use that BEST meets their requirements?<br/>', 
- 'AWS ML Question #114', 
+ 'AWS ML Question 114', 
  '', 
  'Publish', 
  'closed', 
@@ -6768,7 +6768,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,114);
+(23299,@lastQuestionId,114);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6805,7 +6805,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company is using Amazon Personalize to provide personalized product recommendations for its customers during a marketing campaign. The company sees a significant increase in sales of recommended items to existing customers immediately after deploying a new solution version, but these sales decrease a short time after deployment. Only historical data from before the marketing campaign is available for training.<br/>How should a data scientist adjust the solution?<br/>', 
- 'AWS ML Question #115', 
+ 'AWS ML Question 115', 
  '', 
  'Publish', 
  'closed', 
@@ -6827,7 +6827,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,115);
+(23299,@lastQuestionId,115);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6864,7 +6864,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist wants to secure calls to the Amazon SageMaker Service API. The specialist has configured Amazon VPC with a VPC interface endpoint for the Amazon SageMaker Service API and is attempting to secure traffic from specific sets of instances and IAM users. The VPC is configured with a single public subnet.<br/>Which combination of steps should the ML specialist take to secure the traffic? (Choose two.)<br/>', 
- 'AWS ML Question #116', 
+ 'AWS ML Question 116', 
  '', 
  'Publish', 
  'closed', 
@@ -6886,7 +6886,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,116);
+(23299,@lastQuestionId,116);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6928,7 +6928,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An e commerce company wants to launch a new cloud-based product recommendation feature for its web application. Due to data localization regulations, any sensitive data must not leave its on-premises data center, and the product recommendation model must be trained and tested using nonsensitive data only. Data transfer to the cloud must use IPsec. The web application is hosted on premises with a PostgreSQL database that contains all the data. The company wants the data to be uploaded securely to Amazon S3 each day for model retraining.<br/>How should a machine learning specialist meet these requirements?<br/>', 
- 'AWS ML Question #117', 
+ 'AWS ML Question 117', 
  '', 
  'Publish', 
  'closed', 
@@ -6950,7 +6950,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,117);
+(23299,@lastQuestionId,117);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -6987,7 +6987,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A logistics company needs a forecast model to predict next month''s inventory requirements for a single item in 10 warehouses. A machine learning specialist uses<br/>Amazon Forecast to develop a forecast model from 3 years of monthly data. There is no missing data. The specialist selects the DeepAR+ algorithm to train a predictor. The predictor means absolute percentage error (MAPE) is much larger than the MAPE produced by the current human forecasters.<br/>Which changes to the CreatePredictor API call could improve the MAPE? (Choose two.)<br/>', 
- 'AWS ML Question #118', 
+ 'AWS ML Question 118', 
  '', 
  'Publish', 
  'closed', 
@@ -7009,7 +7009,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,118);
+(23299,@lastQuestionId,118);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7050,8 +7050,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A data scientist wants to use Amazon Forecast to build a forecasting model for inventory demand for a retail company. The company has provided a dataset of historic inventory demand for its products as a .csv file stored in an Amazon S3 bucket. The table below shows a sample of the dataset.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#119.jpg"/><br/>How should the data scientist transform the data?<br/>', 
- 'AWS ML Question #119', 
+ 'A data scientist wants to use Amazon Forecast to build a forecasting model for inventory demand for a retail company. The company has provided a dataset of historic inventory demand for its products as a .csv file stored in an Amazon S3 bucket. The table below shows a sample of the dataset.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_119.jpg"/><br/>How should the data scientist transform the data?<br/>', 
+ 'AWS ML Question 119', 
  '', 
  'Publish', 
  'closed', 
@@ -7073,7 +7073,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,119);
+(23299,@lastQuestionId,119);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7110,7 +7110,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning specialist is running an Amazon SageMaker endpoint using the built-in object detection algorithm on a P3 instance for real-time predictions in a company''s production application. When evaluating the model''s resource utilization, the specialist notices that the model is using only a fraction of the GPU.<br/>Which architecture changes would ensure that provisioned resources are being utilized effectively?<br/>', 
- 'AWS ML Question #120', 
+ 'AWS ML Question 120', 
  '', 
  'Publish', 
  'closed', 
@@ -7132,7 +7132,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,120);
+(23299,@lastQuestionId,120);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7169,7 +7169,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist uses an Amazon SageMaker notebook instance to conduct data exploration and analysis. This requires certain Python packages that are not natively available on Amazon SageMaker to be installed on the notebook instance.<br/>How can a machine learning specialist ensure that required packages are automatically available on the notebook instance for the data scientist to use?<br/>', 
- 'AWS ML Question #121', 
+ 'AWS ML Question 121', 
  '', 
  'Publish', 
  'closed', 
@@ -7191,7 +7191,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,121);
+(23299,@lastQuestionId,121);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7228,7 +7228,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist needs to identify fraudulent user accounts for a company''s ecommerce platform. The company wants the ability to determine if a newly created account is associated with a previously known fraudulent user. The data scientist is using AWS Glue to cleanse the company''s application logs during ingestion.<br/>Which strategy will allow the data scientist to identify fraudulent accounts?<br/>', 
- 'AWS ML Question #122', 
+ 'AWS ML Question 122', 
  '', 
  'Publish', 
  'closed', 
@@ -7250,7 +7250,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,122);
+(23299,@lastQuestionId,122);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7286,8 +7286,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A Data Scientist is developing a machine learning model to classify whether a financial transaction is fraudulent. The labeled data available for training consists of<br/>100,000 non-fraudulent observations and 1,000 fraudulent observations.<br/>The Data Scientist applies the XGBoost algorithm to the data, resulting in the following confusion matrix when the trained model is applied to a previously unseen validation dataset. The accuracy of the model is 99.1%, but the Data Scientist needs to reduce the number of false negatives.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#123.jpg"/><br/>Which combination of steps should the Data Scientist take to reduce the number of false negative predictions by the model? (Choose two.)<br/>', 
- 'AWS ML Question #123', 
+ 'A Data Scientist is developing a machine learning model to classify whether a financial transaction is fraudulent. The labeled data available for training consists of<br/>100,000 non-fraudulent observations and 1,000 fraudulent observations.<br/>The Data Scientist applies the XGBoost algorithm to the data, resulting in the following confusion matrix when the trained model is applied to a previously unseen validation dataset. The accuracy of the model is 99.1%, but the Data Scientist needs to reduce the number of false negatives.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_123.jpg"/><br/>Which combination of steps should the Data Scientist take to reduce the number of false negative predictions by the model? (Choose two.)<br/>', 
+ 'AWS ML Question 123', 
  '', 
  'Publish', 
  'closed', 
@@ -7309,7 +7309,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,123);
+(23299,@lastQuestionId,123);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7351,7 +7351,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist has developed a machine learning translation model for English to Japanese by using Amazon SageMaker''s built-in seq2seq algorithm with<br/>500,000 aligned sentence pairs. While testing with sample sentences, the data scientist finds that the translation quality is reasonable for an example as short as five words. However, the quality becomes unacceptable if the sentence is 100 words long.<br/>Which action will resolve the problem?<br/>', 
- 'AWS ML Question #124', 
+ 'AWS ML Question 124', 
  '', 
  'Publish', 
  'closed', 
@@ -7373,7 +7373,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,124);
+(23299,@lastQuestionId,124);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7410,7 +7410,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A financial company is trying to detect credit card fraud. The company observed that, on average, 2% of credit card transactions were fraudulent. A data scientist trained a classifier on a year''s worth of credit card transactions data. The model needs to identify the fraudulent transactions (positives) from the regular ones<br/>(negatives). The company''s goal is to accurately capture as many positives as possible.<br/>Which metrics should the data scientist use to optimize the model? (Choose two.)<br/>', 
- 'AWS ML Question #125', 
+ 'AWS ML Question 125', 
  '', 
  'Publish', 
  'closed', 
@@ -7432,7 +7432,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,125);
+(23299,@lastQuestionId,125);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7474,7 +7474,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning specialist is developing a proof of concept for government users whose primary concern is security. The specialist is using Amazon<br/>SageMaker to train a convolutional neural network (CNN) model for a photo classifier application. The specialist wants to protect the data so that it cannot be accessed and transferred to a remote host by malicious code accidentally installed on the training container.<br/>Which action will provide the MOST secure protection?<br/>', 
- 'AWS ML Question #126', 
+ 'AWS ML Question 126', 
  '', 
  'Publish', 
  'closed', 
@@ -7496,7 +7496,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,126);
+(23299,@lastQuestionId,126);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7533,7 +7533,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A medical imaging company wants to train a computer vision model to detect areas of concern on patients'' CT scans. The company has a large collection of unlabeled CT scans that are linked to each patient and stored in an Amazon S3 bucket. The scans must be accessible to authorized users only. A machine learning engineer needs to build a labeling pipeline.<br/>Which set of steps should the engineer take to build the labeling pipeline with the LEAST effort?<br/>', 
- 'AWS ML Question #127', 
+ 'AWS ML Question 127', 
  '', 
  'Publish', 
  'closed', 
@@ -7555,7 +7555,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,127);
+(23299,@lastQuestionId,127);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7592,7 +7592,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is using Amazon Textract to extract textual data from thousands of scanned text-heavy legal documents daily. The company uses this information to process loan applications automatically. Some of the documents fail business validation and are returned to human reviewers, who investigate the errors. This activity increases the time to process the loan applications.<br/>What should the company do to reduce the processing time of loan applications?<br/>', 
- 'AWS ML Question #128', 
+ 'AWS ML Question 128', 
  '', 
  'Publish', 
  'closed', 
@@ -7614,7 +7614,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,128);
+(23299,@lastQuestionId,128);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7651,7 +7651,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company ingests machine learning (ML) data from web advertising clicks into an Amazon S3 data lake. Click data is added to an Amazon Kinesis data stream by using the Kinesis Producer Library (KPL). The data is loaded into the S3 data lake from the data stream by using an Amazon Kinesis Data Firehose delivery stream. As the data volume increases, an ML specialist notices that the rate of data ingested into Amazon S3 is relatively constant. There also is an increasing backlog of data for Kinesis Data Streams and Kinesis Data Firehose to ingest.<br/>Which next step is MOST likely to improve the data ingestion rate into Amazon S3?<br/>', 
- 'AWS ML Question #129', 
+ 'AWS ML Question 129', 
  '', 
  'Publish', 
  'closed', 
@@ -7673,7 +7673,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,129);
+(23299,@lastQuestionId,129);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7709,8 +7709,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A data scientist must build a custom recommendation model in Amazon SageMaker for an online retail company. Due to the nature of the company''s products, customers buy only 4-5 products every 5-10 years. So, the company relies on a steady stream of new customers. When a new customer signs up, the company collects data on the customer''s preferences. Below is a sample of the data available to the data scientist.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#130.jpg"/><br/>How should the data scientist split the dataset into a training and test set for this use case?<br/>', 
- 'AWS ML Question #130', 
+ 'A data scientist must build a custom recommendation model in Amazon SageMaker for an online retail company. Due to the nature of the company''s products, customers buy only 4-5 products every 5-10 years. So, the company relies on a steady stream of new customers. When a new customer signs up, the company collects data on the customer''s preferences. Below is a sample of the data available to the data scientist.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_130.jpg"/><br/>How should the data scientist split the dataset into a training and test set for this use case?<br/>', 
+ 'AWS ML Question 130', 
  '', 
  'Publish', 
  'closed', 
@@ -7732,7 +7732,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,130);
+(23299,@lastQuestionId,130);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7769,7 +7769,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A financial services company wants to adopt Amazon SageMaker as its default data science environment. The company''s data scientists run machine learning<br/>(ML) models on confidential financial data. The company is worried about data egress and wants an ML engineer to secure the environment.<br/>Which mechanisms can the ML engineer use to control data egress from SageMaker? (Choose three.)<br/>', 
- 'AWS ML Question #131', 
+ 'AWS ML Question 131', 
  '', 
  'Publish', 
  'closed', 
@@ -7791,7 +7791,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,131);
+(23299,@lastQuestionId,131);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7833,7 +7833,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company needs to quickly make sense of a large amount of data and gain insight from it. The data is in different formats, the schemas change frequently, and new data sources are added regularly. The company wants to use AWS services to explore multiple data sources, suggest schemas, and enrich and transform the data. The solution should require the least possible coding effort for the data flows and the least possible infrastructure management.<br/>Which combination of AWS services will meet these requirements?<br/>A.<br/>✑ Amazon EMR for data discovery, enrichment, and transformation<br/>✑ Amazon Athena for querying and analyzing the results in Amazon S3 using standard SQL<br/>✑ Amazon QuickSight for reporting and getting insights<br/>B.<br/>✑ Amazon Kinesis Data Analytics for data ingestion<br/>✑ Amazon EMR for data discovery, enrichment, and transformation<br/>✑ Amazon Redshift for querying and analyzing the results in Amazon S3<br/>C.<br/>✑ AWS Glue for data discovery, enrichment, and transformation<br/>✑ Amazon Athena for querying and analyzing the results in Amazon S3 using standard SQL<br/>✑ Amazon QuickSight for reporting and getting insights<br/>D.<br/>✑ AWS Data Pipeline for data transfer<br/>✑ AWS Step Functions for orchestrating AWS Lambda jobs for data discovery, enrichment, and transformation<br/>✑ Amazon Athena for querying and analyzing the results in Amazon S3 using standard SQL<br/>✑ Amazon QuickSight for reporting and getting insights<br/>', 
- 'AWS ML Question #132', 
+ 'AWS ML Question 132', 
  '', 
  'Publish', 
  'closed', 
@@ -7855,7 +7855,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,132);
+(23299,@lastQuestionId,132);
  
  
 insert into wp_jrf23a6sz5_postmeta (`post_id`,`meta_key`,`meta_value`) VALUES
@@ -7872,7 +7872,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is converting a large number of unstructured paper receipts into images. The company wants to create a model based on natural language processing<br/>(NLP) to find relevant entities such as date, location, and notes, as well as some custom entities such as receipt numbers.<br/>The company is using optical character recognition (OCR) to extract text for data labeling. However, documents are in different structures and formats, and the company is facing challenges with setting up the manual workflows for each document type. Additionally, the company trained a named entity recognition (NER) model for custom entity detection using a small sample size. This model has a very low confidence score and will require retraining with a large dataset.<br/>Which solution for text extraction and entity detection will require the LEAST amount of effort?<br/>', 
- 'AWS ML Question #133', 
+ 'AWS ML Question 133', 
  '', 
  'Publish', 
  'closed', 
@@ -7894,7 +7894,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,133);
+(23299,@lastQuestionId,133);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7931,7 +7931,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a predictive maintenance model based on machine learning (ML). The data is stored in a fully private Amazon S3 bucket that is encrypted at rest with AWS Key Management Service (AWS KMS) CMKs. An ML specialist must run data preprocessing by using an Amazon SageMaker Processing job that is triggered from code in an Amazon SageMaker notebook. The job should read data from Amazon S3, process it, and upload it back to the same S3 bucket.<br/>The preprocessing code is stored in a container image in Amazon Elastic Container Registry (Amazon ECR). The ML specialist needs to grant permissions to ensure a smooth data preprocessing workflow.<br/>Which set of actions should the ML specialist take to meet these requirements?<br/>', 
- 'AWS ML Question #134', 
+ 'AWS ML Question 134', 
  '', 
  'Publish', 
  'closed', 
@@ -7953,7 +7953,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,134);
+(23299,@lastQuestionId,134);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -7990,7 +7990,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist has been running an Amazon SageMaker notebook instance for a few weeks. During this time, a new version of Jupyter Notebook was released along with additional software updates. The security team mandates that all running SageMaker notebook instances use the latest security and software updates provided by SageMaker.<br/>How can the data scientist meet this requirements?<br/>', 
- 'AWS ML Question #135', 
+ 'AWS ML Question 135', 
  '', 
  'Publish', 
  'closed', 
@@ -8012,7 +8012,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,135);
+(23299,@lastQuestionId,135);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8049,7 +8049,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A library is developing an automatic book-borrowing system that uses Amazon Rekognition. Images of library members'' faces are stored in an Amazon S3 bucket.<br/>When members borrow books, the Amazon Rekognition CompareFaces API operation compares real faces against the stored faces in Amazon S3.<br/>The library needs to improve security by making sure that images are encrypted at rest. Also, when the images are used with Amazon Rekognition. they need to be encrypted in transit. The library also must ensure that the images are not used to improve Amazon Rekognition as a service.<br/>How should a machine learning specialist architect the solution to satisfy these requirements?<br/>', 
- 'AWS ML Question #136', 
+ 'AWS ML Question 136', 
  '', 
  'Publish', 
  'closed', 
@@ -8071,7 +8071,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,136);
+(23299,@lastQuestionId,136);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8108,7 +8108,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a line-counting application for use in a quick-service restaurant. The company wants to use video cameras pointed at the line of customers at a given register to measure how many people are in line and deliver notifications to managers if the line grows too long. The restaurant locations have limited bandwidth for connections to external services and cannot accommodate multiple video streams without impacting other operations.<br/>Which solution should a machine learning specialist implement to meet these requirements?<br/>', 
- 'AWS ML Question #137', 
+ 'AWS ML Question 137', 
  '', 
  'Publish', 
  'closed', 
@@ -8130,7 +8130,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,137);
+(23299,@lastQuestionId,137);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8167,7 +8167,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has set up and deployed its machine learning (ML) model into production with an endpoint using Amazon SageMaker hosting services. The ML team has configured automatic scaling for its SageMaker instances to support workload changes. During testing, the team notices that additional instances are being launched before the new instances are ready. This behavior needs to change as soon as possible.<br/>How can the ML team solve this issue?<br/>', 
- 'AWS ML Question #138', 
+ 'AWS ML Question 138', 
  '', 
  'Publish', 
  'closed', 
@@ -8189,7 +8189,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,138);
+(23299,@lastQuestionId,138);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8226,7 +8226,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A telecommunications company is developing a mobile app for its customers. The company is using an Amazon SageMaker hosted endpoint for machine learning model inferences.<br/>Developers want to introduce a new version of the model for a limited number of users who subscribed to a preview feature of the app. After the new version of the model is tested as a preview, developers will evaluate its accuracy. If a new version of the model has better accuracy, developers need to be able to gradually release the new version for all users over a fixed period of time.<br/>How can the company implement the testing model with the LEAST amount of operational overhead?<br/>', 
- 'AWS ML Question #139', 
+ 'AWS ML Question 139', 
  '', 
  'Publish', 
  'closed', 
@@ -8248,7 +8248,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,139);
+(23299,@lastQuestionId,139);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8285,7 +8285,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company offers an online shopping service to its customers. The company wants to enhance the site''s security by requesting additional information when customers access the site from locations that are different from their normal location. The company wants to update the process to call a machine learning (ML) model to determine when additional information should be requested.<br/>The company has several terabytes of data from its existing ecommerce web servers containing the source IP addresses for each request made to the web server. For authenticated requests, the records also contain the login name of the requesting user.<br/>Which approach should an ML specialist take to implement the new security feature in the web application?<br/>', 
- 'AWS ML Question #140', 
+ 'AWS ML Question 140', 
  '', 
  'Publish', 
  'closed', 
@@ -8307,7 +8307,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,140);
+(23299,@lastQuestionId,140);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8344,7 +8344,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company wants to combine its customer orders with the product description data from its product catalog. The structure and format of the records in each dataset is different. A data analyst tried to use a spreadsheet to combine the datasets, but the effort resulted in duplicate records and records that were not properly combined. The company needs a solution that it can use to combine similar records from the two datasets and remove any duplicates.<br/>Which solution will meet these requirements?<br/>', 
- 'AWS ML Question #141', 
+ 'AWS ML Question 141', 
  '', 
  'Publish', 
  'closed', 
@@ -8366,7 +8366,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,141);
+(23299,@lastQuestionId,141);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8403,7 +8403,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company provisions Amazon SageMaker notebook instances for its data science team and creates Amazon VPC interface endpoints to ensure communication between the VPC and the notebook instances. All connections to the Amazon SageMaker API are contained entirely and securely using the AWS network.<br/>However, the data science team realizes that individuals outside the VPC can still connect to the notebook instances across the internet.<br/>Which set of actions should the data science team take to fix the issue?<br/>', 
- 'AWS ML Question #142', 
+ 'AWS ML Question 142', 
  '', 
  'Publish', 
  'closed', 
@@ -8425,7 +8425,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,142);
+(23299,@lastQuestionId,142);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8462,7 +8462,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company will use Amazon SageMaker to train and host a machine learning (ML) model for a marketing campaign. The majority of data is sensitive customer data. The data must be encrypted at rest. The company wants AWS to maintain the root of trust for the master keys and wants encryption key usage to be logged.<br/>Which implementation will meet these requirements?<br/>', 
- 'AWS ML Question #143', 
+ 'AWS ML Question 143', 
  '', 
  'Publish', 
  'closed', 
@@ -8484,7 +8484,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,143);
+(23299,@lastQuestionId,143);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8521,7 +8521,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning specialist stores IoT soil sensor data in Amazon DynamoDB table and stores weather event data as JSON files in Amazon S3. The dataset in<br/>DynamoDB is 10 GB in size and the dataset in Amazon S3 is 5 GB in size. The specialist wants to train a model on this data to help predict soil moisture levels as a function of weather events using Amazon SageMaker.<br/>Which solution will accomplish the necessary transformation to train the Amazon SageMaker model with the LEAST amount of administrative overhead?<br/>', 
- 'AWS ML Question #144', 
+ 'AWS ML Question 144', 
  '', 
  'Publish', 
  'closed', 
@@ -8543,7 +8543,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,144);
+(23299,@lastQuestionId,144);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8580,7 +8580,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company sells thousands of products on a public website and wants to automatically identify products with potential durability problems. The company has<br/>1.000 reviews with date, star rating, review text, review summary, and customer email fields, but many reviews are incomplete and have empty fields. Each review has already been labeled with the correct durability result.<br/>A machine learning specialist must train a model to identify reviews expressing concerns over product durability. The first model needs to be trained and ready to review in 2 days.<br/>What is the MOST direct approach to solve this problem within 2 days?<br/>', 
- 'AWS ML Question #145', 
+ 'AWS ML Question 145', 
  '', 
  'Publish', 
  'closed', 
@@ -8602,7 +8602,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,145);
+(23299,@lastQuestionId,145);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8639,7 +8639,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company that runs an online library is implementing a chatbot using Amazon Lex to provide book recommendations based on category. This intent is fulfilled by an AWS Lambda function that queries an Amazon DynamoDB table for a list of book titles, given a particular category. For testing, there are only three categories implemented as the custom slot types: "comedy," "adventure,` and "documentary.`<br/>A machine learning (ML) specialist notices that sometimes the request cannot be fulfilled because Amazon Lex cannot understand the category spoken by users with utterances such as "funny," "fun," and "humor." The ML specialist needs to fix the problem without changing the Lambda code or data in DynamoDB.<br/>How should the ML specialist fix the problem?<br/>', 
- 'AWS ML Question #146', 
+ 'AWS ML Question 146', 
  '', 
  'Publish', 
  'closed', 
@@ -8661,7 +8661,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,146);
+(23299,@lastQuestionId,146);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8698,7 +8698,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company uses machine learning (ML) models to detect quality issues. The models use images that are taken of the company''s product at the end of each production step. The company has thousands of machines at the production site that generate one image per second on average.<br/>The company ran a successful pilot with a single manufacturing machine. For the pilot, ML specialists used an industrial PC that ran AWS IoT Greengrass with a long-running AWS Lambda function that uploaded the images to Amazon S3. The uploaded images invoked a Lambda function that was written in Python to perform inference by using an Amazon SageMaker endpoint that ran a custom model. The inference results were forwarded back to a web service that was hosted at the production site to prevent faulty products from being shipped.<br/>The company scaled the solution out to all manufacturing machines by installing similarly configured industrial PCs on each production machine. However, latency for predictions increased beyond acceptable limits. Analysis shows that the internet connection is at its capacity limit.<br/>How can the company resolve this issue MOST cost-effectively?<br/>', 
- 'AWS ML Question #147', 
+ 'AWS ML Question 147', 
  '', 
  'Publish', 
  'closed', 
@@ -8720,7 +8720,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,147);
+(23299,@lastQuestionId,147);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8757,7 +8757,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is using an Amazon SageMaker notebook instance and needs to securely access data stored in a specific Amazon S3 bucket.<br/>How should the data scientist accomplish this?<br/>', 
- 'AWS ML Question #148', 
+ 'AWS ML Question 148', 
  '', 
  'Publish', 
  'closed', 
@@ -8779,7 +8779,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,148);
+(23299,@lastQuestionId,148);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8816,7 +8816,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is launching a new product and needs to build a mechanism to monitor comments about the company and its new product on social media. The company needs to be able to evaluate the sentiment expressed in social media posts, and visualize trends and configure alarms based on various thresholds.<br/>The company needs to implement this solution quickly, and wants to minimize the infrastructure and data science resources needed to evaluate the messages.<br/>The company already has a solution in place to collect posts and store them within an Amazon S3 bucket.<br/>What services should the data science team use to deliver this solution?<br/>', 
- 'AWS ML Question #149', 
+ 'AWS ML Question 149', 
  '', 
  'Publish', 
  'closed', 
@@ -8838,7 +8838,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,149);
+(23299,@lastQuestionId,149);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8875,7 +8875,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A bank wants to launch a low-rate credit promotion. The bank is located in a town that recently experienced economic hardship. Only some of the bank''s customers were affected by the crisis, so the bank''s credit team must identify which customers to target with the promotion. However, the credit team wants to make sure that loyal customers'' full credit history is considered when the decision is made.<br/>The bank''s data science team developed a model that classifies account transactions and understands credit eligibility. The data science team used the XGBoost algorithm to train the model. The team used 7 years of bank transaction historical data for training and hyperparameter tuning over the course of several days.<br/>The accuracy of the model is sufficient, but the credit team is struggling to explain accurately why the model denies credit to some customers. The credit team has almost no skill in data science.<br/>What should the data science team do to address this issue in the MOST operationally efficient manner?<br/>', 
- 'AWS ML Question #150', 
+ 'AWS ML Question 150', 
  '', 
  'Publish', 
  'closed', 
@@ -8897,7 +8897,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,150);
+(23299,@lastQuestionId,150);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8934,7 +8934,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data science team is planning to build a natural language processing (NLP) application. The application''s text preprocessing stage will include part-of-speech tagging and key phase extraction. The preprocessed text will be input to a custom classification algorithm that the data science team has already written and trained using Apache MXNet.<br/>Which solution can the team build MOST quickly to meet these requirements?<br/>', 
- 'AWS ML Question #151', 
+ 'AWS ML Question 151', 
  '', 
  'Publish', 
  'closed', 
@@ -8956,7 +8956,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,151);
+(23299,@lastQuestionId,151);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -8993,7 +8993,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist must develop a classification model for a financial services company. A domain expert provides the dataset, which is tabular with 10,000 rows and 1,020 features. During exploratory data analysis, the specialist finds no missing values and a small percentage of duplicate rows. There are correlation scores of &gt; 0.9 for 200 feature pairs. The mean value of each feature is similar to its 50th percentile.<br/>Which feature engineering strategy should the ML specialist use with Amazon SageMaker?<br/>', 
- 'AWS ML Question #152', 
+ 'AWS ML Question 152', 
  '', 
  'Publish', 
  'closed', 
@@ -9015,7 +9015,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,152);
+(23299,@lastQuestionId,152);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9052,7 +9052,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company asks its machine learning specialist to develop a model that classifies defective parts into one of eight defect types. The company has provided roughly 100,000 images per defect type for training. During the initial training of the image classification model, the specialist notices that the validation accuracy is 80%, while the training accuracy is 90%. It is known that human-level performance for this type of image classification is around 90%.<br/>What should the specialist consider to fix this issue?<br/>', 
- 'AWS ML Question #153', 
+ 'AWS ML Question 153', 
  '', 
  'Publish', 
  'closed', 
@@ -9074,7 +9074,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,153);
+(23299,@lastQuestionId,153);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9111,7 +9111,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning specialist needs to analyze comments on a news website with users across the globe. The specialist must find the most discussed topics in the comments that are in either English or Spanish.<br/>What steps could be used to accomplish this task? (Choose two.)<br/>', 
- 'AWS ML Question #154', 
+ 'AWS ML Question 154', 
  '', 
  'Publish', 
  'closed', 
@@ -9133,7 +9133,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,154);
+(23299,@lastQuestionId,154);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9175,7 +9175,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is administering a production Amazon SageMaker endpoint with model monitoring configured. Amazon SageMaker Model<br/>Monitor detects violations on the SageMaker endpoint, so the ML specialist retrains the model with the latest dataset. This dataset is statistically representative of the current production traffic. The ML specialist notices that even after deploying the new SageMaker model and running the first monitoring job, the SageMaker endpoint still has violations.<br/>What should the ML specialist do to resolve the violations?<br/>', 
- 'AWS ML Question #155', 
+ 'AWS ML Question 155', 
  '', 
  'Publish', 
  'closed', 
@@ -9197,7 +9197,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,155);
+(23299,@lastQuestionId,155);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9234,7 +9234,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company supplies wholesale clothing to thousands of retail stores. A data scientist must create a model that predicts the daily sales volume for each item for each store. The data scientist discovers that more than half of the stores have been in business for less than 6 months. Sales data is highly consistent from week to week. Daily data from the database has been aggregated weekly, and weeks with no sales are omitted from the current dataset. Five years (100 MB) of sales data is available in Amazon S3.<br/>Which factors will adversely impact the performance of the forecast model to be developed, and which actions should the data scientist take to mitigate them?<br/>(Choose two.)<br/>', 
- 'AWS ML Question #156', 
+ 'AWS ML Question 156', 
  '', 
  'Publish', 
  'closed', 
@@ -9256,7 +9256,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,156);
+(23299,@lastQuestionId,156);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9298,7 +9298,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company is automating the categorization of its products based on images. A data scientist has trained a computer vision model using the Amazon<br/>SageMaker image classification algorithm. The images for each product are classified according to specific product lines. The accuracy of the model is too low when categorizing new products. All of the product images have the same dimensions and are stored within an Amazon S3 bucket. The company wants to improve the model so it can be used for new products as soon as possible.<br/>Which steps would improve the accuracy of the solution? (Choose three.)<br/>', 
- 'AWS ML Question #157', 
+ 'AWS ML Question 157', 
  '', 
  'Publish', 
  'closed', 
@@ -9320,7 +9320,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,157);
+(23299,@lastQuestionId,157);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9361,8 +9361,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A data scientist is training a text classification model by using the Amazon SageMaker built-in BlazingText algorithm. There are 5 classes in the dataset, with 300 samples for category A, 292 samples for category B, 240 samples for category C, 258 samples for category D, and 310 samples for category E.<br/>The data scientist shuffles the data and splits off 10% for testing. After training the model, the data scientist generates confusion matrices for the training and test sets.<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#158.jpg"/><br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#158.jpg"/><br/>What could the data scientist conclude form these results?<br/>', 
- 'AWS ML Question #158', 
+ 'A data scientist is training a text classification model by using the Amazon SageMaker built-in BlazingText algorithm. There are 5 classes in the dataset, with 300 samples for category A, 292 samples for category B, 240 samples for category C, 258 samples for category D, and 310 samples for category E.<br/>The data scientist shuffles the data and splits off 10% for testing. After training the model, the data scientist generates confusion matrices for the training and test sets.<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_158.jpg"/><br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_158.jpg"/><br/>What could the data scientist conclude form these results?<br/>', 
+ 'AWS ML Question 158', 
  '', 
  'Publish', 
  'closed', 
@@ -9384,7 +9384,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,158);
+(23299,@lastQuestionId,158);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9421,7 +9421,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company that manufactures mobile devices wants to determine and calibrate the appropriate sales price for its devices. The company is collecting the relevant data and is determining data features that it can use to train machine learning (ML) models. There are more than 1,000 features, and the company wants to determine the primary features that contribute to the sales price.<br/>Which techniques should the company use for feature selection? (Choose three.)<br/>', 
- 'AWS ML Question #159', 
+ 'AWS ML Question 159', 
  '', 
  'Publish', 
  'closed', 
@@ -9443,7 +9443,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,159);
+(23299,@lastQuestionId,159);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9485,7 +9485,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A power company wants to forecast future energy consumption for its customers in residential properties and commercial business properties. Historical power consumption data for the last 10 years is available. A team of data scientists who performed the initial data analysis and feature selection will include the historical power consumption data and data such as weather, number of individuals on the property, and public holidays.<br/>The data scientists are using Amazon Forecast to generate the forecasts.<br/>Which algorithm in Forecast should the data scientists use to meet these requirements?<br/>', 
- 'AWS ML Question #160', 
+ 'AWS ML Question 160', 
  '', 
  'Publish', 
  'closed', 
@@ -9507,7 +9507,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,160);
+(23299,@lastQuestionId,160);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9544,7 +9544,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to use automatic speech recognition (ASR) to transcribe messages that are less than 60 seconds long from a voicemail-style application. The company requires the correct identification of 200 unique product names, some of which have unique spellings or pronunciations.<br/>The company has 4,000 words of Amazon SageMaker Ground Truth voicemail transcripts it can use to customize the chosen ASR model. The company needs to ensure that everyone can update their customizations multiple times each hour.<br/>Which approach will maximize transcription accuracy during the development phase?<br/>', 
- 'AWS ML Question #161', 
+ 'AWS ML Question 161', 
  '', 
  'Publish', 
  'closed', 
@@ -9566,7 +9566,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,161);
+(23299,@lastQuestionId,161);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9603,7 +9603,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a demand forecasting model based on machine learning (ML). In the development stage, an ML specialist uses an Amazon SageMaker notebook to perform feature engineering during work hours that consumes low amounts of CPU and memory resources. A data engineer uses the same notebook to perform data preprocessing once a day on average that requires very high memory and completes in only 2 hours. The data preprocessing is not configured to use GPU. All the processes are running well on an ml.m5.4xlarge notebook instance.<br/>The company receives an AWS Budgets alert that the billing for this month exceeds the allocated budget.<br/>Which solution will result in the MOST cost savings?<br/>', 
- 'AWS ML Question #162', 
+ 'AWS ML Question 162', 
  '', 
  'Publish', 
  'closed', 
@@ -9625,7 +9625,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,162);
+(23299,@lastQuestionId,162);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9661,8 +9661,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A machine learning specialist is developing a regression model to predict rental rates from rental listings. A variable named Wall_Color represents the most prominent exterior wall color of the property. The following is the sample data, excluding all other variables:<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#163.jpg"/><br/>The specialist chose a model that needs numerical input data.<br/>Which feature engineering approaches should the specialist use to allow the regression model to learn from the Wall_Color data? (Choose two.)<br/>', 
- 'AWS ML Question #163', 
+ 'A machine learning specialist is developing a regression model to predict rental rates from rental listings. A variable named Wall_Color represents the most prominent exterior wall color of the property. The following is the sample data, excluding all other variables:<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_163.jpg"/><br/>The specialist chose a model that needs numerical input data.<br/>Which feature engineering approaches should the specialist use to allow the regression model to learn from the Wall_Color data? (Choose two.)<br/>', 
+ 'AWS ML Question 163', 
  '', 
  'Publish', 
  'closed', 
@@ -9684,7 +9684,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,163);
+(23299,@lastQuestionId,163);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9726,7 +9726,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is working on a public sector project for an urban traffic system. While studying the traffic patterns, it is clear to the data scientist that the traffic behavior at each light is correlated, subject to a small stochastic error term. The data scientist must model the traffic behavior to analyze the traffic patterns and reduce congestion.<br/>How will the data scientist MOST effectively model the problem?<br/>', 
- 'AWS ML Question #164', 
+ 'AWS ML Question 164', 
  '', 
  'Publish', 
  'closed', 
@@ -9748,7 +9748,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,164);
+(23299,@lastQuestionId,164);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9785,7 +9785,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is using the Amazon SageMaker Neural Topic Model (NTM) algorithm to build a model that recommends tags from blog posts. The raw blog post data is stored in an Amazon S3 bucket in JSON format. During model evaluation, the data scientist discovered that the model recommends certain stopwords such as "a," "an," and "the" as tags to certain blog posts, along with a few rare words that are present only in certain blog entries. After a few iterations of tag review with the content team, the data scientist notices that the rare words are unusual but feasible. The data scientist also must ensure that the tag recommendations of the generated model do not include the stopwords.<br/>What should the data scientist do to meet these requirements?<br/>', 
- 'AWS ML Question #165', 
+ 'AWS ML Question 165', 
  '', 
  'Publish', 
  'closed', 
@@ -9807,7 +9807,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,165);
+(23299,@lastQuestionId,165);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9844,7 +9844,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to create a data repository in the AWS Cloud for machine learning (ML) projects. The company wants to use AWS to perform complete ML lifecycles and wants to use Amazon S3 for the data storage. All of the company''s data currently resides on premises and is 40 ׀¢׀’ in size.<br/>The company wants a solution that can transfer and automatically update data between the on-premises object storage and Amazon S3. The solution must support encryption, scheduling, monitoring, and data integrity validation.<br/>Which solution meets these requirements?<br/>', 
- 'AWS ML Question #166', 
+ 'AWS ML Question 166', 
  '', 
  'Publish', 
  'closed', 
@@ -9866,7 +9866,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,166);
+(23299,@lastQuestionId,166);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9903,7 +9903,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has video feeds and images of a subway train station. The company wants to create a deep learning model that will alert the station manager if any passenger crosses the yellow safety line when there is no train in the station. The alert will be based on the video feeds. The company wants the model to detect the yellow line, the passengers who cross the yellow line, and the trains in the video feeds. This task requires labeling. The video data must remain confidential.<br/>A data scientist creates a bounding box to label the sample data and uses an object detection model. However, the object detection model cannot clearly demarcate the yellow line, the passengers who cross the yellow line, and the trains.<br/>Which labeling approach will help the company improve this model?<br/>', 
- 'AWS ML Question #167', 
+ 'AWS ML Question 167', 
  '', 
  'Publish', 
  'closed', 
@@ -9925,7 +9925,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,167);
+(23299,@lastQuestionId,167);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -9962,7 +9962,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer at a bank is evaluating a new tabular dataset that includes customer data. The data engineer will use the customer data to create a new model to predict customer behavior. After creating a correlation matrix for the variables, the data engineer notices that many of the 100 features are highly correlated with each other.<br/>Which steps should the data engineer take to address this issue? (Choose two.)<br/>', 
- 'AWS ML Question #168', 
+ 'AWS ML Question 168', 
  '', 
  'Publish', 
  'closed', 
@@ -9984,7 +9984,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,168);
+(23299,@lastQuestionId,168);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10026,7 +10026,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a new version of a recommendation engine. Machine learning (ML) specialists need to keep adding new data from users to improve personalized recommendations. The ML specialists gather data from the users'' interactions on the platform and from sources such as external websites and social media.<br/>The pipeline cleans, transforms, enriches, and compresses terabytes of data daily, and this data is stored in Amazon S3. A set of Python scripts was coded to do the job and is stored in a large Amazon EC2 instance. The whole process takes more than 20 hours to finish, with each script taking at least an hour. The company wants to move the scripts out of Amazon EC2 into a more managed solution that will eliminate the need to maintain servers.<br/>Which approach will address all of these requirements with the LEAST development effort?<br/>', 
- 'AWS ML Question #169', 
+ 'AWS ML Question 169', 
  '', 
  'Publish', 
  'closed', 
@@ -10048,7 +10048,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,169);
+(23299,@lastQuestionId,169);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10085,7 +10085,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company is selling products through a global online marketplace. The company wants to use machine learning (ML) to analyze customer feedback and identify specific areas for improvement. A developer has built a tool that collects customer reviews from the online marketplace and stores them in an Amazon S3 bucket. This process yields a dataset of 40 reviews. A data scientist building the ML models must identify additional sources of data to increase the size of the dataset.<br/>Which data sources should the data scientist use to augment the dataset of reviews? (Choose three.)<br/>', 
- 'AWS ML Question #170', 
+ 'AWS ML Question 170', 
  '', 
  'Publish', 
  'closed', 
@@ -10107,7 +10107,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,170);
+(23299,@lastQuestionId,170);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10149,7 +10149,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist wants to create a data preparation job that uses a PySpark script with complex window aggregation operations to create data for training and testing. The ML specialist needs to evaluate the impact of the number of features and the sample count on model performance.<br/>Which approach should the ML specialist use to determine the ideal data transformations for the model?<br/>', 
- 'AWS ML Question #171', 
+ 'AWS ML Question 171', 
  '', 
  'Publish', 
  'closed', 
@@ -10171,7 +10171,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,171);
+(23299,@lastQuestionId,171);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10208,7 +10208,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist has a dataset of machine part images stored in Amazon Elastic File System (Amazon EFS). The data scientist needs to use Amazon SageMaker to create and train an image classification machine learning model based on this dataset. Because of budget and time constraints, management wants the data scientist to create and train a model with the least number of steps and integration work required.<br/>How should the data scientist meet these requirements?<br/>', 
- 'AWS ML Question #172', 
+ 'AWS ML Question 172', 
  '', 
  'Publish', 
  'closed', 
@@ -10230,7 +10230,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,172);
+(23299,@lastQuestionId,172);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10267,7 +10267,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company uses a machine learning (ML) model for daily sales forecasting. The company''s brand manager reports that the model has provided inaccurate results for the past 3 weeks.<br/>At the end of each day, an AWS Glue job consolidates the input data that is used for the forecasting with the actual daily sales data and the predictions of the model. The AWS Glue job stores the data in Amazon S3. The company''s ML team is using an Amazon SageMaker Studio notebook to gain an understanding about the source of the model''s inaccuracies.<br/>What should the ML team do on the SageMaker Studio notebook to visualize the model''s degradation MOST accurately?<br/>', 
- 'AWS ML Question #173', 
+ 'AWS ML Question 173', 
  '', 
  'Publish', 
  'closed', 
@@ -10289,7 +10289,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,173);
+(23299,@lastQuestionId,173);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10326,7 +10326,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company sends a weekly email newsletter to all of its customers. Management has hired a team of writers to create additional targeted content. A data scientist needs to identify five customer segments based on age, income, and location. The customers'' current segmentation is unknown. The data scientist previously built an XGBoost model to predict the likelihood of a customer responding to an email based on age, income, and location.<br/>Why does the XGBoost model NOT meet the current requirements, and how can this be fixed?<br/>', 
- 'AWS ML Question #174', 
+ 'AWS ML Question 174', 
  '', 
  'Publish', 
  'closed', 
@@ -10348,7 +10348,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,174);
+(23299,@lastQuestionId,174);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10385,7 +10385,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A global financial company is using machine learning to automate its loan approval process. The company has a dataset of customer information. The dataset contains some categorical fields, such as customer location by city and housing status. The dataset also includes financial fields in different units, such as account balances in US dollars and monthly interest in US cents.<br/>The company''s data scientists are using a gradient boosting regression model to infer the credit score for each customer. The model has a training accuracy of<br/>99% and a testing accuracy of 75%. The data scientists want to improve the model''s testing accuracy.<br/>Which process will improve the testing accuracy the MOST?<br/>', 
- 'AWS ML Question #175', 
+ 'AWS ML Question 175', 
  '', 
  'Publish', 
  'closed', 
@@ -10407,7 +10407,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,175);
+(23299,@lastQuestionId,175);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10444,7 +10444,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist needs to extract embedding vectors from a text series. The goal is to provide a ready-to-ingest feature space for a data scientist to develop downstream ML predictive models. The text consists of curated sentences in English. Many sentences use similar words but in different contexts. There are questions and answers among the sentences, and the embedding space must differentiate between them.<br/>Which options can produce the required embedding vectors that capture word context and sequential QA information? (Choose two.)<br/>', 
- 'AWS ML Question #176', 
+ 'AWS ML Question 176', 
  '', 
  'Publish', 
  'closed', 
@@ -10466,7 +10466,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,176);
+(23299,@lastQuestionId,176);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10508,7 +10508,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company wants to update its customer support system. The company wants to implement automatic routing of customer claims to different queues to prioritize the claims by category.<br/>Currently, an operator manually performs the category assignment and routing. After the operator classifies and routes the claim, the company stores the claim''s record in a central database. The claim''s record includes the claim''s category.<br/>The company has no data science team or experience in the field of machine learning (ML). The company''s small development team needs a solution that requires no ML expertise.<br/>Which solution meets these requirements?<br/>', 
- 'AWS ML Question #177', 
+ 'AWS ML Question 177', 
  '', 
  'Publish', 
  'closed', 
@@ -10530,7 +10530,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,177);
+(23299,@lastQuestionId,177);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10566,8 +10566,8 @@ INSERT INTO wp_jrf23a6sz5_posts
 (5, 
  NOW(), 
  NOW(), 
- 'A machine learning (ML) specialist is using Amazon SageMaker hyperparameter optimization (HPO) to improve a model''s accuracy. The learning rate parameter is specified in the following HPO configuration:<br/><img class="in-exam-image" src="wp-content/uploads/examdump/awsML/question_#178.jpg"/><br/>During the results analysis, the ML specialist determines that most of the training jobs had a learning rate between 0.01 and 0.1. The best result had a learning rate of less than 0.01. Training jobs need to run regularly over a changing dataset. The ML specialist needs to find a tuning mechanism that uses different learning rates more evenly from the provided range between MinValue and MaxValue.<br/>Which solution provides the MOST accurate result?<br/>', 
- 'AWS ML Question #178', 
+ 'A machine learning (ML) specialist is using Amazon SageMaker hyperparameter optimization (HPO) to improve a model''s accuracy. The learning rate parameter is specified in the following HPO configuration:<br/><img class="in-exam-image" src="/wp-content/uploads/examdump/awsML/question_178.jpg"/><br/>During the results analysis, the ML specialist determines that most of the training jobs had a learning rate between 0.01 and 0.1. The best result had a learning rate of less than 0.01. Training jobs need to run regularly over a changing dataset. The ML specialist needs to find a tuning mechanism that uses different learning rates more evenly from the provided range between MinValue and MaxValue.<br/>Which solution provides the MOST accurate result?<br/>', 
+ 'AWS ML Question 178', 
  '', 
  'Publish', 
  'closed', 
@@ -10589,7 +10589,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,178);
+(23299,@lastQuestionId,178);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10626,7 +10626,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company wants to use machine learning (ML) to automate quality control in its facilities. The facilities are in remote locations and have limited internet connectivity. The company has 20 ׀¢׀’ of training data that consists of labeled images of defective product parts. The training data is in the corporate on- premises data center.<br/>The company will use this data to train a model for real-time defect detection in new parts as the parts move on a conveyor belt in the facilities. The company needs a solution that minimizes costs for compute infrastructure and that maximizes the scalability of resources for training. The solution also must facilitate the company''s use of an ML model in the low-connectivity environments.<br/>Which solution will meet these requirements?<br/>', 
- 'AWS ML Question #179', 
+ 'AWS ML Question 179', 
  '', 
  'Publish', 
  'closed', 
@@ -10648,7 +10648,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,179);
+(23299,@lastQuestionId,179);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10685,7 +10685,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has an ecommerce website with a product recommendation engine built in TensorFlow. The recommendation engine endpoint is hosted by Amazon<br/>SageMaker. Three compute-optimized instances support the expected peak load of the website.<br/>Response times on the product recommendation page are increasing at the beginning of each month. Some users are encountering errors. The website receives the majority of its traffic between 8 AM and 6 PM on weekdays in a single time zone.<br/>Which of the following options are the MOST effective in solving the issue while keeping costs to a minimum? (Choose two.)<br/>', 
- 'AWS ML Question #180', 
+ 'AWS ML Question 180', 
  '', 
  'Publish', 
  'closed', 
@@ -10707,7 +10707,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,180);
+(23299,@lastQuestionId,180);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10749,7 +10749,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A real-estate company is launching a new product that predicts the prices of new houses. The historical data for the properties and prices is stored in .csv format in an Amazon S3 bucket. The data has a header, some categorical fields, and some missing values. The company''s data scientists have used Python with a common open-source library to fill the missing values with zeros. The data scientists have dropped all of the categorical fields and have trained a model by using the open-source linear regression algorithm with the default parameters.<br/>The accuracy of the predictions with the current model is below 50%. The company wants to improve the model performance and launch the new product as soon as possible.<br/>Which solution will meet these requirements with the LEAST operational overhead?<br/>', 
- 'AWS ML Question #181', 
+ 'AWS ML Question 181', 
  '', 
  'Publish', 
  'closed', 
@@ -10771,7 +10771,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,181);
+(23299,@lastQuestionId,181);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10808,7 +10808,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is reviewing customer comments about a company''s products. The data scientist needs to present an initial exploratory analysis by using charts and a word cloud. The data scientist must use feature engineering techniques to prepare this analysis before starting a natural language processing (NLP) model.<br/>Which combination of feature engineering techniques should the data scientist use to meet these requirements? (Choose two.)<br/>', 
- 'AWS ML Question #182', 
+ 'AWS ML Question 182', 
  '', 
  'Publish', 
  'closed', 
@@ -10830,7 +10830,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,182);
+(23299,@lastQuestionId,182);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10872,7 +10872,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is evaluating a GluonTS on Amazon SageMaker DeepAR model. The evaluation metrics on the test set indicate that the coverage score is 0.489 and 0.889 at the 0.5 and 0.9 quantiles, respectively.<br/>What can the data scientist reasonably conclude about the distributional forecast related to the test set?<br/>', 
- 'AWS ML Question #183', 
+ 'AWS ML Question 183', 
  '', 
  'Publish', 
  'closed', 
@@ -10894,7 +10894,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,183);
+(23299,@lastQuestionId,183);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10931,7 +10931,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An energy company has wind turbines, weather stations, and solar panels that generate telemetry data. The company wants to perform predictive maintenance on these devices. The devices are in various locations and have unstable internet connectivity.<br/>A team of data scientists is using the telemetry data to perform machine learning (ML) to conduct anomaly detection and predict maintenance before the devices start to deteriorate. The team needs a scalable, secure, high-velocity data ingestion mechanism. The team has decided to use Amazon S3 as the data storage location.<br/>Which approach meets these requirements?<br/>', 
- 'AWS ML Question #184', 
+ 'AWS ML Question 184', 
  '', 
  'Publish', 
  'closed', 
@@ -10953,7 +10953,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,184);
+(23299,@lastQuestionId,184);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -10990,7 +10990,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company collects customer comments about its products from social media, the company website, and customer call logs. A team of data scientists and engineers wants to find common topics and determine which products the customers are referring to in their comments. The team is using natural language processing (NLP) to build a model to help with this classification.<br/>Each product can be classified into multiple categories that the company defines. These categories are related but are not mutually exclusive. For example, if there is mention of "Sample Yogurt" in the document of customer comments, then "Sample Yogurt" should be classified as "yogurt," "snack," and "dairy product."<br/>The team is using Amazon Comprehend to train the model and must complete the project as soon as possible.<br/>Which functionality of Amazon Comprehend should the team use to meet these requirements?<br/>', 
- 'AWS ML Question #185', 
+ 'AWS ML Question 185', 
  '', 
  'Publish', 
  'closed', 
@@ -11012,7 +11012,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,185);
+(23299,@lastQuestionId,185);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11049,7 +11049,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer is using AWS Glue to create optimized, secure datasets in Amazon S3. The data science team wants the ability to access the ETL scripts directly from Amazon SageMaker notebooks within a VPC. After this setup is complete, the data science team wants the ability to run the AWS Glue job and invoke the<br/>SageMaker training job.<br/>Which combination of steps should the data engineer take to meet these requirements? (Choose three.)<br/>', 
- 'AWS ML Question #186', 
+ 'AWS ML Question 186', 
  '', 
  'Publish', 
  'closed', 
@@ -11071,7 +11071,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,186);
+(23299,@lastQuestionId,186);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11113,7 +11113,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer needs to provide a team of data scientists with the appropriate dataset to run machine learning training jobs. The data will be stored in Amazon S3. The data engineer is obtaining the data from an Amazon Redshift database and is using join queries to extract a single tabular dataset. A portion of the schema is as follows:<br/><br/>TransactionTimestamp (Timestamp)<br/>CardName (Varchar)<br/>CardNo (Varchar)<br/><br/>The data engineer must provide the data so that any row with a CardNo value of NULL is removed. Also, the TransactionTimestamp column must be separated into a TransactionDate column and a TransactionTime column. Finally, the CardName column must be renamed to NameOnCard.<br/><br/>The data will be extracted on a monthly basis and will be loaded into an S3 bucket. The solution must minimize the effort that is needed to set up infrastructure for the ingestion and transformation. The solution also must be automated and must minimize the load on the Amazon Redshift cluster.<br/><br/>Which solution meets these requirements?', 
- 'AWS ML Question #187', 
+ 'AWS ML Question 187', 
  '', 
  'Publish', 
  'closed', 
@@ -11135,7 +11135,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,187);
+(23299,@lastQuestionId,187);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11172,7 +11172,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist wants to bring a custom training algorithm to Amazon SageMaker. The ML specialist implements the algorithm in a Docker container that is supported by SageMaker.<br/><br/>How should the ML specialist package the Docker container so that SageMaker can launch the training correctly?', 
- 'AWS ML Question #188', 
+ 'AWS ML Question 188', 
  '', 
  'Publish', 
  'closed', 
@@ -11194,7 +11194,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,188);
+(23299,@lastQuestionId,188);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11231,7 +11231,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company wants to use machine learning (ML) to monitor fraudulent transactions on its website. The company is using Amazon SageMaker to research, train, deploy, and monitor the ML models.<br/><br/>The historical transactions data is in a .csv file that is stored in Amazon S3. The data contains features such as the user''s IP address, navigation time, average time on each page, and the number of clicks for each session. There is no label in the data to indicate if a transaction is anomalous.<br/><br/>Which models should the company use in combination to detect anomalous transactions? (Choose two.)', 
- 'AWS ML Question #189', 
+ 'AWS ML Question 189', 
  '', 
  'Publish', 
  'closed', 
@@ -11253,7 +11253,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,189);
+(23299,@lastQuestionId,189);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11295,7 +11295,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A healthcare company is using an Amazon SageMaker notebook instance to develop machine learning (ML) models. The company''s data scientists will need to be able to access datasets stored in Amazon S3 to train the models. Due to regulatory requirements, access to the data from instances and services used for training must not be transmitted over the internet.<br/><br/>Which combination of steps should an ML specialist take to provide this access? (Choose two.)', 
- 'AWS ML Question #190', 
+ 'AWS ML Question 190', 
  '', 
  'Publish', 
  'closed', 
@@ -11317,7 +11317,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,190);
+(23299,@lastQuestionId,190);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11359,7 +11359,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist at a retail company is forecasting sales for one of the company''s stores. The ML specialist is using data from the past 10 years. The company has provided a dataset that includes the total amount of money in sales each day for the store. Approximately 5% of the days are missing sales data.<br/><br/>The ML specialist builds a simple forecasting model with the dataset and discovers that the model performs poorly. The performance is poor around the time of seasonal events, when the model consistently predicts sales figures that are too low or too high.<br/><br/>Which actions should the ML specialist take to try to improve the model''s performance? (Choose two.)', 
- 'AWS ML Question #191', 
+ 'AWS ML Question 191', 
  '', 
  'Publish', 
  'closed', 
@@ -11381,7 +11381,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,191);
+(23299,@lastQuestionId,191);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11423,7 +11423,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A newspaper publisher has a table of customer data that consists of several numerical and categorical features, such as age and education history, as well as subscription status. The company wants to build a targeted marketing model for predicting the subscription status based on the table data.<br/><br/>Which Amazon SageMaker built-in algorithm should be used to model the targeted marketing?', 
- 'AWS ML Question #192', 
+ 'AWS ML Question 192', 
  '', 
  'Publish', 
  'closed', 
@@ -11445,7 +11445,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,192);
+(23299,@lastQuestionId,192);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11482,7 +11482,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company will use Amazon SageMaker to train and host a machine learning model for a marketing campaign. The data must be encrypted at rest. Most of the data is sensitive customer data. The company wants AWS to maintain the root of trust for the encryption keys and wants key usage to be logged.<br/><br/>Which solution will meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #193', 
+ 'AWS ML Question 193', 
  '', 
  'Publish', 
  'closed', 
@@ -11504,7 +11504,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,193);
+(23299,@lastQuestionId,193);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11541,7 +11541,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is working on a model to predict a company''s required inventory stock levels. All historical data is stored in .csv files in the company''s data lake on Amazon S3. The dataset consists of approximately 500 GB of data The data scientist wants to use SQL to explore the data before training the model. The company wants to minimize costs.<br/><br/>Which option meets these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #194', 
+ 'AWS ML Question 194', 
  '', 
  'Publish', 
  'closed', 
@@ -11563,7 +11563,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,194);
+(23299,@lastQuestionId,194);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11600,7 +11600,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A geospatial analysis company processes thousands of new satellite images each day to produce vessel detection data for commercial shipping. The company stores the training data in Amazon S3. The training data incrementally increases in size with new images each day.<br/><br/>The company has configured an Amazon SageMaker training job to use a single ml.p2.xlarge instance with File input mode to train the built-in Object Detection algorithm. The training process was successful last month but is now failing because of a lack of storage. Aside from the addition of training data, nothing has changed in the model training process.<br/><br/>A machine learning (ML) specialist needs to change the training configuration to fix the problem. The solution must optimize performance and must minimize the cost of training.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #195', 
+ 'AWS ML Question 195', 
  '', 
  'Publish', 
  'closed', 
@@ -11622,7 +11622,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,195);
+(23299,@lastQuestionId,195);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11659,7 +11659,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is using Amazon SageMaker to build a machine learning (ML) model to predict customer churn based on customer call transcripts. Audio files from customer calls are located in an on-premises VoIP system that has petabytes of recorded calls. The on-premises infrastructure has high-velocity networking and connects to the company''s AWS infrastructure through a VPN connection over a 100 Mbps connection.<br/><br/>The company has an algorithm for transcribing customer calls that requires GPUs for inference. The company wants to store these transcriptions in an Amazon S3 bucket in the AWS Cloud for model development.<br/><br/>Which solution should an ML specialist use to deliver the transcriptions to the S3 bucket as quickly as possible?', 
- 'AWS ML Question #196', 
+ 'AWS ML Question 196', 
  '', 
  'Publish', 
  'closed', 
@@ -11681,7 +11681,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,196);
+(23299,@lastQuestionId,196);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11718,7 +11718,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has a podcast platform that has thousands of users. The company has implemented an anomaly detection algorithm to detect low podcast engagement based on a 10-minute running window of user events such as listening, pausing, and exiting the podcast. A machine learning (ML) specialist is designing the data ingestion of these events with the knowledge that the event payload needs some small transformations before inference.<br/><br/>How should the ML specialist design the data ingestion to meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #197', 
+ 'AWS ML Question 197', 
  '', 
  'Publish', 
  'closed', 
@@ -11740,7 +11740,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,197);
+(23299,@lastQuestionId,197);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11777,7 +11777,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to predict the classification of documents that are created from an application. New documents are saved to an Amazon S3 bucket every 3 seconds. The company has developed three versions of a machine learning (ML) model within Amazon SageMaker to classify document text. The company wants to deploy these three versions to predict the classification of each document.<br/><br/>Which approach will meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #198', 
+ 'AWS ML Question 198', 
  '', 
  'Publish', 
  'closed', 
@@ -11799,7 +11799,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,198);
+(23299,@lastQuestionId,198);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11836,7 +11836,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company needs to identify returned smartphones that have been damaged by moisture. The company has an automated process that produces 2,000 diagnostic values for each phone. The database contains more than five million phone evaluations. The evaluation process is consistent, and there are no missing values in the data. A machine learning (ML) specialist has trained an Amazon SageMaker linear learner ML model to classify phones as moisture damaged or not moisture damaged by using all available features. The model''s F1 score is 0.6.<br/><br/>Which changes in model training would MOST likely improve the model''s F1 score? (Choose two.)', 
- 'AWS ML Question #199', 
+ 'AWS ML Question 199', 
  '', 
  'Publish', 
  'closed', 
@@ -11858,7 +11858,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,199);
+(23299,@lastQuestionId,199);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11900,7 +11900,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a machine learning (ML) model to classify images of plants. An ML specialist has trained the model using the Amazon SageMaker built-in Image Classification algorithm. The model is hosted using a SageMaker endpoint on an ml.m5.xlarge instance for real-time inference. When used by researchers in the field, the inference has greater latency than is acceptable. The latency gets worse when multiple researchers perform inference at the same time on their devices. Using Amazon CloudWatch metrics, the ML specialist notices that the ModelLatency metric shows a high value and is responsible for most of the response latency.<br/><br/>The ML specialist needs to fix the performance issue so that researchers can experience less latency when performing inference from their devices.<br/><br/>Which action should the ML specialist take to meet this requirement?', 
- 'AWS ML Question #200', 
+ 'AWS ML Question 200', 
  '', 
  'Publish', 
  'closed', 
@@ -11922,7 +11922,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,200);
+(23299,@lastQuestionId,200);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -11959,7 +11959,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An automotive company is using computer vision in its autonomous cars. The company has trained its models successfully by using transfer learning from a convolutional neural network (CNN). The models are trained with PyTorch through the use of the Amazon SageMaker SDK. The company wants to reduce the time that is required for performing inferences, given the low latency that is required for self-driving.<br/><br/>Which solution should the company use to evaluate and improve the performance of the models?', 
- 'AWS ML Question #201', 
+ 'AWS ML Question 201', 
  '', 
  'Publish', 
  'closed', 
@@ -11981,7 +11981,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,201);
+(23299,@lastQuestionId,201);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12018,7 +12018,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company''s machine learning (ML) specialist is designing a scalable data storage solution for Amazon SageMaker. The company has an existing TensorFlow-based model that uses a train.py script. The model relies on static training data that is currently stored in TFRecord format.<br/><br/>What should the ML specialist do to provide the training data to SageMaker with the LEAST development overhead?', 
- 'AWS ML Question #202', 
+ 'AWS ML Question 202', 
  '', 
  'Publish', 
  'closed', 
@@ -12040,7 +12040,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,202);
+(23299,@lastQuestionId,202);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12077,7 +12077,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company wants to train a large image classification model with 10,000 classes. The company runs multiple model training iterations and needs to minimize operational overhead and cost. The company also needs to avoid loss of work and model retraining.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #203', 
+ 'AWS ML Question 203', 
  '', 
  'Publish', 
  'closed', 
@@ -12099,7 +12099,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,203);
+(23299,@lastQuestionId,203);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12136,7 +12136,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company uses a machine learning (ML) model for daily sales forecasting. The model has provided inaccurate results for the past 3 weeks. At the end of each day, an AWS Glue job consolidates the input data that is used for the forecasting with the actual daily sales data and the predictions of the model. The AWS Glue job stores the data in Amazon S3.<br/><br/>The company''s ML team determines that the inaccuracies are occurring because of a change in the value distributions of the model features. The ML team must implement a solution that will detect when this type of change occurs in the future.<br/><br/>Which solution will meet these requirements with the LEAST amount of operational overhead?', 
- 'AWS ML Question #204', 
+ 'AWS ML Question 204', 
  '', 
  'Publish', 
  'closed', 
@@ -12158,7 +12158,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,204);
+(23299,@lastQuestionId,204);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12195,7 +12195,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist has prepared and used a custom container image with Amazon SageMaker to train an image classification model. The ML specialist is performing hyperparameter optimization (HPO) with this custom container image to produce a higher quality image classifier.<br/><br/>The ML specialist needs to determine whether HPO with the SageMaker built-in image classification algorithm will produce a better model than the model produced by HPO with the custom container image. All ML experiments and HPO jobs must be invoked from scripts inside SageMaker Studio notebooks.<br/><br/>How can the ML specialist meet these requirements in the LEAST amount of time?', 
- 'AWS ML Question #205', 
+ 'AWS ML Question 205', 
  '', 
  'Publish', 
  'closed', 
@@ -12217,7 +12217,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,205);
+(23299,@lastQuestionId,205);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12254,7 +12254,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to deliver digital car management services to its customers. The company plans to analyze data to predict the likelihood of users changing cars. The company has 10 TB of data that is stored in an Amazon Redshift cluster. The company''s data engineering team is using Amazon SageMaker Studio for data analysis and model development. Only a subset of the data is relevant for developing the machine learning models. The data engineering team needs a secure and cost-effective way to export the data to a data repository in Amazon S3 for model development.<br/><br/>Which solutions will meet these requirements? (Choose two.)', 
- 'AWS ML Question #206', 
+ 'AWS ML Question 206', 
  '', 
  'Publish', 
  'closed', 
@@ -12276,7 +12276,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,206);
+(23299,@lastQuestionId,206);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12318,7 +12318,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building an application that can predict spam email messages based on email text. The company can generate a few thousand human-labeled datasets that contain a list of email messages and a label of "spam" or "not spam" for each email message. A machine learning (ML) specialist wants to use transfer learning with a Bidirectional Encoder Representations from Transformers (BERT) model that is trained on English Wikipedia text data.<br/><br/>What should the ML specialist do to initialize the model to fine-tune the model with the custom data?', 
- 'AWS ML Question #207', 
+ 'AWS ML Question 207', 
  '', 
  'Publish', 
  'closed', 
@@ -12340,7 +12340,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,207);
+(23299,@lastQuestionId,207);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12377,7 +12377,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is using a legacy telephony platform and has several years remaining on its contract. The company wants to move to AWS and wants to implement the following machine learning features:<br/><br/>• Call transcription in multiple languages<br/>• Categorization of calls based on the transcript<br/>• Detection of the main customer issues in the calls<br/>• Customer sentiment analysis for each line of the transcript, with positive or negative indication and scoring of that sentiment<br/><br/>Which AWS solution will meet these requirements with the LEAST amount of custom model training?', 
- 'AWS ML Question #208', 
+ 'AWS ML Question 208', 
  '', 
  'Publish', 
  'closed', 
@@ -12399,7 +12399,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,208);
+(23299,@lastQuestionId,208);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12436,7 +12436,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A finance company needs to forecast the price of a commodity. The company has compiled a dataset of historical daily prices. A data scientist must train various forecasting models on 80% of the dataset and must validate the efficacy of those models on the remaining 20% of the dataset.<br/><br/>How should the data scientist split the dataset into a training dataset and a validation dataset to compare model performance?', 
- 'AWS ML Question #209', 
+ 'AWS ML Question 209', 
  '', 
  'Publish', 
  'closed', 
@@ -12458,7 +12458,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,209);
+(23299,@lastQuestionId,209);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12495,7 +12495,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company wants to build a recommendation system for the company''s website. The system needs to provide recommendations for existing users and needs to base those recommendations on each user''s past browsing history. The system also must filter out any items that the user previously purchased.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #210', 
+ 'AWS ML Question 210', 
  '', 
  'Publish', 
  'closed', 
@@ -12517,7 +12517,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,210);
+(23299,@lastQuestionId,210);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12554,7 +12554,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A bank wants to use a machine learning (ML) model to predict if users will default on credit card payments. The training data consists of 30,000 labeled records and is evenly balanced between two categories. For the model, an ML specialist selects the Amazon SageMaker built-in XGBoost algorithm and configures a SageMaker automatic hyperparameter optimization job with the Bayesian method. The ML specialist uses the validation accuracy as the objective metric.<br/><br/>When the bank implements the solution with this model, the prediction accuracy is 75%. The bank has given the ML specialist 1 day to improve the model in production.<br/><br/>Which approach is the FASTEST way to improve the model''s accuracy?', 
- 'AWS ML Question #211', 
+ 'AWS ML Question 211', 
  '', 
  'Publish', 
  'closed', 
@@ -12576,7 +12576,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,211);
+(23299,@lastQuestionId,211);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12613,7 +12613,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist has 20 TB of data in CSV format in an Amazon S3 bucket. The data scientist needs to convert the data to Apache Parquet format.<br/><br/>How can the data scientist convert the file format with the LEAST amount of effort?', 
- 'AWS ML Question #212', 
+ 'AWS ML Question 212', 
  '', 
  'Publish', 
  'closed', 
@@ -12635,7 +12635,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,212);
+(23299,@lastQuestionId,212);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12672,7 +12672,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a pipeline that periodically retrains its machine learning (ML) models by using new streaming data from devices. The company''s data engineering team wants to build a data ingestion system that has high throughput, durable storage, and scalability. The company can tolerate up to 5 minutes of latency for data ingestion. The company needs a solution that can apply basic data transformation during the ingestion process.<br/><br/>Which solution will meet these requirements with the MOST operational efficiency?', 
- 'AWS ML Question #213', 
+ 'AWS ML Question 213', 
  '', 
  'Publish', 
  'closed', 
@@ -12694,7 +12694,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,213);
+(23299,@lastQuestionId,213);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12731,7 +12731,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company is ingesting purchasing records from its network of 20,000 stores to Amazon S3 by using Amazon Kinesis Data Firehose. The company uses a small, server-based application in each store to send the data to AWS over the internet. The company uses this data to train a machine learning model that is retrained each day. The company''s data science team has identified existing attributes on these records that could be combined to create an improved model.<br/><br/>Which change will create the required transformed records with the LEAST operational overhead?', 
- 'AWS ML Question #214', 
+ 'AWS ML Question 214', 
  '', 
  'Publish', 
  'closed', 
@@ -12753,7 +12753,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,214);
+(23299,@lastQuestionId,214);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12790,7 +12790,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A sports broadcasting company is planning to introduce subtitles in multiple languages for a live broadcast. The commentary is in English. The company needs the transcriptions to appear on screen in French or Spanish, depending on the broadcasting country. The transcriptions must be able to capture domain-specific terminology, names, and locations based on the commentary context. The company needs a solution that can support options to provide tuning data.<br/><br/>Which combination of AWS services and features will meet these requirements with the LEAST operational overhead? (Choose two.)', 
- 'AWS ML Question #215', 
+ 'AWS ML Question 215', 
  '', 
  'Publish', 
  'closed', 
@@ -12812,7 +12812,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,215);
+(23299,@lastQuestionId,215);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12854,7 +12854,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist at a retail company is forecasting sales for a product over the next 3 months. After preliminary analysis, the data scientist identifies that sales are seasonal and that holidays affect sales. The data scientist also determines that sales of the product are correlated with sales of other products in the same category.<br/><br/>The data scientist needs to train a sales forecasting model that incorporates this information.<br/><br/>Which solution will meet this requirement with the LEAST development effort?', 
- 'AWS ML Question #216', 
+ 'AWS ML Question 216', 
  '', 
  'Publish', 
  'closed', 
@@ -12876,7 +12876,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,216);
+(23299,@lastQuestionId,216);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12913,7 +12913,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a predictive maintenance model for its warehouse equipment. The model must predict the probability of failure of all machines in the warehouse. The company has collected 10,000 event samples within 3 months. The event samples include 100 failure cases that are evenly distributed across 50 different machine types.<br/><br/>How should the company prepare the data for the model to improve the model''s accuracy?', 
- 'AWS ML Question #217', 
+ 'AWS ML Question 217', 
  '', 
  'Publish', 
  'closed', 
@@ -12935,7 +12935,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,217);
+(23299,@lastQuestionId,217);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -12972,7 +12972,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company stores its documents in Amazon S3 with no predefined product categories. A data scientist needs to build a machine learning model to categorize the documents for all the company''s products.<br/><br/>Which solution will meet these requirements with the MOST operational efficiency?', 
- 'AWS ML Question #218', 
+ 'AWS ML Question 218', 
  '', 
  'Publish', 
  'closed', 
@@ -12994,7 +12994,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,218);
+(23299,@lastQuestionId,218);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13031,7 +13031,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A sports analytics company is providing services at a marathon. Each runner in the marathon will have their race ID printed as text on the front of their shirt. The company needs to extract race IDs from images of the runners.<br/><br/>Which solution will meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #219', 
+ 'AWS ML Question 219', 
  '', 
  'Publish', 
  'closed', 
@@ -13053,7 +13053,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,219);
+(23299,@lastQuestionId,219);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13090,7 +13090,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company wants to monitor its devices for anomalous behavior. A data scientist has trained an Amazon SageMaker scikit-learn model that classifies a device as normal or anomalous based on its 4-day telemetry. The 4-day telemetry of each device is collected in a separate file and is placed in an Amazon S3 bucket once every hour. The total time to run the model across the telemetry for all devices is 5 minutes.<br/><br/>What is the MOST cost-effective solution for the company to use to run the model across the telemetry for all the devices?', 
- 'AWS ML Question #220', 
+ 'AWS ML Question 220', 
  '', 
  'Publish', 
  'closed', 
@@ -13112,7 +13112,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,220);
+(23299,@lastQuestionId,220);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13149,7 +13149,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to segment a large group of customers into subgroups based on shared characteristics. The company’s data scientist is planning to use the Amazon SageMaker built-in k-means clustering algorithm for this task. The data scientist needs to determine the optimal number of subgroups (k) to use.<br/><br/>Which data visualization approach will MOST accurately determine the optimal value of k?', 
- 'AWS ML Question #221', 
+ 'AWS ML Question 221', 
  '', 
  'Publish', 
  'closed', 
@@ -13171,7 +13171,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,221);
+(23299,@lastQuestionId,221);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13208,7 +13208,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist at a financial services company used Amazon SageMaker to train and deploy a model that predicts loan defaults. The model analyzes new loan applications and predicts the risk of loan default. To train the model, the data scientist manually extracted loan data from a database. The data scientist performed the model training and deployment steps in a Jupyter notebook that is hosted on SageMaker Studio notebooks. The model''s prediction accuracy is decreasing over time.<br/><br/>Which combination of steps is the MOST operationally efficient way for the data scientist to maintain the model''s accuracy? (Choose two.)', 
- 'AWS ML Question #222', 
+ 'AWS ML Question 222', 
  '', 
  'Publish', 
  'closed', 
@@ -13230,7 +13230,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,222);
+(23299,@lastQuestionId,222);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13272,7 +13272,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company wants to create a system that can predict sales based on the price of an item. A machine learning (ML) engineer built an initial linear model that resulted in the following residual plot:<br/><br/><img src="None"/><br/><br/>Which actions should the ML engineer take to improve the accuracy of the predictions in the next phase of model building? (Choose three.)', 
- 'AWS ML Question #223', 
+ 'AWS ML Question 223', 
  '', 
  'Publish', 
  'closed', 
@@ -13294,7 +13294,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,223);
+(23299,@lastQuestionId,223);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13336,7 +13336,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist at a food production company wants to use an Amazon SageMaker built-in model to classify different vegetables. The current dataset has many features. The company wants to save on memory costs when the data scientist trains and deploys the model. The company also wants to be able to find similar data points for each test data point.<br/><br/>Which algorithm will meet these requirements?', 
- 'AWS ML Question #224', 
+ 'AWS ML Question 224', 
  '', 
  'Publish', 
  'closed', 
@@ -13358,7 +13358,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,224);
+(23299,@lastQuestionId,224);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13395,7 +13395,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is training a large PyTorch model by using Amazon SageMaker. It takes 10 hours on average to train the model on GPU instances. The data scientist suspects that training is not converging and that resource utilization is not optimal.<br/><br/>What should the data scientist do to identify and address training issues with the LEAST development effort?', 
- 'AWS ML Question #225', 
+ 'AWS ML Question 225', 
  '', 
  'Publish', 
  'closed', 
@@ -13417,7 +13417,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,225);
+(23299,@lastQuestionId,225);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13454,7 +13454,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A bank wants to launch a low-rate credit promotion campaign. The bank must identify which customers to target with the promotion and wants to make sure that each customer''s full credit history is considered when an approval or denial decision is made.<br/><br/>The bank''s data science team used the XGBoost algorithm to train a classification model based on account transaction features. The data science team deployed the model by using the Amazon SageMaker model hosting service. The accuracy of the model is sufficient, but the data science team wants to be able to explain why the model denies the promotion to some customers.<br/><br/>What should the data science team do to meet this requirement in the MOST operationally efficient manner?', 
- 'AWS ML Question #226', 
+ 'AWS ML Question 226', 
  '', 
  'Publish', 
  'closed', 
@@ -13476,7 +13476,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,226);
+(23299,@lastQuestionId,226);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13513,7 +13513,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has hired a data scientist to create a loan risk model. The dataset contains loan amounts and variables such as loan type, region, and other demographic variables. The data scientist wants to use Amazon SageMaker to test bias regarding the loan amount distribution with respect to some of these categorical variables.<br/><br/>Which pretraining bias metrics should the data scientist use to check the bias distribution? (Choose three.)', 
- 'AWS ML Question #227', 
+ 'AWS ML Question 227', 
  '', 
  'Publish', 
  'closed', 
@@ -13535,7 +13535,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,227);
+(23299,@lastQuestionId,227);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13577,7 +13577,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company wants to use Amazon Forecast to predict daily stock levels of inventory. The cost of running out of items in stock is much higher for the company than the cost of having excess inventory. The company has millions of data samples for multiple years for thousands of items. The company’s purchasing department needs to predict demand for 30-day cycles for each item to ensure that restocking occurs.<br/><br/>A machine learning (ML) specialist wants to use item-related features such as "category," "brand," and "safety stock count." The ML specialist also wants to use a binary time series feature that has "promotion applied?" as its name. Future promotion information is available only for the next 5 days.<br/><br/>The ML specialist must choose an algorithm and an evaluation metric for a solution to produce prediction results that will maximize company profit.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #228', 
+ 'AWS ML Question 228', 
  '', 
  'Publish', 
  'closed', 
@@ -13599,7 +13599,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,228);
+(23299,@lastQuestionId,228);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13636,7 +13636,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online retail company wants to develop a natural language processing (NLP) model to improve customer service. A machine learning (ML) specialist is setting up distributed training of a Bidirectional Encoder Representations from Transformers (BERT) model on Amazon SageMaker. SageMaker will use eight compute instances for the distributed training.<br/><br/>The ML specialist wants to ensure the security of the data during the distributed training. The data is stored in an Amazon S3 bucket.<br/><br/>Which combination of steps should the ML specialist take to protect the data during the distributed training? (Choose three.)', 
- 'AWS ML Question #229', 
+ 'AWS ML Question 229', 
  '', 
  'Publish', 
  'closed', 
@@ -13658,7 +13658,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,229);
+(23299,@lastQuestionId,229);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13700,7 +13700,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An analytics company has an Amazon SageMaker hosted endpoint for an image classification model. The model is a custom-built convolutional neural network (CNN) and uses the PyTorch deep learning framework. The company wants to increase throughput and decrease latency for customers that use the model.<br/><br/>Which solution will meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #230', 
+ 'AWS ML Question 230', 
  '', 
  'Publish', 
  'closed', 
@@ -13722,7 +13722,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,230);
+(23299,@lastQuestionId,230);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13759,7 +13759,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company is collecting structured data and unstructured data from its website, mobile apps, and IoT devices. The data is stored in several databases and Amazon S3 buckets. The company is implementing a scalable repository to store structured data and unstructured data. The company must implement a solution that provides a central data catalog, self-service access to the data, and granular data access policies and encryption to protect the data.<br/><br/>Which combination of actions will meet these requirements with the LEAST amount of setup? (Choose three.)', 
- 'AWS ML Question #231', 
+ 'AWS ML Question 231', 
  '', 
  'Publish', 
  'closed', 
@@ -13781,7 +13781,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,231);
+(23299,@lastQuestionId,231);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13823,7 +13823,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is developing a deep learning sentiment analysis model that is based on data from movie reviews. After the ML specialist trains the model and reviews the model results on the validation set, the ML specialist discovers that the model is overfitting.<br/><br/>Which solutions will MOST improve the model generalization and reduce overfitting? (Choose three.)', 
- 'AWS ML Question #232', 
+ 'AWS ML Question 232', 
  '', 
  'Publish', 
  'closed', 
@@ -13845,7 +13845,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,232);
+(23299,@lastQuestionId,232);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13887,7 +13887,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online advertising company is developing a linear model to predict the bid price of advertisements in real time with low-latency predictions. A data scientist has trained the linear model by using many features, but the model is overfitting the training dataset. The data scientist needs to prevent overfitting and must reduce the number of features.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #233', 
+ 'AWS ML Question 233', 
  '', 
  'Publish', 
  'closed', 
@@ -13909,7 +13909,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,233);
+(23299,@lastQuestionId,233);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -13946,7 +13946,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A credit card company wants to identify fraudulent transactions in real time. A data scientist builds a machine learning model for this purpose. The transactional data is captured and stored in Amazon S3. The historic data is already labeled with two classes: fraud (positive) and fair transactions (negative). The data scientist removes all the missing data and builds a classifier by using the XGBoost algorithm in Amazon SageMaker. The model produces the following results:<br/><br/>• True positive rate (TPR): 0.700<br/>• False negative rate (FNR): 0.300<br/>• True negative rate (TNR): 0.977<br/>• False positive rate (FPR): 0.023<br/>• Overall accuracy: 0.949<br/><br/>Which solution should the data scientist use to improve the performance of the model?', 
- 'AWS ML Question #234', 
+ 'AWS ML Question 234', 
  '', 
  'Publish', 
  'closed', 
@@ -13968,7 +13968,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,234);
+(23299,@lastQuestionId,234);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14005,7 +14005,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is training machine learning (ML) models on Amazon SageMaker by using 200 TB of data that is stored in Amazon S3 buckets. The training data consists of individual files that are each larger than 200 MB in size. The company needs a data access solution that offers the shortest processing time and the least amount of setup.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #235', 
+ 'AWS ML Question 235', 
  '', 
  'Publish', 
  'closed', 
@@ -14027,7 +14027,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,235);
+(23299,@lastQuestionId,235);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14064,7 +14064,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online store is predicting future book sales by using a linear regression model that is based on past sales data. The data includes duration, a numerical feature that represents the number of days that a book has been listed in the online store. A data scientist performs an exploratory data analysis and discovers that the relationship between book sales and duration is skewed and non-linear.<br/><br/>Which data transformation step should the data scientist take to improve the predictions of the model?', 
- 'AWS ML Question #236', 
+ 'AWS ML Question 236', 
  '', 
  'Publish', 
  'closed', 
@@ -14086,7 +14086,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,236);
+(23299,@lastQuestionId,236);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14123,7 +14123,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company''s data engineer wants to use Amazon S3 to share datasets with data scientists. The data scientists work in three departments: Finance. Marketing, and Human Resources. Each department has its own IAM user group. Some datasets contain sensitive information and should be accessed only by the data scientists from the Finance department.<br/><br/>How can the data engineer set up access to meet these requirements?', 
- 'AWS ML Question #237', 
+ 'AWS ML Question 237', 
  '', 
  'Publish', 
  'closed', 
@@ -14145,7 +14145,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,237);
+(23299,@lastQuestionId,237);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14182,7 +14182,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company operates an amusement park. The company wants to collect, monitor, and store real-time traffic data at several park entrances by using strategically placed cameras. The company’s security team must be able to immediately access the data for viewing. Stored data must be indexed and must be accessible to the company’s data science team.<br/><br/>Which solution will meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #238', 
+ 'AWS ML Question 238', 
  '', 
  'Publish', 
  'closed', 
@@ -14204,7 +14204,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,238);
+(23299,@lastQuestionId,238);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14241,7 +14241,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An engraving company wants to automate its quality control process for plaques. The company performs the process before mailing each customized plaque to a customer. The company has created an Amazon S3 bucket that contains images of defects that should cause a plaque to be rejected. Low-confidence predictions must be sent to an internal team of reviewers who are using Amazon Augmented AI (Amazon A2I).<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #239', 
+ 'AWS ML Question 239', 
  '', 
  'Publish', 
  'closed', 
@@ -14263,7 +14263,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,239);
+(23299,@lastQuestionId,239);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14300,7 +14300,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer at a bank is building a data ingestion solution to provide transaction features to financial ML models. Raw transactional data is available in an Amazon Kinesis data stream.<br/><br/>The solution must compute rolling averages of the ingested data from the data stream and must store the results in Amazon SageMaker Feature Store. The solution also must serve the results to the models in near real time.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #240', 
+ 'AWS ML Question 240', 
  '', 
  'Publish', 
  'closed', 
@@ -14322,7 +14322,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,240);
+(23299,@lastQuestionId,240);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14359,7 +14359,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'Each morning, a data scientist at a rental car company creates insights about the previous day’s rental car reservation demands. The company needs to automate this process by streaming the data to Amazon S3 in near real time. The solution must detect high-demand rental cars at each of the company’s locations. The solution also must create a visualization dashboard that automatically refreshes with the most recent data.<br/><br/>Which solution will meet these requirements with the LEAST development time?', 
- 'AWS ML Question #241', 
+ 'AWS ML Question 241', 
  '', 
  'Publish', 
  'closed', 
@@ -14381,7 +14381,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,241);
+(23299,@lastQuestionId,241);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14418,7 +14418,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is planning a marketing campaign to promote a new product to existing customers. The company has data for past promotions that are similar. The company decides to try an experiment to send a more expensive marketing package to a smaller number of customers. The company wants to target the marketing campaign to customers who are most likely to buy the new product. The experiment requires that at least 90% of the customers who are likely to purchase the new product receive the marketing materials.<br/><br/>The company trains a model by using the linear learner algorithm in Amazon SageMaker. The model has a recall score of 80% and a precision of 75%.<br/><br/>How should the company retrain the model to meet these requirements?', 
- 'AWS ML Question #242', 
+ 'AWS ML Question 242', 
  '', 
  'Publish', 
  'closed', 
@@ -14440,7 +14440,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,242);
+(23299,@lastQuestionId,242);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14477,7 +14477,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A wildlife research company has a set of images of lions and cheetahs. The company created a dataset of the images. The company labeled each image with a binary label that indicates whether an image contains a lion or cheetah. The company wants to train a model to identify whether new images contain a lion or cheetah.<br/><br/>Which Amazon SageMaker algorithm will meet this requirement?', 
- 'AWS ML Question #243', 
+ 'AWS ML Question 243', 
  '', 
  'Publish', 
  'closed', 
@@ -14499,7 +14499,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,243);
+(23299,@lastQuestionId,243);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14536,7 +14536,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist for a medical diagnostic testing company has developed a machine learning (ML) model to identify patients who have a specific disease. The dataset that the scientist used to train the model is imbalanced. The dataset contains a large number of healthy patients and only a small number of patients who have the disease. The model should consider that patients who are incorrectly identified as positive for the disease will increase costs for the company.<br/><br/>Which metric will MOST accurately evaluate the performance of this model?', 
- 'AWS ML Question #244', 
+ 'AWS ML Question 244', 
  '', 
  'Publish', 
  'closed', 
@@ -14558,7 +14558,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,244);
+(23299,@lastQuestionId,244);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14595,7 +14595,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is training a linear regression model. The specialist notices that the model is overfitting. The specialist applies an L1 regularization parameter and runs the model again. This change results in all features having zero weights.<br/><br/>What should the ML specialist do to improve the model results?', 
- 'AWS ML Question #245', 
+ 'AWS ML Question 245', 
  '', 
  'Publish', 
  'closed', 
@@ -14617,7 +14617,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,245);
+(23299,@lastQuestionId,245);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14654,7 +14654,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer is integrating a production model with a customer metadata repository for real-time inference. The repository is hosted in Amazon SageMaker Feature Store. The engineer wants to retrieve only the latest version of the customer metadata record for a single customer at a time.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #246', 
+ 'AWS ML Question 246', 
  '', 
  'Publish', 
  'closed', 
@@ -14676,7 +14676,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,246);
+(23299,@lastQuestionId,246);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14713,7 +14713,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company’s data scientist has trained a new machine learning model that performs better on test data than the company’s existing model performs in the production environment. The data scientist wants to replace the existing model that runs on an Amazon SageMaker endpoint in the production environment. However, the company is concerned that the new model might not work well on the production environment data.<br/><br/>The data scientist needs to perform A/B testing in the production environment to evaluate whether the new model performs well on production environment data.<br/><br/>Which combination of steps must the data scientist take to perform the A/B testing? (Choose two.)', 
- 'AWS ML Question #247', 
+ 'AWS ML Question 247', 
  '', 
  'Publish', 
  'closed', 
@@ -14735,7 +14735,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,247);
+(23299,@lastQuestionId,247);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14777,7 +14777,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is working on a forecast problem by using a dataset that consists of .csv files that are stored in Amazon S3. The files contain a timestamp variable in the following format:<br/><br/><br/>March 1st, 2020, 08:14pm -<br/><br/>There is a hypothesis about seasonal differences in the dependent variable. This number could be higher or lower for weekdays because some days and hours present varying values, so the day of the week, month, or hour could be an important factor. As a result, the data scientist needs to transform the timestamp into weekdays, month, and day as three separate variables to conduct an analysis.<br/><br/>Which solution requires the LEAST operational overhead to create a new dataset with the added features?', 
- 'AWS ML Question #248', 
+ 'AWS ML Question 248', 
  '', 
  'Publish', 
  'closed', 
@@ -14799,7 +14799,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,248);
+(23299,@lastQuestionId,248);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14836,7 +14836,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company has a production line with sensors that collect hundreds of quality metrics. The company has stored sensor data and manual inspection results in a data lake for several months. To automate quality control, the machine learning team must build an automated mechanism that determines whether the produced goods are good quality, replacement market quality, or scrap quality based on the manual inspection results.<br/><br/>Which modeling approach will deliver the MOST accurate prediction of product quality?', 
- 'AWS ML Question #249', 
+ 'AWS ML Question 249', 
  '', 
  'Publish', 
  'closed', 
@@ -14858,7 +14858,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,249);
+(23299,@lastQuestionId,249);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14895,7 +14895,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A healthcare company wants to create a machine learning (ML) model to predict patient outcomes. A data science team developed an ML model by using a custom ML library. The company wants to use Amazon SageMaker to train this model. The data science team creates a custom SageMaker image to train the model. When the team tries to launch the custom image in SageMaker Studio, the data scientists encounter an error within the application.<br/><br/>Which service can the data scientists use to access the logs for this error?', 
- 'AWS ML Question #250', 
+ 'AWS ML Question 250', 
  '', 
  'Publish', 
  'closed', 
@@ -14917,7 +14917,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,250);
+(23299,@lastQuestionId,250);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -14954,7 +14954,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist wants to build a financial trading bot to automate investment decisions. The financial bot should recommend the quantity and price of an asset to buy or sell to maximize long-term profit. The data scientist will continuously stream financial transactions to the bot for training purposes. The data scientist must select the appropriate machine learning (ML) algorithm to develop the financial trading bot.<br/><br/>Which type of ML algorithm will meet these requirements?', 
- 'AWS ML Question #251', 
+ 'AWS ML Question 251', 
  '', 
  'Publish', 
  'closed', 
@@ -14976,7 +14976,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,251);
+(23299,@lastQuestionId,251);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15013,7 +15013,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company wants to create a machine learning (ML) model to predict when equipment is likely to fail. A data science team already constructed a deep learning model by using TensorFlow and a custom Python script in a local environment. The company wants to use Amazon SageMaker to train the model.<br/><br/>Which TensorFlow estimator configuration will train the model MOST cost-effectively?', 
- 'AWS ML Question #252', 
+ 'AWS ML Question 252', 
  '', 
  'Publish', 
  'closed', 
@@ -15035,7 +15035,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,252);
+(23299,@lastQuestionId,252);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15072,7 +15072,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An automotive company uses computer vision in its autonomous cars. The company trained its object detection models successfully by using transfer learning from a convolutional neural network (CNN). The company trained the models by using PyTorch through the Amazon SageMaker SDK.<br/><br/>The vehicles have limited hardware and compute power. The company wants to optimize the model to reduce memory, battery, and hardware consumption without a significant sacrifice in accuracy.<br/><br/>Which solution will improve the computational efficiency of the models?', 
- 'AWS ML Question #253', 
+ 'AWS ML Question 253', 
  '', 
  'Publish', 
  'closed', 
@@ -15094,7 +15094,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,253);
+(23299,@lastQuestionId,253);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15131,7 +15131,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist wants to improve the fit of a machine learning (ML) model that predicts house prices. The data scientist makes a first attempt to fit the model, but the fitted model has poor accuracy on both the training dataset and the test dataset.<br/><br/>Which steps must the data scientist take to improve model accuracy? (Choose three.)', 
- 'AWS ML Question #254', 
+ 'AWS ML Question 254', 
  '', 
  'Publish', 
  'closed', 
@@ -15153,7 +15153,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,254);
+(23299,@lastQuestionId,254);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15195,7 +15195,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A car company is developing a machine learning solution to detect whether a car is present in an image. The image dataset consists of one million images. Each image in the dataset is 200 pixels in height by 200 pixels in width. Each image is labeled as either having a car or not having a car.<br/><br/>Which architecture is MOST likely to produce a model that detects whether a car is present in an image with the highest accuracy?', 
- 'AWS ML Question #255', 
+ 'AWS ML Question 255', 
  '', 
  'Publish', 
  'closed', 
@@ -15217,7 +15217,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,255);
+(23299,@lastQuestionId,255);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15254,7 +15254,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is creating an application to identify, count, and classify animal images that are uploaded to the company’s website. The company is using the Amazon SageMaker image classification algorithm with an ImageNetV2 convolutional neural network (CNN). The solution works well for most animal images but does not recognize many animal species that are less common.<br/><br/>The company obtains 10,000 labeled images of less common animal species and stores the images in Amazon S3. A machine learning (ML) engineer needs to incorporate the images into the model by using Pipe mode in SageMaker.<br/><br/>Which combination of steps should the ML engineer take to train the model? (Choose two.)', 
- 'AWS ML Question #256', 
+ 'AWS ML Question 256', 
  '', 
  'Publish', 
  'closed', 
@@ -15276,7 +15276,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,256);
+(23299,@lastQuestionId,256);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15318,7 +15318,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A music streaming company is building a pipeline to extract features. The company wants to store the features for offline model training and online inference. The company wants to track feature history and to give the company’s data science teams access to the features.<br/><br/>Which solution will meet these requirements with the MOST operational efficiency?', 
- 'AWS ML Question #257', 
+ 'AWS ML Question 257', 
  '', 
  'Publish', 
  'closed', 
@@ -15340,7 +15340,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,257);
+(23299,@lastQuestionId,257);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15377,7 +15377,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A beauty supply store wants to understand some characteristics of visitors to the store. The store has security video recordings from the past several years. The store wants to generate a report of hourly visitors from the recordings. The report should group visitors by hair style and hair color.<br/><br/>Which solution will meet these requirements with the LEAST amount of effort?', 
- 'AWS ML Question #258', 
+ 'AWS ML Question 258', 
  '', 
  'Publish', 
  'closed', 
@@ -15399,7 +15399,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,258);
+(23299,@lastQuestionId,258);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15436,7 +15436,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A financial services company wants to automate its loan approval process by building a machine learning (ML) model. Each loan data point contains credit history from a third-party data source and demographic information about the customer. Each loan approval prediction must come with a report that contains an explanation for why the customer was approved for a loan or was denied for a loan. The company will use Amazon SageMaker to build the model.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #259', 
+ 'AWS ML Question 259', 
  '', 
  'Publish', 
  'closed', 
@@ -15458,7 +15458,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,259);
+(23299,@lastQuestionId,259);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15495,7 +15495,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A financial company sends special offers to customers through weekly email campaigns. A bulk email marketing system takes the list of email addresses as an input and sends the marketing campaign messages in batches. Few customers use the offers from the campaign messages. The company does not want to send irrelevant offers to customers.<br/><br/>A machine learning (ML) team at the company is using Amazon SageMaker to build a model to recommend specific offers to each customer based on the customer''s profile and the offers that the customer has accepted in the past.<br/><br/>Which solution will meet these requirements with the MOST operational efficiency?', 
- 'AWS ML Question #260', 
+ 'AWS ML Question 260', 
  '', 
  'Publish', 
  'closed', 
@@ -15517,7 +15517,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,260);
+(23299,@lastQuestionId,260);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15554,7 +15554,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A social media company wants to develop a machine learning (ML) model to detect inappropriate or offensive content in images. The company has collected a large dataset of labeled images and plans to use the built-in Amazon SageMaker image classification algorithm to train the model. The company also intends to use SageMaker pipe mode to speed up the training.<br/><br/>The company splits the dataset into training, validation, and testing datasets. The company stores the training and validation images in folders that are named Training and Validation, respectively. The folders contain subfolders that correspond to the names of the dataset classes. The company resizes the images to the same size and generates two input manifest files named training.lst and validation.lst, for the training dataset and the validation dataset, respectively. Finally, the company creates two separate Amazon S3 buckets for uploads of the training dataset and the validation dataset.<br/><br/>Which additional data preparation steps should the company take before uploading the files to Amazon S3?', 
- 'AWS ML Question #261', 
+ 'AWS ML Question 261', 
  '', 
  'Publish', 
  'closed', 
@@ -15576,7 +15576,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,261);
+(23299,@lastQuestionId,261);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15613,7 +15613,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A media company wants to create a solution that identifies celebrities in pictures that users upload. The company also wants to identify the IP address and the timestamp details from the users so the company can prevent users from uploading pictures from unauthorized locations.<br/><br/>Which solution will meet these requirements with LEAST development effort?', 
- 'AWS ML Question #262', 
+ 'AWS ML Question 262', 
  '', 
  'Publish', 
  'closed', 
@@ -15635,7 +15635,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,262);
+(23299,@lastQuestionId,262);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15672,7 +15672,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A pharmaceutical company performs periodic audits of clinical trial sites to quickly resolve critical findings. The company stores audit documents in text format. Auditors have requested help from a data science team to quickly analyze the documents. The auditors need to discover the 10 main topics within the documents to prioritize and distribute the review work among the auditing team members. Documents that describe adverse events must receive the highest priority.<br/><br/>A data scientist will use statistical modeling to discover abstract topics and to provide a list of the top words for each category to help the auditors assess the relevance of the topic.<br/><br/>Which algorithms are best suited to this scenario? (Choose two.)', 
- 'AWS ML Question #263', 
+ 'AWS ML Question 263', 
  '', 
  'Publish', 
  'closed', 
@@ -15694,7 +15694,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,263);
+(23299,@lastQuestionId,263);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15736,7 +15736,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company needs to deploy a chatbot to answer common questions from customers. The chatbot must base its answers on company documentation.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #264', 
+ 'AWS ML Question 264', 
  '', 
  'Publish', 
  'closed', 
@@ -15758,7 +15758,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,264);
+(23299,@lastQuestionId,264);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15795,7 +15795,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to conduct targeted marketing to sell solar panels to homeowners. The company wants to use machine learning (ML) technologies to identify which houses already have solar panels. The company has collected 8,000 satellite images as training data and will use Amazon SageMaker Ground Truth to label the data.<br/><br/>The company has a small internal team that is working on the project. The internal team has no ML expertise and no ML experience.<br/><br/>Which solution will meet these requirements with the LEAST amount of effort from the internal team?', 
- 'AWS ML Question #265', 
+ 'AWS ML Question 265', 
  '', 
  'Publish', 
  'closed', 
@@ -15817,7 +15817,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,265);
+(23299,@lastQuestionId,265);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15854,7 +15854,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company hosts a machine learning (ML) dataset repository on Amazon S3. A data scientist is preparing the repository to train a model. The data scientist needs to redact personally identifiable information (PH) from the dataset.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #266', 
+ 'AWS ML Question 266', 
  '', 
  'Publish', 
  'closed', 
@@ -15876,7 +15876,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,266);
+(23299,@lastQuestionId,266);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15913,7 +15913,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is deploying a new machine learning (ML) model in a production environment. The company is concerned that the ML model will drift over time, so the company creates a script to aggregate all inputs and predictions into a single file at the end of each day. The company stores the file as an object in an Amazon S3 bucket. The total size of the daily file is 100 GB. The daily file size will increase over time.<br/><br/>Four times a year, the company samples the data from the previous 90 days to check the ML model for drift. After the 90-day period, the company must keep the files for compliance reasons.<br/><br/>The company needs to use S3 storage classes to minimize costs. The company wants to maintain the same storage durability of the data.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #267', 
+ 'AWS ML Question 267', 
  '', 
  'Publish', 
  'closed', 
@@ -15935,7 +15935,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,267);
+(23299,@lastQuestionId,267);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -15972,7 +15972,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to enhance audits for its machine learning (ML) systems. The auditing system must be able to perform metadata analysis on the features that the ML models use. The audit solution must generate a report that analyzes the metadata. The solution also must be able to set the data sensitivity and authorship of features.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #268', 
+ 'AWS ML Question 268', 
  '', 
  'Publish', 
  'closed', 
@@ -15994,7 +15994,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,268);
+(23299,@lastQuestionId,268);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16031,7 +16031,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist uploads a dataset to an Amazon S3 bucket that is protected by server-side encryption with AWS KMS keys (SSE-KMS). The ML specialist needs to ensure that an Amazon SageMaker notebook instance can read the dataset that is in Amazon S3.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #269', 
+ 'AWS ML Question 269', 
  '', 
  'Publish', 
  'closed', 
@@ -16053,7 +16053,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,269);
+(23299,@lastQuestionId,269);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16090,7 +16090,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company has a podcast platform that has thousands of users. The company implemented an algorithm to detect low podcast engagement based on a 10-minute running window of user events such as listening to, pausing, and closing the podcast. A machine learning (ML) specialist is designing the ingestion process for these events. The ML specialist needs to transform the data to prepare the data for inference.<br/><br/>How should the ML specialist design the transformation step to meet these requirements with the LEAST operational effort?', 
- 'AWS ML Question #270', 
+ 'AWS ML Question 270', 
  '', 
  'Publish', 
  'closed', 
@@ -16112,7 +16112,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,270);
+(23299,@lastQuestionId,270);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16149,7 +16149,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is training a multilayer perceptron (MLP) on a dataset with multiple classes. The target class of interest is unique compared to the other classes in the dataset, but it does not achieve an acceptable recall metric. The ML specialist varies the number and size of the MLP''s hidden layers, but the results do not improve significantly.<br/><br/>Which solution will improve recall in the LEAST amount of time?', 
- 'AWS ML Question #271', 
+ 'AWS ML Question 271', 
  '', 
  'Publish', 
  'closed', 
@@ -16171,7 +16171,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,271);
+(23299,@lastQuestionId,271);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16208,7 +16208,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist uploads 5 TB of data to an Amazon SageMaker Studio environment. The ML specialist performs initial data cleansing. Before the ML specialist begins to train a model, the ML specialist needs to create and view an analysis report that details potential bias in the uploaded data.<br/><br/>Which combination of actions will meet these requirements with the LEAST operational overhead? (Choose two.)', 
- 'AWS ML Question #272', 
+ 'AWS ML Question 272', 
  '', 
  'Publish', 
  'closed', 
@@ -16230,7 +16230,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,272);
+(23299,@lastQuestionId,272);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16272,7 +16272,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A network security vendor needs to ingest telemetry data from thousands of endpoints that run all over the world. The data is transmitted every 30 seconds in the form of records that contain 50 fields. Each record is up to 1 KB in size. The security vendor uses Amazon Kinesis Data Streams to ingest the data. The vendor requires hourly summaries of the records that Kinesis Data Streams ingests. The vendor will use Amazon Athena to query the records and to generate the summaries. The Athena queries will target 7 to 12 of the available data fields.<br/><br/>Which solution will meet these requirements with the LEAST amount of customization to transform and store the ingested data?', 
- 'AWS ML Question #273', 
+ 'AWS ML Question 273', 
  '', 
  'Publish', 
  'closed', 
@@ -16294,7 +16294,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,273);
+(23299,@lastQuestionId,273);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16331,7 +16331,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A medical device company is building a machine learning (ML) model to predict the likelihood of device recall based on customer data that the company collects from a plain text survey. One of the survey questions asks which medications the customer is taking. The data for this field contains the names of medications that customers enter manually. Customers misspell some of the medication names. The column that contains the medication name data gives a categorical feature with high cardinality but redundancy.<br/><br/>What is the MOST effective way to encode this categorical feature into a numeric feature?', 
- 'AWS ML Question #274', 
+ 'AWS ML Question 274', 
  '', 
  'Publish', 
  'closed', 
@@ -16353,7 +16353,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,274);
+(23299,@lastQuestionId,274);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16390,7 +16390,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer has created a feature repository in Amazon SageMaker Feature Store for the company. The company has AWS accounts for development, integration, and production. The company hosts a feature store in the development account. The company uses Amazon S3 buckets to store feature values offline. The company wants to share features and to allow the integration account and the production account to reuse the features that are in the feature repository.<br/><br/>Which combination of steps will meet these requirements? (Choose two.)', 
- 'AWS ML Question #275', 
+ 'AWS ML Question 275', 
  '', 
  'Publish', 
  'closed', 
@@ -16412,7 +16412,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,275);
+(23299,@lastQuestionId,275);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16454,7 +16454,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a new supervised classification model in an AWS environment. The company''s data science team notices that the dataset has a large quantity of variables. All the variables are numeric.<br/><br/>The model accuracy for training and validation is low. The model''s processing time is affected by high latency. The data science team needs to increase the accuracy of the model and decrease the processing time.<br/><br/>What should the data science team do to meet these requirements?', 
- 'AWS ML Question #276', 
+ 'AWS ML Question 276', 
  '', 
  'Publish', 
  'closed', 
@@ -16476,7 +16476,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,276);
+(23299,@lastQuestionId,276);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16513,7 +16513,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An exercise analytics company wants to predict running speeds for its customers by using a dataset that contains multiple health-related features for each customer. Some of the features originate from sensors that provide extremely noisy values.<br/><br/>The company is training a regression model by using the built-in Amazon SageMaker linear learner algorithm to predict the running speeds. While the company is training the model, a data scientist observes that the training loss decreases to almost zero, but validation loss increases.<br/><br/>Which technique should the data scientist use to optimally fit the model?', 
- 'AWS ML Question #277', 
+ 'AWS ML Question 277', 
  '', 
  'Publish', 
  'closed', 
@@ -16535,7 +16535,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,277);
+(23299,@lastQuestionId,277);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16572,7 +16572,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company''s machine learning (ML) specialist is building a computer vision model to classify 10 different traffic signs. The company has stored 100 images of each class in Amazon S3, and the company has another 10,000 unlabeled images. All the images come from dash cameras and are a size of 224 pixels × 224 pixels. After several training runs, the model is overfitting on the training data.<br/><br/>Which actions should the ML specialist take to address this problem? (Choose two.)', 
- 'AWS ML Question #278', 
+ 'AWS ML Question 278', 
  '', 
  'Publish', 
  'closed', 
@@ -16594,7 +16594,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,278);
+(23299,@lastQuestionId,278);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16636,7 +16636,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data science team is working with a tabular dataset that the team stores in Amazon S3. The team wants to experiment with different feature transformations such as categorical feature encoding. Then the team wants to visualize the resulting distribution of the dataset. After the team finds an appropriate set of feature transformations, the team wants to automate the workflow for feature transformations.<br/><br/>Which solution will meet these requirements with the MOST operational efficiency?', 
- 'AWS ML Question #279', 
+ 'AWS ML Question 279', 
  '', 
  'Publish', 
  'closed', 
@@ -16658,7 +16658,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,279);
+(23299,@lastQuestionId,279);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16695,7 +16695,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company plans to build a custom natural language processing (NLP) model to classify and prioritize user feedback. The company hosts the data and all machine learning (ML) infrastructure in the AWS Cloud. The ML team works from the company''s office, which has an IPsec VPN connection to one VPC in the AWS Cloud.<br/><br/>The company has set both the enableDnsHostnames attribute and the enableDnsSupport attribute of the VPC to true. The company''s DNS resolvers point to the VPC DNS. The company does not allow the ML team to access Amazon SageMaker notebooks through connections that use the public internet. The connection must stay within a private network and within the AWS internal network.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #280', 
+ 'AWS ML Question 280', 
  '', 
  'Publish', 
  'closed', 
@@ -16717,7 +16717,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,280);
+(23299,@lastQuestionId,280);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16754,7 +16754,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is using Amazon Comprehend to perform sentiment analysis on a dataset of one million social media posts.<br/><br/>Which approach will process the dataset in the LEAST time?', 
- 'AWS ML Question #281', 
+ 'AWS ML Question 281', 
  '', 
  'Publish', 
  'closed', 
@@ -16776,7 +16776,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,281);
+(23299,@lastQuestionId,281);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16813,7 +16813,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist at a retail company must build a system to forecast the daily sales for one of the company''s stores. The company provided the ML specialist with sales data for this store from the past 10 years. The historical dataset includes the total amount of sales on each day for the store. Approximately 10% of the days in the historical dataset are missing sales data.<br/><br/>The ML specialist builds a forecasting model based on the historical dataset. The specialist discovers that the model does not meet the performance standards that the company requires.<br/><br/>Which action will MOST likely improve the performance for the forecasting model?', 
- 'AWS ML Question #282', 
+ 'AWS ML Question 282', 
  '', 
  'Publish', 
  'closed', 
@@ -16835,7 +16835,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,282);
+(23299,@lastQuestionId,282);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16872,7 +16872,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A mining company wants to use machine learning (ML) models to identify mineral images in real time. A data science team built an image recognition model that is based on convolutional neural network (CNN). The team trained the model on Amazon SageMaker by using GPU instances. The team will deploy the model to a SageMaker endpoint.<br/><br/>The data science team already knows the workload traffic patterns. The team must determine instance type and configuration for the workloads.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #283', 
+ 'AWS ML Question 283', 
  '', 
  'Publish', 
  'closed', 
@@ -16894,7 +16894,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,283);
+(23299,@lastQuestionId,283);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16931,7 +16931,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building custom deep learning models in Amazon SageMaker by using training and inference containers that run on Amazon EC2 instances. The company wants to reduce training costs but does not want to change the current architecture. The SageMaker training job can finish after interruptions. The company can wait days for the results.<br/><br/>Which combination of resources should the company use to meet these requirements MOST cost-effectively? (Choose two.)', 
- 'AWS ML Question #284', 
+ 'AWS ML Question 284', 
  '', 
  'Publish', 
  'closed', 
@@ -16953,7 +16953,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,284);
+(23299,@lastQuestionId,284);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -16995,7 +16995,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company hosts a public web application on AWS. The application provides a user feedback feature that consists of free-text fields where users can submit text to provide feedback. The company receives a large amount of free-text user feedback from the online web application. The product managers at the company classify the feedback into a set of fixed categories including user interface issues, performance issues, new feature request, and chat issues for further actions by the company''s engineering teams.<br/><br/>A machine learning (ML) engineer at the company must automate the classification of new user feedback into these fixed categories by using Amazon SageMaker. A large set of accurate data is available from the historical user feedback that the product managers previously classified.<br/><br/>Which solution should the ML engineer apply to perform multi-class text classification of the user feedback?', 
- 'AWS ML Question #285', 
+ 'AWS ML Question 285', 
  '', 
  'Publish', 
  'closed', 
@@ -17017,7 +17017,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,285);
+(23299,@lastQuestionId,285);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17054,7 +17054,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A digital media company wants to build a customer churn prediction model by using tabular data. The model should clearly indicate whether a customer will stop using the company''s services. The company wants to clean the data because the data contains some empty fields, duplicate values, and rare values.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #286', 
+ 'AWS ML Question 286', 
  '', 
  'Publish', 
  'closed', 
@@ -17076,7 +17076,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,286);
+(23299,@lastQuestionId,286);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17113,7 +17113,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer is evaluating customer data in Amazon SageMaker Data Wrangler. The data engineer will use the customer data to create a new model to predict customer behavior.<br/><br/>The engineer needs to increase the model performance by checking for multicollinearity in the dataset.<br/><br/>Which steps can the data engineer take to accomplish this with the LEAST operational effort? (Choose two.)', 
- 'AWS ML Question #287', 
+ 'AWS ML Question 287', 
  '', 
  'Publish', 
  'closed', 
@@ -17135,7 +17135,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,287);
+(23299,@lastQuestionId,287);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17177,7 +17177,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company processes millions of orders every day. The company uses Amazon DynamoDB tables to store order information. When customers submit new orders, the new orders are immediately added to the DynamoDB tables. New orders arrive in the DynamoDB tables continuously.<br/><br/>A data scientist must build a peak-time prediction solution. The data scientist must also create an Amazon QuickSight dashboard to display near real-time order insights. The data scientist needs to build a solution that will give QuickSight access to the data as soon as new order information arrives.<br/><br/>Which solution will meet these requirements with the LEAST delay between when a new order is processed and when QuickSight can access the new order information?', 
- 'AWS ML Question #288', 
+ 'AWS ML Question 288', 
  '', 
  'Publish', 
  'closed', 
@@ -17199,7 +17199,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,288);
+(23299,@lastQuestionId,288);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17236,7 +17236,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer is preparing a dataset that a retail company will use to predict the number of visitors to stores. The data engineer created an Amazon S3 bucket. The engineer subscribed the S3 bucket to an AWS Data Exchange data product for general economic indicators. The data engineer wants to join the economic indicator data to an existing table in Amazon Athena to merge with the business data. All these transformations must finish running in 30-60 minutes.<br/><br/>Which solution will meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #289', 
+ 'AWS ML Question 289', 
  '', 
  'Publish', 
  'closed', 
@@ -17258,7 +17258,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,289);
+(23299,@lastQuestionId,289);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17295,7 +17295,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company operates large cranes at a busy port The company plans to use machine learning (ML) for predictive maintenance of the cranes to avoid unexpected breakdowns and to improve productivity.<br/><br/>The company already uses sensor data from each crane to monitor the health of the cranes in real time. The sensor data includes rotation speed, tension, energy consumption, vibration, pressure, and temperature for each crane. The company contracts AWS ML experts to implement an ML solution.<br/><br/>Which potential findings would indicate that an ML-based solution is suitable for this scenario? (Choose two.)', 
- 'AWS ML Question #290', 
+ 'AWS ML Question 290', 
  '', 
  'Publish', 
  'closed', 
@@ -17317,7 +17317,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,290);
+(23299,@lastQuestionId,290);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17359,7 +17359,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to create an artificial intelligence (AШ) yoga instructor that can lead large classes of students. The company needs to create a feature that can accurately count the number of students who are in a class. The company also needs a feature that can differentiate students who are performing a yoga stretch correctly from students who are performing a stretch incorrectly.<br/><br/>Determine whether students are performing a stretch correctly, the solution needs to measure the location and angle of each student’s arms and legs. A data scientist must use Amazon SageMaker to access video footage of a yoga class by extracting image frames and applying computer vision models.<br/><br/>Which combination of models will meet these requirements with the LEAST effort? (Choose two.)', 
- 'AWS ML Question #291', 
+ 'AWS ML Question 291', 
  '', 
  'Publish', 
  'closed', 
@@ -17381,7 +17381,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,291);
+(23299,@lastQuestionId,291);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17423,7 +17423,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company has used Amazon SageMaker to deploy a factorization machines (FM) model to suggest products for customers. The company’s data science team has developed two new models by using the TensorFlow and PyTorch deep learning frameworks. The company needs to use A/B testing to evaluate the new models against the deployed model.<br/><br/>The required A/B testing setup is as follows:<br/><br/>• Send 70% of traffic to the FM model, 15% of traffic to the TensorFlow model, and 15% of traffic to the PyTorch model.<br/>• For customers who are from Europe, send all traffic to the TensorFlow model.<br/><br/>Which architecture can the company use to implement the required A/B testing setup?', 
- 'AWS ML Question #292', 
+ 'AWS ML Question 292', 
  '', 
  'Publish', 
  'closed', 
@@ -17445,7 +17445,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,292);
+(23299,@lastQuestionId,292);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17482,7 +17482,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist stores financial datasets in Amazon S3. The data scientist uses Amazon Athena to query the datasets by using SQL.<br/><br/>The data scientist uses Amazon SageMaker to deploy a machine learning (ML) model. The data scientist wants to obtain inferences from the model at the SageMaker endpoint. However, when the data scientist attempts to invoke the SageMaker endpoint, the data scientist receives SQL statement failures. The data scientist’s IAM user is currently unable to invoke the SageMaker endpoint.<br/><br/>Which combination of actions will give the data scientist’s IAM user the ability to invoke the SageMaker endpoint? (Choose three.)', 
- 'AWS ML Question #293', 
+ 'AWS ML Question 293', 
  '', 
  'Publish', 
  'closed', 
@@ -17504,7 +17504,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,293);
+(23299,@lastQuestionId,293);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17546,7 +17546,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is building a linear regression model. The scientist inspects the dataset and notices that the mode of the distribution is lower than the median, and the median is lower than the mean.<br/><br/>Which data transformation will give the data scientist the ability to apply a linear regression model?', 
- 'AWS ML Question #294', 
+ 'AWS ML Question 294', 
  '', 
  'Publish', 
  'closed', 
@@ -17568,7 +17568,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,294);
+(23299,@lastQuestionId,294);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17605,7 +17605,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist receives a collection of insurance claim records. Each record includes a claim ID. the final outcome of the insurance claim, and the date of the final outcome.<br/><br/>The final outcome of each claim is a selection from among 200 outcome categories. Some claim records include only partial information. However, incomplete claim records include only 3 or 4 outcome categories from among the 200 available outcome categories. The collection includes hundreds of records for each outcome category. The records are from the previous 3 years.<br/><br/>The data scientist must create a solution to predict the number of claims that will be in each outcome category every month, several months in advance.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #295', 
+ 'AWS ML Question 295', 
  '', 
  'Publish', 
  'closed', 
@@ -17627,7 +17627,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,295);
+(23299,@lastQuestionId,295);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17664,7 +17664,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A retail company stores 100 GB of daily transactional data in Amazon S3 at periodic intervals. The company wants to identify the schema of the transactional data. The company also wants to perform transformations on the transactional data that is in Amazon S3.<br/><br/>The company wants to use a machine learning (ML) approach to detect fraud in the transformed data.<br/><br/>Which combination of solutions will meet these requirements with the LEAST operational overhead? (Choose three.)', 
- 'AWS ML Question #296', 
+ 'AWS ML Question 296', 
  '', 
  'Publish', 
  'closed', 
@@ -17686,7 +17686,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,296);
+(23299,@lastQuestionId,296);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17728,7 +17728,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist uses Amazon SageMaker Data Wrangler to define and perform transformations and feature engineering on historical data. The data scientist saves the transformations to SageMaker Feature Store.<br/><br/>The historical data is periodically uploaded to an Amazon S3 bucket. The data scientist needs to transform the new historic data and add it to the online feature store. The data scientist needs to prepare the new historic data for training and inference by using native integrations.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #297', 
+ 'AWS ML Question 297', 
  '', 
  'Publish', 
  'closed', 
@@ -17750,7 +17750,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,297);
+(23299,@lastQuestionId,297);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17787,7 +17787,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An insurance company developed a new experimental machine learning (ML) model to replace an existing model that is in production. The company must validate the quality of predictions from the new experimental model in a production environment before the company uses the new experimental model to serve general user requests.<br/><br/>New one model can serve user requests at a time. The company must measure the performance of the new experimental model without affecting the current live traffic.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #298', 
+ 'AWS ML Question 298', 
  '', 
  'Publish', 
  'closed', 
@@ -17809,7 +17809,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,298);
+(23299,@lastQuestionId,298);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17846,7 +17846,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company deployed a machine learning (ML) model on the company website to predict real estate prices. Several months after deployment, an ML engineer notices that the accuracy of the model has gradually decreased.<br/><br/>The ML engineer needs to improve the accuracy of the model. The engineer also needs to receive notifications for any future performance issues.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #299', 
+ 'AWS ML Question 299', 
  '', 
  'Publish', 
  'closed', 
@@ -17868,7 +17868,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,299);
+(23299,@lastQuestionId,299);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17905,7 +17905,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A university wants to develop a targeted recruitment strategy to increase new student enrollment. A data scientist gathers information about the academic performance history of students. The data scientist wants to use the data to build student profiles. The university will use the profiles to direct resources to recruit students who are likely to enroll in the university.<br/><br/>Which combination of steps should the data scientist take to predict whether a particular student applicant is likely to enroll in the university? (Choose two.)', 
- 'AWS ML Question #300', 
+ 'AWS ML Question 300', 
  '', 
  'Publish', 
  'closed', 
@@ -17927,7 +17927,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,300);
+(23299,@lastQuestionId,300);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -17969,7 +17969,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is using the Amazon SageMaker DeepAR forecasting algorithm to train a model on CPU-based Amazon EC2 On-Demand instances. The model currently takes multiple hours to train. The ML specialist wants to decrease the training time of the model.<br/><br/>Which approaches will meet this requirement? (Choose two.)', 
- 'AWS ML Question #301', 
+ 'AWS ML Question 301', 
  '', 
  'Publish', 
  'closed', 
@@ -17991,7 +17991,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,301);
+(23299,@lastQuestionId,301);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18033,7 +18033,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A chemical company has developed several machine learning (ML) solutions to identify chemical process abnormalities. The time series values of independent variables and the labels are available for the past 2 years and are sufficient to accurately model the problem.<br/><br/>The regular operation label is marked as 0 The abnormal operation label is marked as 1. Process abnormalities have a significant negative effect on the company’s profits. The company must avoid these abnormalities.<br/><br/>Which metrics will indicate an ML solution that will provide the GREATEST probability of detecting an abnormality?', 
- 'AWS ML Question #302', 
+ 'AWS ML Question 302', 
  '', 
  'Publish', 
  'closed', 
@@ -18055,7 +18055,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,302);
+(23299,@lastQuestionId,302);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18092,7 +18092,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online delivery company wants to choose the fastest courier for each delivery at the moment an order is placed. The company wants to implement this feature for existing users and new users of its application. Data scientists have trained separate models with XGBoost for this purpose, and the models are stored in Amazon S3. There is one model for each city where the company operates.<br/><br/>Operation engineers are hosting these models in Amazon EC2 for responding to the web client requests, with one instance for each model, but the instances have only a 5% utilization in CPU and memory. The operation engineers want to avoid managing unnecessary resources.<br/><br/>Which solution will enable the company to achieve its goal with the LEAST operational overhead?', 
- 'AWS ML Question #303', 
+ 'AWS ML Question 303', 
  '', 
  'Publish', 
  'closed', 
@@ -18114,7 +18114,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,303);
+(23299,@lastQuestionId,303);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18151,7 +18151,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company builds computer-vision models that use deep learning for the autonomous vehicle industry. A machine learning (ML) specialist uses an Amazon EC2 instance that has a CPU:GPU ratio of 12:1 to train the models.<br/><br/>The ML specialist examines the instance metric logs and notices that the GPU is idle half of the time. The ML specialist must reduce training costs without increasing the duration of the training jobs.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #304', 
+ 'AWS ML Question 304', 
  '', 
  'Publish', 
  'closed', 
@@ -18173,7 +18173,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,304);
+(23299,@lastQuestionId,304);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18210,7 +18210,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to forecast the daily price of newly launched products based on 3 years of data for older product prices, sales, and rebates. The time-series data has irregular timestamps and is missing some values.<br/><br/>Data scientist must build a dataset to replace the missing values. The data scientist needs a solution that resamples the data daily and exports the data for further modeling.<br/><br/>Which solution will meet these requirements with the LEAST implementation effort?', 
- 'AWS ML Question #305', 
+ 'AWS ML Question 305', 
  '', 
  'Publish', 
  'closed', 
@@ -18232,7 +18232,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,305);
+(23299,@lastQuestionId,305);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18269,7 +18269,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is building a forecasting model for a retail company by using the most recent 5 years of sales records that are stored in a data warehouse. The dataset contains sales records for each of the company’s stores across five commercial regions. The data scientist creates a working dataset with StoreID. Region. Date, and Sales Amount as columns. The data scientist wants to analyze yearly average sales for each region. The scientist also wants to compare how each region performed compared to average sales across all commercial regions.<br/><br/>Which visualization will help the data scientist better understand the data trend?', 
- 'AWS ML Question #306', 
+ 'AWS ML Question 306', 
  '', 
  'Publish', 
  'closed', 
@@ -18291,7 +18291,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,306);
+(23299,@lastQuestionId,306);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18328,7 +18328,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company uses sensors on devices such as motor engines and factory machines to measure parameters, temperature and pressure. The company wants to use the sensor data to predict equipment malfunctions and reduce services outages.<br/><br/>Machine learning (ML) specialist needs to gather the sensors data to train a model to predict device malfunctions. The ML specialist must ensure that the data does not contain outliers before training the model.<br/><br/>How can the ML specialist meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #307', 
+ 'AWS ML Question 307', 
  '', 
  'Publish', 
  'closed', 
@@ -18350,7 +18350,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,307);
+(23299,@lastQuestionId,307);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18387,7 +18387,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist obtains a tabular dataset that contains 150 correlated features with different ranges to build a regression model. The data scientist needs to achieve more efficient model training by implementing a solution that minimizes impact on the model’s performance. The data scientist decides to perform a principal component analysis (PCA) preprocessing step to reduce the number of features to a smaller set of independent features before the data scientist uses the new features in the regression model.<br/><br/>Which preprocessing step will meet these requirements?', 
- 'AWS ML Question #308', 
+ 'AWS ML Question 308', 
  '', 
  'Publish', 
  'closed', 
@@ -18409,7 +18409,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,308);
+(23299,@lastQuestionId,308);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18446,7 +18446,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An online retailer collects the following data on customer orders: demographics, behaviors, location, shipment progress, and delivery time. A data scientist joins all the collected datasets. The result is a single dataset that includes 980 variables.<br/><br/>The data scientist must develop a machine learning (ML) model to identify groups of customers who are likely to respond to a marketing campaign.<br/><br/>Which combination of algorithms should the data scientist use to meet this requirement? (Choose two.)', 
- 'AWS ML Question #309', 
+ 'AWS ML Question 309', 
  '', 
  'Publish', 
  'closed', 
@@ -18468,7 +18468,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,309);
+(23299,@lastQuestionId,309);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18510,7 +18510,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning engineer is building a bird classification model. The engineer randomly separates a dataset into a training dataset and a validation dataset. During the training phase, the model achieves very high accuracy. However, the model did not generalize well during validation of the validation dataset. The engineer realizes that the original dataset was imbalanced.<br/><br/>What should the engineer do to improve the validation accuracy of the model?', 
- 'AWS ML Question #310', 
+ 'AWS ML Question 310', 
  '', 
  'Publish', 
  'closed', 
@@ -18532,7 +18532,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,310);
+(23299,@lastQuestionId,310);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18569,7 +18569,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data engineer wants to perform exploratory data analysis (EDA) on a petabyte of data. The data engineer does not want to manage compute resources and wants to pay only for queries that are run. The data engineer must write the analysis by using Python from a Jupyter notebook.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #311', 
+ 'AWS ML Question 311', 
  '', 
  'Publish', 
  'closed', 
@@ -18591,7 +18591,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,311);
+(23299,@lastQuestionId,311);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18628,7 +18628,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist receives a new dataset in .csv format and stores the dataset in Amazon S3. The data scientist will use the dataset to train a machine learning (ML) model.<br/><br/>The data scientist first needs to identify any potential data quality issues in the dataset. The data scientist must identify values that are missing or values that are not valid. The data scientist must also identify the number of outliers in the dataset.<br/><br/>Which solution will meet these requirements with the LEAST operational effort?', 
- 'AWS ML Question #312', 
+ 'AWS ML Question 312', 
  '', 
  'Publish', 
  'closed', 
@@ -18650,7 +18650,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,312);
+(23299,@lastQuestionId,312);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18687,7 +18687,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company has developed a XGBoost model in Amazon SageMaker to predict whether a customer will return a purchased item. The dataset is imbalanced. Only 5% of customers return items.<br/><br/>A data scientist must find the hyperparameters to capture as many instances of returned items as possible. The company has a small budget for compute.<br/><br/>How should the data scientist meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #313', 
+ 'AWS ML Question 313', 
  '', 
  'Publish', 
  'closed', 
@@ -18709,7 +18709,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,313);
+(23299,@lastQuestionId,313);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18746,7 +18746,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is trying to improve the accuracy of a neural network classification model. The data scientist wants to run a large hyperparameter tuning job in Amazon SageMaker. However, previous smaller tuning jobs on the same model often ran for several weeks. The ML specialist wants to reduce the computation time required to run the tuning job.<br/><br/>Which actions will MOST reduce the computation time for the hyperparameter tuning job? (Choose two.)', 
- 'AWS ML Question #314', 
+ 'AWS ML Question 314', 
  '', 
  'Publish', 
  'closed', 
@@ -18768,7 +18768,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,314);
+(23299,@lastQuestionId,314);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18810,7 +18810,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist needs to solve a binary classification problem for a marketing dataset. The ML specialist must maximize the Area Under the ROC Curve (AUC) of the algorithm by training an XGBoost algorithm. The ML specialist must find values for the eta, alpha, min_child_weight, and max_depth hyperparameters that will generate the most accurate model.<br/><br/>Which approach will meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #315', 
+ 'AWS ML Question 315', 
  '', 
  'Publish', 
  'closed', 
@@ -18832,7 +18832,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,315);
+(23299,@lastQuestionId,315);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18869,7 +18869,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) developer for an online retailer recently uploaded a sales dataset into Amazon SageMaker Studio. The ML developer wants to obtain importance scores for each feature of the dataset. The ML developer will use the importance scores to feature engineer the dataset.<br/><br/>Which solution will meet this requirement with the LEAST development effort?', 
- 'AWS ML Question #316', 
+ 'AWS ML Question 316', 
  '', 
  'Publish', 
  'closed', 
@@ -18891,7 +18891,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,316);
+(23299,@lastQuestionId,316);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18928,7 +18928,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is setting up a mechanism for data scientists and engineers from different departments to access an Amazon SageMaker Studio domain. Each department has a unique SageMaker Studio domain.<br/><br/>The company wants to build a central proxy application that data scientists and engineers can log in to by using their corporate credentials. The proxy application will authenticate users by using the company''s existing Identity provider (IdP). The application will then route users to the appropriate SageMaker Studio domain.<br/><br/>The company plans to maintain a table in Amazon DynamoDB that contains SageMaker domains for each department.<br/><br/>How should the company meet these requirements?', 
- 'AWS ML Question #317', 
+ 'AWS ML Question 317', 
  '', 
  'Publish', 
  'closed', 
@@ -18950,7 +18950,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,317);
+(23299,@lastQuestionId,317);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -18987,7 +18987,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An insurance company is creating an application to automate car insurance claims. A machine learning (ML) specialist used an Amazon SageMaker Object Detection - TensorFlow built-in algorithm to train a model to detect scratches and dents in images of cars. After the model was trained, the ML specialist noticed that the model performed better on the training dataset than on the testing dataset.<br/><br/>Which approach should the ML specialist use to improve the performance of the model on the testing data?', 
- 'AWS ML Question #318', 
+ 'AWS ML Question 318', 
  '', 
  'Publish', 
  'closed', 
@@ -19009,7 +19009,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,318);
+(23299,@lastQuestionId,318);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19046,7 +19046,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A developer at a retail company is creating a daily demand forecasting model. The company stores the historical hourly demand data in an Amazon S3 bucket. However, the historical data does not include demand data for some hours.<br/><br/>The developer wants to verify that an autoregressive integrated moving average (ARIMA) approach will be a suitable model for the use case.<br/><br/>How should the developer verify the suitability of an ARIMA approach?', 
- 'AWS ML Question #319', 
+ 'AWS ML Question 319', 
  '', 
  'Publish', 
  'closed', 
@@ -19068,7 +19068,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,319);
+(23299,@lastQuestionId,319);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19105,7 +19105,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company decides to use Amazon SageMaker to develop machine learning (ML) models. The company will host SageMaker notebook instances in a VPC. The company stores training data in an Amazon S3 bucket. Company security policy states that SageMaker notebook instances must not have internet connectivity.<br/><br/>Which solution will meet the company’s security requirements?', 
- 'AWS ML Question #320', 
+ 'AWS ML Question 320', 
  '', 
  'Publish', 
  'closed', 
@@ -19127,7 +19127,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,320);
+(23299,@lastQuestionId,320);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19164,7 +19164,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer uses Bayesian optimization for a hyperpara meter tuning job in Amazon SageMaker. The ML engineer uses precision as the objective metric.<br/><br/>The ML engineer wants to use recall as the objective metric. The ML engineer also wants to expand the hyperparameter range for a new hyperparameter tuning job. The new hyperparameter range will include the range of the previously performed tuning job.<br/><br/>Which approach will run the new hyperparameter tuning job in the LEAST amount of time?', 
- 'AWS ML Question #321', 
+ 'AWS ML Question 321', 
  '', 
  'Publish', 
  'closed', 
@@ -19186,7 +19186,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,321);
+(23299,@lastQuestionId,321);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19223,7 +19223,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A news company is developing an article search tool for its editors. The search tool should look for the articles that are most relevant and representative for particular words that are queried among a corpus of historical news documents.<br/><br/>The editors test the first version of the tool and report that the tool seems to look for word matches in general. The editors have to spend additional time to filter the results to look for the articles where the queried words are most important. A group of data scientists must redesign the tool so that it isolates the most frequently used words in a document. The tool also must capture the relevance and importance of words for each document in the corpus.<br/><br/>Which solution meets these requirements?', 
- 'AWS ML Question #322', 
+ 'AWS ML Question 322', 
  '', 
  'Publish', 
  'closed', 
@@ -19245,7 +19245,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,322);
+(23299,@lastQuestionId,322);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19282,7 +19282,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A growing company has a business-critical key performance indicator (KPI) for the uptime of a machine learning (ML) recommendation system. The company is using Amazon SageMaker hosting services to develop a recommendation model in a single Availability Zone within an AWS Region.<br/><br/>A machine learning (ML) specialist must develop a solution to achieve high availability. The solution must have a recovery time objective (RTO) of 5 minutes.<br/><br/>Which solution will meet these requirements with the LEAST effort?', 
- 'AWS ML Question #323', 
+ 'AWS ML Question 323', 
  '', 
  'Publish', 
  'closed', 
@@ -19304,7 +19304,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,323);
+(23299,@lastQuestionId,323);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19341,7 +19341,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A global company receives and processes hundreds of documents daily. The documents are in printed .pdf format or .jpg format.<br/><br/>A machine learning (ML) specialist wants to build an automated document processing workflow to extract text from specific fields from the documents and to classify the documents. The ML specialist wants a solution that requires low maintenance.<br/><br/>Which solution will meet these requirements with the LEAST operational effort?', 
- 'AWS ML Question #324', 
+ 'AWS ML Question 324', 
  '', 
  'Publish', 
  'closed', 
@@ -19363,7 +19363,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,324);
+(23299,@lastQuestionId,324);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19400,7 +19400,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to detect credit card fraud. The company has observed that an average of 2% of credit card transactions are fraudulent. A data scientist trains a classifier on a year''s worth of credit card transaction data. The classifier needs to identify the fraudulent transactions. The company wants to accurately capture as many fraudulent transactions as possible.<br/><br/>Which metrics should the data scientist use to optimize the classifier? (Choose two.)', 
- 'AWS ML Question #325', 
+ 'AWS ML Question 325', 
  '', 
  'Publish', 
  'closed', 
@@ -19422,7 +19422,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,325);
+(23299,@lastQuestionId,325);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19464,7 +19464,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is designing a repository that will contain many images of vehicles. The repository must scale automatically in size to store new images every day. The repository must support versioning of the images. The data scientist must implement a solution that maintains multiple immediately accessible copies of the data in different AWS Regions.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #326', 
+ 'AWS ML Question 326', 
  '', 
  'Publish', 
  'closed', 
@@ -19486,7 +19486,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,326);
+(23299,@lastQuestionId,326);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19523,7 +19523,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company wants to update a production real-time machine learning (ML) recommendation engine API that uses Amazon SageMaker. The company wants to release a new model but does not want to make changes to applications that rely on the API. The company also wants to evaluate the performance of the new model in production traffic before the company fully rolls out the new model to all users.<br/><br/>Which solution will meet these requirements with the LEAST operational overhead?', 
- 'AWS ML Question #327', 
+ 'AWS ML Question 327', 
  '', 
  'Publish', 
  'closed', 
@@ -19545,7 +19545,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,327);
+(23299,@lastQuestionId,327);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19582,7 +19582,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist at a manufacturing company uses Amazon SageMaker DeepAR to forecast input materials and energy requirements for the company. Most of the data in the training dataset is missing values for the target variable. The company stores the training dataset as JSON files.<br/><br/>The ML specialist develop a solution by using Amazon SageMaker DeepAR to account for the missing values in the training dataset.<br/><br/>Which approach will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #328', 
+ 'AWS ML Question 328', 
  '', 
  'Publish', 
  'closed', 
@@ -19604,7 +19604,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,328);
+(23299,@lastQuestionId,328);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19641,7 +19641,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A law firm handles thousands of contracts every day. Every contract must be signed. Currently, a lawyer manually checks all contracts for signatures.<br/><br/>The law firm is developing a machine learning (ML) solution to automate signature detection for each contract. The ML solution must also provide a confidence score for each contract page.<br/><br/>Which Amazon Textract API action can the law firm use to generate a confidence score for each page of each contract?', 
- 'AWS ML Question #329', 
+ 'AWS ML Question 329', 
  '', 
  'Publish', 
  'closed', 
@@ -19663,7 +19663,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,329);
+(23299,@lastQuestionId,329);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19700,7 +19700,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company that operates oil platforms uses drones to photograph locations on oil platforms that are difficult for humans to access to search for corrosion.<br/><br/>Experienced engineers review the photos to determine the severity of corrosion. There can be several corroded areas in a single photo. The engineers determine whether the identified corrosion needs to be fixed immediately, scheduled for future maintenance, or requires no action. The corrosion appears in an average of 0.1% of all photos.<br/><br/>A data science team needs to create a solution that automates the process of reviewing the photos and classifying the need for maintenance.<br/><br/>Which combination of steps will meet these requirements? (Choose three.)', 
- 'AWS ML Question #330', 
+ 'AWS ML Question 330', 
  '', 
  'Publish', 
  'closed', 
@@ -19722,7 +19722,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,330);
+(23299,@lastQuestionId,330);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19764,7 +19764,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company maintains a 2 TB dataset that contains information about customer behaviors. The company stores the dataset in Amazon S3. The company stores a trained model container in Amazon Elastic Container Registry (Amazon ECR).<br/><br/>A machine learning (ML) specialist needs to score a batch model for the dataset to predict customer behavior. The ML specialist must select a scalable approach to score the model.<br/><br/>Which solution will meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #331', 
+ 'AWS ML Question 331', 
  '', 
  'Publish', 
  'closed', 
@@ -19786,7 +19786,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,331);
+(23299,@lastQuestionId,331);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19823,7 +19823,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is implementing a deep learning neural network model for an object detection task on images. The data scientist wants to experiment with a large number of parallel hyperparameter tuning jobs to find hyperparameters that optimize compute time.<br/><br/>The data scientist must ensure that jobs that underperform are stopped. The data scientist must allocate computational resources to well-performing hyperparameter configurations. The data scientist is using the hyperparameter tuning job to tune the stochastic gradient descent (SGD) learning rate, momentum, epoch, and mini-batch size.<br/><br/>Which technique will meet these requirements with LEAST computational time?', 
- 'AWS ML Question #332', 
+ 'AWS ML Question 332', 
  '', 
  'Publish', 
  'closed', 
@@ -19845,7 +19845,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,332);
+(23299,@lastQuestionId,332);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19882,7 +19882,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An agriculture company wants to improve crop yield forecasting for the upcoming season by using crop yields from the last three seasons. The company wants to compare the performance of its new scikit-learn model to the benchmark.<br/><br/>A data scientist needs to package the code into a container that computes both the new model forecast and the benchmark. The data scientist wants AWS to be responsible for the operational maintenance of the container.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #333', 
+ 'AWS ML Question 333', 
  '', 
  'Publish', 
  'closed', 
@@ -19904,7 +19904,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,333);
+(23299,@lastQuestionId,333);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -19941,7 +19941,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A cybersecurity company is collecting on-premises server logs, mobile app logs, and IoT sensor data. The company backs up the ingested data in an Amazon S3 bucket and sends the ingested data to Amazon OpenSearch Service for further analysis. Currently, the company has a custom ingestion pipeline that is running on Amazon EC2 instances. The company needs to implement a new serverless ingestion pipeline that can automatically scale to handle sudden changes in the data flow.<br/><br/>Which solution will meet these requirements MOST cost-effectively?', 
- 'AWS ML Question #334', 
+ 'AWS ML Question 334', 
  '', 
  'Publish', 
  'closed', 
@@ -19963,7 +19963,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,334);
+(23299,@lastQuestionId,334);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20000,7 +20000,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A bank has collected customer data for 10 years in CSV format. The bank stores the data in an on-premises server. A data science team wants to use Amazon SageMaker to build and train a machine learning (ML) model to predict churn probability. The team will use the historical data. The data scientists want to perform data transformations quickly and to generate data insights before the team builds a model for production.<br/><br/>Which solution will meet these requirements with the LEAST development effort?', 
- 'AWS ML Question #335', 
+ 'AWS ML Question 335', 
  '', 
  'Publish', 
  'closed', 
@@ -20022,7 +20022,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,335);
+(23299,@lastQuestionId,335);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20059,7 +20059,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A media company wants to deploy a machine learning (ML) model that uses Amazon SageMaker to recommend new articles to the company’s readers. The company''s readers are primarily located in a single city.<br/><br/>The company notices that the heaviest reader traffic predictably occurs early in the morning, after lunch, and again after work hours. There is very little traffic at other times of day. The media company needs to minimize the time required to deliver recommendations to its readers. The expected amount of data that the API call will return for inference is less than 4 MB.<br/><br/>Which solution will meet these requirements in the MOST cost-effective way?', 
- 'AWS ML Question #336', 
+ 'AWS ML Question 336', 
  '', 
  'Publish', 
  'closed', 
@@ -20081,7 +20081,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,336);
+(23299,@lastQuestionId,336);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20118,7 +20118,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer is using Amazon SageMaker automatic model tuning (AMT) to optimize a model''s hyperparameters. The ML engineer notices that the tuning jobs take a long time to run. The tuning jobs continue even when the jobs are not significantly improving against the objective metric.<br/><br/>The ML engineer needs the training jobs to optimize the hyperparameters more quickly.<br/><br/>How should the ML engineer configure the SageMaker AMT data types to meet these requirements?', 
- 'AWS ML Question #337', 
+ 'AWS ML Question 337', 
  '', 
  'Publish', 
  'closed', 
@@ -20140,7 +20140,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,337);
+(23299,@lastQuestionId,337);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20177,7 +20177,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A global bank requires a solution to predict whether customers will leave the bank and choose another bank. The bank is using a dataset to train a model to predict customer loss. The training dataset has 1,000 rows. The training dataset includes 100 instances of customers who left the bank.<br/><br/>A machine learning (ML) specialist is using Amazon SageMaker Data Wrangler to train a churn prediction model by using a SageMaker training job. After training, the ML specialist notices that the model returns only false results. The ML specialist must correct the model so that it returns more accurate predictions.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #338', 
+ 'AWS ML Question 338', 
  '', 
  'Publish', 
  'closed', 
@@ -20199,7 +20199,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,338);
+(23299,@lastQuestionId,338);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20236,7 +20236,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A banking company provides financial products to customers around the world. A machine learning (ML) specialist collected transaction data from internal customers. The ML specialist split the dataset into training, testing, and validation datasets. The ML specialist analyzed the training dataset by using Amazon SageMaker Clarify. The analysis found that the training dataset contained fewer examples of customers in the 40 to 55 year-old age group compared to the other age groups.<br/><br/>Which type of pretraining bias did the ML specialist observe in the training dataset?', 
- 'AWS ML Question #339', 
+ 'AWS ML Question 339', 
  '', 
  'Publish', 
  'closed', 
@@ -20258,7 +20258,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,339);
+(23299,@lastQuestionId,339);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20295,7 +20295,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A tourism company uses a machine learning (ML) model to make recommendations to customers. The company uses an Amazon SageMaker environment and set hyperparameter tuning completion criteria to MaxNumberOfTrainingJobs.<br/><br/>An ML specialist wants to change the hyperparameter tuning completion criteria. The ML specialist wants to stop tuning immediately after an internal algorithm determines that tuning job is unlikely to improve more than 1% over the objective metric from the best training job.<br/><br/>Which completion criteria will meet this requirement?', 
- 'AWS ML Question #340', 
+ 'AWS ML Question 340', 
  '', 
  'Publish', 
  'closed', 
@@ -20317,7 +20317,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,340);
+(23299,@lastQuestionId,340);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20354,7 +20354,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A car company has dealership locations in multiple cities. The company uses a machine learning (ML) recommendation system to market cars to its customers.<br/><br/>An ML engineer trained the ML recommendation model on a dataset that includes multiple attributes about each car. The dataset includes attributes such as car brand, car type, fuel efficiency, and price.<br/><br/>The ML engineer uses Amazon SageMaker Data Wrangler to analyze and visualize data. The ML engineer needs to identify the distribution of car prices for a specific type of car.<br/><br/>Which type of visualization should the ML engineer use to meet these requirements?', 
- 'AWS ML Question #341', 
+ 'AWS ML Question 341', 
  '', 
  'Publish', 
  'closed', 
@@ -20376,7 +20376,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,341);
+(23299,@lastQuestionId,341);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20413,7 +20413,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A media company is building a computer vision model to analyze images that are on social media. The model consists of CNNs that the company trained by using images that the company stores in Amazon S3. The company used an Amazon SageMaker training job in File mode with a single Amazon EC2 On-Demand Instance.<br/><br/>Every day, the company updates the model by using about 10,000 images that the company has collected in the last 24 hours. The company configures training with only one epoch. The company wants to speed up training and lower costs without the need to make any code changes.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #342', 
+ 'AWS ML Question 342', 
  '', 
  'Publish', 
  'closed', 
@@ -20435,7 +20435,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,342);
+(23299,@lastQuestionId,342);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20472,7 +20472,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A telecommunications company has deployed a machine learning model using Amazon SageMaker. The model identifies customers who are likely to cancel their contract when calling customer service. These customers are then directed to a specialist service team. The model has been trained on historical data from multiple years relating to customer contracts and customer service interactions in a single geographic region.<br/><br/>The company is planning to launch a new global product that will use this model. Management is concerned that the model might incorrectly direct a large number of calls from customers in regions without historical data to the specialist service team.<br/><br/>Which approach would MOST effectively address this issue?', 
- 'AWS ML Question #343', 
+ 'AWS ML Question 343', 
  '', 
  'Publish', 
  'closed', 
@@ -20494,7 +20494,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,343);
+(23299,@lastQuestionId,343);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20531,7 +20531,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) engineer is creating a binary classification model. The ML engineer will use the model in a highly sensitive environment.<br/><br/>There is no cost associated with missing a positive label. However, the cost of making a false positive inference is extremely high.<br/><br/>What is the most important metric to optimize the model for in this scenario?', 
- 'AWS ML Question #344', 
+ 'AWS ML Question 344', 
  '', 
  'Publish', 
  'closed', 
@@ -20553,7 +20553,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,344);
+(23299,@lastQuestionId,344);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20590,7 +20590,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'An ecommerce company discovers that the search tool for the company''s website is not presenting the top search results to customers. The company needs to resolve the issue so the search tool will present results that customers are most likely to want to purchase.<br/><br/>Which solution will meet this requirement with the LEAST operational effort?', 
- 'AWS ML Question #345', 
+ 'AWS ML Question 345', 
  '', 
  'Publish', 
  'closed', 
@@ -20612,7 +20612,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,345);
+(23299,@lastQuestionId,345);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20649,7 +20649,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist collected daily product usage data for a group of customers. The ML specialist appended customer metadata such as age and gender from an external data source.<br/><br/>The ML specialist wants to understand product usage patterns for each day of the week for customers in specific age groups. The ML specialist creates two categorical features named dayofweek and binned_age, respectively.<br/><br/>Which approach should the ML specialist use discover the relationship between the two new categorical features?', 
- 'AWS ML Question #346', 
+ 'AWS ML Question 346', 
  '', 
  'Publish', 
  'closed', 
@@ -20671,7 +20671,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,346);
+(23299,@lastQuestionId,346);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20708,7 +20708,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company needs to develop a model that uses a machine learning (ML) model for risk analysis. An ML engineer needs to evaluate the contribution each feature of a training dataset makes to the prediction of the target variable before the ML engineer selects features.<br/><br/>How should the ML engineer predict the contribution of each feature?', 
- 'AWS ML Question #347', 
+ 'AWS ML Question 347', 
  '', 
  'Publish', 
  'closed', 
@@ -20730,7 +20730,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,347);
+(23299,@lastQuestionId,347);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20767,7 +20767,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company is building a predictive maintenance system using real-time data from devices on remote sites. There is no AWS Direct Connect connection or VPN connection between the sites and the company''s VPC. The data needs to be ingested in real time from the devices into Amazon S3.<br/><br/>Transformation is needed to convert the raw data into clean .csv data to be fed into the machine learning (ML) model. The transformation needs to happen during the ingestion process. When transformation fails, the records need to be stored in a specific location in Amazon S3 for human review. The raw data before transformation also needs to be stored in Amazon S3.<br/><br/>How should an ML specialist architect the solution to meet these requirements with the LEAST effort?', 
- 'AWS ML Question #348', 
+ 'AWS ML Question 348', 
  '', 
  'Publish', 
  'closed', 
@@ -20789,7 +20789,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,348);
+(23299,@lastQuestionId,348);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20826,7 +20826,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company wants to use machine learning (ML) to improve its customer churn prediction model. The company stores data in an Amazon Redshift data warehouse.<br/><br/>A data science team wants to use Amazon Redshift machine learning (Amazon Redshift ML) to build a model and run predictions for new data directly within the data warehouse.<br/><br/>Which combination of steps should the company take to use Amazon Redshift ML to meet these requirements? (Choose three.)', 
- 'AWS ML Question #349', 
+ 'AWS ML Question 349', 
  '', 
  'Publish', 
  'closed', 
@@ -20848,7 +20848,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,349);
+(23299,@lastQuestionId,349);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20890,7 +20890,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company’s machine learning (ML) team needs to build a system that can detect whether people in a collection of images are wearing the company’s logo. The company has a set of labeled training data.<br/><br/>Which algorithm should the ML team use to meet this requirement?', 
- 'AWS ML Question #350', 
+ 'AWS ML Question 350', 
  '', 
  'Publish', 
  'closed', 
@@ -20912,7 +20912,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,350);
+(23299,@lastQuestionId,350);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -20949,7 +20949,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist uses Amazon SageMaker Data Wrangler to obtain a feature summary from a dataset that the data scientist imported from Amazon S3. The data scientist notices that the prediction power for a dataset feature has a score of 1.<br/><br/>What is the cause of the score?', 
- 'AWS ML Question #351', 
+ 'AWS ML Question 351', 
  '', 
  'Publish', 
  'closed', 
@@ -20971,7 +20971,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,351);
+(23299,@lastQuestionId,351);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -21008,7 +21008,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is conducting exploratory data analysis (EDA) on a dataset that contains information about product suppliers. The dataset records the country where each product supplier is located as a two-letter text code. For example, the code for New Zealand is "NZ."<br/><br/>The data scientist needs to transform the country codes for model training. The data scientist must choose the solution that will result in the smallest increase in dimensionality. The solution must not result in any information loss.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #352', 
+ 'AWS ML Question 352', 
  '', 
  'Publish', 
  'closed', 
@@ -21030,7 +21030,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,352);
+(23299,@lastQuestionId,352);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -21067,7 +21067,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A data scientist is building a new model for an ecommerce company. The model will predict how many minutes it will take to deliver a package.<br/><br/>During model training, the data scientist needs to evaluate model performance.<br/><br/>Which metrics should the data scientist use to meet this requirement? (Choose two.)', 
- 'AWS ML Question #353', 
+ 'AWS ML Question 353', 
  '', 
  'Publish', 
  'closed', 
@@ -21089,7 +21089,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,353);
+(23299,@lastQuestionId,353);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -21131,7 +21131,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A machine learning (ML) specialist is developing a model for a company. The model will classify and predict sequences of objects that are displayed in a video. The ML specialist decides to use a hybrid architecture that consists of a convolutional neural network (CNN) followed by a classifier three-layer recurrent neural network (RNN).<br/><br/>The company developed a similar model previously but trained the model to classify a different set of objects. The ML specialist wants to save time by using the previously trained model and adapting the model for the current use case and set of objects.<br/><br/>Which combination of steps will accomplish this goal with the LEAST amount of effort? (Choose two.)', 
- 'AWS ML Question #354', 
+ 'AWS ML Question 354', 
  '', 
  'Publish', 
  'closed', 
@@ -21153,7 +21153,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,354);
+(23299,@lastQuestionId,354);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -21195,7 +21195,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A company distributes an online multiple-choice survey to several thousand people. Respondents to the survey can select multiple options for each question.<br/><br/>A machine learning (ML) engineer needs to comprehensively represent every response from all respondents in a dataset. The ML engineer will use the dataset to train a logistic regression model.<br/><br/>Which solution will meet these requirements?', 
- 'AWS ML Question #355', 
+ 'AWS ML Question 355', 
  '', 
  'Publish', 
  'closed', 
@@ -21217,7 +21217,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,355);
+(23299,@lastQuestionId,355);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 
@@ -21254,7 +21254,7 @@ INSERT INTO wp_jrf23a6sz5_posts
  NOW(), 
  NOW(), 
  'A manufacturing company stores production volume data in a PostgreSQL database.<br/><br/>The company needs an end-to-end solution that will give business analysts the ability to prepare data for processing and to predict future production volume based the previous year''s production volume. The solution must not require the company to have coding knowledge.<br/><br/>Which solution will meet these requirements with the LEAST effort?', 
- 'AWS ML Question #356', 
+ 'AWS ML Question 356', 
  '', 
  'Publish', 
  'closed', 
@@ -21276,7 +21276,7 @@ INSERT INTO wp_jrf23a6sz5_posts
 set @lastQuestionId = Last_Insert_ID(); 
  
 insert into `wp_jrf23a6sz5_learnpress_quiz_questions` (`quiz_id`,`question_id`,`question_order`) VALUES
-(23466,@lastQuestionId,356);
+(23299,@lastQuestionId,356);
  
 
 INSERT INTO wp_jrf23a6sz5_learnpress_question_answers (`question_id`, `title`, `value`, `order`, `is_true`)  VALUES 

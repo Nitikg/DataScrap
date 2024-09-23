@@ -118,13 +118,13 @@ function ShiviDeleteTables() {
 		$wpdb->query("TRUNCATE table wp_jrf23a6sz5_learnpress_question_answers;");
 		$wpdb->query("truncate table wp_jrf23a6sz5_learnpress_quiz_questions;");
 		$wpdb->query("delete from wp_jrf23a6sz5_postmeta WHERE meta_key ='_lp_type';");
-		$wpdb->query("delete from wp_jrf23a6sz5_postmeta WHERE meta_key ='_lp_mark';");
+		$wpdb->query("delete from wp_jrf23a6sz5_postmeta WHERE meta_key ='_lp_mark' and meta_value = 1;");
 		//local
 		$wpdb->query("delete FROM wp_posts WHERE post_type='lp_question';"); 
 		$wpdb->query("TRUNCATE table wp_learnpress_question_answers;");
 		$wpdb->query("truncate table wp_learnpress_quiz_questions;");
-		$wpdb->query("truncate table wp_postmeta WHERE meta_key ='_lp_type';");
-		$wpdb->query("truncate table wp_postmeta WHERE meta_key ='_lp_mark';");
+		$wpdb->query("delete from table wp_postmeta WHERE meta_key ='_lp_type';");
+		$wpdb->query("delete from table wp_postmeta WHERE meta_key ='_lp_mark' and meta_value = 1;");
 		
         echo "<p>I am executed with function name ShiviDeleteTables in it.</p>";
     } catch (Exception $e) {
