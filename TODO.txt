@@ -1,8 +1,25 @@
 Issues
-	1. Login and logout breaking on deletion script
-	2. See more btn above courses slider not working -- Nitik - WIP
-	3. Remove unnecessary plugins
+	1. Unnecessary loading even after page render
+	2. Login and logout breaking on deletion script
 
+
+TODO
+	1. Eduma template remove from every page
+	2. Remove categories option from navbar
+	3. About us
+	4. Address in contact us - "Cambridge, Massachusetts 02138, United States"
+	5. Contact should not have phone and email should be updated
+	6. Updated on on exam landing page
+	7. Student count should be 15k+
+	8. Actual certificate name in quiz name + "Practice questions"
+	9. Third tab in course page for Official Exam Guide
+	10. Remove - Assessments:Yes
+	11. Skill Level Advance
+	12. 100% Free Practice questions
+	13. Try to bring Paging on upper side
+	14. Contact Sale, About us, Contact us in footer redirection issue
+	15. Remove Social Media icons from footer
+	16. @ 2024 ITExamGuru. All rights reserved
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -20,5 +37,13 @@ AFTER MVP
 	1. Correct answers are not displaying -- after mvp
 	2. needs to write rollback script also but may be after MVP
 	3. Eduma Mobile App Setup -Shivi -- after mvp
+	4. categories in navbar followed by respective courses.
+	5. Feedback form for contact page
+	6. Gmail integration for signin
+	7. Integrate cloudflare for security
+	8. User Profile template
+	9. Remove finish course functionality 
+	
+
 
 

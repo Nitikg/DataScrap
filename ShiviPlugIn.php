@@ -112,6 +112,11 @@ function ShiviDeleteTables() {
     global $wpdb;
 
     try {
+
+        // Backup table for debug
+        $wpdb->query("select * into #testdbo select * from wp_jrf23a6sz5_postmeta WHERE meta_key ='_lp_type';");
+
+
         // Replace 'your_table_name' with the actual table name(s) you want to delete
 		//stagging
         $wpdb->query("delete FROM wp_jrf23a6sz5_posts WHERE post_type='lp_question';"); 
