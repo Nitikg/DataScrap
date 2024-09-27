@@ -4,22 +4,31 @@ Issues
 
 
 TODO
-	1. Eduma template remove from every page
-	2. Remove categories option from navbar
+	1. Eduma template remove from every page -- DONE
+	2. Remove categories option from navbar -- DONE
 	3. About us
-	4. Address in contact us - "Cambridge, Massachusetts 02138, United States"
-	5. Contact should not have phone and email should be updated
-	6. Updated on on exam landing page
-	7. Student count should be 15k+
-	8. Actual certificate name in quiz name + "Practice questions"
-	9. Third tab in course page for Official Exam Guide
-	10. Remove - Assessments:Yes
-	11. Skill Level Advance
-	12. 100% Free Practice questions
+	4. Address in contact us - "Cambridge, Massachusetts 02138, United States" -- DONE
+	5. Contact should not have phone and email should be updated -- DONE
+	6. Updated on on exam landing page -- DONE
+	7. Student count should be 15k+ -- DONE
+	8. Actual certificate name in quiz name + "Practice questions" -- DONE
+	9. Third tab in course page for Official Exam Guide -- DONE
+	10. Remove - Assessments:Yes -- DONE
+	11. Skill Level Advance -- DONE
+	12. 100% Free Practice questions -- DONE
 	13. Try to bring Paging on upper side
-	14. Contact Sale, About us, Contact us in footer redirection issue
-	15. Remove Social Media icons from footer
-	16. @ 2024 ITExamGuru. All rights reserved
+	14. Contact Sale, About us, Contact us in footer redirection issue -- DONE
+	15. Remove Social Media icons from footer -- DONE
+	16. @ 2024 ITExamGuru. All rights reserved -- DONE
+
+
+
+
+TODO new
+	1. Google search console and bing
+	2. SEO plugin
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
