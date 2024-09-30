@@ -30,3 +30,6 @@ Eduma theme Purchase Code:
 
 
 Image path - wp-content/uploads/examdump/{examName}/imageName.jpg
+
+
+License Crack Path -  D:\Wordpress\Local\Temp01\app\public\wp-content\plugins\thim-core\admin\class-thim-theme-license.php
